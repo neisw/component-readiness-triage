@@ -1,0 +1,211 @@
+{
+  "Arguments": {
+    "TestRelease": "4.16",
+    "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2024-02-28T23:59:59Z&baseRelease=4.15&baseStartTime=2024-02-01T00:00:00Z&confidence=95&excludeArches=arm64,heterogeneous,ppc64le,s390x&excludeClouds=openstack,ibmcloud,libvirt,ovirt,unknown&excludeVariants=hypershift,osd,microshift,techpreview,single-node,assisted,compact&groupBy=cloud,arch,network&ignoreDisruption=true&ignoreMissing=false&minFail=3&pity=5&sampleEndTime=2024-05-21T23:59:59Z&sampleRelease=4.16&sampleStartTime=2024-05-14T00:00:00Z&component=Installer%20%2F%20openshift-installer&capability=Other&environment=ovn%20amd64%20metal-ipi&network=ovn&arch=amd64&platform=metal-ipi",
+    "IssueDescription": "metal-ipi bootstrap fails intermittently due to master provisioning delays",
+    "IssueType": "Product",
+    "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-33157",
+    "OutputFile": "/home/fsb/tmp/gen_resolved/triage/devan-metal-install-triage-3-update-incidents-regressions.json",
+    "IncidentGroupId": "99a98cc0-0099-479e-9e1f-45d1a28d1ef2"
+  },
+  "Tests": [
+    {
+      "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
+      "TestName": "install should succeed: overall",
+      "Release": "4.16",
+      "GroupId": "99a98cc0-0099-479e-9e1f-45d1a28d1ef2",
+      "Issue": {
+        "Type": "Product",
+        "Description": "metal-ipi bootstrap fails intermittently due to master provisioning delays",
+        "URL": "https://issues.redhat.com/browse/OCPBUGS-33157"
+      },
+      "Variants": [
+        {
+          "key": "Network",
+          "value": "ovn"
+        },
+        {
+          "key": "Upgrade",
+          "value": "no-upgrade"
+        },
+        {
+          "key": "Architecture",
+          "value": "amd64"
+        },
+        {
+          "key": "Platform",
+          "value": "metal-ipi"
+        },
+        {
+          "key": "Variant",
+          "value": "standard"
+        }
+      ]
+    },
+    {
+      "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
+      "TestName": "install should succeed: overall",
+      "Release": "4.16",
+      "GroupId": "99a98cc0-0099-479e-9e1f-45d1a28d1ef2",
+      "Issue": {
+        "Type": "Product",
+        "Description": "metal-ipi bootstrap fails intermittently due to master provisioning delays",
+        "URL": "https://issues.redhat.com/browse/OCPBUGS-33157"
+      },
+      "Variants": [
+        {
+          "key": "Network",
+          "value": "ovn"
+        },
+        {
+          "key": "Upgrade",
+          "value": "upgrade-micro"
+        },
+        {
+          "key": "Architecture",
+          "value": "amd64"
+        },
+        {
+          "key": "Platform",
+          "value": "metal-ipi"
+        },
+        {
+          "key": "Variant",
+          "value": "standard"
+        }
+      ]
+    },
+    {
+      "TestId": "cluster install:6ce515c7c732a322333427bf4f5508a5",
+      "TestName": "install should succeed: cluster bootstrap",
+      "Release": "4.16",
+      "GroupId": "99a98cc0-0099-479e-9e1f-45d1a28d1ef2",
+      "Issue": {
+        "Type": "Product",
+        "Description": "metal-ipi bootstrap fails intermittently due to master provisioning delays",
+        "URL": "https://issues.redhat.com/browse/OCPBUGS-33157"
+      },
+      "Variants": [
+        {
+          "key": "Network",
+          "value": "ovn"
+        },
+        {
+          "key": "Upgrade",
+          "value": "upgrade-micro"
+        },
+        {
+          "key": "Architecture",
+          "value": "amd64"
+        },
+        {
+          "key": "Platform",
+          "value": "metal-ipi"
+        },
+        {
+          "key": "Variant",
+          "value": "standard"
+        }
+      ]
+    },
+    {
+      "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
+      "TestName": "install should succeed: overall",
+      "Release": "4.16",
+      "GroupId": "99a98cc0-0099-479e-9e1f-45d1a28d1ef2",
+      "Issue": {
+        "Type": "Product",
+        "Description": "metal-ipi bootstrap fails intermittently due to master provisioning delays",
+        "URL": "https://issues.redhat.com/browse/OCPBUGS-33157"
+      },
+      "Variants": [
+        {
+          "key": "Network",
+          "value": "ovn"
+        },
+        {
+          "key": "Upgrade",
+          "value": "no-upgrade"
+        },
+        {
+          "key": "Architecture",
+          "value": "amd64"
+        },
+        {
+          "key": "Platform",
+          "value": "metal-ipi"
+        },
+        {
+          "key": "Variant",
+          "value": "serial"
+        }
+      ]
+    },
+    {
+      "TestId": "cluster install:6ce515c7c732a322333427bf4f5508a5",
+      "TestName": "install should succeed: cluster bootstrap",
+      "Release": "4.16",
+      "GroupId": "99a98cc0-0099-479e-9e1f-45d1a28d1ef2",
+      "Issue": {
+        "Type": "Product",
+        "Description": "metal-ipi bootstrap fails intermittently due to master provisioning delays",
+        "URL": "https://issues.redhat.com/browse/OCPBUGS-33157"
+      },
+      "Variants": [
+        {
+          "key": "Network",
+          "value": "ovn"
+        },
+        {
+          "key": "Upgrade",
+          "value": "no-upgrade"
+        },
+        {
+          "key": "Architecture",
+          "value": "amd64"
+        },
+        {
+          "key": "Platform",
+          "value": "metal-ipi"
+        },
+        {
+          "key": "Variant",
+          "value": "standard"
+        }
+      ]
+    },
+    {
+      "TestId": "cluster install:6ce515c7c732a322333427bf4f5508a5",
+      "TestName": "install should succeed: cluster bootstrap",
+      "Release": "4.16",
+      "GroupId": "99a98cc0-0099-479e-9e1f-45d1a28d1ef2",
+      "Issue": {
+        "Type": "Product",
+        "Description": "metal-ipi bootstrap fails intermittently due to master provisioning delays",
+        "URL": "https://issues.redhat.com/browse/OCPBUGS-33157"
+      },
+      "Variants": [
+        {
+          "key": "Network",
+          "value": "ovn"
+        },
+        {
+          "key": "Upgrade",
+          "value": "no-upgrade"
+        },
+        {
+          "key": "Architecture",
+          "value": "amd64"
+        },
+        {
+          "key": "Platform",
+          "value": "metal-ipi"
+        },
+        {
+          "key": "Variant",
+          "value": "serial"
+        }
+      ]
+    }
+  ]
+}

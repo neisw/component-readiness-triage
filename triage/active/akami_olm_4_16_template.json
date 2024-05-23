@@ -1,0 +1,16 @@
+{
+    "Arguments": {
+        "TestRelease": "4.16",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2024-02-28T23:59:59Z&baseRelease=4.15&baseStartTime=2024-02-01T00:00:00Z&confidence=95&excludeArches=arm64,heterogeneous,ppc64le,s390x&excludeClouds=openstack,ibmcloud,libvirt,ovirt,unknown&excludeVariants=hypershift,osd,microshift,techpreview,single-node,assisted,compact&groupBy=cloud,arch,network&ignoreDisruption=true&ignoreMissing=false&minFail=3&pity=5&sampleEndTime=2024-05-20T23:59:59Z&sampleRelease=4.16&sampleStartTime=2024-05-14T00:00:00Z&component=OLM&capability=Alerts",
+        "IssueDescription": "OLM / Akamai cache problem",
+        "IssueType": "Infrastructure",
+        "IssueURL": "https://issues.redhat.com/browse/CLOUDWF-10332",
+        "OutputFile": "./akami_olm_4_16_regressions.json",
+        "IncidentGroupId": "e83bd403-d336-45f4-8d9a-a310a96fb245"
+    },
+    "Tests": [
+        {
+            "TestId": "openshift-tests-upgrade:7dd49c583b2a86489d255d6ec262f69e"
+        }
+    ]
+}
