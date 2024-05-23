@@ -1,0 +1,172 @@
+{
+    "Arguments": {
+        "TestRelease": "4.16",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2024-02-28T23:59:59Z&baseRelease=4.15&baseStartTime=2024-02-01T00:00:00Z&confidence=95&excludeArches=arm64,heterogeneous,ppc64le,s390x&excludeClouds=openstack,ibmcloud,libvirt,ovirt,unknown&excludeVariants=hypershift,osd,microshift,techpreview,single-node,assisted,compact&groupBy=cloud,arch,network&ignoreDisruption=true&ignoreMissing=false&minFail=3&pity=5&sampleEndTime=2024-05-20T23:59:59Z&sampleRelease=4.16&sampleStartTime=2024-05-14T00:00:00Z&component=OLM&capability=Alerts",
+        "IssueDescription": "OLM / Akamai cache problem",
+        "IssueType": "Infrastructure",
+        "IssueURL": "https://issues.redhat.com/browse/CLOUDWF-10332",
+        "OutputFile": "./akami_olm_4_16_regressions.json",
+        "IncidentGroupId": "e83bd403-d336-45f4-8d9a-a310a96fb245",
+        "TargetModifiedTime": "2024-05-20 16:40:10.335386+00:00"
+    },
+    "Tests": [
+        {
+            "TestId": "openshift-tests-upgrade:7dd49c583b2a86489d255d6ec262f69e",
+            "TestName": "[OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-marketplace",
+            "Release": "4.16",
+            "GroupId": "e83bd403-d336-45f4-8d9a-a310a96fb245",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "OLM / Akamai cache problem",
+                "URL": "https://issues.redhat.com/browse/CLOUDWF-10332"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "sdn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "upgrade-minor"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "Variant",
+                    "value": "standard"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-aws-sdn-upgrade/1792313221995040768",
+                    "StartTime": "2024-05-19T21:55:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-upgrade-from-stable-4.15-e2e-aws-sdn-upgrade/1792199458415448064",
+                    "StartTime": "2024-05-19T14:23:39Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-upgrade-from-stable-4.15-e2e-aws-sdn-upgrade/1792269432840523776",
+                    "StartTime": "2024-05-19T19:01:34Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests-upgrade:7dd49c583b2a86489d255d6ec262f69e",
+            "TestName": "[OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-marketplace",
+            "Release": "4.16",
+            "GroupId": "e83bd403-d336-45f4-8d9a-a310a96fb245",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "OLM / Akamai cache problem",
+                "URL": "https://issues.redhat.com/browse/CLOUDWF-10332"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "sdn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "upgrade-minor"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "azure"
+                },
+                {
+                    "key": "Variant",
+                    "value": "standard"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-azure-sdn-upgrade/1792313294988513280",
+                    "StartTime": "2024-05-19T21:56:00Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-azure-sdn-upgrade/1792313279893213184",
+                    "StartTime": "2024-05-19T21:55:59Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-azure-sdn-upgrade/1792313291624681472",
+                    "StartTime": "2024-05-19T21:56:00Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-azure-sdn-upgrade/1792313282397212672",
+                    "StartTime": "2024-05-19T21:55:59Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-azure-sdn-upgrade/1792313289108099072",
+                    "StartTime": "2024-05-19T21:56:00Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-azure-sdn-upgrade/1792313302534066176",
+                    "StartTime": "2024-05-19T21:56:01Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-azure-sdn-upgrade/1792313286591516672",
+                    "StartTime": "2024-05-19T21:55:59Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-azure-sdn-upgrade/1792313297496707072",
+                    "StartTime": "2024-05-19T21:56:00Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-azure-sdn-upgrade/1792313284074934272",
+                    "StartTime": "2024-05-19T21:55:59Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-azure-sdn-upgrade/1792403339485384704",
+                    "StartTime": "2024-05-20T03:53:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-azure-sdn-upgrade/1792403347861409792",
+                    "StartTime": "2024-05-20T03:53:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-azure-sdn-upgrade/1792403352894574592",
+                    "StartTime": "2024-05-20T03:53:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-azure-sdn-upgrade/1792403336977190912",
+                    "StartTime": "2024-05-20T03:53:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-azure-sdn-upgrade/1792403344547909632",
+                    "StartTime": "2024-05-20T03:53:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-azure-sdn-upgrade/1792403341985189888",
+                    "StartTime": "2024-05-20T03:53:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-azure-sdn-upgrade/1792403357923545088",
+                    "StartTime": "2024-05-20T03:53:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-azure-sdn-upgrade/1792403346179493888",
+                    "StartTime": "2024-05-20T03:53:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-azure-sdn-upgrade/1792403355411156992",
+                    "StartTime": "2024-05-20T03:53:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-azure-sdn-upgrade/1792403350373797888",
+                    "StartTime": "2024-05-20T03:53:47Z"
+                }
+            ]
+        }
+    ]
+}

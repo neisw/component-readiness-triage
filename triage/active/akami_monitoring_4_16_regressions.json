@@ -1,0 +1,112 @@
+{
+    "Arguments": {
+        "TestRelease": "4.16",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2024-02-28T23:59:59Z&baseRelease=4.15&baseStartTime=2024-02-01T00:00:00Z&confidence=95&excludeArches=arm64,heterogeneous,ppc64le,s390x&excludeClouds=openstack,ibmcloud,libvirt,ovirt,unknown&excludeVariants=hypershift,osd,microshift,techpreview,single-node,assisted,compact&groupBy=cloud,arch,network&ignoreDisruption=true&ignoreMissing=false&minFail=3&pity=5&sampleEndTime=2024-05-20T23:59:59Z&sampleRelease=4.16&sampleStartTime=2024-05-14T00:00:00Z&component=Monitoring&capability=Other",
+        "IssueDescription": "Monitoring/ Akamai cache problem",
+        "IssueType": "Infrastructure",
+        "IssueURL": "https://issues.redhat.com/browse/CLOUDWF-10332",
+        "OutputFile": "./akami_monitoring_4_16_regressions.json",
+        "IncidentGroupId": "76e9d152-b10d-432e-b9d3-4e332afaa298",
+        "TargetModifiedTime": "2024-05-20 16:40:20.259567+00:00"
+    },
+    "Tests": [
+        {
+            "TestId": "openshift-tests-upgrade:c1f54790201ec8f4241eca902f854b79",
+            "TestName": "[sig-instrumentation] Prometheus [apigroup:image.openshift.io] when installed on the cluster shouldn't report any alerts in firing state apart from Watchdog and AlertmanagerReceiversNotConfigured [Early][apigroup:config.openshift.io] [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
+            "Release": "4.16",
+            "GroupId": "76e9d152-b10d-432e-b9d3-4e332afaa298",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Monitoring/ Akamai cache problem",
+                "URL": "https://issues.redhat.com/browse/CLOUDWF-10332"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "sdn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "upgrade-minor"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "Variant",
+                    "value": "standard"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-aws-sdn-upgrade/1792313221995040768",
+                    "StartTime": "2024-05-19T21:55:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-upgrade-from-stable-4.15-e2e-aws-sdn-upgrade/1792199458415448064",
+                    "StartTime": "2024-05-19T14:23:39Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-upgrade-from-stable-4.15-e2e-aws-sdn-upgrade/1792269432840523776",
+                    "StartTime": "2024-05-19T19:01:34Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests-upgrade:c1f54790201ec8f4241eca902f854b79",
+            "TestName": "[sig-instrumentation] Prometheus [apigroup:image.openshift.io] when installed on the cluster shouldn't report any alerts in firing state apart from Watchdog and AlertmanagerReceiversNotConfigured [Early][apigroup:config.openshift.io] [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
+            "Release": "4.16",
+            "GroupId": "76e9d152-b10d-432e-b9d3-4e332afaa298",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Monitoring/ Akamai cache problem",
+                "URL": "https://issues.redhat.com/browse/CLOUDWF-10332"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "sdn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "upgrade-minor"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal-ipi"
+                },
+                {
+                    "key": "Variant",
+                    "value": "standard"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-upgrade-from-stable-4.15-e2e-metal-ipi-sdn-bm-upgrade/1792112460484841472",
+                    "StartTime": "2024-05-19T08:37:57Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-upgrade-from-stable-4.15-e2e-metal-ipi-sdn-bm-upgrade/1792199336944209920",
+                    "StartTime": "2024-05-19T14:23:10Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-upgrade-from-stable-4.15-e2e-metal-ipi-sdn-bm-upgrade/1792269477300146176",
+                    "StartTime": "2024-05-19T19:01:51Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-upgrade-from-stable-4.15-e2e-metal-ipi-sdn-bm-upgrade/1792345049573363712",
+                    "StartTime": "2024-05-20T00:02:01Z"
+                }
+            ]
+        }
+    ]
+}
