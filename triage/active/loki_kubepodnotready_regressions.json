@@ -1,0 +1,61 @@
+{
+    "Arguments": {
+        "TestRelease": "4.16",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2024-02-28T23:59:59Z&baseRelease=4.15&baseStartTime=2024-02-01T00:00:00Z&confidence=95&excludeArches=arm64,heterogeneous,ppc64le,s390x&excludeClouds=openstack,ibmcloud,libvirt,ovirt,unknown&excludeVariants=hypershift,osd,microshift,techpreview,single-node,assisted,compact&groupBy=cloud,arch,network&ignoreDisruption=true&ignoreMissing=false&minFail=3&pity=5&sampleEndTime=2024-05-23T23:59:59Z&sampleRelease=4.16&sampleStartTime=2024-05-17T00:00:00Z&component=Unknown&capability=Other&testId=openshift-tests-upgrade%3A57b9d37e7f1d80cb25d3ba4386abc630&environment=sdn%20amd64%20aws&network=sdn&arch=amd64&platform=aws",
+        "IssueDescription": "Loki image pull problems causing KubePodNotReady failures",
+        "IssueType": "Infrastructure",
+        "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-34385",
+        "OutputFile": "./loki_kubepodnotready_regressions.json",
+        "IncidentGroupId": "ace2fd6a-0784-4f7c-be73-330b9482ebf2",
+        "TargetModifiedTime": "2024-05-23 16:58:23.243428+00:00"
+    },
+    "Tests": [
+        {
+            "TestId": "openshift-tests-upgrade:57b9d37e7f1d80cb25d3ba4386abc630",
+            "TestName": "[Unknown][invariant] alert/KubePodNotReady should not be at or above info in all the other namespaces",
+            "Release": "4.16",
+            "GroupId": "ace2fd6a-0784-4f7c-be73-330b9482ebf2",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Loki image pull problems causing KubePodNotReady failures",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-34385"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "sdn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "upgrade-minor"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "Variant",
+                    "value": "standard"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-aws-sdn-upgrade/1793416882271817728",
+                    "StartTime": "2024-05-22T23:00:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-aws-sdn-upgrade/1793508179791843328",
+                    "StartTime": "2024-05-23T05:03:56Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-upgrade-from-stable-4.15-e2e-aws-sdn-upgrade/1793456236176347136",
+                    "StartTime": "2024-05-23T01:37:41Z"
+                }
+            ]
+        }
+    ]
+}
