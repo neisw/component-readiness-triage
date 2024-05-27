@@ -1,7 +1,7 @@
 {
     "Arguments": {
         "TestRelease": "4.16",
-        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2024-02-28T23:59:59Z&baseRelease=4.15&baseStartTime=2024-02-01T00:00:00Z&confidence=95&excludeArches=arm64,heterogeneous,ppc64le,s390x&excludeClouds=openstack,ibmcloud,libvirt,ovirt,unknown&excludeVariants=hypershift,osd,microshift,techpreview,single-node,assisted,compact&groupBy=cloud,arch,network&ignoreDisruption=true&ignoreMissing=false&minFail=3&pity=5&sampleEndTime=2024-05-23T23:59:59Z&sampleRelease=4.16&sampleStartTime=2024-05-17T00:00:00Z&component=Unknown&capability=Other&testId=openshift-tests-upgrade%3A57b9d37e7f1d80cb25d3ba4386abc630&environment=sdn%20amd64%20aws&network=sdn&arch=amd64&platform=aws",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2024-02-28T23:59:59Z&baseRelease=4.15&baseStartTime=2024-02-01T00:00:00Z&confidence=95&excludeArches=arm64,heterogeneous,ppc64le,s390x&excludeClouds=openstack,ibmcloud,libvirt,ovirt,unknown&excludeVariants=hypershift,osd,microshift,techpreview,single-node,assisted,compact&groupBy=cloud,arch,network&ignoreDisruption=true&ignoreMissing=false&minFail=3&pity=5&sampleEndTime=2024-05-27T23:59:59Z&sampleRelease=4.16&sampleStartTime=2024-05-21T00:00:00Z&component=Unknown&capability=Other",
         "IssueDescription": "Loki image pull problems causing KubePodNotReady failures",
         "IssueType": "Infrastructure",
         "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-34385",
@@ -11,6 +11,9 @@
     "Tests": [
         {
             "TestId": "openshift-tests-upgrade:57b9d37e7f1d80cb25d3ba4386abc630"
+        },
+        {
+            "TestId": "openshift-tests:57b9d37e7f1d80cb25d3ba4386abc630"
         }
     ]
 }
