@@ -1,0 +1,571 @@
+{
+    "Arguments": {
+        "TestRelease": "4.16",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2024-02-28T23:59:59Z&baseRelease=4.15&baseStartTime=2024-02-01T00:00:00Z&confidence=95&excludeArches=arm64,heterogeneous,ppc64le,s390x&excludeClouds=openstack,ibmcloud,libvirt,ovirt,unknown&excludeVariants=hypershift,osd,microshift,techpreview,single-node,assisted,compact&groupBy=cloud,arch,network&ignoreDisruption=true&ignoreMissing=false&minFail=3&pity=5&sampleEndTime=2024-05-27T23:59:59Z&sampleRelease=4.16&sampleStartTime=2024-05-21T00:00:00Z&component=OLM&capability=Other&testId=openshift-tests%3A40365516152136b9a06007d3c5bc7c13",
+        "IssueDescription": "OLM / Akamai cache problem",
+        "IssueType": "Infrastructure",
+        "IssueURL": "https://issues.redhat.com/browse/CLOUDWF-10332",
+        "OutputFile": "./akami_olm_4_16_subscribe_to_operator_regressions.json",
+        "IncidentGroupId": "6a0acbd1-832a-49d1-b878-9d6e4874e72e",
+        "TargetModifiedTime": "2024-05-27 17:29:34.424555+00:00"
+    },
+    "Tests": [
+        {
+            "TestId": "openshift-tests:40365516152136b9a06007d3c5bc7c13",
+            "TestName": "[sig-operator] an end user can use OLM can subscribe to the operator [apigroup:config.openshift.io] [Skipped:Disconnected] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel]",
+            "Release": "4.16",
+            "GroupId": "6a0acbd1-832a-49d1-b878-9d6e4874e72e",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "OLM / Akamai cache problem",
+                "URL": "https://issues.redhat.com/browse/CLOUDWF-10332"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "upgrade-micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "Variant",
+                    "value": "standard"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-e2e-aws-ovn-upgrade/1792857095188516864",
+                    "StartTime": "2024-05-21T09:56:33Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-e2e-aws-ovn-upgrade/1794107731792105472",
+                    "StartTime": "2024-05-24T20:46:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-e2e-aws-ovn-upgrade/1794827403621568512",
+                    "StartTime": "2024-05-26T20:26:13Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:40365516152136b9a06007d3c5bc7c13",
+            "TestName": "[sig-operator] an end user can use OLM can subscribe to the operator [apigroup:config.openshift.io] [Skipped:Disconnected] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel]",
+            "Release": "4.16",
+            "GroupId": "6a0acbd1-832a-49d1-b878-9d6e4874e72e",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "OLM / Akamai cache problem",
+                "URL": "https://issues.redhat.com/browse/CLOUDWF-10332"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "upgrade-minor"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "Variant",
+                    "value": "standard"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-aws-ovn-upgrade/1792855477781008384",
+                    "StartTime": "2024-05-21T09:50:23Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-aws-ovn-upgrade/1792855472785592320",
+                    "StartTime": "2024-05-21T09:50:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-aws-ovn-upgrade/1792855480331145216",
+                    "StartTime": "2024-05-21T09:50:23Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-aws-ovn-upgrade/1792855467903422464",
+                    "StartTime": "2024-05-21T09:50:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-aws-ovn-upgrade/1794143115402022912",
+                    "StartTime": "2024-05-24T23:07:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-aws-ovn-upgrade/1794143106161971200",
+                    "StartTime": "2024-05-24T23:07:02Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-aws-ovn-upgrade/1794143098360565760",
+                    "StartTime": "2024-05-24T23:07:02Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-aws-ovn-upgrade/1794143108724690944",
+                    "StartTime": "2024-05-24T23:07:02Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-aws-ovn-upgrade/1794231920201043968",
+                    "StartTime": "2024-05-25T04:59:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-aws-ovn-upgrade/1794231916027711488",
+                    "StartTime": "2024-05-25T04:59:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-aws-ovn-upgrade/1794896434005282816",
+                    "StartTime": "2024-05-27T01:00:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-aws-ovn-upgrade/1794896443236945920",
+                    "StartTime": "2024-05-27T01:00:32Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-aws-ovn-upgrade/1794896448253333504",
+                    "StartTime": "2024-05-27T01:00:32Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:40365516152136b9a06007d3c5bc7c13",
+            "TestName": "[sig-operator] an end user can use OLM can subscribe to the operator [apigroup:config.openshift.io] [Skipped:Disconnected] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel]",
+            "Release": "4.16",
+            "GroupId": "6a0acbd1-832a-49d1-b878-9d6e4874e72e",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "OLM / Akamai cache problem",
+                "URL": "https://issues.redhat.com/browse/CLOUDWF-10332"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "sdn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "no-upgrade"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "Variant",
+                    "value": "standard"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-aws-sdn/1794481073497837568",
+                    "StartTime": "2024-05-25T21:29:50Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-aws-sdn/1794629244546977792",
+                    "StartTime": "2024-05-26T07:18:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-aws-sdn/1794721112613982208",
+                    "StartTime": "2024-05-26T13:23:52Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-aws-sdn/1794754938954321920",
+                    "StartTime": "2024-05-26T15:38:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-aws-sdn-cgroupsv2/1792857251350843392",
+                    "StartTime": "2024-05-21T09:57:32Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-aws-sdn-cgroupsv2/1794919595140714496",
+                    "StartTime": "2024-05-27T02:32:23Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:40365516152136b9a06007d3c5bc7c13",
+            "TestName": "[sig-operator] an end user can use OLM can subscribe to the operator [apigroup:config.openshift.io] [Skipped:Disconnected] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel]",
+            "Release": "4.16",
+            "GroupId": "6a0acbd1-832a-49d1-b878-9d6e4874e72e",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "OLM / Akamai cache problem",
+                "URL": "https://issues.redhat.com/browse/CLOUDWF-10332"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "sdn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "upgrade-micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "Variant",
+                    "value": "standard"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-aws-sdn-upgrade/1794107881906245632",
+                    "StartTime": "2024-05-24T20:47:06Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-aws-sdn-upgrade/1794107894484963328",
+                    "StartTime": "2024-05-24T20:47:07Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-aws-sdn-upgrade/1794107883588161536",
+                    "StartTime": "2024-05-24T20:47:06Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-aws-sdn-upgrade/1794226707457118208",
+                    "StartTime": "2024-05-25T04:39:16Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-aws-sdn-upgrade/1794226697374011392",
+                    "StartTime": "2024-05-25T04:39:14Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-aws-sdn-upgrade/1794226699064315904",
+                    "StartTime": "2024-05-25T04:39:14Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-aws-sdn-upgrade/1794329849708417024",
+                    "StartTime": "2024-05-25T11:28:55Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-aws-sdn-upgrade/1794329845514113024",
+                    "StartTime": "2024-05-25T11:28:54Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-aws-sdn-upgrade/1794329843001724928",
+                    "StartTime": "2024-05-25T11:28:54Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-aws-sdn-upgrade/1794481005684330496",
+                    "StartTime": "2024-05-25T21:29:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-aws-sdn-upgrade/1794481005948571648",
+                    "StartTime": "2024-05-25T21:29:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-aws-sdn-upgrade/1794629209360961536",
+                    "StartTime": "2024-05-26T07:18:36Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-aws-sdn-upgrade/1794629216868765696",
+                    "StartTime": "2024-05-26T07:18:36Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-aws-sdn-upgrade/1794629218542292992",
+                    "StartTime": "2024-05-26T07:18:37Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-aws-sdn-upgrade/1794629231964065792",
+                    "StartTime": "2024-05-26T07:18:37Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-aws-sdn-upgrade/1794785370571804672",
+                    "StartTime": "2024-05-26T17:39:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-aws-sdn-upgrade/1794785390704463872",
+                    "StartTime": "2024-05-26T17:39:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-aws-sdn-upgrade/1794785373088387072",
+                    "StartTime": "2024-05-26T17:39:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-aws-sdn-upgrade/1794919803782172672",
+                    "StartTime": "2024-05-27T02:33:23Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-aws-sdn-upgrade/1794919805455699968",
+                    "StartTime": "2024-05-27T02:33:23Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-aws-sdn-upgrade/1794919818042806272",
+                    "StartTime": "2024-05-27T02:33:25Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-aws-sdn-upgrade/1794919807141810176",
+                    "StartTime": "2024-05-27T02:33:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:40365516152136b9a06007d3c5bc7c13",
+            "TestName": "[sig-operator] an end user can use OLM can subscribe to the operator [apigroup:config.openshift.io] [Skipped:Disconnected] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel]",
+            "Release": "4.16",
+            "GroupId": "6a0acbd1-832a-49d1-b878-9d6e4874e72e",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "OLM / Akamai cache problem",
+                "URL": "https://issues.redhat.com/browse/CLOUDWF-10332"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "sdn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "upgrade-minor"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "Variant",
+                    "value": "standard"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-aws-sdn-upgrade/1792855580944109568",
+                    "StartTime": "2024-05-21T09:50:54Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.16-upgrade-from-stable-4.15-e2e-aws-sdn-upgrade/1794143097806917632",
+                    "StartTime": "2024-05-24T23:07:02Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-upgrade-from-stable-4.15-e2e-aws-sdn-upgrade/1794329820356677632",
+                    "StartTime": "2024-05-25T11:28:52Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-upgrade-from-stable-4.15-e2e-aws-sdn-upgrade/1794785567012032512",
+                    "StartTime": "2024-05-26T17:39:58Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-upgrade-from-stable-4.15-e2e-aws-sdn-upgrade/1794919575825944576",
+                    "StartTime": "2024-05-27T02:32:19Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:40365516152136b9a06007d3c5bc7c13",
+            "TestName": "[sig-operator] an end user can use OLM can subscribe to the operator [apigroup:config.openshift.io] [Skipped:Disconnected] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel]",
+            "Release": "4.16",
+            "GroupId": "6a0acbd1-832a-49d1-b878-9d6e4874e72e",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "OLM / Akamai cache problem",
+                "URL": "https://issues.redhat.com/browse/CLOUDWF-10332"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "no-upgrade"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "Variant",
+                    "value": "standard"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-vsphere-ovn-upi/1794329971351621632",
+                    "StartTime": "2024-05-25T11:29:18Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-vsphere-ovn-upi/1794481048327819264",
+                    "StartTime": "2024-05-25T21:29:48Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-vsphere-ovn-upi/1794629346078494720",
+                    "StartTime": "2024-05-26T07:18:51Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-vsphere-ovn-upi/1794785304545071104",
+                    "StartTime": "2024-05-26T17:38:56Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-vsphere-ovn-upi/1794919729400385536",
+                    "StartTime": "2024-05-27T02:33:05Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-vsphere-static-ovn/1794481036587962368",
+                    "StartTime": "2024-05-25T21:29:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-vsphere-static-ovn/1794629253778640896",
+                    "StartTime": "2024-05-26T07:18:39Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-vsphere-static-ovn/1794785500599422976",
+                    "StartTime": "2024-05-26T17:39:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-vsphere-static-ovn/1794920187128975360",
+                    "StartTime": "2024-05-27T02:34:55Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:40365516152136b9a06007d3c5bc7c13",
+            "TestName": "[sig-operator] an end user can use OLM can subscribe to the operator [apigroup:config.openshift.io] [Skipped:Disconnected] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel]",
+            "Release": "4.16",
+            "GroupId": "6a0acbd1-832a-49d1-b878-9d6e4874e72e",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "OLM / Akamai cache problem",
+                "URL": "https://issues.redhat.com/browse/CLOUDWF-10332"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "sdn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "no-upgrade"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "Variant",
+                    "value": "standard"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-vsphere-sdn/1794329910114783232",
+                    "StartTime": "2024-05-25T11:29:14Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-vsphere-sdn/1794369012134580224",
+                    "StartTime": "2024-05-25T14:04:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-vsphere-sdn/1794398523760840704",
+                    "StartTime": "2024-05-25T16:02:01Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-vsphere-sdn/1794428785811001344",
+                    "StartTime": "2024-05-25T18:02:16Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-vsphere-sdn/1794481172495994880",
+                    "StartTime": "2024-05-25T21:29:58Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-vsphere-sdn/1794511376924807168",
+                    "StartTime": "2024-05-25T23:30:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-vsphere-sdn/1794539418904694784",
+                    "StartTime": "2024-05-26T01:21:53Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-vsphere-sdn/1794570688997101568",
+                    "StartTime": "2024-05-26T03:26:08Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-vsphere-sdn/1794629461023395840",
+                    "StartTime": "2024-05-26T07:19:37Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-vsphere-sdn/1794661142849654784",
+                    "StartTime": "2024-05-26T09:25:34Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-vsphere-sdn/1794688018800447488",
+                    "StartTime": "2024-05-26T11:12:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-vsphere-sdn/1794717789961850880",
+                    "StartTime": "2024-05-26T13:10:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-vsphere-sdn/1794785436854390784",
+                    "StartTime": "2024-05-26T17:39:21Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-vsphere-sdn/1794814508783374336",
+                    "StartTime": "2024-05-26T19:34:59Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-vsphere-sdn/1794844470538145792",
+                    "StartTime": "2024-05-26T21:34:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-vsphere-sdn/1794874599486263296",
+                    "StartTime": "2024-05-26T23:33:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-vsphere-sdn/1794919750933942272",
+                    "StartTime": "2024-05-27T02:33:10Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-vsphere-sdn/1794949584410120192",
+                    "StartTime": "2024-05-27T04:31:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-vsphere-sdn/1794985344647565312",
+                    "StartTime": "2024-05-27T06:53:50Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.16-e2e-vsphere-sdn/1795014667068772352",
+                    "StartTime": "2024-05-27T08:50:21Z"
+                }
+            ]
+        }
+    ]
+}
