@@ -1,0 +1,40 @@
+{
+    "Arguments": {
+        "TestRelease": "4.17",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2024-02-28T23:59:59Z&baseRelease=4.15&baseStartTime=2024-02-01T00:00:00Z&confidence=95&excludeArches=arm64,heterogeneous,ppc64le,s390x&excludeClouds=openstack,ibmcloud,libvirt,ovirt,unknown&excludeVariants=hypershift,osd,microshift,techpreview,single-node,assisted,compact&groupBy=cloud,arch,network&ignoreDisruption=true&ignoreMissing=false&minFail=3&pity=5&sampleEndTime=2024-05-31T23:59:59Z&sampleRelease=4.17&sampleStartTime=2024-05-25T00:00:00Z&component=Storage",
+        "IssueDescription": "Storage tests broke when kube 1.30 rebase merged due to the origin PR not being ready yet",
+        "IssueType": "Product",
+        "IssueURL": "https://issues.redhat.com/browse/TRT-1684",
+        "OutputFile": "./kube_rebase_storage_4_17_regressions.json",
+        "IncidentGroupId": "44ab5414-446f-4eef-a2d4-9744cc11fdc9"
+    },
+    "Tests": [
+        {
+            "TestId": "openshift-tests:c54ea0e8a60d4ae212c36c70794df388"
+        },
+        {
+            "TestId": "openshift-tests:d8a50ae70daae2cf45a96d59196faa98"
+        },
+        {
+            "TestId": "openshift-tests:970ce1cf5922f223074767e3c5723c8f"
+        },
+        {
+            "TestId": "openshift-tests:cb083e216acd2fed37360f87371f9f61"
+        },
+        {
+            "TestId": "openshift-tests:16d43131e3cda5db962f5e2ff7b31e39"
+        },
+        {
+            "TestId": "openshift-tests:257050021c7897c5de4c1182ff789d39"
+        },
+        {
+            "TestId": "openshift-tests:43ebba52cfd4d966465d4063efbac21e"
+        },
+        {
+            "TestId": "openshift-tests:99e30f8a38cefc07c34dbc35623ba35e"
+        },
+        {
+            "TestId": "openshift-tests:007416f59899e876f5204f6770dd5fc9"
+        }
+    ]
+}
