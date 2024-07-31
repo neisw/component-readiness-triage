@@ -1,0 +1,60 @@
+{
+    "Arguments": {
+        "TestRelease": "4.17",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2024-06-27T23:59:59Z&baseRelease=4.16&baseStartTime=2024-05-31T00:00:00Z&columnGroupBy=Platform,Architecture,Network&confidence=95&dbGroupBy=Platform,Architecture,Network,Topology,FeatureSet,Upgrade,Suite,Installer&ignoreDisruption=true&ignoreMissing=false&includeVariant=Architecture:amd64&includeVariant=FeatureSet:default&includeVariant=Installer:ipi&includeVariant=Installer:upi&includeVariant=Owner:eng&includeVariant=Platform:metal&includeVariant=Topology:ha&includeVariant=Network:ovn&minFail=3&pity=5&sampleEndTime=2024-07-29T23:59:59Z&sampleRelease=4.17&sampleStartTime=2024-07-23T00:00:00Z",
+        "IssueDescription": "Triage metal resource issues",
+        "IssueType": "Infrastructure",
+        "IssueURL": "",
+        "OutputFile": "metal_no_available_host_4_17_test_regressions.json",
+        "FileMatches": {
+            "MatchDefinitions": {
+                "MatchGate": "OR",
+                "Files": [
+                    {
+                        "FilePath": "artifacts/e2e-metal-ipi-ovn-bm-upgrade/gather-extra/artifacts/machines.json",
+                        "ContentType": "application/json",
+                        "MatchGate": "AND",
+                        "Matches": [
+                            "errorReason[\\\":\\s]*InsufficientResources",
+                            "\"phase\": \"Provisioning\"",
+                            "\"errorMessage\": \"No available BareMetalHost found\""
+                        ]
+                    },
+                    {
+                        "FilePath": "build-log.txt",
+                        "ContentType": "text/plain",
+                        "MatchGate": "AND",
+                        "Matches": [
+                            "<==== OFCIR ERROR RESPONSE BODY =====",
+                            "^No available resource found"
+                        ]
+                    },
+                    {
+                        "FilePath": "artifacts/e2e-metal-ipi-ovn-bm/gather-extra/artifacts/machines.json",
+                        "ContentType": "application/json",
+                        "MatchGate": "AND",
+                        "Matches": [
+                            "\"errorMessage\": \"No available BareMetalHost found\"",
+                            "\"errorReason\": \"InsufficientResources\""
+                        ]
+                    },
+                    {
+                        "FilePath": "artifacts/e2e-metal-ipi-ovn-bm-upgrade/gather-extra/artifacts/machines.json",
+                        "ContentType": "application/json",
+                        "MatchGate": "AND",
+                        "Matches": [
+                            "\"message\": \"Instance has not been created\"",
+                            "\"reason\": \"InstanceNotCreated\""
+                        ]
+                    }
+                ]
+            }
+        },
+        "IncidentGroupId": "25140332-b6da-45ed-a3f6-8456182e4df2"
+    },
+    "Tests": [
+        {
+            "TestId": "*"
+        }
+    ]
+}
