@@ -1,0 +1,16 @@
+{
+    "Arguments": {
+        "TestRelease": "4.17",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2024-06-27T23:59:59Z&baseRelease=4.16&baseStartTime=2024-05-31T00:00:00Z&columnGroupBy=Platform,Architecture,Network&confidence=95&dbGroupBy=Platform,Architecture,Network,Topology,FeatureSet,Upgrade,Suite,Installer&ignoreDisruption=true&ignoreMissing=false&includeVariant=Architecture:amd64&includeVariant=FeatureSet:default&includeVariant=Installer:ipi&includeVariant=Installer:upi&includeVariant=Owner:eng&includeVariant=Platform:metal&includeVariant=Platform:vsphere&includeVariant=Topology:ha&minFail=3&pity=5&sampleEndTime=2024-08-27T23:59:59Z&sampleRelease=4.17&sampleStartTime=2024-08-20T00:00:00Z&component=kube-storage-version-migrator",
+        "IssueDescription": "keepalived capabilities / errors",
+        "IssueType": "Product",
+        "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-37862",
+        "OutputFile": "/home/fsb/github/neisw/component-readiness-triage/triage/active/kube_storage_version_migrator_4_17_test_regressions.json",
+        "IncidentGroupId": "a6adabe0-3d6e-42a1-a2a8-2b50daf9627b"
+    },
+    "Tests": [
+        {
+            "TestId": "*"
+        }
+    ]
+}
