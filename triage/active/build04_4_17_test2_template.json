@@ -1,0 +1,159 @@
+{
+    "Arguments": {
+        "TestRelease": "4.17",
+        "TestReportURL": "http://127.0.0.1:8080/api/component_readiness?baseEndTime=2024-06-27T23:59:59Z&baseRelease=4.16&baseStartTime=2024-05-31T00:00:00Z&columnGroupBy=Platform,Architecture,Network&confidence=95&dbGroupBy=Platform,Architecture,Network,Topology,FeatureSet,Upgrade,Suite,Installer&ignoreDisruption=true&ignoreMissing=false&includeVariant=Architecture:amd64&includeVariant=FeatureSet:default&includeVariant=Installer:ipi&includeVariant=Installer:upi&includeVariant=Owner:eng&includeVariant=Platform:gcp&includeVariant=Platform:azure&includeVariant=Platform:aws&includeVariant=Platform:metal&includeVariant=Platform:vsphere&includeVariant=Topology:ha&minFail=3&pity=5&sampleEndTime=2024-07-02T23:59:59Z&sampleRelease=4.17&sampleStartTime=2024-06-25T00:00:00Z",
+        "IssueDescription": "build04 dns issues",
+        "IssueType": "Infrastructure",
+        "IssueURL": "",
+        "OutputFile": "build04_4_17_test2_regressions.json",
+        "IncidentGroupId": "a7050c92-852b-4c09-84dc-7057c7346796",
+        "TargetModifiedTime": "2024-07-02 17:32:39.757201+00:00",
+        "TargetBuildCluster": "build04"
+    },
+    "Tests": [
+        {
+            "TestId": "openshift-tests-upgrade:cc7e2ba6166c37b611478c22a74bc749",
+            "TestName": "[sig-arch][Feature:ClusterUpgrade] Cluster should remain functional during upgrade [Disruptive] [Serial]"
+        },
+        {
+            "TestId": "Cluster upgrade:2b2216bdf4b6c563428ce86dd8db4613",
+            "TestName": "[sig-cluster-lifecycle] Cluster completes upgrade"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:770fae93559f87279401bb4b02b1fd79",
+            "TestName": "[Jira:\"Cluster Version Operator\"] monitor test required-scc-annotation-checker collection"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:3ddc72d5dd5714b3c6e65cf0f697919e",
+            "TestName": "[Jira:\"Cluster Version Operator\"] monitor test termination-message-policy collection"
+        },
+        {
+            "TestId": "Cluster upgrade:f02f1ad3ade3961488b4396cfa64416c",
+            "TestName": "[bz-Cluster Version Operator] Verify object deletions after upgrade success"
+        },
+        {
+            "TestId": "Cluster upgrade:da6f11f33c23307077d8c20c0855c647",
+            "TestName": "[bz-Cluster Version Operator] Verify presence of admin ack gate blocks upgrade until acknowledged"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:46424b24053f349c231a40bc8ae6f29d",
+            "TestName": "[sig-arch][Feature:ClusterUpgrade] Cluster should be upgradeable after finishing upgrade [Late][Suite:upgrade]"
+        },
+        {
+            "TestId": "Operator results:45d55df296fbbfa7144600dce70c1182",
+            "TestName": "operator conditions etcd"
+        },
+        {
+            "TestId": "Operator results:45d55df296fbbfa7144600dce70c1182",
+            "TestName": "operator conditions etcd"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:191ded02c6c578c04efee03cbc053f7b",
+            "TestName": "[Jira:\"Image Registry\"] monitor test image-registry-availability test evaluation"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:0927f2a44c06e3ad12c3ebcf2297ae6c",
+            "TestName": "[Jira:\"Image Registry\"] monitor test image-registry-availability cleanup"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:d807f2793ab98df5ef27b67baa5e9152",
+            "TestName": "[Jira:\"Monitoring\"] monitor test metrics-api-availability test evaluation"
+        },
+        {
+            "TestId": "Cluster upgrade:5103bb96b86c9e790dba81a3d1c9040f",
+            "TestName": "[sig-instrumentation] Prometheus metrics should be available after an upgrade"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:c00fcb5f3f9820763368b944ef82855f",
+            "TestName": "[Jira:\"Monitoring\"] monitor test monitoring-statefulsets-recreation test evaluation"
+        },
+        {
+            "TestId": "Cluster upgrade:c2c43a74ddd4c3281a393ab692a45073",
+            "TestName": "[sig-network-edge] Verify DNS availability during and after upgrade success"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:b9a54e94edf0c9e371816ee1b14d3d48",
+            "TestName": "[Jira:\"Network / ovn-kubernetes\"] monitor test pod-network-avalibility cleanup"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:4081e031d57a8506dd834a580c774e6f",
+            "TestName": "[Jira:\"Network / ovn-kubernetes\"] monitor test pod-network-avalibility collection"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:9bc4661b05ba13ed49d4c91f63899776",
+            "TestName": "[Jira:\"Networking / router\"] monitor test service-type-load-balancer-availability cleanup"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:8a5e1ac0d31115e41ae682bf79a79826",
+            "TestName": "[Jira:\"Networking / router\"] monitor test service-type-load-balancer-availability test evaluation"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:0b11e4acf1427845afa5ea907d3be4a3",
+            "TestName": "[Jira:\"Networking / router\"] monitor test ingress-availability test evaluation"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:893ebb08c6126bc00e9514889a746f1b",
+            "TestName": "[Jira:\"Node / Kubelet\"] monitor test kubelet-log-collector collection"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:a34debcefb2dfe639b733430d1e4012f",
+            "TestName": "[sig-node] static pods should start after being created"
+        },
+        {
+            "TestId": "Cluster upgrade:4974f72522046bdbf07d54e3592afe81",
+            "TestName": "[sig-node][Late] Image pulls are fast"
+        },
+        {
+            "TestId": "Cluster upgrade:8245aa91a099b010302fae9bd1c9f6a9",
+            "TestName": "[sig-storage] [sig-api-machinery] secret-upgrade"
+        },
+        {
+            "TestId": "Cluster upgrade:a9b7f12d7dc3929d8beb5757e4f66c64",
+            "TestName": "[sig-storage] [sig-api-machinery] configmap-upgrade"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:a0a6113e84033f14db3afad11fabcec3",
+            "TestName": "[Jira:\"Test Framework\"] monitor test azure-metrics-collector collection"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:e42eb63895b24f7d6c5194ff3b364f65",
+            "TestName": "[Jira:\"Test Framework\"] monitor test metrics-endpoints-down collection"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:e9bad9a699937f916cf49f9b660d5de7",
+            "TestName": "[Jira:\"Test Framework\"] monitor test alert-summary-serializer collection"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:03c087559ac37d301cdab3dc854a160f",
+            "TestName": "[Jira:\"Test Framework\"] monitor test legacy-test-framework-invariants test evaluation"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:ca1b05fa75822ec9d858a479fe2be2ce",
+            "TestName": "[Jira:\"kube-apiserver\"] monitor test audit-log-analyzer collection"
+        },
+        {
+            "TestId": "Operator results:2bc3a57ebccf0bcb4d36d338809848c2",
+            "TestName": "operator conditions kube-apiserver"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:d7c56e53863153927832b16f175d4aba",
+            "TestName": "[Jira:\"kube-apiserver\"] monitor test apiserver-availability test evaluation"
+        },
+        {
+            "TestId": "Cluster upgrade:a675c489791e5eb42897fd5587e0cc33",
+            "TestName": "[sig-apps] daemonset-upgrade"
+        },
+        {
+            "TestId": "Cluster upgrade:113ee14de1d86c26047063ded0d58ad5",
+            "TestName": "[sig-apps] job-upgrade"
+        },
+        {
+            "TestId": "Cluster upgrade:5b887599e36729974d5d12bb6c7467d4",
+            "TestName": "[sig-apps] deployment-upgrade"
+        },
+        {
+            "TestId": "Cluster upgrade:6d8d083dec32d4046ed048288afeb23e",
+            "TestName": "[sig-apps] replicaset-upgrade"
+        }
+    ]
+}

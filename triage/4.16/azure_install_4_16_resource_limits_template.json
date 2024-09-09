@@ -1,0 +1,24 @@
+{
+    "Arguments": {
+        "TestRelease": "4.16",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2024-02-28T23:59:59Z&baseRelease=4.15&baseStartTime=2024-02-01T00:00:00Z&confidence=95&excludeArches=arm64,heterogeneous,ppc64le,s390x&excludeClouds=openstack,ibmcloud,libvirt,ovirt,unknown,gcp,aws,metal-assisted,metal-ipi,vsphere,vsphere-upi&excludeNetworks=ovn&excludeVariants=hypershift,osd,microshift,techpreview,single-node,assisted,compact&groupBy=cloud,arch,network&ignoreDisruption=true&ignoreMissing=false&minFail=3&pity=5&sampleEndTime=2024-06-21T23:59:59Z&sampleRelease=4.16&sampleStartTime=2024-06-15T00:00:00Z&component=Networking%20%2F%20router&environment=sdn%20amd64%20azure&network=sdn&arch=amd64&platform=azure",
+        "IssueDescription": "azure has limited resources for job runs",
+        "IssueType": "Infrastructure",
+        "IssueURL": "https://web-rca.devshift.net/incident/ITN-2024-00103",
+        "OutputFile": "azure_install_4_16_resource_limits_regressions.json",
+        "MatchAllJobRuns": "True",
+        "IssueResolutionDate": "2024-06-21 16:02:09.683866+00:00",
+        "IncidentGroupId": "b845f3b0-f9d3-4994-a1be-c51b1ca129aa"
+    },
+    "Tests": [
+        {
+            "TestId": "cluster install:3e14279ba2c202608dd9a041e5023c4c"
+        },
+        {
+            "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0"
+        },
+        {
+            "TestId": "Operator results:33921465a4b24f992f7e9c47b1ec9409"
+        }
+    ]
+}
