@@ -1,0 +1,30 @@
+{
+    "Arguments": {
+        "TestRelease": "4.16",
+        "TestReportURL": "0Z&confidence=95&excludeArches=arm64,heterogeneous,ppc64le,s390x&excludeClouds=openstack,ibmcloud,libvirt,ovirt,unknown,metal-assisted,gcp,azure,aws,vsphere,vsphere-upi&excludeNetworks=sdn&excludeVariants=hypershift,osd,microshift,techpreview,single-node,assisted,compact&groupBy=cloud,arch,network&ignoreDisruption=true&ignoreMissing=false&minFail=3&pity=5&sampleEndTime=2024-06-13T23:59:59Z&sampleRelease=4.16&sampleStartTime=2024-06-07T00:00:00Z",
+        "IssueDescription": "Installer panic with invalid memory address or nil pointer dereference",
+        "IssueType": "Product",
+        "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-35423",
+        "OutputFile": "metal_install_4_16_resource_limits_panic_regressions.json",
+        "MatchAllJobRuns": "True",
+        "IncidentGroupId": "f76a1017-b183-411d-93a0-bd4f9e77d251",
+        "IssueResolutionDate": "2024-06-13 16:02:09.683866+00:00"
+    },
+    "Tests": [
+        {
+            "TestId": "Operator results:868edf33fa32b0aab132c2a676d49e3b"
+        },
+        {
+            "TestId": "Operator results:ff3f4ce2ada4b853ece12306b1ef3eaf"
+        },
+        {
+            "TestId": "Operator results:33921465a4b24f992f7e9c47b1ec9409"
+        },
+        {
+            "TestId": "Operator results:7e4c8db94dde9f957ea7d639cd29d6dd"
+        },
+        {
+            "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0"
+        }
+    ]
+}

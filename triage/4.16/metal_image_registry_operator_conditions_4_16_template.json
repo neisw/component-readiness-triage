@@ -1,0 +1,17 @@
+{
+    "Arguments": {
+        "TestRelease": "4.16",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2024-02-28T23:59:59Z&baseRelease=4.15&baseStartTime=2024-02-01T00:00:00Z&confidence=95&excludeArches=arm64,heterogeneous,ppc64le,s390x&excludeClouds=openstack,ibmcloud,libvirt,ovirt,unknown,metal-assisted,gcp,azure,aws,vsphere,vsphere-upi&excludeVariants=hypershift,osd,microshift,techpreview,single-node,assisted,compact&groupBy=cloud,arch,network&ignoreDisruption=true&ignoreMissing=false&minFail=3&pity=5&sampleEndTime=2024-06-18T23:59:59Z&sampleRelease=4.16&sampleStartTime=2024-06-11T00:00:00Z",
+        "IssueDescription": "metal-ipi has limited resources for job runs",
+        "IssueType": "Infrastructure",
+        "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-35564",
+        "OutputFile": "metal_image_registry_operator_conditions_4_16_regressions.json",
+        "IssueResolutionDate": "2024-06-18 16:02:09.683866+00:00",
+        "IncidentGroupId": "5aa815d7-b2d3-4fdf-a65a-85e8a268b606"
+    },
+    "Tests": [
+        {
+            "TestId": "Operator results:ad47fd0f8db4a5195cee022678627c9b"
+        }
+    ]
+}

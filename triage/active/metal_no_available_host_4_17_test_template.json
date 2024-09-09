@@ -3,9 +3,9 @@
         "TestRelease": "4.17",
         "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2024-06-27T23:59:59Z&baseRelease=4.16&baseStartTime=2024-05-31T00:00:00Z&columnGroupBy=Platform,Architecture,Network&confidence=95&dbGroupBy=Platform,Architecture,Network,Topology,FeatureSet,Upgrade,Suite,Installer&ignoreDisruption=true&ignoreMissing=false&includeVariant=Architecture:amd64&includeVariant=FeatureSet:default&includeVariant=Installer:ipi&includeVariant=Installer:upi&includeVariant=Owner:eng&includeVariant=Platform:metal&includeVariant=Topology:ha&includeVariant=Network:ovn&minFail=3&pity=5&sampleEndTime=2024-07-29T23:59:59Z&sampleRelease=4.17&sampleStartTime=2024-07-23T00:00:00Z",
         "IssueDescription": "Triage metal resource issues",
-        "IssueType": "Infrastructure",
-        "IssueURL": "",
-        "OutputFile": "metal_no_available_host_4_17_test_regressions.json",
+        "IssueType": "Product",
+        "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-37984",
+        "OutputFile": "/home/fsb/github/neisw/component-readiness-triage/triage/active/metal_no_available_host_4_17_test_regressions.json",
         "FileMatches": {
             "MatchDefinitions": {
                 "MatchGate": "OR",
