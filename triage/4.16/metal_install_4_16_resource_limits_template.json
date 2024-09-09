@@ -1,0 +1,36 @@
+{
+    "Arguments": {
+        "TestRelease": "4.16",
+        "TestReportURL": "http://127.0.0.1:8080/api/component_readiness?baseEndTime=2024-02-28T23:59:59Z&baseRelease=4.15&baseStartTime=2024-02-01T00:00:00Z&columnGroupBy=Platform,Architecture,Network&confidence=95&dbGroupBy=Platform,Architecture,Network,Topology,FeatureSet,Upgrade,Suite,Installer&ignoreDisruption=true&ignoreMissing=false&includeVariant=Architecture:amd64&includeVariant=FeatureSet:default&includeVariant=Installer:ipi&includeVariant=Installer:upi&includeVariant=Owner:eng&includeVariant=Platform:metal&includeVariant=Topology:ha&minFail=3&pity=5&sampleEndTime=2024-06-20T23:59:59Z&sampleRelease=4.16&sampleStartTime=2024-06-13T00:00:00Z&component=Installer%20%2F%20openshift-installer&capability=Other&testId=cluster%20install%3A2bc0fe9de9a98831c20e569a21d7ded9",
+        "IssueDescription": "metal-ipi has limited resources for job runs",
+        "IssueType": "Infrastructure",
+        "IssueURL": "",
+        "OutputFile": "metal_install_4_16_resource_limits_regressions.json",
+        "MatchAllJobRuns": "True",
+        "IncidentGroupId": "f76a1017-b183-411d-93a0-bd4f9e77d251",
+        "IssueResolutionDate": "2024-06-20 16:02:09.683866+00:00"
+    },
+    "Tests": [
+        {
+            "TestId": "Operator results:868edf33fa32b0aab132c2a676d49e3b"
+        },
+        {
+            "TestId": "Operator results:ff3f4ce2ada4b853ece12306b1ef3eaf"
+        },
+        {
+            "TestId": "Operator results:33921465a4b24f992f7e9c47b1ec9409"
+        },
+        {
+            "TestId": "Operator results:7e4c8db94dde9f957ea7d639cd29d6dd"
+        },
+        {
+            "TestId": "Operator results:5c8f5ec6b30928a1b2b69aba4b7d7daa"
+        },
+        {
+            "TestId": "cluster install:2bc0fe9de9a98831c20e569a21d7ded9"
+        },
+        {
+            "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0"
+        }
+    ]
+}
