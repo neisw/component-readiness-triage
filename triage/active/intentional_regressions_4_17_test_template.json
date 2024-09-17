@@ -1,0 +1,16 @@
+{
+    "Arguments": {
+        "TestRelease": "4.17",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2024-06-27T23:59:59Z&baseRelease=4.16&baseStartTime=2024-05-31T00:00:00Z&columnGroupBy=Platform,Architecture,Network&confidence=95&dbGroupBy=Platform,Architecture,Network,Topology,FeatureSet,Upgrade,Suite,Installer&ignoreDisruption=true&ignoreMissing=false&includeVariant=Architecture:amd64&includeVariant=FeatureSet:default&includeVariant=Installer:ipi&includeVariant=Installer:upi&includeVariant=Owner:eng&includeVariant=Platform:vsphere&includeVariant=Topology:ha&includeVariant=Network:ovn&minFail=3&pity=5&sampleEndTime=2024-09-16T23:59:59Z&sampleRelease=4.17&sampleStartTime=2024-09-09T00:00:00Z",
+        "IssueDescription": "Build Intentional Regressions",
+        "IssueType": "Product",
+        "OutputFile": "intentional_regressions_4_17_test_regressions.json",
+        "IntentionalRegressions": "true",
+        "IncidentGroupId": "8cdfd5fe-f704-4c10-8bee-3bcb14d48e00"
+    },
+    "Tests": [
+        {
+            "TestId": "*"
+        }
+    ]
+}
