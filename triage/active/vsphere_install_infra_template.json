@@ -1,0 +1,17 @@
+{
+    "Arguments": {
+        "TestRelease": "4.17",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2024-06-27T23:59:59Z&baseRelease=4.16&baseStartTime=2024-05-28T00:00:00Z&columnGroupBy=Architecture,Network,Platform&confidence=95&dbGroupBy=Platform,Architecture,Network,Topology,FeatureSet,Upgrade,Suite,Installer&ignoreDisruption=true&ignoreMissing=false&includeVariant=Architecture:amd64&includeVariant=CGroupMode:v2&includeVariant=ContainerRuntime:runc&includeVariant=FeatureSet:default&includeVariant=Installer:ipi&includeVariant=Installer:upi&includeVariant=Owner:eng&includeVariant=Platform:aws&includeVariant=Platform:azure&includeVariant=Platform:gcp&includeVariant=Platform:metal&includeVariant=Platform:vsphere&includeVariant=Topology:ha&minFail=3&pity=5&sampleEndTime=2024-09-30T23:59:59Z&sampleRelease=4.17&sampleStartTime=2024-09-23T00:00:00Z&component=Installer%20%2F%20openshift-installer&capability=Other&testId=cluster%20install%3A3e14279ba2c202608dd9a041e5023c4c&environment=amd64%20ovn%20vsphere&Architecture=amd64&Network=ovn&Platform=vsphere",
+        "IssueDescription": "VSphere infra outage",
+        "IssueType": "Infrastructure",
+        "IssueURL": "",
+        "OutputFile": "vsphere_install_infra_regressions.json",
+        "IncidentGroupId": "a9be0dc7-27c9-4ef5-a199-151a6695125c"
+    },
+    "Tests": [
+        {
+            "TestId": "cluster install:3e14279ba2c202608dd9a041e5023c4c",
+            "TestName": "cluster install.install should succeed: infrastructure"
+        }
+    ]
+}
