@@ -1,0 +1,149 @@
+{
+    "Arguments": {
+        "TestRelease": "4.18",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2024-10-01T23:59:59Z&baseRelease=4.17&baseStartTime=2024-09-01T00:00:00Z&columnGroupBy=Architecture,Network,Platform,Topology&confidence=95&dbGroupBy=Platform,Architecture,Network,Topology,FeatureSet,Upgrade,Suite,Installer&ignoreDisruption=true&ignoreMissing=false&includeVariant=Architecture:amd64&includeVariant=CGroupMode:v2&includeVariant=ContainerRuntime:runc&includeVariant=FeatureSet:default&includeVariant=Installer:ipi&includeVariant=Installer:upi&includeVariant=Network:ovn&includeVariant=Owner:eng&includeVariant=Platform:aws&includeVariant=Platform:azure&includeVariant=Platform:gcp&includeVariant=Platform:metal&includeVariant=Platform:vsphere&includeVariant=Topology:ha&includeVariant=Topology:microshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2024-11-04T23:59:59Z&sampleRelease=4.18&sampleStartTime=2024-11-01T00:00:00Z",
+        "IssueDescription": "Quay R2 Caching",
+        "IssueType": "Infrastructure",
+        "IssueURL": "https://issues.redhat.com/browse/TRT-1870",
+        "OutputFile": "quay_r2cache_infra_regressions_output.json",
+        "IncidentGroupId": "1660562f-e2be-4b7e-bb32-9e64c9e9c24f",
+        "TargetModifiedTime": "2024-11-05 16:06:18.126763+00:00",
+        "JobRunStartTimeMax": "2024-11-04T12:58:50Z",
+        "JobRunStartTimeMin": "2024-11-01T12:00:50Z"
+    },
+    "Tests": [
+        {
+            "TestId": "openshift-tests:9f3fb60052539c29ab66564689f616ce",
+            "TestName": "[sig-cluster-lifecycle][Feature:Machines][Serial] Managed cluster should grow and decrease when scaling different machineSets simultaneously [Timeout:30m][apigroup:machine.openshift.io] [Suite:openshift/conformance/serial]"
+        },
+        {
+            "TestId": "openshift-tests:9f3fb60052539c29ab66564689f616ce",
+            "TestName": "[sig-cluster-lifecycle][Feature:Machines][Serial] Managed cluster should grow and decrease when scaling different machineSets simultaneously [Timeout:30m][apigroup:machine.openshift.io] [Suite:openshift/conformance/serial]"
+        },
+        {
+            "TestId": "Cluster upgrade:0bf7638bc532109d8a7a3c395e2867da",
+            "TestName": "[sig-cluster-lifecycle] cluster upgrade should complete in a reasonable time"
+        },
+        {
+            "TestId": "Cluster upgrade:2b2216bdf4b6c563428ce86dd8db4613",
+            "TestName": "[sig-cluster-lifecycle] Cluster completes upgrade"
+        },
+        {
+            "TestId": "Cluster upgrade:0bf7638bc532109d8a7a3c395e2867da",
+            "TestName": "[sig-cluster-lifecycle] cluster upgrade should complete in a reasonable time"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:cc7e2ba6166c37b611478c22a74bc749",
+            "TestName": "[sig-arch][Feature:ClusterUpgrade] Cluster should remain functional during upgrade [Disruptive] [Serial]"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:46424b24053f349c231a40bc8ae6f29d",
+            "TestName": "[sig-arch][Feature:ClusterUpgrade] Cluster should be upgradeable after finishing upgrade [Late][Suite:upgrade]"
+        },
+        {
+            "TestId": "Operator results:45d55df296fbbfa7144600dce70c1182",
+            "TestName": "operator conditions etcd"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:c38c1e0245ebdc13bc6448512279313f",
+            "TestName": "[bz-Machine Config Operator] Nodes should reach OSUpdateStaged in a timely fashion"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:c38c1e0245ebdc13bc6448512279313f",
+            "TestName": "[bz-Machine Config Operator] Nodes should reach OSUpdateStaged in a timely fashion"
+        },
+        {
+            "TestId": "Operator results:9855fdba309a0838d2db273c1f73ad88",
+            "TestName": "operator conditions machine-config"
+        },
+        {
+            "TestId": "Cluster upgrade:d87ef271624b9db745ab284988d797db",
+            "TestName": "Operator upgrade machine-config"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:0c0c13b3b7479c1ab8b72e5da43066b3",
+            "TestName": "[Management Console][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-console"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:0c0c13b3b7479c1ab8b72e5da43066b3",
+            "TestName": "[Management Console][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-console"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:5ee89d1a387e1592c6dc9fe611ed0230",
+            "TestName": "[bz-monitoring][invariant] alert/Watchdog must have no gaps or changes"
+        },
+        {
+            "TestId": "openshift-tests:76131b410298f74c0188caf02dae8b2b",
+            "TestName": "[sig-arch] events should not repeat pathologically for ns/openshift-network-diagnostics"
+        },
+        {
+            "TestId": "openshift-tests:76131b410298f74c0188caf02dae8b2b",
+            "TestName": "[sig-arch] events should not repeat pathologically for ns/openshift-network-diagnostics"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:44e2e0e6106443fef746afb65a3aaa9f",
+            "TestName": "[sig-network] can collect host-to-pod poller pod logs"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:fbe6ebd6d5f577a21de3de9504ca242a",
+            "TestName": "[sig-network] can collect pod-to-host poller pod logs"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:07a835d0c2d8e48df6a12d8e0206d67a",
+            "TestName": "[sig-network] can collect host-to-host poller pod logs"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:a7bca0ce3787e8bd213b32795d81bb50",
+            "TestName": "[sig-network] can collect pod-to-pod poller pod logs"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:cc1518431a9dbf5c839f29edc86a51c0",
+            "TestName": "[sig-network] can collect host-to-service poller pod logs"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:c2f88e80fa2064a98711768d5a679735",
+            "TestName": "[sig-network] can collect pod-to-service poller pod logs"
+        },
+        {
+            "TestId": "openshift-tests:4ef347b98570fc3fa0f208ca0bbcdd04",
+            "TestName": "[sig-arch] events should not repeat pathologically for ns/openshift-multus"
+        },
+        {
+            "TestId": "openshift-tests:4ef347b98570fc3fa0f208ca0bbcdd04",
+            "TestName": "[sig-arch] events should not repeat pathologically for ns/openshift-multus"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:4ef347b98570fc3fa0f208ca0bbcdd04",
+            "TestName": "[sig-arch] events should not repeat pathologically for ns/openshift-multus"
+        },
+        {
+            "TestId": "openshift-tests:3322cf74a1f537e188239ef3f31f2a74",
+            "TestName": "[sig-network][Feature:EgressIP][apigroup:operator.openshift.io] [external-targets][apigroup:user.openshift.io][apigroup:security.openshift.io] only pods matched by the pod selector should have the EgressIPs [Skipped:Network/OpenShiftSDN] [Serial] [Suite:openshift/conformance/serial]"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:fe6d887d502145876e1e724a5986dbde",
+            "TestName": "[Networking][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-ovn-kubernetes"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:30ac23dcd7037e581ed41a85fad97ecf",
+            "TestName": "[sig-arch] events should not repeat pathologically for ns/openshift-cluster-csi-drivers"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:9a5af3e40b55b646653cfe4eaa0569cf",
+            "TestName": "[sig-arch] events should not repeat pathologically"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:e42eb63895b24f7d6c5194ff3b364f65",
+            "TestName": "[Jira:\"Test Framework\"] monitor test metrics-endpoints-down collection"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:e9bad9a699937f916cf49f9b660d5de7",
+            "TestName": "[Jira:\"Test Framework\"] monitor test alert-summary-serializer collection"
+        },
+
+        {
+            "TestId": "Cluster upgrade:a675c489791e5eb42897fd5587e0cc33",
+            "TestName": "[sig-apps] daemonset-upgrade"
+        }
+    ]
+}
