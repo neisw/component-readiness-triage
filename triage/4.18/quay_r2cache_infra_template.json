@@ -1,0 +1,18 @@
+{
+    "Arguments": {
+        "TestRelease": "4.18",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2024-10-01T23:59:59Z&baseRelease=4.17&baseStartTime=2024-09-01T00:00:00Z&columnGroupBy=Architecture,Network,Platform,Topology&confidence=95&dbGroupBy=Platform,Architecture,Network,Topology,FeatureSet,Upgrade,Suite,Installer&ignoreDisruption=true&ignoreMissing=false&includeVariant=Architecture:amd64&includeVariant=CGroupMode:v2&includeVariant=ContainerRuntime:runc&includeVariant=FeatureSet:default&includeVariant=Installer:ipi&includeVariant=Installer:upi&includeVariant=Network:ovn&includeVariant=Owner:eng&includeVariant=Platform:aws&includeVariant=Platform:azure&includeVariant=Platform:gcp&includeVariant=Platform:metal&includeVariant=Platform:vsphere&includeVariant=Topology:ha&includeVariant=Topology:microshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2024-11-04T23:59:59Z&sampleRelease=4.18&sampleStartTime=2024-11-01T00:00:00Z",
+        "IssueDescription": "Quay R2 Caching",
+        "IssueType": "Infrastructure",
+        "IssueURL": "https://issues.redhat.com/browse/TRT-1870",
+        "JobRunStartTimeMin": "2024-11-01T12:00:50Z",
+        "JobRunStartTimeMax": "2024-11-04T12:58:50Z",
+        "OutputFile": "quay_r2cache_infra_regressions.json",
+        "IncidentGroupId": "1660562f-e2be-4b7e-bb32-9e64c9e9c24f"
+    },
+    "Tests": [
+        {
+            "TestId": "*"
+        }
+    ]
+}

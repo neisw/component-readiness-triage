@@ -1,0 +1,371 @@
+{
+    "Arguments": {
+        "TestRelease": "4.18",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2024-10-01T23:59:59Z&baseRelease=4.17&baseStartTime=2024-09-01T00:00:00Z&columnGroupBy=Architecture,Network,Platform,Topology&confidence=95&dbGroupBy=Platform,Architecture,Network,Topology,FeatureSet,Upgrade,Suite,Installer&ignoreDisruption=true&ignoreMissing=false&includeVariant=Architecture:amd64&includeVariant=CGroupMode:v2&includeVariant=ContainerRuntime:runc&includeVariant=FeatureSet:default&includeVariant=Installer:ipi&includeVariant=Installer:upi&includeVariant=Network:ovn&includeVariant=Owner:eng&includeVariant=Platform:aws&includeVariant=Platform:azure&includeVariant=Platform:gcp&includeVariant=Platform:metal&includeVariant=Platform:vsphere&includeVariant=Topology:ha&includeVariant=Topology:microshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2024-11-04T23:59:59Z&sampleRelease=4.18&sampleStartTime=2024-11-01T00:00:00Z",
+        "IssueDescription": "Quay R2 Caching",
+        "IssueType": "Infrastructure",
+        "IssueURL": "https://issues.redhat.com/browse/TRT-1870",
+        "OutputFile": "quay_r2cache_infra_regressions_output_2.json",
+        "IncidentGroupId": "1660562f-e2be-4b7e-bb32-9e64c9e9c24f",
+        "TargetModifiedTime": "2024-11-05 16:06:18.126763+00:00",
+        "JobRunStartTimeMax": "2024-11-04T12:58:50Z",
+        "JobRunStartTimeMin": "2024-11-01T12:00:50Z"
+    },
+    "Tests": [
+        {
+            "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
+            "TestName": "install should succeed: overall",
+            "Release": "4.18",
+            "GroupId": "1660562f-e2be-4b7e-bb32-9e64c9e9c24f",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Quay R2 Caching",
+                "URL": "https://issues.redhat.com/browse/TRT-1870"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-oadp-operator-master-4.18-dev-preview-e2e-test-aws-periodic/1852561488791736320",
+                    "StartTime": "2024-11-02T04:00:26Z",
+                    "CompletionTime": "2024-11-02T05:51:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-oadp-operator-master-4.18-dev-preview-e2e-test-aws-periodic/1853286292578635776",
+                    "StartTime": "2024-11-04T04:00:30Z",
+                    "CompletionTime": "2024-11-04T05:30:19Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn/1853108355619360768",
+                    "StartTime": "2024-11-03T16:13:39Z",
+                    "CompletionTime": "2024-11-03T17:44:18Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-overlay-mtu-ovn-edge-1100/1852863710213705728",
+                    "StartTime": "2024-11-03T00:00:47Z",
+                    "CompletionTime": "2024-11-03T03:07:37Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-proxy/1853108304499183616",
+                    "StartTime": "2024-11-03T16:13:34Z",
+                    "CompletionTime": "2024-11-03T18:12:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-shared-vpc-edge-zones/1852863714403815424",
+                    "StartTime": "2024-11-03T00:00:48Z",
+                    "CompletionTime": "2024-11-03T03:14:18Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-workers-rhel8/1852896041053982720",
+                    "StartTime": "2024-11-03T02:10:15Z",
+                    "CompletionTime": "2024-11-03T02:49:50Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
+            "TestName": "install should succeed: overall",
+            "Release": "4.18",
+            "GroupId": "1660562f-e2be-4b7e-bb32-9e64c9e9c24f",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Quay R2 Caching",
+                "URL": "https://issues.redhat.com/browse/TRT-1870"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.18-periodics-e2e-gcp/1853108459625517056",
+                    "StartTime": "2024-11-03T16:13:48Z",
+                    "CompletionTime": "2024-11-03T17:45:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-gcp-ovn-rt/1852821522675142656",
+                    "StartTime": "2024-11-02T21:13:50Z",
+                    "CompletionTime": "2024-11-02T23:01:45Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
+            "TestName": "install should succeed: overall",
+            "Release": "4.18",
+            "GroupId": "1660562f-e2be-4b7e-bb32-9e64c9e9c24f",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Quay R2 Caching",
+                "URL": "https://issues.redhat.com/browse/TRT-1870"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1852487208833912832",
+                    "StartTime": "2024-11-01T23:05:33Z",
+                    "CompletionTime": "2024-11-02T00:27:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1852849601707511808",
+                    "StartTime": "2024-11-02T23:05:36Z",
+                    "CompletionTime": "2024-11-03T00:31:46Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:2bc0fe9de9a98831c20e569a21d7ded9",
+            "TestName": "install should succeed: cluster creation",
+            "Release": "4.18",
+            "GroupId": "1660562f-e2be-4b7e-bb32-9e64c9e9c24f",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Quay R2 Caching",
+                "URL": "https://issues.redhat.com/browse/TRT-1870"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "minor"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1852821677860196352",
+                    "StartTime": "2024-11-02T21:14:04Z",
+                    "CompletionTime": "2024-11-02T22:59:48Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1852821679542112256",
+                    "StartTime": "2024-11-02T21:14:05Z",
+                    "CompletionTime": "2024-11-02T23:03:50Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1853108413504950272",
+                    "StartTime": "2024-11-03T16:13:44Z",
+                    "CompletionTime": "2024-11-03T18:02:23Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1853108406777286656",
+                    "StartTime": "2024-11-03T16:13:43Z",
+                    "CompletionTime": "2024-11-03T18:13:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1853108415182671872",
+                    "StartTime": "2024-11-03T16:13:44Z",
+                    "CompletionTime": "2024-11-03T18:13:59Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-upgrade/1853108464658681856",
+                    "StartTime": "2024-11-03T16:13:49Z",
+                    "CompletionTime": "2024-11-03T18:13:43Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
+            "TestName": "install should succeed: overall",
+            "Release": "4.18",
+            "GroupId": "1660562f-e2be-4b7e-bb32-9e64c9e9c24f",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Quay R2 Caching",
+                "URL": "https://issues.redhat.com/browse/TRT-1870"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "minor"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1852821677860196352",
+                    "StartTime": "2024-11-02T21:14:04Z",
+                    "CompletionTime": "2024-11-02T22:59:48Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1852821679542112256",
+                    "StartTime": "2024-11-02T21:14:05Z",
+                    "CompletionTime": "2024-11-02T23:03:50Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1853108402582982656",
+                    "StartTime": "2024-11-03T16:13:43Z",
+                    "CompletionTime": "2024-11-03T17:48:27Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1853108413504950272",
+                    "StartTime": "2024-11-03T16:13:44Z",
+                    "CompletionTime": "2024-11-03T18:02:23Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1853108406777286656",
+                    "StartTime": "2024-11-03T16:13:43Z",
+                    "CompletionTime": "2024-11-03T18:13:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1853108415182671872",
+                    "StartTime": "2024-11-03T16:13:44Z",
+                    "CompletionTime": "2024-11-03T18:13:59Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-upgrade/1853108464658681856",
+                    "StartTime": "2024-11-03T16:13:49Z",
+                    "CompletionTime": "2024-11-03T18:13:43Z"
+                }
+            ]
+        }
+    ]
+}
