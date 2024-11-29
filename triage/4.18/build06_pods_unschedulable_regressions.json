@@ -1,0 +1,34 @@
+{
+    "Arguments": {
+        "TestRelease": "4.18",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2024-10-01T23:59:59Z&baseRelease=4.17&baseStartTime=2024-09-01T00:00:00Z&columnGroupBy=Architecture,Network,Platform,Topology&confidence=95&dbGroupBy=Platform,Architecture,Network,Topology,FeatureSet,Upgrade,Suite,Installer&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=false&includeVariant=Architecture:amd64&includeVariant=CGroupMode:v2&includeVariant=ContainerRuntime:runc&includeVariant=ContainerRuntime:crun&includeVariant=FeatureSet:default&includeVariant=Installer:ipi&includeVariant=Installer:upi&includeVariant=Network:ovn&includeVariant=Owner:eng&includeVariant=Platform:aws&includeVariant=Platform:azure&includeVariant=Platform:gcp&includeVariant=Platform:metal&includeVariant=Platform:vsphere&includeVariant=Topology:ha&includeVariant=Topology:microshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2024-11-29T23:59:59Z&sampleRelease=4.18&sampleStartTime=2024-11-22T00:00:00Z",
+        "IssueDescription": "build06 unable to schedule pods",
+        "IssueType": "Infrastructure",
+        "IssueURL": "https://issues.redhat.com/browse/TRT-1901",
+        "OutputFile": "build06_pods_unschedulable_regressions_output.json",
+        "IncidentGroupId": "f66ab4d6-377f-4693-be45-44d2b5be9a50",
+        "TargetBuildCluster": "build06",
+        "FileMatches": {
+            "MatchDefinitions": {
+                "MatchGate": "OR",
+                "Files": [
+                    {
+                        "FilePath": "build-log.txt",
+                        "ContentType": "text/plain",
+                        "MatchGate": "AND",
+                        "Matches": [
+                            "pod pending for more than 1h0m0s"
+                        ]
+                    }
+                ]
+            }
+        },
+        "JobRunStartTimeMax": "2024-11-29T14:00:50Z",
+        "JobRunStartTimeMin": "2024-11-28T14:00:50Z"
+    },
+    "Tests": [
+        {
+            "TestId": "*"
+        }
+    ]
+}
