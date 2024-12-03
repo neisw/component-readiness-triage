@@ -1,0 +1,3332 @@
+{
+    "Arguments": {
+        "TestRelease": "4.18",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2024-10-01T23:59:59Z&baseRelease=4.17&baseStartTime=2024-09-01T00:00:00Z&columnGroupBy=Architecture,Network,Platform,Topology&confidence=95&dbGroupBy=Platform,Architecture,Network,Topology,FeatureSet,Upgrade,Suite,Installer&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=false&includeVariant=Architecture:amd64&includeVariant=CGroupMode:v2&includeVariant=ContainerRuntime:runc&includeVariant=ContainerRuntime:crun&includeVariant=FeatureSet:default&includeVariant=Installer:ipi&includeVariant=Installer:upi&includeVariant=Network:ovn&includeVariant=Owner:eng&includeVariant=Platform:metal&includeVariant=Topology:ha&includeVariant=Topology:microshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2024-12-02T23:59:59Z&sampleRelease=4.18&sampleStartTime=2024-11-25T00:00:00Z",
+        "IssueDescription": "Metal ESI Host Disk Issues",
+        "IssueType": "Infrastructure",
+        "IssueURL": "https://github.com/openshift/release/pull/59396",
+        "OutputFile": "metal_esi_host_infra_regressions.json",
+        "IncidentGroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+        "TargetModifiedTime": "2024-12-02 19:58:26.390759+00:00"
+    },
+    "Tests": [
+        {
+            "TestId": "openshift-tests:1ba103eee763d21ca8b0cf7f1815f0b9",
+            "TestName": "[sig-builds][Feature:Builds] prune builds based on settings in the buildconfig should prune completed builds based on the successfulBuildsHistoryLimit setting [apigroup:build.openshift.io] [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:cd67458c825ff2d0e6398d5f1f3bfee4",
+            "TestName": "[sig-devex] check registry.redhat.io is available and samples operator can import sample imagestreams run sample related validations [apigroup:config.openshift.io][apigroup:image.openshift.io] [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:3ddc72d5dd5714b3c6e65cf0f697919e",
+            "TestName": "[Jira:\"Cluster Version Operator\"] monitor test termination-message-policy collection",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:770fae93559f87279401bb4b02b1fd79",
+            "TestName": "[Jira:\"Cluster Version Operator\"] monitor test required-scc-annotation-checker collection",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-metal-ovn-network-flow-matrix-bm/1863357731398750208",
+                    "StartTime": "2024-12-01T23:01:00Z",
+                    "CompletionTime": "2024-12-02T01:45:17Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:7c09dcfc31c6b2a8d431a8ea3944a5f2",
+            "TestName": "[sig-etcd] etcd leader changes are not excessive [Late] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:0927f2a44c06e3ad12c3ebcf2297ae6c",
+            "TestName": "[Jira:\"Image Registry\"] monitor test image-registry-availability cleanup",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-metal-ovn-network-flow-matrix-bm/1863357731398750208",
+                    "StartTime": "2024-12-01T23:01:00Z",
+                    "CompletionTime": "2024-12-02T01:45:17Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:191ded02c6c578c04efee03cbc053f7b",
+            "TestName": "[Jira:\"Image Registry\"] monitor test image-registry-availability test evaluation",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-metal-ovn-network-flow-matrix-bm/1863357731398750208",
+                    "StartTime": "2024-12-01T23:01:00Z",
+                    "CompletionTime": "2024-12-02T01:45:17Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:3da7841b185c8e59bc6bdfd3d563f66d",
+            "TestName": "[sig-instrumentation][Late] OpenShift alerting rules [apigroup:image.openshift.io] should link to a valid URL if the runbook_url annotation is defined [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:3bff77a9c719b626357a20a7f00efb36",
+            "TestName": "[sig-instrumentation][Late] Alerts shouldn't exceed the series limit of total series sent via telemetry from each cluster [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:ac507aa06b48e3635ae252d7b478d4fc",
+            "TestName": "[sig-instrumentation][Late] OpenShift alerting rules [apigroup:image.openshift.io] should have a runbook_url annotation if the alert is critical [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:0c7cebf8221eafe7c9641fe29f16197d",
+            "TestName": "[sig-instrumentation][Late] OpenShift alerting rules [apigroup:image.openshift.io] should have description and summary annotations [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:d807f2793ab98df5ef27b67baa5e9152",
+            "TestName": "[Jira:\"Monitoring\"] monitor test metrics-api-availability test evaluation",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-metal-ovn-network-flow-matrix-bm/1863357731398750208",
+                    "StartTime": "2024-12-01T23:01:00Z",
+                    "CompletionTime": "2024-12-02T01:45:17Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:c7b95060ef6a403433f51a925d5b0e3f",
+            "TestName": "[sig-instrumentation][Late] OpenShift alerting rules [apigroup:image.openshift.io] should link to an HTTP(S) location if the runbook_url annotation is defined [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:24ad065638d7bbae146e8ca0ea69c08d",
+            "TestName": "[sig-instrumentation][Late] OpenShift alerting rules [apigroup:image.openshift.io] should have a valid severity label [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:135646933fe658cb46eac09dba2b7b97",
+            "TestName": "[Jira:\"Networking / On-Prem Host Networking\"] monitor test on-prem-haproxy collection",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:356e9bda27b1959596ec4e937754f0a3",
+            "TestName": "[sig-network] pods should successfully create sandboxes by other",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-metal-ovn-network-flow-matrix-bm/1863357731398750208",
+                    "StartTime": "2024-12-01T23:01:00Z",
+                    "CompletionTime": "2024-12-02T01:45:17Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:0a733d91867731b0b0625e584d11fc80",
+            "TestName": "[sig-network] Internal connectivity for TCP and UDP on ports 9000-9999 is allowed [Serial:Self] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-metal-ovn-network-flow-matrix-bm/1863357731398750208",
+                    "StartTime": "2024-12-01T23:01:00Z",
+                    "CompletionTime": "2024-12-02T01:45:17Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:4081e031d57a8506dd834a580c774e6f",
+            "TestName": "[Jira:\"Network / ovn-kubernetes\"] monitor test pod-network-avalibility collection",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-metal-ovn-network-flow-matrix-bm/1863357731398750208",
+                    "StartTime": "2024-12-01T23:01:00Z",
+                    "CompletionTime": "2024-12-02T01:45:17Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:b9a54e94edf0c9e371816ee1b14d3d48",
+            "TestName": "[Jira:\"Network / ovn-kubernetes\"] monitor test pod-network-avalibility cleanup",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-metal-ovn-network-flow-matrix-bm/1863357731398750208",
+                    "StartTime": "2024-12-01T23:01:00Z",
+                    "CompletionTime": "2024-12-02T01:45:17Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:0b11e4acf1427845afa5ea907d3be4a3",
+            "TestName": "[Jira:\"Networking / router\"] monitor test ingress-availability test evaluation",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-metal-ovn-network-flow-matrix-bm/1863357731398750208",
+                    "StartTime": "2024-12-01T23:01:00Z",
+                    "CompletionTime": "2024-12-02T01:45:17Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:108a94602e5fca61f7235103596a5090",
+            "TestName": "[sig-node] Managed cluster should report ready nodes the entire duration of the test run [Late][apigroup:monitoring.coreos.com] [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:893ebb08c6126bc00e9514889a746f1b",
+            "TestName": "[Jira:\"Node / Kubelet\"] monitor test kubelet-log-collector collection",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:395883aa8f7704e85adc14794ca7a88a",
+            "TestName": "[sig-node][Late] should not have pod creation failures due to systemd timeouts [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:956a9e436fa8d2a879a8ed5c9a307e89",
+            "TestName": "[sig-node] Managed cluster should verify that nodes have no unexpected reboots [Late] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:505d9c504f94ae9042e700f2dd8e90df",
+            "TestName": "[Jira:\"Node / Kubelet\"] monitor test pod-lifecycle test evaluation",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-metal-ovn-network-flow-matrix-bm/1863357731398750208",
+                    "StartTime": "2024-12-01T23:01:00Z",
+                    "CompletionTime": "2024-12-02T01:45:17Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:a34debcefb2dfe639b733430d1e4012f",
+            "TestName": "[sig-node] static pods should start after being created",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-metal-ovn-network-flow-matrix-bm/1863357731398750208",
+                    "StartTime": "2024-12-01T23:01:00Z",
+                    "CompletionTime": "2024-12-02T01:45:17Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:58fba4e3d92d78a9d18713311c13e4aa",
+            "TestName": "[sig-storage][Late] Metrics should report short mount times [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:39d39daba380102efffe1b150e4a89f6",
+            "TestName": "[sig-storage][Late] Metrics should report short attach times [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:03c087559ac37d301cdab3dc854a160f",
+            "TestName": "[Jira:\"Test Framework\"] monitor test legacy-test-framework-invariants test evaluation",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-metal-ovn-network-flow-matrix-bm/1863357731398750208",
+                    "StartTime": "2024-12-01T23:01:00Z",
+                    "CompletionTime": "2024-12-02T01:45:17Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:e9bad9a699937f916cf49f9b660d5de7",
+            "TestName": "[Jira:\"Test Framework\"] monitor test alert-summary-serializer collection",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:a0a6113e84033f14db3afad11fabcec3",
+            "TestName": "[Jira:\"Test Framework\"] monitor test azure-metrics-collector collection",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:e42eb63895b24f7d6c5194ff3b364f65",
+            "TestName": "[Jira:\"Test Framework\"] monitor test metrics-endpoints-down collection",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:b2b4339b09433a8e2552f0b722a67923",
+            "TestName": "[Jira:\"Test Framework\"] monitor test initial-and-final-operator-log-scraper collection",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-metal-ovn-network-flow-matrix-bm/1863357731398750208",
+                    "StartTime": "2024-12-01T23:01:00Z",
+                    "CompletionTime": "2024-12-02T01:45:17Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:9ff4e9b171ea809e0d6faf721b2fe737",
+            "TestName": "[sig-arch][Late] operators should not create watch channels very often [apigroup:apiserver.openshift.io] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:14bc1dac4894a91ac206871e0dfe81a8",
+            "TestName": "[sig-api-machinery][Feature:APIServer][Late] API LBs follow /readyz of kube-apiserver and stop sending requests [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:91672aad25cfdd6f79c4f18b04208e88",
+            "TestName": "[sig-arch][Late] clients should not use APIs that are removed in upcoming releases [apigroup:apiserver.openshift.io] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:d754b9eef103fcad55466ae2348c4bef",
+            "TestName": "[sig-api-machinery][Feature:APIServer][Late] API LBs follow /readyz of kube-apiserver and don't send request early [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:d7c56e53863153927832b16f175d4aba",
+            "TestName": "[Jira:\"kube-apiserver\"] monitor test apiserver-availability test evaluation",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-metal-ovn-network-flow-matrix-bm/1863357731398750208",
+                    "StartTime": "2024-12-01T23:01:00Z",
+                    "CompletionTime": "2024-12-02T01:45:17Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:dfa1a5d540c34b20b720e43802e99adc",
+            "TestName": "[sig-api-machinery][Feature:APIServer][Late] API LBs follow /readyz of kube-apiserver and stop sending requests before server shutdowns for external clients [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:302c02fff573c156b8c3fc7b7ddb0298",
+            "TestName": "[sig-arch][Late][Jira:\"kube-apiserver\"] all tls artifacts must be registered [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:41b75ff7d715670cd956ffba497fab8f",
+            "TestName": "[sig-api-machinery][Feature:APIServer][Late] kubelet terminates kube-apiserver gracefully [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:ca1b05fa75822ec9d858a479fe2be2ce",
+            "TestName": "[Jira:\"kube-apiserver\"] monitor test audit-log-analyzer collection",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-metal-ovn-network-flow-matrix-bm/1863357731398750208",
+                    "StartTime": "2024-12-01T23:01:00Z",
+                    "CompletionTime": "2024-12-02T01:45:17Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:ac5e7495f4a897891fed990bd3bc853a",
+            "TestName": "[sig-arch][Late][Jira:\"kube-apiserver\"] collect certificate data [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:e34cbdcb020c6402ce95bcb5265866b3",
+            "TestName": "[sig-arch][Late][Jira:\"kube-apiserver\"] all registered tls artifacts must have no metadata violation regressions [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:843a9f8eaa92c42cdcef383e3a77e011",
+            "TestName": "[sig-api-machinery][Feature:APIServer][Late] kube-apiserver terminates within graceful termination period [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:5ae42624b31485ae557804c8a25f8355",
+            "TestName": "[Jira:\"kube-apiserver\"] monitor test api-unreachable-from-client-metrics collection",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:8941fa4ded23610031953baf4bf9f25d",
+            "TestName": "[sig-api-machinery][Feature:APIServer][Late] kubelet terminates kube-apiserver gracefully extended [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:6886315fd1e0fd6fd2bbf9184043cda5",
+            "TestName": "[sig-cli] oc adm must-gather runs successfully [apigroup:config.openshift.io] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1861099612195000320",
+                    "StartTime": "2024-11-25T17:27:36Z",
+                    "CompletionTime": "2024-11-25T21:27:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:58a9e69187ecc4faad9bd0194f498610",
+            "TestName": "[sig-apps] poddisruptionbudgets with unhealthyPodEvictionPolicy should evict according to the IfHealthyBudget policy [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "1346591b-d86f-4e2b-81bf-ca37e8047eff",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Metal ESI Host Disk Issues",
+                "URL": "https://github.com/openshift/release/pull/59396"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1862598290462216192",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-29T23:44:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-dualstack/1863429955887566848",
+                    "StartTime": "2024-12-02T03:48:03Z",
+                    "CompletionTime": "2024-12-02T06:53:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-ipv4/1861800914910711808",
+                    "StartTime": "2024-11-27T15:55:03Z",
+                    "CompletionTime": "2024-11-27T18:39:05Z"
+                }
+            ]
+        }
+    ]
+}

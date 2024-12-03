@@ -1,0 +1,1906 @@
+{
+    "Arguments": {
+        "TestRelease": "4.18",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2024-10-01T23:59:59Z&baseRelease=4.17&baseStartTime=2024-09-01T00:00:00Z&columnGroupBy=Architecture,Network,Platform,Topology&confidence=95&dbGroupBy=Platform,Architecture,Network,Topology,FeatureSet,Upgrade,Suite,Installer&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=false&includeVariant=Architecture:amd64&includeVariant=CGroupMode:v2&includeVariant=ContainerRuntime:runc&includeVariant=ContainerRuntime:crun&includeVariant=FeatureSet:default&includeVariant=Installer:ipi&includeVariant=Installer:upi&includeVariant=Network:ovn&includeVariant=Owner:eng&includeVariant=Platform:aws&includeVariant=Platform:azure&includeVariant=Platform:gcp&includeVariant=Platform:metal&includeVariant=Platform:vsphere&includeVariant=Topology:ha&includeVariant=Topology:microshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2024-12-02T23:59:59Z&sampleRelease=4.18&sampleStartTime=2024-11-25T00:00:00Z",
+        "IssueDescription": "Invalid RHCOS CRUN Build",
+        "IssueType": "Infrastructure",
+        "IssueURL": "https://issues.redhat.com/browse/TRT-1900",
+        "OutputFile": "disruption_rhcos_invalid_crun_infra_regressions.json",
+        "IncidentGroupId": "6e176a07-366b-4dd5-941e-4fc51265dacd",
+        "TargetModifiedTime": "2024-12-02 21:32:25.411820+00:00"
+    },
+    "Tests": [
+        {
+            "TestId": "openshift-tests-upgrade:40681ae76fa1069a637f318eed2aba70",
+            "TestName": "[bz-Etcd] clusteroperator/etcd should not change condition/Available",
+            "Release": "4.18",
+            "GroupId": "6e176a07-366b-4dd5-941e-4fc51265dacd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Invalid RHCOS CRUN Build",
+                "URL": "https://issues.redhat.com/browse/TRT-1900"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862144564450562048",
+                    "StartTime": "2024-11-28T14:40:20Z",
+                    "CompletionTime": "2024-11-28T18:16:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862144561090924544",
+                    "StartTime": "2024-11-28T14:40:20Z",
+                    "CompletionTime": "2024-11-28T18:26:11Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862144558574342144",
+                    "StartTime": "2024-11-28T14:40:20Z",
+                    "CompletionTime": "2024-11-28T18:38:07Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862298008591273984",
+                    "StartTime": "2024-11-29T00:49:39Z",
+                    "CompletionTime": "2024-11-29T04:17:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862298023694962688",
+                    "StartTime": "2024-11-29T00:49:40Z",
+                    "CompletionTime": "2024-11-29T04:27:36Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862446280576339968",
+                    "StartTime": "2024-11-29T10:39:14Z",
+                    "CompletionTime": "2024-11-29T13:52:18Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862446283004841984",
+                    "StartTime": "2024-11-29T10:39:14Z",
+                    "CompletionTime": "2024-11-29T14:00:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862446276298149888",
+                    "StartTime": "2024-11-29T10:39:13Z",
+                    "CompletionTime": "2024-11-29T14:42:20Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862598265258643456",
+                    "StartTime": "2024-11-29T20:42:57Z",
+                    "CompletionTime": "2024-11-29T23:51:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862598267057999872",
+                    "StartTime": "2024-11-29T20:42:58Z",
+                    "CompletionTime": "2024-11-30T00:00:57Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862598261060145152",
+                    "StartTime": "2024-11-29T20:42:57Z",
+                    "CompletionTime": "2024-11-30T00:03:13Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862598256870035456",
+                    "StartTime": "2024-11-29T20:42:57Z",
+                    "CompletionTime": "2024-11-30T00:04:39Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862598271965335552",
+                    "StartTime": "2024-11-29T20:42:58Z",
+                    "CompletionTime": "2024-11-30T00:05:34Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests-upgrade:40681ae76fa1069a637f318eed2aba70",
+            "TestName": "[bz-Etcd] clusteroperator/etcd should not change condition/Available",
+            "Release": "4.18",
+            "GroupId": "6e176a07-366b-4dd5-941e-4fc51265dacd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Invalid RHCOS CRUN Build",
+                "URL": "https://issues.redhat.com/browse/TRT-1900"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "azure"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862144587116580864",
+                    "StartTime": "2024-11-28T14:40:22Z",
+                    "CompletionTime": "2024-11-28T18:54:14Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862144569479532544",
+                    "StartTime": "2024-11-28T14:40:21Z",
+                    "CompletionTime": "2024-11-28T19:39:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862297779573886976",
+                    "StartTime": "2024-11-29T00:49:20Z",
+                    "CompletionTime": "2024-11-29T04:31:01Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862297762796670976",
+                    "StartTime": "2024-11-29T00:49:19Z",
+                    "CompletionTime": "2024-11-29T04:30:34Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862446346758262784",
+                    "StartTime": "2024-11-29T10:39:24Z",
+                    "CompletionTime": "2024-11-29T14:14:27Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862446344254263296",
+                    "StartTime": "2024-11-29T10:39:24Z",
+                    "CompletionTime": "2024-11-29T14:26:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862446361861951488",
+                    "StartTime": "2024-11-29T10:39:27Z",
+                    "CompletionTime": "2024-11-29T14:42:15Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862446357671841792",
+                    "StartTime": "2024-11-29T10:39:26Z",
+                    "CompletionTime": "2024-11-29T14:45:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862598318111068160",
+                    "StartTime": "2024-11-29T20:43:02Z",
+                    "CompletionTime": "2024-11-30T00:35:07Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862598311395987456",
+                    "StartTime": "2024-11-29T20:43:01Z",
+                    "CompletionTime": "2024-11-30T00:37:48Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862598316424957952",
+                    "StartTime": "2024-11-29T20:43:02Z",
+                    "CompletionTime": "2024-11-30T00:54:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862598313073709056",
+                    "StartTime": "2024-11-29T20:43:01Z",
+                    "CompletionTime": "2024-11-30T00:54:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862598314751430656",
+                    "StartTime": "2024-11-29T20:43:02Z",
+                    "CompletionTime": "2024-11-30T01:00:55Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests-upgrade:40681ae76fa1069a637f318eed2aba70",
+            "TestName": "[bz-Etcd] clusteroperator/etcd should not change condition/Available",
+            "Release": "4.18",
+            "GroupId": "6e176a07-366b-4dd5-941e-4fc51265dacd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Invalid RHCOS CRUN Build",
+                "URL": "https://issues.redhat.com/browse/TRT-1900"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862144519986745344",
+                    "StartTime": "2024-11-28T14:40:17Z",
+                    "CompletionTime": "2024-11-28T17:54:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862446163056136192",
+                    "StartTime": "2024-11-29T10:38:55Z",
+                    "CompletionTime": "2024-11-29T13:32:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862490194360406016",
+                    "StartTime": "2024-11-29T13:34:00Z",
+                    "CompletionTime": "2024-11-29T17:04:39Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862598172979761152",
+                    "StartTime": "2024-11-29T20:42:50Z",
+                    "CompletionTime": "2024-11-30T00:17:06Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862652656074362880",
+                    "StartTime": "2024-11-30T00:19:34Z",
+                    "CompletionTime": "2024-11-30T03:40:54Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests-upgrade:40681ae76fa1069a637f318eed2aba70",
+            "TestName": "[bz-Etcd] clusteroperator/etcd should not change condition/Available",
+            "Release": "4.18",
+            "GroupId": "6e176a07-366b-4dd5-941e-4fc51265dacd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Invalid RHCOS CRUN Build",
+                "URL": "https://issues.redhat.com/browse/TRT-1900"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-bm-upgrade/1862144605550546944",
+                    "StartTime": "2024-11-28T14:40:24Z",
+                    "CompletionTime": "2024-11-28T17:07:21Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-bm-upgrade/1862598222472548352",
+                    "StartTime": "2024-11-29T20:42:54Z",
+                    "CompletionTime": "2024-11-29T23:21:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-upgrade-ovn-ipv6/1862144540119404544",
+                    "StartTime": "2024-11-28T14:40:18Z",
+                    "CompletionTime": "2024-11-28T17:14:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-upgrade-ovn-ipv6/1862220872429867008",
+                    "StartTime": "2024-11-28T19:43:49Z",
+                    "CompletionTime": "2024-11-28T22:15:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-upgrade-ovn-ipv6/1862399897920081920",
+                    "StartTime": "2024-11-29T07:35:12Z",
+                    "CompletionTime": "2024-11-29T10:05:23Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-upgrade-ovn-ipv6/1862446242739523584",
+                    "StartTime": "2024-11-29T10:39:07Z",
+                    "CompletionTime": "2024-11-29T13:16:53Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-upgrade-ovn-ipv6/1862486367989141504",
+                    "StartTime": "2024-11-29T13:18:47Z",
+                    "CompletionTime": "2024-11-29T15:38:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-upgrade-ovn-ipv6/1862653040943697920",
+                    "StartTime": "2024-11-30T00:21:05Z",
+                    "CompletionTime": "2024-11-30T03:13:12Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-upgrade-ovn-ipv6/1862696855599583232",
+                    "StartTime": "2024-11-30T03:15:12Z",
+                    "CompletionTime": "2024-11-30T05:59:15Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests-upgrade:3df631c675c3a45009422da1f24b571f",
+            "TestName": "[bz-DNS] clusteroperator/dns should not change condition/Available",
+            "Release": "4.18",
+            "GroupId": "6e176a07-366b-4dd5-941e-4fc51265dacd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Invalid RHCOS CRUN Build",
+                "URL": "https://issues.redhat.com/browse/TRT-1900"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862193600360615936",
+                    "StartTime": "2024-11-28T17:55:26Z",
+                    "CompletionTime": "2024-11-28T20:58:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862240258062553088",
+                    "StartTime": "2024-11-28T21:00:43Z",
+                    "CompletionTime": "2024-11-29T00:21:26Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests-upgrade:3df631c675c3a45009422da1f24b571f",
+            "TestName": "[bz-DNS] clusteroperator/dns should not change condition/Available",
+            "Release": "4.18",
+            "GroupId": "6e176a07-366b-4dd5-941e-4fc51265dacd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Invalid RHCOS CRUN Build",
+                "URL": "https://issues.redhat.com/browse/TRT-1900"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-bm-upgrade/1862335343911505920",
+                    "StartTime": "2024-11-29T03:18:40Z",
+                    "CompletionTime": "2024-11-29T05:47:29Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-bm-upgrade/1862469592924819456",
+                    "StartTime": "2024-11-29T12:12:08Z",
+                    "CompletionTime": "2024-11-29T14:44:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-bm-upgrade/1862659251072143360",
+                    "StartTime": "2024-11-30T00:45:46Z",
+                    "CompletionTime": "2024-11-30T03:20:52Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-upgrade-ovn-ipv6/1862220872429867008",
+                    "StartTime": "2024-11-28T19:43:49Z",
+                    "CompletionTime": "2024-11-28T22:15:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-upgrade-ovn-ipv6/1862399897920081920",
+                    "StartTime": "2024-11-29T07:35:12Z",
+                    "CompletionTime": "2024-11-29T10:05:23Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-upgrade-ovn-ipv6/1862696855599583232",
+                    "StartTime": "2024-11-30T03:15:12Z",
+                    "CompletionTime": "2024-11-30T05:59:15Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests-upgrade:1f3a2a9f8d7b6e8deb502468746bc363",
+            "TestName": "[sig-node] node-lifecycle detects unexpected not ready node",
+            "Release": "4.18",
+            "GroupId": "6e176a07-366b-4dd5-941e-4fc51265dacd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Invalid RHCOS CRUN Build",
+                "URL": "https://issues.redhat.com/browse/TRT-1900"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "azure"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862297779573886976",
+                    "StartTime": "2024-11-29T00:49:20Z",
+                    "CompletionTime": "2024-11-29T04:31:01Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862297777057304576",
+                    "StartTime": "2024-11-29T00:49:20Z",
+                    "CompletionTime": "2024-11-29T04:33:10Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862446344254263296",
+                    "StartTime": "2024-11-29T10:39:24Z",
+                    "CompletionTime": "2024-11-29T14:26:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862446353473343488",
+                    "StartTime": "2024-11-29T10:39:25Z",
+                    "CompletionTime": "2024-11-29T14:41:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862446357671841792",
+                    "StartTime": "2024-11-29T10:39:26Z",
+                    "CompletionTime": "2024-11-29T14:45:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862598318111068160",
+                    "StartTime": "2024-11-29T20:43:02Z",
+                    "CompletionTime": "2024-11-30T00:35:07Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862598316424957952",
+                    "StartTime": "2024-11-29T20:43:02Z",
+                    "CompletionTime": "2024-11-30T00:54:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862598314751430656",
+                    "StartTime": "2024-11-29T20:43:02Z",
+                    "CompletionTime": "2024-11-30T01:00:55Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862598297970020352",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-30T01:05:32Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests-upgrade:94dd2139932adef9349f0563f5f9d799",
+            "TestName": "[sig-node] node-lifecycle detects unreachable state on node",
+            "Release": "4.18",
+            "GroupId": "6e176a07-366b-4dd5-941e-4fc51265dacd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Invalid RHCOS CRUN Build",
+                "URL": "https://issues.redhat.com/browse/TRT-1900"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "azure"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862144580388917248",
+                    "StartTime": "2024-11-28T14:40:22Z",
+                    "CompletionTime": "2024-11-28T18:14:25Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862297779573886976",
+                    "StartTime": "2024-11-29T00:49:20Z",
+                    "CompletionTime": "2024-11-29T04:31:01Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862297777057304576",
+                    "StartTime": "2024-11-29T00:49:20Z",
+                    "CompletionTime": "2024-11-29T04:33:10Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862446344254263296",
+                    "StartTime": "2024-11-29T10:39:24Z",
+                    "CompletionTime": "2024-11-29T14:26:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862446353473343488",
+                    "StartTime": "2024-11-29T10:39:25Z",
+                    "CompletionTime": "2024-11-29T14:41:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862446357671841792",
+                    "StartTime": "2024-11-29T10:39:26Z",
+                    "CompletionTime": "2024-11-29T14:45:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862598318111068160",
+                    "StartTime": "2024-11-29T20:43:02Z",
+                    "CompletionTime": "2024-11-30T00:35:07Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862598316424957952",
+                    "StartTime": "2024-11-29T20:43:02Z",
+                    "CompletionTime": "2024-11-30T00:54:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862598314751430656",
+                    "StartTime": "2024-11-29T20:43:02Z",
+                    "CompletionTime": "2024-11-30T01:00:55Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862598297970020352",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-30T01:05:32Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests-upgrade:1f3a2a9f8d7b6e8deb502468746bc363",
+            "TestName": "[sig-node] node-lifecycle detects unexpected not ready node",
+            "Release": "4.18",
+            "GroupId": "6e176a07-366b-4dd5-941e-4fc51265dacd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Invalid RHCOS CRUN Build",
+                "URL": "https://issues.redhat.com/browse/TRT-1900"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862144519986745344",
+                    "StartTime": "2024-11-28T14:40:17Z",
+                    "CompletionTime": "2024-11-28T17:54:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862193600360615936",
+                    "StartTime": "2024-11-28T17:55:26Z",
+                    "CompletionTime": "2024-11-28T20:58:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862240258062553088",
+                    "StartTime": "2024-11-28T21:00:43Z",
+                    "CompletionTime": "2024-11-29T00:21:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862350067424301056",
+                    "StartTime": "2024-11-29T04:17:11Z",
+                    "CompletionTime": "2024-11-29T07:25:12Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862446163056136192",
+                    "StartTime": "2024-11-29T10:38:55Z",
+                    "CompletionTime": "2024-11-29T13:32:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862703825572335616",
+                    "StartTime": "2024-11-30T03:42:54Z",
+                    "CompletionTime": "2024-11-30T07:03:51Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests-upgrade:94dd2139932adef9349f0563f5f9d799",
+            "TestName": "[sig-node] node-lifecycle detects unreachable state on node",
+            "Release": "4.18",
+            "GroupId": "6e176a07-366b-4dd5-941e-4fc51265dacd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Invalid RHCOS CRUN Build",
+                "URL": "https://issues.redhat.com/browse/TRT-1900"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862144519986745344",
+                    "StartTime": "2024-11-28T14:40:17Z",
+                    "CompletionTime": "2024-11-28T17:54:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862193600360615936",
+                    "StartTime": "2024-11-28T17:55:26Z",
+                    "CompletionTime": "2024-11-28T20:58:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862240258062553088",
+                    "StartTime": "2024-11-28T21:00:43Z",
+                    "CompletionTime": "2024-11-29T00:21:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862350067424301056",
+                    "StartTime": "2024-11-29T04:17:11Z",
+                    "CompletionTime": "2024-11-29T07:25:12Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862446163056136192",
+                    "StartTime": "2024-11-29T10:38:55Z",
+                    "CompletionTime": "2024-11-29T13:32:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862703825572335616",
+                    "StartTime": "2024-11-30T03:42:54Z",
+                    "CompletionTime": "2024-11-30T07:03:51Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests-upgrade:1f3a2a9f8d7b6e8deb502468746bc363",
+            "TestName": "[sig-node] node-lifecycle detects unexpected not ready node",
+            "Release": "4.18",
+            "GroupId": "6e176a07-366b-4dd5-941e-4fc51265dacd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Invalid RHCOS CRUN Build",
+                "URL": "https://issues.redhat.com/browse/TRT-1900"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-bm-upgrade/1862203995393626112",
+                    "StartTime": "2024-11-28T18:36:45Z",
+                    "CompletionTime": "2024-11-28T20:57:15Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-bm-upgrade/1862373302652112896",
+                    "StartTime": "2024-11-29T05:49:31Z",
+                    "CompletionTime": "2024-11-29T08:29:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-bm-upgrade/1862469592924819456",
+                    "StartTime": "2024-11-29T12:12:08Z",
+                    "CompletionTime": "2024-11-29T14:44:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-bm-upgrade/1862598222472548352",
+                    "StartTime": "2024-11-29T20:42:54Z",
+                    "CompletionTime": "2024-11-29T23:21:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-bm-upgrade/1862659251072143360",
+                    "StartTime": "2024-11-30T00:45:46Z",
+                    "CompletionTime": "2024-11-30T03:20:52Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-upgrade-ovn-ipv6/1862144540119404544",
+                    "StartTime": "2024-11-28T14:40:18Z",
+                    "CompletionTime": "2024-11-28T17:14:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-upgrade-ovn-ipv6/1862220872429867008",
+                    "StartTime": "2024-11-28T19:43:49Z",
+                    "CompletionTime": "2024-11-28T22:15:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-upgrade-ovn-ipv6/1862522098975510528",
+                    "StartTime": "2024-11-29T15:40:47Z",
+                    "CompletionTime": "2024-11-29T18:05:26Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests-upgrade:94dd2139932adef9349f0563f5f9d799",
+            "TestName": "[sig-node] node-lifecycle detects unreachable state on node",
+            "Release": "4.18",
+            "GroupId": "6e176a07-366b-4dd5-941e-4fc51265dacd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Invalid RHCOS CRUN Build",
+                "URL": "https://issues.redhat.com/browse/TRT-1900"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-bm-upgrade/1862203995393626112",
+                    "StartTime": "2024-11-28T18:36:45Z",
+                    "CompletionTime": "2024-11-28T20:57:15Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-bm-upgrade/1862373302652112896",
+                    "StartTime": "2024-11-29T05:49:31Z",
+                    "CompletionTime": "2024-11-29T08:29:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-bm-upgrade/1862469592924819456",
+                    "StartTime": "2024-11-29T12:12:08Z",
+                    "CompletionTime": "2024-11-29T14:44:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-bm-upgrade/1862598222472548352",
+                    "StartTime": "2024-11-29T20:42:54Z",
+                    "CompletionTime": "2024-11-29T23:21:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-bm-upgrade/1862659251072143360",
+                    "StartTime": "2024-11-30T00:45:46Z",
+                    "CompletionTime": "2024-11-30T03:20:52Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-upgrade-ovn-ipv6/1862144540119404544",
+                    "StartTime": "2024-11-28T14:40:18Z",
+                    "CompletionTime": "2024-11-28T17:14:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-upgrade-ovn-ipv6/1862220872429867008",
+                    "StartTime": "2024-11-28T19:43:49Z",
+                    "CompletionTime": "2024-11-28T22:15:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-upgrade-ovn-ipv6/1862522098975510528",
+                    "StartTime": "2024-11-29T15:40:47Z",
+                    "CompletionTime": "2024-11-29T18:05:26Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests-upgrade:031d42fd3cc6ef23b291a267655c3c52",
+            "TestName": "[bz-Storage] clusteroperator/storage should not change condition/Available",
+            "Release": "4.18",
+            "GroupId": "6e176a07-366b-4dd5-941e-4fc51265dacd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Invalid RHCOS CRUN Build",
+                "URL": "https://issues.redhat.com/browse/TRT-1900"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-vsphere-ovn-upgrade/1862144483907342336",
+                    "StartTime": "2024-11-28T14:40:10Z",
+                    "CompletionTime": "2024-11-28T16:24:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-vsphere-ovn-upgrade/1862297831587450880",
+                    "StartTime": "2024-11-29T00:49:24Z",
+                    "CompletionTime": "2024-11-29T02:32:00Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-vsphere-ovn-upgrade/1862446444095475712",
+                    "StartTime": "2024-11-29T10:39:36Z",
+                    "CompletionTime": "2024-11-29T12:36:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-vsphere-ovn-upgrade/1862598232576626688",
+                    "StartTime": "2024-11-29T20:42:55Z",
+                    "CompletionTime": "2024-11-29T22:42:59Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests-upgrade:a4f86850c76a6182ecc874d99ea4f37c",
+            "TestName": "[bz-apiserver-auth] clusteroperator/authentication should not change condition/Available",
+            "Release": "4.18",
+            "GroupId": "6e176a07-366b-4dd5-941e-4fc51265dacd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Invalid RHCOS CRUN Build",
+                "URL": "https://issues.redhat.com/browse/TRT-1900"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862240258062553088",
+                    "StartTime": "2024-11-28T21:00:43Z",
+                    "CompletionTime": "2024-11-29T00:21:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862297845952942080",
+                    "StartTime": "2024-11-29T00:49:26Z",
+                    "CompletionTime": "2024-11-29T04:16:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862543708075855872",
+                    "StartTime": "2024-11-29T17:06:39Z",
+                    "CompletionTime": "2024-11-29T20:37:01Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862598172979761152",
+                    "StartTime": "2024-11-29T20:42:50Z",
+                    "CompletionTime": "2024-11-30T00:17:06Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests-upgrade:a4f86850c76a6182ecc874d99ea4f37c",
+            "TestName": "[bz-apiserver-auth] clusteroperator/authentication should not change condition/Available",
+            "Release": "4.18",
+            "GroupId": "6e176a07-366b-4dd5-941e-4fc51265dacd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Invalid RHCOS CRUN Build",
+                "URL": "https://issues.redhat.com/browse/TRT-1900"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-bm-upgrade/1862203995393626112",
+                    "StartTime": "2024-11-28T18:36:45Z",
+                    "CompletionTime": "2024-11-28T20:57:15Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-bm-upgrade/1862297795529019392",
+                    "StartTime": "2024-11-29T00:49:21Z",
+                    "CompletionTime": "2024-11-29T03:17:58Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-bm-upgrade/1862335343911505920",
+                    "StartTime": "2024-11-29T03:18:40Z",
+                    "CompletionTime": "2024-11-29T05:47:29Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-bm-upgrade/1862469592924819456",
+                    "StartTime": "2024-11-29T12:12:08Z",
+                    "CompletionTime": "2024-11-29T14:44:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-bm-upgrade/1862598222472548352",
+                    "StartTime": "2024-11-29T20:42:54Z",
+                    "CompletionTime": "2024-11-29T23:21:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-upgrade-ovn-ipv6/1862653040943697920",
+                    "StartTime": "2024-11-30T00:21:05Z",
+                    "CompletionTime": "2024-11-30T03:13:12Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-upgrade-ovn-ipv6/1862696855599583232",
+                    "StartTime": "2024-11-30T03:15:12Z",
+                    "CompletionTime": "2024-11-30T05:59:15Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:8941fa4ded23610031953baf4bf9f25d",
+            "TestName": "[sig-api-machinery][Feature:APIServer][Late] kubelet terminates kube-apiserver gracefully extended [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "6e176a07-366b-4dd5-941e-4fc51265dacd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Invalid RHCOS CRUN Build",
+                "URL": "https://issues.redhat.com/browse/TRT-1900"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862144553541177344",
+                    "StartTime": "2024-11-28T14:40:19Z",
+                    "CompletionTime": "2024-11-28T18:05:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862144551024594944",
+                    "StartTime": "2024-11-28T14:40:19Z",
+                    "CompletionTime": "2024-11-28T18:07:58Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862144545207095296",
+                    "StartTime": "2024-11-28T14:40:19Z",
+                    "CompletionTime": "2024-11-28T18:05:14Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862144546826096640",
+                    "StartTime": "2024-11-28T14:40:19Z",
+                    "CompletionTime": "2024-11-28T18:12:16Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862144564450562048",
+                    "StartTime": "2024-11-28T14:40:20Z",
+                    "CompletionTime": "2024-11-28T18:16:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862144561090924544",
+                    "StartTime": "2024-11-28T14:40:20Z",
+                    "CompletionTime": "2024-11-28T18:26:11Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862144558574342144",
+                    "StartTime": "2024-11-28T14:40:20Z",
+                    "CompletionTime": "2024-11-28T18:38:07Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862298008591273984",
+                    "StartTime": "2024-11-29T00:49:39Z",
+                    "CompletionTime": "2024-11-29T04:17:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862298023694962688",
+                    "StartTime": "2024-11-29T00:49:40Z",
+                    "CompletionTime": "2024-11-29T04:27:36Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862446267909541888",
+                    "StartTime": "2024-11-29T10:39:11Z",
+                    "CompletionTime": "2024-11-29T13:50:20Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862446280576339968",
+                    "StartTime": "2024-11-29T10:39:14Z",
+                    "CompletionTime": "2024-11-29T13:52:18Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862446283004841984",
+                    "StartTime": "2024-11-29T10:39:14Z",
+                    "CompletionTime": "2024-11-29T14:00:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862446276298149888",
+                    "StartTime": "2024-11-29T10:39:13Z",
+                    "CompletionTime": "2024-11-29T14:42:20Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862598265258643456",
+                    "StartTime": "2024-11-29T20:42:57Z",
+                    "CompletionTime": "2024-11-29T23:51:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862598276163833856",
+                    "StartTime": "2024-11-29T20:42:58Z",
+                    "CompletionTime": "2024-11-29T23:55:57Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862598259407589376",
+                    "StartTime": "2024-11-29T20:42:57Z",
+                    "CompletionTime": "2024-11-29T23:57:36Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862598267057999872",
+                    "StartTime": "2024-11-29T20:42:58Z",
+                    "CompletionTime": "2024-11-30T00:00:57Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862598261060145152",
+                    "StartTime": "2024-11-29T20:42:57Z",
+                    "CompletionTime": "2024-11-30T00:03:13Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862598273647251456",
+                    "StartTime": "2024-11-29T20:42:58Z",
+                    "CompletionTime": "2024-11-30T00:03:27Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862598256870035456",
+                    "StartTime": "2024-11-29T20:42:57Z",
+                    "CompletionTime": "2024-11-30T00:04:39Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862598271965335552",
+                    "StartTime": "2024-11-29T20:42:58Z",
+                    "CompletionTime": "2024-11-30T00:05:34Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862598262737866752",
+                    "StartTime": "2024-11-29T20:42:57Z",
+                    "CompletionTime": "2024-11-30T00:09:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1862598269448753152",
+                    "StartTime": "2024-11-29T20:42:58Z",
+                    "CompletionTime": "2024-11-30T00:24:31Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:8941fa4ded23610031953baf4bf9f25d",
+            "TestName": "[sig-api-machinery][Feature:APIServer][Late] kubelet terminates kube-apiserver gracefully extended [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "6e176a07-366b-4dd5-941e-4fc51265dacd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Invalid RHCOS CRUN Build",
+                "URL": "https://issues.redhat.com/browse/TRT-1900"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "azure"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862144580388917248",
+                    "StartTime": "2024-11-28T14:40:22Z",
+                    "CompletionTime": "2024-11-28T18:14:25Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862144577863946240",
+                    "StartTime": "2024-11-28T14:40:22Z",
+                    "CompletionTime": "2024-11-28T18:28:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862144573686419456",
+                    "StartTime": "2024-11-28T14:40:21Z",
+                    "CompletionTime": "2024-11-28T18:47:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862144587116580864",
+                    "StartTime": "2024-11-28T14:40:22Z",
+                    "CompletionTime": "2024-11-28T18:54:14Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862144576182030336",
+                    "StartTime": "2024-11-28T14:40:21Z",
+                    "CompletionTime": "2024-11-28T19:33:10Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862144569479532544",
+                    "StartTime": "2024-11-28T14:40:21Z",
+                    "CompletionTime": "2024-11-28T19:39:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862297772871389184",
+                    "StartTime": "2024-11-29T00:49:19Z",
+                    "CompletionTime": "2024-11-29T04:13:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862297779573886976",
+                    "StartTime": "2024-11-29T00:49:20Z",
+                    "CompletionTime": "2024-11-29T04:31:01Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862297774544916480",
+                    "StartTime": "2024-11-29T00:49:19Z",
+                    "CompletionTime": "2024-11-29T04:30:02Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862297762796670976",
+                    "StartTime": "2024-11-29T00:49:19Z",
+                    "CompletionTime": "2024-11-29T04:30:34Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862297777057304576",
+                    "StartTime": "2024-11-29T00:49:20Z",
+                    "CompletionTime": "2024-11-29T04:33:10Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862297755251118080",
+                    "StartTime": "2024-11-29T00:49:19Z",
+                    "CompletionTime": "2024-11-29T04:36:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862446346758262784",
+                    "StartTime": "2024-11-29T10:39:24Z",
+                    "CompletionTime": "2024-11-29T14:14:27Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862446340890431488",
+                    "StartTime": "2024-11-29T10:39:23Z",
+                    "CompletionTime": "2024-11-29T14:20:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862446351795621888",
+                    "StartTime": "2024-11-29T10:39:25Z",
+                    "CompletionTime": "2024-11-29T14:24:58Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862446344254263296",
+                    "StartTime": "2024-11-29T10:39:24Z",
+                    "CompletionTime": "2024-11-29T14:26:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862446353473343488",
+                    "StartTime": "2024-11-29T10:39:25Z",
+                    "CompletionTime": "2024-11-29T14:41:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862446361861951488",
+                    "StartTime": "2024-11-29T10:39:27Z",
+                    "CompletionTime": "2024-11-29T14:42:15Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862446357671841792",
+                    "StartTime": "2024-11-29T10:39:26Z",
+                    "CompletionTime": "2024-11-29T14:45:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862598308883599360",
+                    "StartTime": "2024-11-29T20:43:01Z",
+                    "CompletionTime": "2024-11-30T00:25:23Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862598300490797056",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-30T00:27:23Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862598303019962368",
+                    "StartTime": "2024-11-29T20:43:01Z",
+                    "CompletionTime": "2024-11-30T00:30:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862598318111068160",
+                    "StartTime": "2024-11-29T20:43:02Z",
+                    "CompletionTime": "2024-11-30T00:35:07Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862598311395987456",
+                    "StartTime": "2024-11-29T20:43:01Z",
+                    "CompletionTime": "2024-11-30T00:37:48Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862598316424957952",
+                    "StartTime": "2024-11-29T20:43:02Z",
+                    "CompletionTime": "2024-11-30T00:54:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862598306367016960",
+                    "StartTime": "2024-11-29T20:43:01Z",
+                    "CompletionTime": "2024-11-30T00:57:01Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862598313073709056",
+                    "StartTime": "2024-11-29T20:43:01Z",
+                    "CompletionTime": "2024-11-30T00:54:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862598314751430656",
+                    "StartTime": "2024-11-29T20:43:02Z",
+                    "CompletionTime": "2024-11-30T01:00:55Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1862598297970020352",
+                    "StartTime": "2024-11-29T20:43:00Z",
+                    "CompletionTime": "2024-11-30T01:05:32Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:8941fa4ded23610031953baf4bf9f25d",
+            "TestName": "[sig-api-machinery][Feature:APIServer][Late] kubelet terminates kube-apiserver gracefully extended [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "6e176a07-366b-4dd5-941e-4fc51265dacd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Invalid RHCOS CRUN Build",
+                "URL": "https://issues.redhat.com/browse/TRT-1900"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862144519986745344",
+                    "StartTime": "2024-11-28T14:40:17Z",
+                    "CompletionTime": "2024-11-28T17:54:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862193600360615936",
+                    "StartTime": "2024-11-28T17:55:26Z",
+                    "CompletionTime": "2024-11-28T20:58:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862240258062553088",
+                    "StartTime": "2024-11-28T21:00:43Z",
+                    "CompletionTime": "2024-11-29T00:21:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862297845952942080",
+                    "StartTime": "2024-11-29T00:49:26Z",
+                    "CompletionTime": "2024-11-29T04:16:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862350067424301056",
+                    "StartTime": "2024-11-29T04:17:11Z",
+                    "CompletionTime": "2024-11-29T07:25:12Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862397884620607488",
+                    "StartTime": "2024-11-29T07:27:12Z",
+                    "CompletionTime": "2024-11-29T10:34:01Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862446163056136192",
+                    "StartTime": "2024-11-29T10:38:55Z",
+                    "CompletionTime": "2024-11-29T13:32:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862490194360406016",
+                    "StartTime": "2024-11-29T13:34:00Z",
+                    "CompletionTime": "2024-11-29T17:04:39Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862543708075855872",
+                    "StartTime": "2024-11-29T17:06:39Z",
+                    "CompletionTime": "2024-11-29T20:37:01Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862598172979761152",
+                    "StartTime": "2024-11-29T20:42:50Z",
+                    "CompletionTime": "2024-11-30T00:17:06Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862652656074362880",
+                    "StartTime": "2024-11-30T00:19:34Z",
+                    "CompletionTime": "2024-11-30T03:40:54Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn-upgrade/1862703825572335616",
+                    "StartTime": "2024-11-30T03:42:54Z",
+                    "CompletionTime": "2024-11-30T07:03:51Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:8941fa4ded23610031953baf4bf9f25d",
+            "TestName": "[sig-api-machinery][Feature:APIServer][Late] kubelet terminates kube-apiserver gracefully extended [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "6e176a07-366b-4dd5-941e-4fc51265dacd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Invalid RHCOS CRUN Build",
+                "URL": "https://issues.redhat.com/browse/TRT-1900"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-upgrade-ovn-ipv6/1862297981747728384",
+                    "StartTime": "2024-11-29T00:49:37Z",
+                    "CompletionTime": "2024-11-29T04:17:01Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-upgrade-ovn-ipv6/1862350725875503104",
+                    "StartTime": "2024-11-29T04:19:48Z",
+                    "CompletionTime": "2024-11-29T07:33:12Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-upgrade-ovn-ipv6/1862598208216109056",
+                    "StartTime": "2024-11-29T20:42:52Z",
+                    "CompletionTime": "2024-11-30T00:20:19Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:2fe0fed7df547183e79b13e5edd07276",
+            "TestName": "API LBs follow /readyz of kube-apiserver and stop sending requests before server shutdowns for external clients",
+            "Release": "4.18",
+            "GroupId": "6e176a07-366b-4dd5-941e-4fc51265dacd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Invalid RHCOS CRUN Build",
+                "URL": "https://issues.redhat.com/browse/TRT-1900"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "upi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-vsphere-ovn-upi-serial/1861809781312851968",
+                    "StartTime": "2024-11-27T16:30:10Z",
+                    "CompletionTime": "2024-11-27T19:28:10Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests-upgrade:e7f70b89f489bfa8d1e923c9832cdeff",
+            "TestName": "[bz-openshift-apiserver] clusteroperator/openshift-apiserver should not change condition/Available",
+            "Release": "4.18",
+            "GroupId": "6e176a07-366b-4dd5-941e-4fc51265dacd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Invalid RHCOS CRUN Build",
+                "URL": "https://issues.redhat.com/browse/TRT-1900"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-ovn-bm-upgrade/1862373302652112896",
+                    "StartTime": "2024-11-29T05:49:31Z",
+                    "CompletionTime": "2024-11-29T08:29:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-upgrade-ovn-ipv6/1862144540119404544",
+                    "StartTime": "2024-11-28T14:40:18Z",
+                    "CompletionTime": "2024-11-28T17:14:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-metal-ipi-upgrade-ovn-ipv6/1862486367989141504",
+                    "StartTime": "2024-11-29T13:18:47Z",
+                    "CompletionTime": "2024-11-29T15:38:47Z"
+                }
+            ]
+        }
+    ]
+}
