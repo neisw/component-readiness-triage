@@ -1,0 +1,687 @@
+{
+    "Arguments": {
+        "TestRelease": "4.18",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2024-10-01T23:59:59Z&baseRelease=4.17&baseStartTime=2024-09-01T00:00:00Z&columnGroupBy=Architecture,Network,Platform,Topology&confidence=95&dbGroupBy=Platform,Architecture,Network,Topology,FeatureSet,Upgrade,Suite,Installer&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=false&includeVariant=Architecture:amd64&includeVariant=CGroupMode:v2&includeVariant=ContainerRuntime:runc&includeVariant=ContainerRuntime:crun&includeVariant=FeatureSet:default&includeVariant=Installer:ipi&includeVariant=Installer:upi&includeVariant=Network:ovn&includeVariant=Owner:eng&includeVariant=Platform:vsphere&includeVariant=Topology:ha&includeVariant=Topology:microshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-02-09T23:59:59Z&sampleRelease=4.18&sampleStartTime=2025-02-02T00:00:00Z",
+        "IssueDescription": "ContentMirror",
+        "IssueType": "Infrastructure",
+        "IssueURL": "https://redhat-internal.slack.com/archives/C015H2WDJRY/p1739132545376839",
+        "OutputFile": "vsphere02_infra_regressions_1.json",
+        "IncidentGroupId": "c5e046a4-1831-4da9-aa70-b760bb2c9e6f",
+        "TargetModifiedTime": "2025-02-09 21:34:45.494770+00:00",
+        "JobRunStartTimeMin": "2025-02-07T01:58:06Z",
+        "TargetBuildCluster": "vsphere02"
+    },
+    "Tests": [
+        {
+            "TestId": "openshift-tests-upgrade:cc7e2ba6166c37b611478c22a74bc749",
+            "TestName": "[sig-arch][Feature:ClusterUpgrade] Cluster should remain functional during upgrade [Disruptive] [Serial]",
+            "Release": "4.18",
+            "GroupId": "c5e046a4-1831-4da9-aa70-b760bb2c9e6f",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "ContentMirror"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "minor"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1887932438521319424",
+                    "StartTime": "2025-02-07T18:32:21Z",
+                    "CompletionTime": "2025-02-07T21:54:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1888015659833495552",
+                    "StartTime": "2025-02-08T00:02:30Z",
+                    "CompletionTime": "2025-02-08T01:38:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1888518808671358976",
+                    "StartTime": "2025-02-09T09:22:03Z",
+                    "CompletionTime": "2025-02-09T11:30:04Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests-upgrade:c1f54790201ec8f4241eca902f854b79",
+            "TestName": "[sig-instrumentation] Prometheus [apigroup:image.openshift.io] when installed on the cluster shouldn't report any alerts in firing state apart from Watchdog and AlertmanagerReceiversNotConfigured [Early][apigroup:config.openshift.io] [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "c5e046a4-1831-4da9-aa70-b760bb2c9e6f",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "ContentMirror"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "minor"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1887932438521319424",
+                    "StartTime": "2025-02-07T18:32:21Z",
+                    "CompletionTime": "2025-02-07T21:54:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1888015659833495552",
+                    "StartTime": "2025-02-08T00:02:30Z",
+                    "CompletionTime": "2025-02-08T01:38:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1888518808671358976",
+                    "StartTime": "2025-02-09T09:22:03Z",
+                    "CompletionTime": "2025-02-09T11:30:04Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests-upgrade:4fc7a1949165eeaef47bb9bef87e15d3",
+            "TestName": "[sig-node] Managed cluster record the number of nodes at the beginning of the tests [Early] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "c5e046a4-1831-4da9-aa70-b760bb2c9e6f",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "ContentMirror"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "minor"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1887932438521319424",
+                    "StartTime": "2025-02-07T18:32:21Z",
+                    "CompletionTime": "2025-02-07T21:54:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1888015659833495552",
+                    "StartTime": "2025-02-08T00:02:30Z",
+                    "CompletionTime": "2025-02-08T01:38:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1888518808671358976",
+                    "StartTime": "2025-02-09T09:22:03Z",
+                    "CompletionTime": "2025-02-09T11:30:04Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests-upgrade:c61a74a73a87adf1df7214a832c3312c",
+            "TestName": "[sig-arch][Early] Operators low level operators should have at least the conditions we had in 4.17 [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "c5e046a4-1831-4da9-aa70-b760bb2c9e6f",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "ContentMirror"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "minor"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1887932438521319424",
+                    "StartTime": "2025-02-07T18:32:21Z",
+                    "CompletionTime": "2025-02-07T21:54:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1888015659833495552",
+                    "StartTime": "2025-02-08T00:02:30Z",
+                    "CompletionTime": "2025-02-08T01:38:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1888518808671358976",
+                    "StartTime": "2025-02-09T09:22:03Z",
+                    "CompletionTime": "2025-02-09T11:30:04Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests-upgrade:253a05e9fc74edc68fc9c472cdfa9939",
+            "TestName": "[sig-arch][Early] APIs for openshift.io must have stable versions [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "c5e046a4-1831-4da9-aa70-b760bb2c9e6f",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "ContentMirror"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "minor"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1887932438521319424",
+                    "StartTime": "2025-02-07T18:32:21Z",
+                    "CompletionTime": "2025-02-07T21:54:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1888015659833495552",
+                    "StartTime": "2025-02-08T00:02:30Z",
+                    "CompletionTime": "2025-02-08T01:38:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1888518808671358976",
+                    "StartTime": "2025-02-09T09:22:03Z",
+                    "CompletionTime": "2025-02-09T11:30:04Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests-upgrade:b3e170673c14c432c14836e9f41e7285",
+            "TestName": "[sig-arch][Early] CRDs for openshift.io should have subresource.status [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "c5e046a4-1831-4da9-aa70-b760bb2c9e6f",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "ContentMirror"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "minor"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1887932438521319424",
+                    "StartTime": "2025-02-07T18:32:21Z",
+                    "CompletionTime": "2025-02-07T21:54:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1888015659833495552",
+                    "StartTime": "2025-02-08T00:02:30Z",
+                    "CompletionTime": "2025-02-08T01:38:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1888518808671358976",
+                    "StartTime": "2025-02-09T09:22:03Z",
+                    "CompletionTime": "2025-02-09T11:30:04Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests-upgrade:bacf1b7d3797a0c60c7bfdb72463a9ec",
+            "TestName": "[sig-arch][Early] CRDs for openshift.io should have a status in the CRD schema [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "c5e046a4-1831-4da9-aa70-b760bb2c9e6f",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "ContentMirror"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "minor"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1887932438521319424",
+                    "StartTime": "2025-02-07T18:32:21Z",
+                    "CompletionTime": "2025-02-07T21:54:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1888015659833495552",
+                    "StartTime": "2025-02-08T00:02:30Z",
+                    "CompletionTime": "2025-02-08T01:38:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1888518808671358976",
+                    "StartTime": "2025-02-09T09:22:03Z",
+                    "CompletionTime": "2025-02-09T11:30:04Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests-upgrade:a6460959c62d45ac9b5ad34748ab23dd",
+            "TestName": "[sig-scheduling][Early] The HAProxy router pods [apigroup:route.openshift.io] should be scheduled on different nodes [Skipped:SingleReplicaTopology] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "c5e046a4-1831-4da9-aa70-b760bb2c9e6f",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "ContentMirror"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "minor"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1887932438521319424",
+                    "StartTime": "2025-02-07T18:32:21Z",
+                    "CompletionTime": "2025-02-07T21:54:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1888015659833495552",
+                    "StartTime": "2025-02-08T00:02:30Z",
+                    "CompletionTime": "2025-02-08T01:38:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1888518808671358976",
+                    "StartTime": "2025-02-09T09:22:03Z",
+                    "CompletionTime": "2025-02-09T11:30:04Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests-upgrade:ae597e3cc46d327c24568317e4f049cf",
+            "TestName": "[sig-scheduling][Early] The openshift-authentication pods [apigroup:oauth.openshift.io] should be scheduled on different nodes [Skipped:SingleReplicaTopology] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "c5e046a4-1831-4da9-aa70-b760bb2c9e6f",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "ContentMirror"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "minor"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1887932438521319424",
+                    "StartTime": "2025-02-07T18:32:21Z",
+                    "CompletionTime": "2025-02-07T21:54:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1888015659833495552",
+                    "StartTime": "2025-02-08T00:02:30Z",
+                    "CompletionTime": "2025-02-08T01:38:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1888518808671358976",
+                    "StartTime": "2025-02-09T09:22:03Z",
+                    "CompletionTime": "2025-02-09T11:30:04Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests-upgrade:b6c295d391ecad2e9e2da53d6f2414a9",
+            "TestName": "[sig-scheduling][Early] The openshift-etcd pods [apigroup:operator.openshift.io] should be scheduled on different nodes [Skipped:SingleReplicaTopology] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "c5e046a4-1831-4da9-aa70-b760bb2c9e6f",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "ContentMirror"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "minor"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1887932438521319424",
+                    "StartTime": "2025-02-07T18:32:21Z",
+                    "CompletionTime": "2025-02-07T21:54:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1888015659833495552",
+                    "StartTime": "2025-02-08T00:02:30Z",
+                    "CompletionTime": "2025-02-08T01:38:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1888518808671358976",
+                    "StartTime": "2025-02-09T09:22:03Z",
+                    "CompletionTime": "2025-02-09T11:30:04Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests-upgrade:2086ba47170a75add4548a707f2aa761",
+            "TestName": "[sig-auth][Feature:SCC][Early] should not have pod creation failures during install [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "c5e046a4-1831-4da9-aa70-b760bb2c9e6f",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "ContentMirror"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "minor"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1887932438521319424",
+                    "StartTime": "2025-02-07T18:32:21Z",
+                    "CompletionTime": "2025-02-07T21:54:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1888015659833495552",
+                    "StartTime": "2025-02-08T00:02:30Z",
+                    "CompletionTime": "2025-02-08T01:38:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-vsphere-ovn-upgrade/1888518808671358976",
+                    "StartTime": "2025-02-09T09:22:03Z",
+                    "CompletionTime": "2025-02-09T11:30:04Z"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1457 @@
+{
+    "Arguments": {
+        "TestRelease": "4.18",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2024-10-01T23:59:59Z&baseRelease=4.17&baseStartTime=2024-09-01T00:00:00Z&columnGroupBy=Architecture,Network,Platform,Topology&confidence=95&dbGroupBy=Platform,Architecture,Network,Topology,FeatureSet,Upgrade,Suite,Installer&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=false&includeVariant=Architecture:amd64&includeVariant=CGroupMode:v2&includeVariant=ContainerRuntime:runc&includeVariant=ContainerRuntime:crun&includeVariant=FeatureSet:default&includeVariant=Installer:ipi&includeVariant=Installer:upi&includeVariant=Network:ovn&includeVariant=Owner:eng&includeVariant=Platform:aws&includeVariant=Platform:azure&includeVariant=Platform:gcp&includeVariant=Platform:metal&includeVariant=Platform:vsphere&includeVariant=Topology:ha&includeVariant=Topology:microshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-02-05T23:59:59Z&sampleRelease=4.18&sampleStartTime=2025-01-29T00:00:00Z",
+        "IssueDescription": "0 Nodes Available",
+        "IssueType": "Infrastructure",
+        "IssueURL": "",
+        "OutputFile": "no_cluster_nodes_infra_regressions_testing.json",
+        "IncidentGroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+        "TargetModifiedTime": "2025-02-05 23:18:00.684818+00:00"
+    },
+    "Tests": [
+        {
+            "TestId": "openshift-tests:3bff77a9c719b626357a20a7f00efb36",
+            "TestName": "[sig-instrumentation][Late] Alerts shouldn't exceed the series limit of total series sent via telemetry from each cluster [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-cilium/1887168832359895040",
+                    "StartTime": "2025-02-05T15:58:06Z",
+                    "CompletionTime": "2025-02-05T18:47:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-no-capabilities/1887168832422809600",
+                    "StartTime": "2025-02-05T15:58:06Z",
+                    "CompletionTime": "2025-02-05T19:02:11Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-crun-wasm/1887169083791642624",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:29:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-cpu-partitioning/1887169083846168576",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:16:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-local-gateway/1887169083980386304",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:34:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:3b6c68ac2ecd10fd747355a98580be8b",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] EndpointSlices mirroring when using openshift ovn-kubernetes created using UserDefinedNetwork does not mirror EndpointSlices in namespaces not using user defined primary networks L3 dualstack primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-crun-wasm/1887169083791642624",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:29:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-cpu-partitioning/1887169083846168576",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:16:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-local-gateway/1887169083980386304",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:34:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:8bcb94af3ea21c52a4a5ecf903a361f8",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using UserDefinedNetwork isolates overlapping CIDRs with L2 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-crun-wasm/1887169083791642624",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:29:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-cpu-partitioning/1887169083846168576",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:16:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-local-gateway/1887169083980386304",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:34:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:c98655fb483fa186cdcabdfe16c783ee",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes UserDefinedNetwork should create NetworkAttachmentDefinition according to spec [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-crun-wasm/1887169083791642624",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:29:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-cpu-partitioning/1887169083846168576",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:16:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-local-gateway/1887169083980386304",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:34:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:ccf5cb7a4258f96c26651d1a2d7dcc88",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using UserDefinedNetwork is isolated from the default network with L3 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-crun-wasm/1887169083791642624",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:29:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-cpu-partitioning/1887169083846168576",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:16:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-local-gateway/1887169083980386304",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:34:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:6a58ecc06bda51efe3f5b34f9c51b881",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using NetworkAttachmentDefinitions isolates overlapping CIDRs with L3 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-crun-wasm/1887169083791642624",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:29:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-cpu-partitioning/1887169083846168576",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:16:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-local-gateway/1887169083980386304",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:34:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:7a4a0747e1a1ffe45661d8b40766ecaf",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes UserDefinedNetwork should delete NetworkAttachmentDefinition when UserDefinedNetwork is deleted [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-crun-wasm/1887169083791642624",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:29:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-cpu-partitioning/1887169083846168576",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:16:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-local-gateway/1887169083980386304",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:34:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:99b8a4d92264ef8f243711a19a9396ef",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] EndpointSlices mirroring when using openshift ovn-kubernetes created using UserDefinedNetwork mirrors EndpointSlices managed by the default controller for namespaces with user defined primary networks L3 primary UDN, cluster-networked pods [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-crun-wasm/1887169083791642624",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:29:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-cpu-partitioning/1887169083846168576",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:16:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-local-gateway/1887169083980386304",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:34:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:b83c8837c9e1ea2531e9466f31e203ac",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using UserDefinedNetwork can perform east/west traffic between nodes two pods connected over a L3 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-crun-wasm/1887169083791642624",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:29:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-cpu-partitioning/1887169083846168576",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:16:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-local-gateway/1887169083980386304",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:34:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:49f059643beb9459d38acc7c0c33ec54",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using UserDefinedNetwork is isolated from the default network with L2 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-crun-wasm/1887169083791642624",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:29:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-cpu-partitioning/1887169083846168576",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:16:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-local-gateway/1887169083980386304",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:34:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:66305a75b3c1a94f78a0c52dfc007966",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using NetworkAttachmentDefinitions can perform east/west traffic between nodes two pods connected over a L3 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-crun-wasm/1887169083791642624",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:29:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-cpu-partitioning/1887169083846168576",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:16:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-local-gateway/1887169083980386304",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:34:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:a3c05068e582269a29e5402e7cf77925",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using NetworkAttachmentDefinitions isolates overlapping CIDRs with L2 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-crun-wasm/1887169083791642624",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:29:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-cpu-partitioning/1887169083846168576",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:16:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-local-gateway/1887169083980386304",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:34:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:b4f45b8bd99a0e5527bfc40a03e521b9",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] EndpointSlices mirroring when using openshift ovn-kubernetes created using UserDefinedNetwork mirrors EndpointSlices managed by the default controller for namespaces with user defined primary networks L2 primary UDN, host-networked pods [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-crun-wasm/1887169083791642624",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:29:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-cpu-partitioning/1887169083846168576",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:16:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-local-gateway/1887169083980386304",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:34:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:4e1812b7664f84ffeb05e3741c8e0f30",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes when primary network exist, UserDefinedNetwork status should report not-ready [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-crun-wasm/1887169083791642624",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:29:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-cpu-partitioning/1887169083846168576",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:16:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-local-gateway/1887169083980386304",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:34:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:d93060c970e02799508eb0a8bba40419",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using UserDefinedNetwork isolates overlapping CIDRs with L3 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-crun-wasm/1887169083791642624",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:29:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-cpu-partitioning/1887169083846168576",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:16:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-local-gateway/1887169083980386304",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:34:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:54fc74ad55699b4ac636a31bb7d84e46",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] EndpointSlices mirroring when using openshift ovn-kubernetes created using UserDefinedNetwork mirrors EndpointSlices managed by the default controller for namespaces with user defined primary networks L2 primary UDN, cluster-networked pods [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-crun-wasm/1887169083791642624",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:29:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-cpu-partitioning/1887169083846168576",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:16:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-local-gateway/1887169083980386304",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:34:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:4bf316baafaa9d64bacbc86e16ea2435",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes UserDefinedNetwork pod connected to UserDefinedNetwork cannot be deleted when being used [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-crun-wasm/1887169083791642624",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:29:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-cpu-partitioning/1887169083846168576",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:16:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-local-gateway/1887169083980386304",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:34:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:057cfb4c5b7815367fa242f00bcb9e56",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using UserDefinedNetwork can perform east/west traffic between nodes for two pods connected over a L2 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-crun-wasm/1887169083791642624",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:29:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-cpu-partitioning/1887169083846168576",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:16:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-local-gateway/1887169083980386304",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:34:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:5901e757731e46cb051d288498492904",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] EndpointSlices mirroring when using openshift ovn-kubernetes created using UserDefinedNetwork does not mirror EndpointSlices in namespaces not using user defined primary networks L2 dualstack primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-crun-wasm/1887169083791642624",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:29:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-cpu-partitioning/1887169083846168576",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:16:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-local-gateway/1887169083980386304",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:34:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:c04ba0a44a0b60fa1b0e0f369db4444c",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] EndpointSlices mirroring when using openshift ovn-kubernetes created using UserDefinedNetwork mirrors EndpointSlices managed by the default controller for namespaces with user defined primary networks L3 primary UDN, host-networked pods [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-crun-wasm/1887169083791642624",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:29:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-cpu-partitioning/1887169083846168576",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:16:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-local-gateway/1887169083980386304",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:34:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:c8a3b20fc588f367a65614ea720527f1",
+            "TestName": "[sig-network][Feature:Router][apigroup:route.openshift.io] when FIPS is enabled the HAProxy router should not work when configured with a 1024-bit RSA key [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-cilium/1887168832359895040",
+                    "StartTime": "2025-02-05T15:58:06Z",
+                    "CompletionTime": "2025-02-05T18:47:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-no-capabilities/1887168832422809600",
+                    "StartTime": "2025-02-05T15:58:06Z",
+                    "CompletionTime": "2025-02-05T19:02:11Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-crun-wasm/1887169083791642624",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:29:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-cpu-partitioning/1887169083846168576",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:16:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-local-gateway/1887169083980386304",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:34:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:0c0cc3c8ed00082e1c8c423d61129c21",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLM][Skipped:Disconnected] OLMv1 operator installation should fail to install a non-existing cluster extension [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-cilium/1887168832359895040",
+                    "StartTime": "2025-02-05T15:58:06Z",
+                    "CompletionTime": "2025-02-05T18:47:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-no-capabilities/1887168832422809600",
+                    "StartTime": "2025-02-05T15:58:06Z",
+                    "CompletionTime": "2025-02-05T19:02:11Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-crun-wasm/1887169083791642624",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:29:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-cpu-partitioning/1887169083846168576",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:16:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-local-gateway/1887169083980386304",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:34:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:f8c9a96afcf430ac6c28ef3e6f414644",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLM][Skipped:Disconnected] OLMv1 operator installation should install a cluster extension [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-cilium/1887168832359895040",
+                    "StartTime": "2025-02-05T15:58:06Z",
+                    "CompletionTime": "2025-02-05T18:47:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-no-capabilities/1887168832422809600",
+                    "StartTime": "2025-02-05T15:58:06Z",
+                    "CompletionTime": "2025-02-05T19:02:11Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-crun-wasm/1887169083791642624",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:29:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-cpu-partitioning/1887169083846168576",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:16:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-local-gateway/1887169083980386304",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:34:24Z"
+                }
+            ]
+        }
+    ]
+}
