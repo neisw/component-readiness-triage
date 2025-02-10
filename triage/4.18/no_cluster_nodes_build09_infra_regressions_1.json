@@ -1,0 +1,4314 @@
+{
+    "Arguments": {
+        "TestRelease": "4.18",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2024-10-01T23%3A59%3A59Z&baseRelease=4.17&baseStartTime=2024-09-01T00%3A00%3A00Z&columnGroupBy=Architecture%2CNetwork%2CPlatform%2CTopology&confidence=95&dbGroupBy=Platform%2CArchitecture%2CNetwork%2CTopology%2CFeatureSet%2CUpgrade%2CSuite%2CInstaller&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=false&includeVariant=Architecture%3Aamd64&includeVariant=CGroupMode%3Av2&includeVariant=ContainerRuntime%3Arunc&includeVariant=ContainerRuntime%3Acrun&includeVariant=FeatureSet%3Adefault&includeVariant=Installer%3Aipi&includeVariant=Installer%3Aupi&includeVariant=Network%3Aovn&includeVariant=Owner%3Aeng&includeVariant=Platform%3Aaws&includeVariant=Platform%3Aazure&includeVariant=Platform%3Agcp&includeVariant=Platform%3Ametal&includeVariant=Platform%3Avsphere&includeVariant=Topology%3Aha&includeVariant=Topology%3Amicroshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-02-07T23%3A59%3A59Z&sampleRelease=4.18&sampleStartTime=2025-01-31T00%3A00%3A00Z",
+        "IssueDescription": "0 Nodes Available",
+        "IssueType": "Infrastructure",
+        "IssueURL": "",
+        "OutputFile": "no_cluster_nodes_build09_infra_regressions_1.json",
+        "IncidentGroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+        "TargetModifiedTime": "2025-02-07 20:03:20.561195+00:00",
+        "JobRunStartTimeMin": "2025-02-07T01:58:06Z",
+        "TargetBuildCluster": "build09"
+    },
+    "Tests": [
+        {
+            "TestId": "openshift-tests:d6750e53a5dc1ce362c183f9a9430380",
+            "TestName": "[sig-cloud-provider][Feature:OpenShiftCloudControllerManager][Late] Deploy an external cloud provider [apigroup:machineconfiguration.openshift.io] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:770fae93559f87279401bb4b02b1fd79",
+            "TestName": "[Jira:\"Cluster Version Operator\"] monitor test required-scc-annotation-checker collection",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:3ddc72d5dd5714b3c6e65cf0f697919e",
+            "TestName": "[Jira:\"Cluster Version Operator\"] monitor test termination-message-policy collection",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:7c09dcfc31c6b2a8d431a8ea3944a5f2",
+            "TestName": "[sig-etcd] etcd leader changes are not excessive [Late] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:98d0d2c9e3db154d8d31fb6f12c05a69",
+            "TestName": "[sig-imageregistry][Feature:ImageTriggers][Serial] ImageStream API TestImageStreamMappingCreate [apigroup:image.openshift.io] [Suite:openshift/conformance/serial]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:0927f2a44c06e3ad12c3ebcf2297ae6c",
+            "TestName": "[Jira:\"Image Registry\"] monitor test image-registry-availability cleanup",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:191ded02c6c578c04efee03cbc053f7b",
+            "TestName": "[Jira:\"Image Registry\"] monitor test image-registry-availability test evaluation",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:a6157c261fa396ab3c0fd1c179391b2c",
+            "TestName": "[sig-mco][OCPFeatureGate:ManagedBootImagesAWS][Serial] Should not update boot images on any MachineSet when not configured [apigroup:machineconfiguration.openshift.io] [Suite:openshift/conformance/serial]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:9a841b4818ec3fb8ae5d96b063f74eb3",
+            "TestName": "[sig-mco][OCPFeatureGate:ManagedBootImagesAWS][Serial] Should update boot images only on MachineSets that are opted in [apigroup:machineconfiguration.openshift.io] [Suite:openshift/conformance/serial]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:6a3e6fe9b30cfa12275711979638c60a",
+            "TestName": "[sig-mco][OCPFeatureGate:ManagedBootImagesAWS][Serial] Should stamp coreos-bootimages configmap with current MCO hash and release version [apigroup:machineconfiguration.openshift.io] [Suite:openshift/conformance/serial]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:0c7cebf8221eafe7c9641fe29f16197d",
+            "TestName": "[sig-instrumentation][Late] OpenShift alerting rules [apigroup:image.openshift.io] should have description and summary annotations [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:ac507aa06b48e3635ae252d7b478d4fc",
+            "TestName": "[sig-instrumentation][Late] OpenShift alerting rules [apigroup:image.openshift.io] should have a runbook_url annotation if the alert is critical [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:c7b95060ef6a403433f51a925d5b0e3f",
+            "TestName": "[sig-instrumentation][Late] OpenShift alerting rules [apigroup:image.openshift.io] should link to an HTTP(S) location if the runbook_url annotation is defined [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:d807f2793ab98df5ef27b67baa5e9152",
+            "TestName": "[Jira:\"Monitoring\"] monitor test metrics-api-availability test evaluation",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:24ad065638d7bbae146e8ca0ea69c08d",
+            "TestName": "[sig-instrumentation][Late] OpenShift alerting rules [apigroup:image.openshift.io] should have a valid severity label [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:3da7841b185c8e59bc6bdfd3d563f66d",
+            "TestName": "[sig-instrumentation][Late] OpenShift alerting rules [apigroup:image.openshift.io] should link to a valid URL if the runbook_url annotation is defined [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:135646933fe658cb46eac09dba2b7b97",
+            "TestName": "[Jira:\"Networking / On-Prem Host Networking\"] monitor test on-prem-haproxy collection",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:0d3c9af706541d1f65c466d3f70a1da9",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkDiagnosticsConfig][Serial] Should be enabled by default [Suite:openshift/conformance/serial]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:4a2262647ef65f52716d7ecff1dc153d",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkDiagnosticsConfig][Serial] Should set the condition to false if there are no nodes able to host the source pods [Suite:openshift/conformance/serial]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:2b52023973aa10beacb067081d57ab22",
+            "TestName": "[sig-network] services when running openshift ipv4 cluster ensures external ip policy is configured correctly on the cluster [apigroup:config.openshift.io] [Serial] [Suite:openshift/conformance/serial]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:59d14cf738d51c9c4c9158ba269eca82",
+            "TestName": "[sig-network][Feature:MultiNetworkPolicy][Serial][apigroup:operator.openshift.io] should enforce a network policies on secondary network IPv4 [Suite:openshift/conformance/serial]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:356e9bda27b1959596ec4e937754f0a3",
+            "TestName": "[sig-network] pods should successfully create sandboxes by other",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:b9a54e94edf0c9e371816ee1b14d3d48",
+            "TestName": "[Jira:\"Network / ovn-kubernetes\"] monitor test pod-network-avalibility cleanup",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:4081e031d57a8506dd834a580c774e6f",
+            "TestName": "[Jira:\"Network / ovn-kubernetes\"] monitor test pod-network-avalibility collection",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:3322cf74a1f537e188239ef3f31f2a74",
+            "TestName": "[sig-network][Feature:EgressIP][apigroup:operator.openshift.io] [external-targets][apigroup:user.openshift.io][apigroup:security.openshift.io] only pods matched by the pod selector should have the EgressIPs [Skipped:Network/OpenShiftSDN] [Serial] [Suite:openshift/conformance/serial]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:8bcb94af3ea21c52a4a5ecf903a361f8",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using UserDefinedNetwork isolates overlapping CIDRs with L2 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "azure"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1887814183408373760",
+                    "StartTime": "2025-02-07T10:42:10Z",
+                    "CompletionTime": "2025-02-07T14:38:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1887814171660128256",
+                    "StartTime": "2025-02-07T10:42:09Z",
+                    "CompletionTime": "2025-02-07T14:36:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1887814175862820864",
+                    "StartTime": "2025-02-07T10:42:10Z",
+                    "CompletionTime": "2025-02-07T14:35:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1887814180887597056",
+                    "StartTime": "2025-02-07T10:42:10Z",
+                    "CompletionTime": "2025-02-07T14:51:58Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:607563974cec0498bd6a4a4b332f069a",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] EndpointSlices mirroring when using openshift ovn-kubernetes created using NetworkAttachmentDefinitions does not mirror EndpointSlices in namespaces not using user defined primary networks L3 dualstack primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "azure"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1887814183408373760",
+                    "StartTime": "2025-02-07T10:42:10Z",
+                    "CompletionTime": "2025-02-07T14:38:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1887814171660128256",
+                    "StartTime": "2025-02-07T10:42:09Z",
+                    "CompletionTime": "2025-02-07T14:36:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1887814175862820864",
+                    "StartTime": "2025-02-07T10:42:10Z",
+                    "CompletionTime": "2025-02-07T14:35:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1887814180887597056",
+                    "StartTime": "2025-02-07T10:42:10Z",
+                    "CompletionTime": "2025-02-07T14:51:58Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:d93060c970e02799508eb0a8bba40419",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using UserDefinedNetwork isolates overlapping CIDRs with L3 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "azure"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1887814183408373760",
+                    "StartTime": "2025-02-07T10:42:10Z",
+                    "CompletionTime": "2025-02-07T14:38:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1887814171660128256",
+                    "StartTime": "2025-02-07T10:42:09Z",
+                    "CompletionTime": "2025-02-07T14:36:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1887814175862820864",
+                    "StartTime": "2025-02-07T10:42:10Z",
+                    "CompletionTime": "2025-02-07T14:35:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-azure-ovn-upgrade/1887814180887597056",
+                    "StartTime": "2025-02-07T10:42:10Z",
+                    "CompletionTime": "2025-02-07T14:51:58Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:db1962d9d560f197ea5fe13b9951301d",
+            "TestName": "[sig-network-edge][Feature:Idling] Unidling [apigroup:apps.openshift.io][apigroup:route.openshift.io] should handle many TCP connections by possibly dropping those over a certain bound [Serial] [Suite:openshift/conformance/serial]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:9bc4661b05ba13ed49d4c91f63899776",
+            "TestName": "[Jira:\"Networking / router\"] monitor test service-type-load-balancer-availability cleanup",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:8a5e1ac0d31115e41ae682bf79a79826",
+            "TestName": "[Jira:\"Networking / router\"] monitor test service-type-load-balancer-availability test evaluation",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:7972054eb20120ea6089fa7befed762b",
+            "TestName": "[sig-network-edge][Feature:Idling] Unidling [apigroup:apps.openshift.io][apigroup:route.openshift.io] should handle many UDP senders (by continuing to drop all packets on the floor) [Serial] [Suite:openshift/conformance/serial]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:0b11e4acf1427845afa5ea907d3be4a3",
+            "TestName": "[Jira:\"Networking / router\"] monitor test ingress-availability test evaluation",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:205ee3e220635786144fdb6c1f4a9cbb",
+            "TestName": "[sig-node] NoExecuteTaintManager Single Pod [Serial] doesn't evict pod with tolerations from tainted nodes [Skipped:SingleReplicaTopology] [Suite:openshift/conformance/serial] [Suite:k8s]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:395883aa8f7704e85adc14794ca7a88a",
+            "TestName": "[sig-node][Late] should not have pod creation failures due to systemd timeouts [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:893ebb08c6126bc00e9514889a746f1b",
+            "TestName": "[Jira:\"Node / Kubelet\"] monitor test kubelet-log-collector collection",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:2b16b7b6afc2b8c28e6391f4011a47f0",
+            "TestName": "[sig-node] NoExecuteTaintManager Single Pod [Serial] eventually evict pod with finite tolerations from tainted nodes [Skipped:SingleReplicaTopology] [Suite:openshift/conformance/serial] [Suite:k8s]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:108a94602e5fca61f7235103596a5090",
+            "TestName": "[sig-node] Managed cluster should report ready nodes the entire duration of the test run [Late][apigroup:monitoring.coreos.com] [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:956a9e436fa8d2a879a8ed5c9a307e89",
+            "TestName": "[sig-node] Managed cluster should verify that nodes have no unexpected reboots [Late] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:505d9c504f94ae9042e700f2dd8e90df",
+            "TestName": "[Jira:\"Node / Kubelet\"] monitor test pod-lifecycle test evaluation",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:82c13894c19a27427a9976221e9bb5f6",
+            "TestName": "[sig-node] NoExecuteTaintManager Single Pod [Serial] pods evicted from tainted nodes have pod disruption condition [Skipped:SingleReplicaTopology] [Suite:openshift/conformance/serial] [Suite:k8s]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:f8c9a96afcf430ac6c28ef3e6f414644",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLM][Skipped:Disconnected] OLMv1 operator installation should install a cluster extension [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1887814298328109056",
+                    "StartTime": "2025-02-07T10:42:20Z",
+                    "CompletionTime": "2025-02-07T14:06:02Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1887814305882050560",
+                    "StartTime": "2025-02-07T10:42:21Z",
+                    "CompletionTime": "2025-02-07T14:22:48Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1887814314274852864",
+                    "StartTime": "2025-02-07T10:42:22Z",
+                    "CompletionTime": "2025-02-07T14:22:34Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:0c0cc3c8ed00082e1c8c423d61129c21",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLM][Skipped:Disconnected] OLMv1 operator installation should fail to install a non-existing cluster extension [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-fips/1887814131390615552",
+                    "StartTime": "2025-02-07T10:42:06Z",
+                    "CompletionTime": "2025-02-07T13:27:15Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:0c0cc3c8ed00082e1c8c423d61129c21",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLM][Skipped:Disconnected] OLMv1 operator installation should fail to install a non-existing cluster extension [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1887814298328109056",
+                    "StartTime": "2025-02-07T10:42:20Z",
+                    "CompletionTime": "2025-02-07T14:06:02Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1887814305882050560",
+                    "StartTime": "2025-02-07T10:42:21Z",
+                    "CompletionTime": "2025-02-07T14:22:48Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-upgrade/1887814314274852864",
+                    "StartTime": "2025-02-07T10:42:22Z",
+                    "CompletionTime": "2025-02-07T14:22:34Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:f8c9a96afcf430ac6c28ef3e6f414644",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLM][Skipped:Disconnected] OLMv1 operator installation should install a cluster extension [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-fips/1887814131390615552",
+                    "StartTime": "2025-02-07T10:42:06Z",
+                    "CompletionTime": "2025-02-07T13:27:15Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:58fba4e3d92d78a9d18713311c13e4aa",
+            "TestName": "[sig-storage][Late] Metrics should report short mount times [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:39d39daba380102efffe1b150e4a89f6",
+            "TestName": "[sig-storage][Late] Metrics should report short attach times [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:a0a6113e84033f14db3afad11fabcec3",
+            "TestName": "[Jira:\"Test Framework\"] monitor test azure-metrics-collector collection",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:e9bad9a699937f916cf49f9b660d5de7",
+            "TestName": "[Jira:\"Test Framework\"] monitor test alert-summary-serializer collection",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:e42eb63895b24f7d6c5194ff3b364f65",
+            "TestName": "[Jira:\"Test Framework\"] monitor test metrics-endpoints-down collection",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:03c087559ac37d301cdab3dc854a160f",
+            "TestName": "[Jira:\"Test Framework\"] monitor test legacy-test-framework-invariants test evaluation",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:b2b4339b09433a8e2552f0b722a67923",
+            "TestName": "[Jira:\"Test Framework\"] monitor test initial-and-final-operator-log-scraper collection",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:cb88879140df8adac8643ba960596ec3",
+            "TestName": "[sig-api-machinery] Namespaces [Serial] should always delete fast (ALL of 100 namespaces in 150 seconds) [Feature:ComprehensiveNamespaceDraining] [Suite:openshift/conformance/serial] [Suite:k8s]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:d754b9eef103fcad55466ae2348c4bef",
+            "TestName": "[sig-api-machinery][Feature:APIServer][Late] API LBs follow /readyz of kube-apiserver and don't send request early [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:8e0fc1dea41b0ad174dab753f4a5fd29",
+            "TestName": "[sig-api-machinery] Namespaces [Serial] should patch a Namespace [Conformance] [Suite:openshift/conformance/serial/minimal] [Suite:k8s]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:843a9f8eaa92c42cdcef383e3a77e011",
+            "TestName": "[sig-api-machinery][Feature:APIServer][Late] kube-apiserver terminates within graceful termination period [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:dfa1a5d540c34b20b720e43802e99adc",
+            "TestName": "[sig-api-machinery][Feature:APIServer][Late] API LBs follow /readyz of kube-apiserver and stop sending requests before server shutdowns for external clients [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:41b75ff7d715670cd956ffba497fab8f",
+            "TestName": "[sig-api-machinery][Feature:APIServer][Late] kubelet terminates kube-apiserver gracefully [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:ca1b05fa75822ec9d858a479fe2be2ce",
+            "TestName": "[Jira:\"kube-apiserver\"] monitor test audit-log-analyzer collection",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:9ff4e9b171ea809e0d6faf721b2fe737",
+            "TestName": "[sig-arch][Late] operators should not create watch channels very often [apigroup:apiserver.openshift.io] [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:14bc1dac4894a91ac206871e0dfe81a8",
+            "TestName": "[sig-api-machinery][Feature:APIServer][Late] API LBs follow /readyz of kube-apiserver and stop sending requests [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:d7c56e53863153927832b16f175d4aba",
+            "TestName": "[Jira:\"kube-apiserver\"] monitor test apiserver-availability test evaluation",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:5ae42624b31485ae557804c8a25f8355",
+            "TestName": "[Jira:\"kube-apiserver\"] monitor test api-unreachable-from-client-metrics collection",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:8941fa4ded23610031953baf4bf9f25d",
+            "TestName": "[sig-api-machinery][Feature:APIServer][Late] kubelet terminates kube-apiserver gracefully extended [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:e65af9c4a928e2ca58e569d05594a551",
+            "TestName": "[sig-scheduling] SchedulerPreemption [Serial] PriorityClass endpoints verify PriorityClass endpoints can be operated with different HTTP methods [Conformance] [Suite:openshift/conformance/serial/minimal] [Suite:k8s]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:90ec40586489637e090fda49b32a1628",
+            "TestName": "[sig-scheduling] SchedulerPredicates [Serial] validates that NodeSelector is respected if matching [Conformance] [Suite:openshift/conformance/serial/minimal] [Suite:k8s]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:987563c7d087ad0a45fc78bd91437b26",
+            "TestName": "[sig-scheduling] SchedulerPredicates [Serial] PodTopologySpread Filtering validates 4 pods with MaxSkew=1 are evenly distributed into 2 nodes [Suite:openshift/conformance/serial] [Suite:k8s]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:2446811dd766428ef633c14851322a03",
+            "TestName": "[sig-scheduling] SchedulerPreemption [Serial] PodTopologySpread Preemption validates proper pods are preempted [Suite:openshift/conformance/serial] [Suite:k8s]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:53f2390c74c599a2fe64699792fee18a",
+            "TestName": "[sig-scheduling] SchedulerPriorities [Serial] Pod should be preferably scheduled to nodes pod can tolerate [Suite:openshift/conformance/serial] [Suite:k8s]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:dedeac2d15201c260a901981196b243c",
+            "TestName": "[sig-scheduling] SchedulerPredicates [Serial] validates pod overhead is considered along with resource limits of pods that are allowed to run verify pod overhead is accounted for [Suite:openshift/conformance/serial] [Suite:k8s]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:80370c4fb8235021816feaac0effccce",
+            "TestName": "[sig-scheduling] SchedulerPreemption [Serial] validates lower priority pod preemption by critical pod [Conformance] [Suite:openshift/conformance/serial/minimal] [Suite:k8s]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:ec606a04ac1ccf4666f0a3e3255e03d9",
+            "TestName": "[sig-scheduling] SchedulerPredicates [Serial] validates Pods with non-empty schedulingGates are blocked on scheduling [Suite:openshift/conformance/serial] [Suite:k8s]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:a2d1aebf3dcc1acd90ee66205ccc9a9e",
+            "TestName": "[sig-scheduling] SchedulerPreemption [Serial] validates pod disruption condition is added to the preempted pod [Conformance] [Suite:openshift/conformance/serial/minimal] [Suite:k8s]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:ae46cf89f5542f1216719921bb63da2d",
+            "TestName": "[sig-auth][Feature:LDAP][Serial] ldap group sync can sync groups from ldap [apigroup:user.openshift.io][apigroup:authorization.openshift.io][apigroup:security.openshift.io] [Suite:openshift/conformance/serial]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:46784d21b301b6dda59bfed6e81a6fb6",
+            "TestName": "[sig-auth][Feature:ProjectAPI][Serial]  TestUnprivilegedNewProjectDenied [apigroup:authorization.openshift.io][apigroup:project.openshift.io] [Suite:openshift/conformance/serial]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:94af967d0f5b5949e84351e999178d43",
+            "TestName": "[sig-cli] oc adm cluster-role-reapers [Serial][apigroup:authorization.openshift.io][apigroup:user.openshift.io] [Suite:openshift/conformance/serial]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:130e383aa31af740066b7a4cbe77b103",
+            "TestName": "[sig-cli] Kubectl client Kubectl taint [Serial] should update the taint on a node [Suite:openshift/conformance/serial] [Suite:k8s]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:2e64255bac0592c7328a03cad4359282",
+            "TestName": "[sig-cli] Kubectl client Kubectl taint [Serial] should remove all the taints with the same key off a node [Skipped:SingleReplicaTopology] [Suite:openshift/conformance/serial] [Suite:k8s]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:900a66908c09091dee310adfc17f5c00",
+            "TestName": "[sig-cli] oc project can switch between different projects [apigroup:authorization.openshift.io][apigroup:user.openshift.io][apigroup:project.openshift.io][Serial] [Suite:openshift/conformance/serial]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:87384d3f7439059222f015b7e7b4d91f",
+            "TestName": "[sig-apps] DisruptionController evictions: too few pods, replicaSet, percentage => should not allow an eviction [Serial] [Suite:openshift/conformance/serial] [Suite:k8s]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:6a3a6b4cff98fa8cd4d5bb4c979bc8a8",
+            "TestName": "[sig-apps] Daemon set [Serial] should run and stop complex daemon with node affinity [Suite:openshift/conformance/serial] [Suite:k8s]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:5bfab5443ff615e3e1849ea055b36412",
+            "TestName": "[sig-apps] Daemon set [Serial] should verify changes to a daemon set status [Conformance] [Suite:openshift/conformance/serial/minimal] [Suite:k8s]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:5a2b27e376c90c34d2c923568880d9eb",
+            "TestName": "[sig-apps] Daemon set [Serial] should update pod when spec was updated and update strategy is RollingUpdate [Conformance] [Suite:openshift/conformance/serial/minimal] [Suite:k8s]",
+            "Release": "4.18",
+            "GroupId": "ce15fbac-8ae1-47b2-a8e0-9053f71f46cd",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-serial/1887814116291121152",
+                    "StartTime": "2025-02-07T10:42:05Z",
+                    "CompletionTime": "2025-02-07T14:53:20Z"
+                }
+            ]
+        }
+    ]
+}

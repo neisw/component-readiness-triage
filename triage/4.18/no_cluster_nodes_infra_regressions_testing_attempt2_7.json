@@ -1,0 +1,497 @@
+{
+    "Arguments": {
+        "TestRelease": "4.18",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2024-10-01T23%3A59%3A59Z&baseRelease=4.17&baseStartTime=2024-09-01T00%3A00%3A00Z&columnGroupBy=Architecture%2CNetwork%2CPlatform%2CTopology&confidence=95&dbGroupBy=Platform%2CArchitecture%2CNetwork%2CTopology%2CFeatureSet%2CUpgrade%2CSuite%2CInstaller&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=false&includeVariant=Architecture%3Aamd64&includeVariant=CGroupMode%3Av2&includeVariant=ContainerRuntime%3Arunc&includeVariant=ContainerRuntime%3Acrun&includeVariant=FeatureSet%3Adefault&includeVariant=Installer%3Aipi&includeVariant=Installer%3Aupi&includeVariant=Network%3Aovn&includeVariant=Owner%3Aeng&includeVariant=Platform%3Aaws&includeVariant=Topology%3Aha&includeVariant=Topology%3Amicroshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-02-10T23%3A59%3A59Z&sampleRelease=4.18&sampleStartTime=2025-02-03T00%3A00%3A00Z",
+        "IssueDescription": "0 Nodes Available",
+        "IssueType": "Infrastructure",
+        "IssueURL": "",
+        "OutputFile": "no_cluster_nodes_infra_regressions_testing_attempt2_7.json",
+        "IncidentGroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+        "TargetModifiedTime": "2025-02-10 19:03:07.154918+00:00",
+        "JobRunStartTimeMin": "2025-02-05T11:58:06Z",
+        "TargetBuildCluster": "build06"
+    },
+    "Tests": [
+        {
+            "TestId": "openshift-tests:0c0cc3c8ed00082e1c8c423d61129c21",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLM][Skipped:Disconnected] OLMv1 operator installation should fail to install a non-existing cluster extension [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-cilium/1887168832359895040",
+                    "StartTime": "2025-02-05T15:58:06Z",
+                    "CompletionTime": "2025-02-05T18:47:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-no-capabilities/1887168832422809600",
+                    "StartTime": "2025-02-05T15:58:06Z",
+                    "CompletionTime": "2025-02-05T19:02:11Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-crun-wasm/1887169083791642624",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:29:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-cpu-partitioning/1887169083846168576",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:16:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-fips/1887301248516886528",
+                    "StartTime": "2025-02-06T00:43:45Z",
+                    "CompletionTime": "2025-02-06T04:36:15Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-local-gateway/1887169083980386304",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:34:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-runc/1887312149517176832",
+                    "StartTime": "2025-02-06T01:27:35Z",
+                    "CompletionTime": "2025-02-06T04:52:11Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:f8c9a96afcf430ac6c28ef3e6f414644",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLM][Skipped:Disconnected] OLMv1 operator installation should install a cluster extension [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-cilium/1887168832359895040",
+                    "StartTime": "2025-02-05T15:58:06Z",
+                    "CompletionTime": "2025-02-05T18:47:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-no-capabilities/1887168832422809600",
+                    "StartTime": "2025-02-05T15:58:06Z",
+                    "CompletionTime": "2025-02-05T19:02:11Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-crun-wasm/1887169083791642624",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:29:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-cpu-partitioning/1887169083846168576",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:16:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-fips/1887301248516886528",
+                    "StartTime": "2025-02-06T00:43:45Z",
+                    "CompletionTime": "2025-02-06T04:36:15Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-local-gateway/1887169083980386304",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:34:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-runc/1887312149517176832",
+                    "StartTime": "2025-02-06T01:27:35Z",
+                    "CompletionTime": "2025-02-06T04:52:11Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:06eb975471eb6f252edb44af9835b437",
+            "TestName": "[sig-storage] HostPath should support r/w [NodeConformance] [Suite:openshift/conformance/parallel] [Suite:k8s]",
+            "Release": "4.18",
+            "GroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-cilium/1887168832359895040",
+                    "StartTime": "2025-02-05T15:58:06Z",
+                    "CompletionTime": "2025-02-05T18:47:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-no-capabilities/1887168832422809600",
+                    "StartTime": "2025-02-05T15:58:06Z",
+                    "CompletionTime": "2025-02-05T19:02:11Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-crun-wasm/1887169083791642624",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:29:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-cpu-partitioning/1887169083846168576",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:16:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-fips/1887301248516886528",
+                    "StartTime": "2025-02-06T00:43:45Z",
+                    "CompletionTime": "2025-02-06T04:36:15Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-local-gateway/1887169083980386304",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:34:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-runc/1887312149517176832",
+                    "StartTime": "2025-02-06T01:27:35Z",
+                    "CompletionTime": "2025-02-06T04:52:11Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:f328bbfd58ea3e8671cb75991472f244",
+            "TestName": "[sig-storage] In-tree Volumes [Driver: local] [LocalVolumeType: dir] [Testpattern: Pre-provisioned PV (default fs)] volumes should store data [Suite:openshift/conformance/parallel] [Suite:k8s]",
+            "Release": "4.18",
+            "GroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-cilium/1887168832359895040",
+                    "StartTime": "2025-02-05T15:58:06Z",
+                    "CompletionTime": "2025-02-05T18:47:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-no-capabilities/1887168832422809600",
+                    "StartTime": "2025-02-05T15:58:06Z",
+                    "CompletionTime": "2025-02-05T19:02:11Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-crun-wasm/1887169083791642624",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:29:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-cpu-partitioning/1887169083846168576",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:16:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-fips/1887301248516886528",
+                    "StartTime": "2025-02-06T00:43:45Z",
+                    "CompletionTime": "2025-02-06T04:36:15Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-local-gateway/1887169083980386304",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:34:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-runc/1887312149517176832",
+                    "StartTime": "2025-02-06T01:27:35Z",
+                    "CompletionTime": "2025-02-06T04:52:11Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:236896ec8fcfae1f174d0d60838fa770",
+            "TestName": "[sig-cli] oc adm node-logs [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-cilium/1887168832359895040",
+                    "StartTime": "2025-02-05T15:58:06Z",
+                    "CompletionTime": "2025-02-05T18:47:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-ovn-no-capabilities/1887168832422809600",
+                    "StartTime": "2025-02-05T15:58:06Z",
+                    "CompletionTime": "2025-02-05T19:02:11Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-crun-wasm/1887169083791642624",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:29:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-cpu-partitioning/1887169083846168576",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:16:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-fips/1887301248516886528",
+                    "StartTime": "2025-02-06T00:43:45Z",
+                    "CompletionTime": "2025-02-06T04:36:15Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-local-gateway/1887169083980386304",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:34:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-runc/1887312149517176832",
+                    "StartTime": "2025-02-06T01:27:35Z",
+                    "CompletionTime": "2025-02-06T04:52:11Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:aa9392680f657999240193f7c316414a",
+            "TestName": "[sig-cli] oc idle [apigroup:apps.openshift.io][apigroup:route.openshift.io][apigroup:project.openshift.io][apigroup:image.openshift.io] by all [Suite:openshift/conformance/parallel]",
+            "Release": "4.18",
+            "GroupId": "2b59af5a-2bbb-479c-a455-57c327cd21cc",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "0 Nodes Available"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-aws-cilium/1887168832359895040",
+                    "StartTime": "2025-02-05T15:58:06Z",
+                    "CompletionTime": "2025-02-05T18:47:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-crun-wasm/1887169083791642624",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:29:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-cpu-partitioning/1887169083846168576",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:16:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-fips/1887301248516886528",
+                    "StartTime": "2025-02-06T00:43:45Z",
+                    "CompletionTime": "2025-02-06T04:36:15Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-local-gateway/1887169083980386304",
+                    "StartTime": "2025-02-05T15:59:06Z",
+                    "CompletionTime": "2025-02-05T18:34:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-aws-ovn-runc/1887312149517176832",
+                    "StartTime": "2025-02-06T01:27:35Z",
+                    "CompletionTime": "2025-02-06T04:52:11Z"
+                }
+            ]
+        }
+    ]
+}
