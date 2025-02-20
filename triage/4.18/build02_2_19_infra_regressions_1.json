@@ -1,0 +1,285 @@
+{
+    "Arguments": {
+        "TestRelease": "4.18",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2024-10-01T23%3A59%3A59Z&baseRelease=4.17&baseStartTime=2024-09-01T00%3A00%3A00Z&columnGroupBy=Architecture%2CNetwork%2CPlatform%2CTopology&confidence=95&dbGroupBy=Platform%2CArchitecture%2CNetwork%2CTopology%2CFeatureSet%2CUpgrade%2CSuite%2CInstaller&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=false&includeVariant=Architecture%3Aamd64&includeVariant=CGroupMode%3Av2&includeVariant=ContainerRuntime%3Arunc&includeVariant=ContainerRuntime%3Acrun&includeVariant=FeatureSet%3Adefault&includeVariant=Installer%3Aipi&includeVariant=Installer%3Aupi&includeVariant=LayeredProduct%3Anone&includeVariant=Network%3Aovn&includeVariant=Owner%3Aeng&includeVariant=Platform%3Aaws&includeVariant=Platform%3Aazure&includeVariant=Platform%3Agcp&includeVariant=Platform%3Ametal&includeVariant=Platform%3Avsphere&includeVariant=Topology%3Aha&includeVariant=Topology%3Amicroshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-02-20T23%3A59%3A59Z&sampleRelease=4.18&sampleStartTime=2025-02-13T00%3A00%3A00Z&component=Installer+%2F+openshift-installer",
+        "IssueDescription": "Bootstrap install failures",
+        "IssueType": "Infrastructure",
+        "IssueURL": "",
+        "OutputFile": "build02_2_19_infra_regressions_1.json",
+        "IncidentGroupId": "2fa65cb7-e762-4ec5-8527-b26b9b42b3b0",
+        "TargetModifiedTime": "2025-02-20 22:50:53.429119+00:00",
+        "JobRunStartTimeMax": "2025-02-19T23:59:06Z",
+        "JobRunStartTimeMin": "2025-02-19T23:57:06Z",
+        "TargetBuildCluster": "build02"
+    },
+    "Tests": [
+        {
+            "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
+            "TestName": "install should succeed: overall",
+            "Release": "4.18",
+            "GroupId": "2fa65cb7-e762-4ec5-8527-b26b9b42b3b0",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Bootstrap install failures"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.18-periodics-e2e-gcp/1892362995980308480",
+                    "StartTime": "2025-02-19T23:57:51Z",
+                    "CompletionTime": "2025-02-20T00:58:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-e2e-gcp-ovn/1892363174611521536",
+                    "StartTime": "2025-02-19T23:58:04Z",
+                    "CompletionTime": "2025-02-20T00:46:32Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-gcp-ovn-csi/1892363069858779136",
+                    "StartTime": "2025-02-19T23:57:55Z",
+                    "CompletionTime": "2025-02-20T00:42:14Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.18-e2e-gcp-ovn-rt/1892363232488722432",
+                    "StartTime": "2025-02-19T23:58:09Z",
+                    "CompletionTime": "2025-02-20T00:44:46Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
+            "TestName": "install should succeed: overall",
+            "Release": "4.18",
+            "GroupId": "2fa65cb7-e762-4ec5-8527-b26b9b42b3b0",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Bootstrap install failures"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "minor"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1892363139383562240",
+                    "StartTime": "2025-02-19T23:58:01Z",
+                    "CompletionTime": "2025-02-20T00:47:54Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1892363149437308928",
+                    "StartTime": "2025-02-19T23:58:02Z",
+                    "CompletionTime": "2025-02-20T00:47:58Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1892363141895950336",
+                    "StartTime": "2025-02-19T23:58:02Z",
+                    "CompletionTime": "2025-02-20T00:48:11Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1892363132668481536",
+                    "StartTime": "2025-02-19T23:58:01Z",
+                    "CompletionTime": "2025-02-20T00:48:51Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1892363144408338432",
+                    "StartTime": "2025-02-19T23:58:02Z",
+                    "CompletionTime": "2025-02-20T00:48:34Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1892363151119224832",
+                    "StartTime": "2025-02-19T23:58:02Z",
+                    "CompletionTime": "2025-02-20T00:50:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1892363146924920832",
+                    "StartTime": "2025-02-19T23:58:02Z",
+                    "CompletionTime": "2025-02-20T00:49:16Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1892363136858591232",
+                    "StartTime": "2025-02-19T23:58:01Z",
+                    "CompletionTime": "2025-02-20T00:49:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1892363134342008832",
+                    "StartTime": "2025-02-19T23:58:01Z",
+                    "CompletionTime": "2025-02-20T00:49:07Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1892363153640001536",
+                    "StartTime": "2025-02-19T23:58:03Z",
+                    "CompletionTime": "2025-02-20T00:49:20Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-upgrade/1892363159553970176",
+                    "StartTime": "2025-02-19T23:58:03Z",
+                    "CompletionTime": "2025-02-20T00:48:02Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:6ce515c7c732a322333427bf4f5508a5",
+            "TestName": "install should succeed: cluster bootstrap",
+            "Release": "4.18",
+            "GroupId": "2fa65cb7-e762-4ec5-8527-b26b9b42b3b0",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Bootstrap install failures"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "minor"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1892363139383562240",
+                    "StartTime": "2025-02-19T23:58:01Z",
+                    "CompletionTime": "2025-02-20T00:47:54Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1892363149437308928",
+                    "StartTime": "2025-02-19T23:58:02Z",
+                    "CompletionTime": "2025-02-20T00:47:58Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1892363141895950336",
+                    "StartTime": "2025-02-19T23:58:02Z",
+                    "CompletionTime": "2025-02-20T00:48:11Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1892363132668481536",
+                    "StartTime": "2025-02-19T23:58:01Z",
+                    "CompletionTime": "2025-02-20T00:48:51Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1892363144408338432",
+                    "StartTime": "2025-02-19T23:58:02Z",
+                    "CompletionTime": "2025-02-20T00:48:34Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1892363151119224832",
+                    "StartTime": "2025-02-19T23:58:02Z",
+                    "CompletionTime": "2025-02-20T00:50:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1892363146924920832",
+                    "StartTime": "2025-02-19T23:58:02Z",
+                    "CompletionTime": "2025-02-20T00:49:16Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1892363136858591232",
+                    "StartTime": "2025-02-19T23:58:01Z",
+                    "CompletionTime": "2025-02-20T00:49:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1892363134342008832",
+                    "StartTime": "2025-02-19T23:58:01Z",
+                    "CompletionTime": "2025-02-20T00:49:07Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/1892363153640001536",
+                    "StartTime": "2025-02-19T23:58:03Z",
+                    "CompletionTime": "2025-02-20T00:49:20Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-upgrade/1892363159553970176",
+                    "StartTime": "2025-02-19T23:58:03Z",
+                    "CompletionTime": "2025-02-20T00:48:02Z"
+                }
+            ]
+        }
+    ]
+}
