@@ -6,7 +6,7 @@
         "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-52358",
         "OutputFile": "egressfirewall_test_details_regressions.json",
         "IncidentGroupId": "15887a6d-dee3-4fee-82f9-8851bd377de1",
-        "TargetModifiedTime": "2025-03-19 14:44:10.093250+00:00"
+        "TargetModifiedTime": "2025-03-24 14:35:26.651762+00:00"
     },
     "Tests": [
         {
@@ -55,24 +55,24 @@
             ],
             "JobRuns": [
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn/1900079381447970816",
-                    "StartTime": "2025-03-13T06:59:19Z",
-                    "CompletionTime": "2025-03-13T09:30:51Z"
-                },
-                {
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn/1901897178863898624",
                     "StartTime": "2025-03-18T07:22:24Z",
                     "CompletionTime": "2025-03-18T09:46:51Z"
                 },
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-azure-ovn-runc/1900348851466801152",
-                    "StartTime": "2025-03-14T00:50:47Z",
-                    "CompletionTime": "2025-03-14T03:16:51Z"
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn/1902392439390343168",
+                    "StartTime": "2025-03-19T16:11:01Z",
+                    "CompletionTime": "2025-03-19T18:54:45Z"
                 },
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-azure-ovn-runc/1900711243291824128",
-                    "StartTime": "2025-03-15T00:50:48Z",
-                    "CompletionTime": "2025-03-15T03:14:32Z"
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-azure-ovn-runc/1903247900608040960",
+                    "StartTime": "2025-03-22T00:50:33Z",
+                    "CompletionTime": "2025-03-22T03:08:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-azure-ovn-runc/1903610285130780672",
+                    "StartTime": "2025-03-23T00:50:33Z",
+                    "CompletionTime": "2025-03-23T03:09:10Z"
                 }
             ]
         },
@@ -122,121 +122,6 @@
             ],
             "JobRuns": [
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1899639791234846720",
-                    "StartTime": "2025-03-12T01:53:03Z",
-                    "CompletionTime": "2025-03-12T05:34:58Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1899639797928955904",
-                    "StartTime": "2025-03-12T01:53:03Z",
-                    "CompletionTime": "2025-03-12T05:40:04Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1899639801317953536",
-                    "StartTime": "2025-03-12T01:53:04Z",
-                    "CompletionTime": "2025-03-12T05:51:55Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1899790941355511808",
-                    "StartTime": "2025-03-12T11:53:32Z",
-                    "CompletionTime": "2025-03-12T15:26:29Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1899790946384482304",
-                    "StartTime": "2025-03-12T11:53:32Z",
-                    "CompletionTime": "2025-03-12T16:42:17Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1899895690893463552",
-                    "StartTime": "2025-03-12T18:49:26Z",
-                    "CompletionTime": "2025-03-12T21:46:13Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1899897536227840000",
-                    "StartTime": "2025-03-12T18:49:28Z",
-                    "CompletionTime": "2025-03-12T21:52:11Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1899895602410426368",
-                    "StartTime": "2025-03-12T18:49:26Z",
-                    "CompletionTime": "2025-03-12T21:58:43Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1899896268382015488",
-                    "StartTime": "2025-03-12T18:49:27Z",
-                    "CompletionTime": "2025-03-12T22:22:41Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1900079226271305728",
-                    "StartTime": "2025-03-13T06:59:07Z",
-                    "CompletionTime": "2025-03-13T09:53:25Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1900079227932250112",
-                    "StartTime": "2025-03-13T06:59:07Z",
-                    "CompletionTime": "2025-03-13T09:52:08Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1900079230453026816",
-                    "StartTime": "2025-03-13T06:59:08Z",
-                    "CompletionTime": "2025-03-13T10:00:52Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1900079232965414912",
-                    "StartTime": "2025-03-13T06:59:08Z",
-                    "CompletionTime": "2025-03-13T10:10:08Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1900179164720271360",
-                    "StartTime": "2025-03-13T13:35:37Z",
-                    "CompletionTime": "2025-03-13T17:06:51Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1900179116917788672",
-                    "StartTime": "2025-03-13T13:35:36Z",
-                    "CompletionTime": "2025-03-13T17:14:52Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1900179109401595904",
-                    "StartTime": "2025-03-13T13:35:35Z",
-                    "CompletionTime": "2025-03-13T17:17:54Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1900251617215647744",
-                    "StartTime": "2025-03-13T18:23:44Z",
-                    "CompletionTime": "2025-03-13T21:18:45Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1900251626409562112",
-                    "StartTime": "2025-03-13T18:23:45Z",
-                    "CompletionTime": "2025-03-13T21:20:53Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1900251633963503616",
-                    "StartTime": "2025-03-13T18:23:45Z",
-                    "CompletionTime": "2025-03-13T21:31:02Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1900332586689892352",
-                    "StartTime": "2025-03-13T23:45:39Z",
-                    "CompletionTime": "2025-03-14T03:45:53Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1900430521943461888",
-                    "StartTime": "2025-03-14T06:14:55Z",
-                    "CompletionTime": "2025-03-14T10:00:31Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1900759872069177344",
-                    "StartTime": "2025-03-15T04:03:28Z",
-                    "CompletionTime": "2025-03-15T07:29:57Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1900759867874873344",
-                    "StartTime": "2025-03-15T04:03:28Z",
-                    "CompletionTime": "2025-03-15T07:35:27Z"
-                },
-                {
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1901651882791669760",
                     "StartTime": "2025-03-17T15:07:47Z",
                     "CompletionTime": "2025-03-17T19:10:15Z"
@@ -277,9 +162,94 @@
                     "CompletionTime": "2025-03-19T11:43:48Z"
                 },
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-runc-upgrade/1901102828412211200",
-                    "StartTime": "2025-03-16T02:46:49Z",
-                    "CompletionTime": "2025-03-16T06:25:11Z"
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1902392663601057792",
+                    "StartTime": "2025-03-19T16:11:16Z",
+                    "CompletionTime": "2025-03-19T19:46:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1902393677246894080",
+                    "StartTime": "2025-03-19T16:11:16Z",
+                    "CompletionTime": "2025-03-19T19:57:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1902534450953064448",
+                    "StartTime": "2025-03-20T01:35:15Z",
+                    "CompletionTime": "2025-03-20T04:59:58Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1902534445919899648",
+                    "StartTime": "2025-03-20T01:35:15Z",
+                    "CompletionTime": "2025-03-20T05:03:53Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1902534459337478144",
+                    "StartTime": "2025-03-20T01:35:16Z",
+                    "CompletionTime": "2025-03-20T05:09:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1902607712890392576",
+                    "StartTime": "2025-03-20T06:25:50Z",
+                    "CompletionTime": "2025-03-20T09:22:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1902607696952037376",
+                    "StartTime": "2025-03-20T06:25:48Z",
+                    "CompletionTime": "2025-03-20T10:04:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1902844922487115776",
+                    "StartTime": "2025-03-20T22:08:31Z",
+                    "CompletionTime": "2025-03-21T01:28:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1902844925016281088",
+                    "StartTime": "2025-03-20T22:08:31Z",
+                    "CompletionTime": "2025-03-21T01:32:49Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1902844918334754816",
+                    "StartTime": "2025-03-20T22:08:30Z",
+                    "CompletionTime": "2025-03-21T01:35:50Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1902844941776719872",
+                    "StartTime": "2025-03-20T22:08:32Z",
+                    "CompletionTime": "2025-03-21T01:34:01Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1902921034936356864",
+                    "StartTime": "2025-03-21T03:11:21Z",
+                    "CompletionTime": "2025-03-21T06:49:23Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1903003831868854272",
+                    "StartTime": "2025-03-21T08:40:40Z",
+                    "CompletionTime": "2025-03-21T11:59:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1903003829335494656",
+                    "StartTime": "2025-03-21T08:40:39Z",
+                    "CompletionTime": "2025-03-21T12:08:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1903118522821644288",
+                    "StartTime": "2025-03-21T16:15:40Z",
+                    "CompletionTime": "2025-03-21T19:48:29Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1903118527871586304",
+                    "StartTime": "2025-03-21T16:15:41Z",
+                    "CompletionTime": "2025-03-21T19:52:58Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1903347516120764416",
+                    "StartTime": "2025-03-22T07:26:16Z",
+                    "CompletionTime": "2025-03-22T10:49:19Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1903347532059119616",
+                    "StartTime": "2025-03-22T07:26:18Z",
+                    "CompletionTime": "2025-03-22T10:55:29Z"
                 }
             ]
         },
@@ -329,111 +299,6 @@
             ],
             "JobRuns": [
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1899690101995212800",
-                    "StartTime": "2025-03-12T05:13:03Z",
-                    "CompletionTime": "2025-03-12T08:58:24Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1899690091102605312",
-                    "StartTime": "2025-03-12T05:13:02Z",
-                    "CompletionTime": "2025-03-12T08:58:00Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1899787334631559168",
-                    "StartTime": "2025-03-12T11:39:22Z",
-                    "CompletionTime": "2025-03-12T15:41:32Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1899787325404090368",
-                    "StartTime": "2025-03-12T11:39:21Z",
-                    "CompletionTime": "2025-03-12T15:42:16Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1899787323726368768",
-                    "StartTime": "2025-03-12T11:39:20Z",
-                    "CompletionTime": "2025-03-12T15:54:14Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1899787322048647168",
-                    "StartTime": "2025-03-12T11:39:20Z",
-                    "CompletionTime": "2025-03-12T15:57:31Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1899968983340158976",
-                    "StartTime": "2025-03-12T23:41:13Z",
-                    "CompletionTime": "2025-03-13T03:38:42Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1899968974116884480",
-                    "StartTime": "2025-03-12T23:41:12Z",
-                    "CompletionTime": "2025-03-13T03:50:20Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1900061123302920192",
-                    "StartTime": "2025-03-13T05:47:20Z",
-                    "CompletionTime": "2025-03-13T10:01:09Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1900512552090079232",
-                    "StartTime": "2025-03-14T11:41:16Z",
-                    "CompletionTime": "2025-03-14T15:38:10Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1900695355725451264",
-                    "StartTime": "2025-03-14T23:47:39Z",
-                    "CompletionTime": "2025-03-15T03:32:56Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1900695362448920576",
-                    "StartTime": "2025-03-14T23:47:41Z",
-                    "CompletionTime": "2025-03-15T03:35:45Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1900695351535341568",
-                    "StartTime": "2025-03-14T23:47:39Z",
-                    "CompletionTime": "2025-03-15T03:38:58Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1900965884084621312",
-                    "StartTime": "2025-03-15T17:42:38Z",
-                    "CompletionTime": "2025-03-15T21:29:33Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1901146182948753408",
-                    "StartTime": "2025-03-16T05:39:01Z",
-                    "CompletionTime": "2025-03-16T09:27:08Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1901146188824973312",
-                    "StartTime": "2025-03-16T05:39:02Z",
-                    "CompletionTime": "2025-03-16T09:38:44Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1901329355842260992",
-                    "StartTime": "2025-03-16T17:46:47Z",
-                    "CompletionTime": "2025-03-16T21:28:07Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1901329341581627392",
-                    "StartTime": "2025-03-16T17:46:46Z",
-                    "CompletionTime": "2025-03-16T21:55:51Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1901419887922778112",
-                    "StartTime": "2025-03-16T23:46:35Z",
-                    "CompletionTime": "2025-03-17T03:37:34Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1901419869484617728",
-                    "StartTime": "2025-03-16T23:46:34Z",
-                    "CompletionTime": "2025-03-17T03:38:25Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1901419882893807616",
-                    "StartTime": "2025-03-16T23:46:35Z",
-                    "CompletionTime": "2025-03-17T03:55:28Z"
-                },
-                {
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1901509380801564672",
                     "StartTime": "2025-03-17T05:42:13Z",
                     "CompletionTime": "2025-03-17T09:24:19Z"
@@ -472,6 +337,246 @@
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1902233576972226560",
                     "StartTime": "2025-03-19T05:39:32Z",
                     "CompletionTime": "2025-03-19T10:11:33Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1902324239139082240",
+                    "StartTime": "2025-03-19T11:40:15Z",
+                    "CompletionTime": "2025-03-19T15:23:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1902324249213800448",
+                    "StartTime": "2025-03-19T11:40:17Z",
+                    "CompletionTime": "2025-03-19T15:25:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1902324234944778240",
+                    "StartTime": "2025-03-19T11:40:15Z",
+                    "CompletionTime": "2025-03-19T15:26:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1902324246688829440",
+                    "StartTime": "2025-03-19T11:40:17Z",
+                    "CompletionTime": "2025-03-19T15:44:11Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1902416273187278848",
+                    "StartTime": "2025-03-19T17:43:58Z",
+                    "CompletionTime": "2025-03-19T21:27:14Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1902421460442419200",
+                    "StartTime": "2025-03-19T17:43:56Z",
+                    "CompletionTime": "2025-03-19T21:55:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1902418680638083072",
+                    "StartTime": "2025-03-19T17:43:57Z",
+                    "CompletionTime": "2025-03-19T21:56:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1902505275558989824",
+                    "StartTime": "2025-03-19T23:39:31Z",
+                    "CompletionTime": "2025-03-20T03:44:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1902505268835520512",
+                    "StartTime": "2025-03-19T23:39:31Z",
+                    "CompletionTime": "2025-03-20T03:46:12Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1902505280583766016",
+                    "StartTime": "2025-03-19T23:39:32Z",
+                    "CompletionTime": "2025-03-20T03:53:02Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1902597777825730560",
+                    "StartTime": "2025-03-20T05:47:07Z",
+                    "CompletionTime": "2025-03-20T09:28:07Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1902597756858404864",
+                    "StartTime": "2025-03-20T05:47:05Z",
+                    "CompletionTime": "2025-03-20T09:39:56Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1902686499233599488",
+                    "StartTime": "2025-03-20T11:39:39Z",
+                    "CompletionTime": "2025-03-20T15:31:13Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1902686496754765824",
+                    "StartTime": "2025-03-20T11:39:39Z",
+                    "CompletionTime": "2025-03-20T15:37:37Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1902686504275152896",
+                    "StartTime": "2025-03-20T11:39:40Z",
+                    "CompletionTime": "2025-03-20T15:33:25Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1902686490844991488",
+                    "StartTime": "2025-03-20T11:39:38Z",
+                    "CompletionTime": "2025-03-20T15:34:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1902686492535296000",
+                    "StartTime": "2025-03-20T11:39:39Z",
+                    "CompletionTime": "2025-03-20T15:38:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1902686512676343808",
+                    "StartTime": "2025-03-20T11:39:40Z",
+                    "CompletionTime": "2025-03-20T16:00:37Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1902777546693414912",
+                    "StartTime": "2025-03-20T17:40:30Z",
+                    "CompletionTime": "2025-03-20T21:22:51Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1902777554087972864",
+                    "StartTime": "2025-03-20T17:40:31Z",
+                    "CompletionTime": "2025-03-20T21:26:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1902777551542030336",
+                    "StartTime": "2025-03-20T17:40:31Z",
+                    "CompletionTime": "2025-03-20T21:34:11Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1902867690045837312",
+                    "StartTime": "2025-03-20T23:39:41Z",
+                    "CompletionTime": "2025-03-21T03:43:53Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1902958239327195136",
+                    "StartTime": "2025-03-21T05:39:29Z",
+                    "CompletionTime": "2025-03-21T09:49:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1903048833458245632",
+                    "StartTime": "2025-03-21T11:39:26Z",
+                    "CompletionTime": "2025-03-21T15:14:37Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1903048825937858560",
+                    "StartTime": "2025-03-21T11:39:25Z",
+                    "CompletionTime": "2025-03-21T15:48:00Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1903139589711728640",
+                    "StartTime": "2025-03-21T17:40:04Z",
+                    "CompletionTime": "2025-03-21T21:42:55Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1903230028997464064",
+                    "StartTime": "2025-03-21T23:39:30Z",
+                    "CompletionTime": "2025-03-22T03:26:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1903321405575925760",
+                    "StartTime": "2025-03-22T05:42:36Z",
+                    "CompletionTime": "2025-03-22T09:19:48Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1903321427424055296",
+                    "StartTime": "2025-03-22T05:42:38Z",
+                    "CompletionTime": "2025-03-22T09:27:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1903412703125311488",
+                    "StartTime": "2025-03-22T11:45:20Z",
+                    "CompletionTime": "2025-03-22T15:34:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1903412696414425088",
+                    "StartTime": "2025-03-22T11:45:19Z",
+                    "CompletionTime": "2025-03-22T15:37:07Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1903503300951543808",
+                    "StartTime": "2025-03-22T17:45:26Z",
+                    "CompletionTime": "2025-03-22T21:26:58Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1903503300674719744",
+                    "StartTime": "2025-03-22T17:45:26Z",
+                    "CompletionTime": "2025-03-22T21:35:21Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1903594167381004288",
+                    "StartTime": "2025-03-22T23:46:22Z",
+                    "CompletionTime": "2025-03-23T03:42:27Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1903594163186700288",
+                    "StartTime": "2025-03-22T23:46:21Z",
+                    "CompletionTime": "2025-03-23T03:43:27Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1903685297632186368",
+                    "StartTime": "2025-03-23T05:48:32Z",
+                    "CompletionTime": "2025-03-23T09:37:00Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1903685285892329472",
+                    "StartTime": "2025-03-23T05:48:31Z",
+                    "CompletionTime": "2025-03-23T09:38:29Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1903685299314102272",
+                    "StartTime": "2025-03-23T05:48:32Z",
+                    "CompletionTime": "2025-03-23T09:54:23Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1903773599118921728",
+                    "StartTime": "2025-03-23T11:39:25Z",
+                    "CompletionTime": "2025-03-23T15:52:20Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1903773584862482432",
+                    "StartTime": "2025-03-23T11:39:24Z",
+                    "CompletionTime": "2025-03-23T15:45:11Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1903865435078529024",
+                    "StartTime": "2025-03-23T17:44:18Z",
+                    "CompletionTime": "2025-03-23T21:31:16Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1903865413268148224",
+                    "StartTime": "2025-03-23T17:44:16Z",
+                    "CompletionTime": "2025-03-23T21:38:53Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1903954812588789760",
+                    "StartTime": "2025-03-23T23:39:30Z",
+                    "CompletionTime": "2025-03-24T03:48:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1903954807559819264",
+                    "StartTime": "2025-03-23T23:39:29Z",
+                    "CompletionTime": "2025-03-24T03:58:32Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904045284028059648",
+                    "StartTime": "2025-03-24T05:39:05Z",
+                    "CompletionTime": "2025-03-24T09:28:54Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904045283826733056",
+                    "StartTime": "2025-03-24T05:39:05Z",
+                    "CompletionTime": "2025-03-24T09:35:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904045283755429888",
+                    "StartTime": "2025-03-24T05:39:05Z",
+                    "CompletionTime": "2025-03-24T09:37:02Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-runc-upgrade/1903598018385416192",
+                    "StartTime": "2025-03-23T00:01:01Z",
+                    "CompletionTime": "2025-03-23T04:10:43Z"
                 }
             ]
         }

@@ -1,0 +1,75 @@
+{
+    "Arguments": {
+        "TestRelease": "4.19",
+        "IssueDescription": "errors writing network status due to etcd timeout",
+        "IssueType": "Product",
+        "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-50510",
+        "OutputFile": "sandboxes_by_writing_network_status_etcdserver_timed_out_regressions_1.json",
+        "IncidentGroupId": "0861f229-f96d-4408-b21e-25f17a7a8244",
+        "TargetModifiedTime": "2025-03-24 14:19:23.564136+00:00"
+    },
+    "Tests": [
+        {
+            "TestId": "openshift-tests:6cb415326667dd22498dca85f30ae240",
+            "TestName": "[sig-network] pods should successfully create sandboxes by writing network status",
+            "Release": "4.19",
+            "GroupId": "0861f229-f96d-4408-b21e-25f17a7a8244",
+            "Issue": {
+                "Type": "Product",
+                "Description": "errors writing network status due to etcd timeout",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-50510"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-serial-ovn-ipv6/1901730838182105088",
+                    "StartTime": "2025-03-17T20:22:14Z",
+                    "CompletionTime": "2025-03-18T00:14:16Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-serial-ovn-ipv6/1902096323763507200",
+                    "StartTime": "2025-03-18T20:34:13Z",
+                    "CompletionTime": "2025-03-19T00:53:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-serial-ovn-ipv6/1902392350517235712",
+                    "StartTime": "2025-03-19T16:10:55Z",
+                    "CompletionTime": "2025-03-19T19:47:20Z"
+                }
+            ]
+        }
+    ]
+}

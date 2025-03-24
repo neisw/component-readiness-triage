@@ -1,0 +1,115 @@
+{
+    "Arguments": {
+        "TestRelease": "4.19",
+        "IssueDescription": "Samples Operator Failing Install",
+        "IssueType": "Product",
+        "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-52848",
+        "OutputFile": "samples_operator_test_details_regressions_3.json",
+        "IncidentGroupId": "dbce16fa-ce51-4809-907d-69e2f8adcac6",
+        "TargetModifiedTime": "2025-03-24 14:29:17.558261+00:00"
+    },
+    "Tests": [
+        {
+            "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
+            "TestName": "install should succeed: overall",
+            "Release": "4.19",
+            "GroupId": "dbce16fa-ce51-4809-907d-69e2f8adcac6",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Samples Operator Failing Install",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-52848"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-gcp-techpreview/1901513286415814656",
+                    "StartTime": "2025-03-17T05:57:50Z",
+                    "CompletionTime": "2025-03-17T07:32:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-gcp-techpreview/1901875927567044608",
+                    "StartTime": "2025-03-18T05:58:50Z",
+                    "CompletionTime": "2025-03-18T07:29:20Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-gcp-techpreview/1902238425898029056",
+                    "StartTime": "2025-03-19T05:59:17Z",
+                    "CompletionTime": "2025-03-19T07:44:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview/1901651923925209088",
+                    "StartTime": "2025-03-17T15:07:51Z",
+                    "CompletionTime": "2025-03-17T16:00:06Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview/1901731136741052416",
+                    "StartTime": "2025-03-17T20:22:39Z",
+                    "CompletionTime": "2025-03-17T22:04:12Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview/1902007959785836544",
+                    "StartTime": "2025-03-18T14:42:14Z",
+                    "CompletionTime": "2025-03-18T16:17:32Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview/1902096302783598592",
+                    "StartTime": "2025-03-18T20:34:11Z",
+                    "CompletionTime": "2025-03-18T22:06:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview/1902271066726731776",
+                    "StartTime": "2025-03-19T08:08:51Z",
+                    "CompletionTime": "2025-03-19T09:42:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview/1902738426180931584",
+                    "StartTime": "2025-03-20T14:26:44Z",
+                    "CompletionTime": "2025-03-20T16:37:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-gcp-ovn-runc-techpreview/1902129958331879424",
+                    "StartTime": "2025-03-18T22:48:16Z",
+                    "CompletionTime": "2025-03-19T00:23:15Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-gcp-ovn-runc-techpreview/1902492406683537408",
+                    "StartTime": "2025-03-19T22:48:30Z",
+                    "CompletionTime": "2025-03-20T00:21:45Z"
+                }
+            ]
+        }
+    ]
+}

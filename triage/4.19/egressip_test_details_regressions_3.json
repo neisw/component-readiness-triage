@@ -6,7 +6,7 @@
         "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-53201",
         "OutputFile": "egressip_test_details_regressions_3.json",
         "IncidentGroupId": "dba91f6a-cb26-4c23-b78b-a062a2358274",
-        "TargetModifiedTime": "2025-03-18 20:09:17.810878+00:00",
+        "TargetModifiedTime": "2025-03-24 14:39:08.444580+00:00",
         "IssueResolutionDate": "2025-03-18T00:01:01Z"
     },
     "Tests": [
@@ -57,21 +57,6 @@
             ],
             "JobRuns": [
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview-serial/1900682227281301504",
-                    "StartTime": "2025-03-14T22:54:52Z",
-                    "CompletionTime": "2025-03-15T02:38:31Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview-serial/1900759653113925632",
-                    "StartTime": "2025-03-15T04:03:07Z",
-                    "CompletionTime": "2025-03-15T07:42:49Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview-serial/1900927178569158656",
-                    "StartTime": "2025-03-15T15:08:24Z",
-                    "CompletionTime": "2025-03-15T19:09:59Z"
-                },
-                {
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview-serial/1901651600246575104",
                     "StartTime": "2025-03-17T15:07:27Z",
                     "CompletionTime": "2025-03-17T19:10:09Z"
@@ -130,21 +115,6 @@
             ],
             "JobRuns": [
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-serial/1900682287679279104",
-                    "StartTime": "2025-03-14T22:54:57Z",
-                    "CompletionTime": "2025-03-15T02:31:06Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-serial/1900759715206402048",
-                    "StartTime": "2025-03-15T04:03:12Z",
-                    "CompletionTime": "2025-03-15T07:28:41Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-serial/1900927258260934656",
-                    "StartTime": "2025-03-15T15:08:31Z",
-                    "CompletionTime": "2025-03-15T18:38:31Z"
-                },
-                {
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-serial/1901651693179768832",
                     "StartTime": "2025-03-17T15:07:33Z",
                     "CompletionTime": "2025-03-17T19:00:30Z"
@@ -203,21 +173,6 @@
             ],
             "JobRuns": [
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-serial/1900682287679279104",
-                    "StartTime": "2025-03-14T22:54:57Z",
-                    "CompletionTime": "2025-03-15T02:31:06Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-serial/1900759715206402048",
-                    "StartTime": "2025-03-15T04:03:12Z",
-                    "CompletionTime": "2025-03-15T07:28:41Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-serial/1900927258260934656",
-                    "StartTime": "2025-03-15T15:08:31Z",
-                    "CompletionTime": "2025-03-15T18:38:31Z"
-                },
-                {
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-serial/1901651693179768832",
                     "StartTime": "2025-03-17T15:07:33Z",
                     "CompletionTime": "2025-03-17T19:00:30Z"
@@ -276,21 +231,6 @@
             ],
             "JobRuns": [
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-serial/1900682287679279104",
-                    "StartTime": "2025-03-14T22:54:57Z",
-                    "CompletionTime": "2025-03-15T02:31:06Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-serial/1900759715206402048",
-                    "StartTime": "2025-03-15T04:03:12Z",
-                    "CompletionTime": "2025-03-15T07:28:41Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-serial/1900927258260934656",
-                    "StartTime": "2025-03-15T15:08:31Z",
-                    "CompletionTime": "2025-03-15T18:38:31Z"
-                },
-                {
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-serial/1901651693179768832",
                     "StartTime": "2025-03-17T15:07:33Z",
                     "CompletionTime": "2025-03-17T19:00:30Z"
@@ -348,21 +288,6 @@
                 }
             ],
             "JobRuns": [
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview-serial/1900682227281301504",
-                    "StartTime": "2025-03-14T22:54:52Z",
-                    "CompletionTime": "2025-03-15T02:38:31Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview-serial/1900759653113925632",
-                    "StartTime": "2025-03-15T04:03:07Z",
-                    "CompletionTime": "2025-03-15T07:42:49Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview-serial/1900927178569158656",
-                    "StartTime": "2025-03-15T15:08:24Z",
-                    "CompletionTime": "2025-03-15T19:09:59Z"
-                },
                 {
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview-serial/1901651600246575104",
                     "StartTime": "2025-03-17T15:07:27Z",
@@ -421,21 +346,6 @@
                 }
             ],
             "JobRuns": [
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview-serial/1900682227281301504",
-                    "StartTime": "2025-03-14T22:54:52Z",
-                    "CompletionTime": "2025-03-15T02:38:31Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview-serial/1900759653113925632",
-                    "StartTime": "2025-03-15T04:03:07Z",
-                    "CompletionTime": "2025-03-15T07:42:49Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview-serial/1900927178569158656",
-                    "StartTime": "2025-03-15T15:08:24Z",
-                    "CompletionTime": "2025-03-15T19:09:59Z"
-                },
                 {
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview-serial/1901651600246575104",
                     "StartTime": "2025-03-17T15:07:27Z",
