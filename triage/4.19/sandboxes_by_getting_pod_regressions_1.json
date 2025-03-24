@@ -1,0 +1,75 @@
+{
+    "Arguments": {
+        "TestRelease": "4.19",
+        "IssueDescription": "pod sandbox errors on get due to deleted pod",
+        "IssueType": "Product",
+        "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-54153",
+        "OutputFile": "sandboxes_by_getting_pod_regressions_1.json",
+        "IncidentGroupId": "6e70419d-c4c5-4202-8af8-dd5b5f4eafe2",
+        "TargetModifiedTime": "2025-03-24 14:03:47.717192+00:00"
+    },
+    "Tests": [
+        {
+            "TestId": "openshift-tests:69c10b64c8b4f7dcd83370984f293882",
+            "TestName": "[sig-network] pods should successfully create sandboxes by getting pod",
+            "Release": "4.19",
+            "GroupId": "6e70419d-c4c5-4202-8af8-dd5b5f4eafe2",
+            "Issue": {
+                "Type": "Product",
+                "Description": "pod sandbox errors on get due to deleted pod",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54153"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "parallel"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-agent-ha-dualstack-conformance/1901786082911981568",
+                    "StartTime": "2025-03-18T00:00:56Z",
+                    "CompletionTime": "2025-03-18T02:25:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-agent-ha-dualstack-conformance/1902271074276478976",
+                    "StartTime": "2025-03-19T08:08:52Z",
+                    "CompletionTime": "2025-03-19T10:36:05Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-agent-ha-dualstack-conformance/1903003951821754368",
+                    "StartTime": "2025-03-21T08:40:49Z",
+                    "CompletionTime": "2025-03-21T11:05:42Z"
+                }
+            ]
+        }
+    ]
+}
