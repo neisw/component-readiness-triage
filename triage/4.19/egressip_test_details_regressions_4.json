@@ -1,0 +1,350 @@
+{
+    "Arguments": {
+        "TestRelease": "4.19",
+        "IssueDescription": "EgressIP tests failing on azure",
+        "IssueType": "Product",
+        "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-53201",
+        "OutputFile": "egressip_test_details_regressions_4.json",
+        "IncidentGroupId": "dba91f6a-cb26-4c23-b78b-a062a2358274",
+        "TargetModifiedTime": "2025-03-25 12:11:40.470753+00:00"
+    },
+    "Tests": [
+        {
+            "TestId": "openshift-tests:a9bef800f0481fa91c44e3ea27cd79a9",
+            "TestName": "[sig-network][Feature:EgressIP][apigroup:operator.openshift.io] [external-targets][apigroup:user.openshift.io][apigroup:security.openshift.io] pods should keep the assigned EgressIPs when being rescheduled to another node [Serial] [Suite:openshift/conformance/serial]",
+            "Release": "4.19",
+            "GroupId": "dba91f6a-cb26-4c23-b78b-a062a2358274",
+            "Issue": {
+                "Type": "Product",
+                "Description": "EgressIP tests failing on azure",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-53201"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "azure"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview-serial/1901897120990892032",
+                    "StartTime": "2025-03-18T07:22:20Z",
+                    "CompletionTime": "2025-03-18T11:12:42Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:a9bef800f0481fa91c44e3ea27cd79a9",
+            "TestName": "[sig-network][Feature:EgressIP][apigroup:operator.openshift.io] [external-targets][apigroup:user.openshift.io][apigroup:security.openshift.io] pods should keep the assigned EgressIPs when being rescheduled to another node [Serial] [Suite:openshift/conformance/serial]",
+            "Release": "4.19",
+            "GroupId": "dba91f6a-cb26-4c23-b78b-a062a2358274",
+            "Issue": {
+                "Type": "Product",
+                "Description": "EgressIP tests failing on azure",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-53201"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "azure"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-serial/1901897165437931520",
+                    "StartTime": "2025-03-18T07:22:23Z",
+                    "CompletionTime": "2025-03-18T10:49:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-azure-ovn-serial-runc/1902147004557955072",
+                    "StartTime": "2025-03-18T23:56:00Z",
+                    "CompletionTime": "2025-03-19T03:23:04Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:d0fdfe1cbcabeab7a3f34537b40f6f2c",
+            "TestName": "[sig-network][Feature:EgressIP][apigroup:operator.openshift.io] [external-targets][apigroup:user.openshift.io][apigroup:security.openshift.io] pods should have the assigned EgressIPs and EgressIPs can be updated [Skipped:Network/OpenShiftSDN] [Serial] [Suite:openshift/conformance/serial]",
+            "Release": "4.19",
+            "GroupId": "dba91f6a-cb26-4c23-b78b-a062a2358274",
+            "Issue": {
+                "Type": "Product",
+                "Description": "EgressIP tests failing on azure",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-53201"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "azure"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-serial/1901897165437931520",
+                    "StartTime": "2025-03-18T07:22:23Z",
+                    "CompletionTime": "2025-03-18T10:49:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-serial/1902392546751942656",
+                    "StartTime": "2025-03-19T16:11:10Z",
+                    "CompletionTime": "2025-03-19T20:33:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-azure-ovn-serial-runc/1902147004557955072",
+                    "StartTime": "2025-03-18T23:56:00Z",
+                    "CompletionTime": "2025-03-19T03:23:04Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:3322cf74a1f537e188239ef3f31f2a74",
+            "TestName": "[sig-network][Feature:EgressIP][apigroup:operator.openshift.io] [external-targets][apigroup:user.openshift.io][apigroup:security.openshift.io] only pods matched by the pod selector should have the EgressIPs [Skipped:Network/OpenShiftSDN] [Serial] [Suite:openshift/conformance/serial]",
+            "Release": "4.19",
+            "GroupId": "dba91f6a-cb26-4c23-b78b-a062a2358274",
+            "Issue": {
+                "Type": "Product",
+                "Description": "EgressIP tests failing on azure",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-53201"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "azure"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-serial/1901897165437931520",
+                    "StartTime": "2025-03-18T07:22:23Z",
+                    "CompletionTime": "2025-03-18T10:49:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-azure-ovn-serial-runc/1902147004557955072",
+                    "StartTime": "2025-03-18T23:56:00Z",
+                    "CompletionTime": "2025-03-19T03:23:04Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:3322cf74a1f537e188239ef3f31f2a74",
+            "TestName": "[sig-network][Feature:EgressIP][apigroup:operator.openshift.io] [external-targets][apigroup:user.openshift.io][apigroup:security.openshift.io] only pods matched by the pod selector should have the EgressIPs [Skipped:Network/OpenShiftSDN] [Serial] [Suite:openshift/conformance/serial]",
+            "Release": "4.19",
+            "GroupId": "dba91f6a-cb26-4c23-b78b-a062a2358274",
+            "Issue": {
+                "Type": "Product",
+                "Description": "EgressIP tests failing on azure",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-53201"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "azure"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview-serial/1901897120990892032",
+                    "StartTime": "2025-03-18T07:22:20Z",
+                    "CompletionTime": "2025-03-18T11:12:42Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:d0fdfe1cbcabeab7a3f34537b40f6f2c",
+            "TestName": "[sig-network][Feature:EgressIP][apigroup:operator.openshift.io] [external-targets][apigroup:user.openshift.io][apigroup:security.openshift.io] pods should have the assigned EgressIPs and EgressIPs can be updated [Skipped:Network/OpenShiftSDN] [Serial] [Suite:openshift/conformance/serial]",
+            "Release": "4.19",
+            "GroupId": "dba91f6a-cb26-4c23-b78b-a062a2358274",
+            "Issue": {
+                "Type": "Product",
+                "Description": "EgressIP tests failing on azure",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-53201"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "azure"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview-serial/1901897120990892032",
+                    "StartTime": "2025-03-18T07:22:20Z",
+                    "CompletionTime": "2025-03-18T11:12:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview-serial/1902096230641569792",
+                    "StartTime": "2025-03-18T20:34:05Z",
+                    "CompletionTime": "2025-03-19T01:16:06Z"
+                }
+            ]
+        }
+    ]
+}

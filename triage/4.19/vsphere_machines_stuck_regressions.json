@@ -1,0 +1,301 @@
+{
+    "Arguments": {
+        "TestRelease": "4.19",
+        "IssueDescription": "vSphere install failing due to machines stuck in Provisioned",
+        "IssueType": "Product",
+        "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-54197",
+        "OutputFile": "vsphere_machines_stuck_regressions.json",
+        "IncidentGroupId": "13655607-b883-4ddf-bfd0-997e6f4caff2",
+        "TargetModifiedTime": "2025-03-25 11:56:10.532467+00:00"
+    },
+    "Tests": [
+        {
+            "TestId": "Operator results:33921465a4b24f992f7e9c47b1ec9409",
+            "TestName": "operator conditions ingress",
+            "Release": "4.19",
+            "GroupId": "13655607-b883-4ddf-bfd0-997e6f4caff2",
+            "Issue": {
+                "Type": "Product",
+                "Description": "vSphere install failing due to machines stuck in Provisioned",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54197"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1902392425935015936",
+                    "StartTime": "2025-03-19T16:11:00Z",
+                    "CompletionTime": "2025-03-19T17:35:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1902414832968142848",
+                    "StartTime": "2025-03-19T17:40:05Z",
+                    "CompletionTime": "2025-03-19T19:45:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1904164853229031424",
+                    "StartTime": "2025-03-24T13:34:09Z",
+                    "CompletionTime": "2025-03-24T15:03:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1904188434763747328",
+                    "StartTime": "2025-03-24T15:07:55Z",
+                    "CompletionTime": "2025-03-24T16:28:34Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-kube-apiserver-rollout/1903222493410234368",
+                    "StartTime": "2025-03-21T23:09:33Z",
+                    "CompletionTime": "2025-03-22T00:31:32Z"
+                }
+            ]
+        },
+        {
+            "TestId": "Operator results:7e4c8db94dde9f957ea7d639cd29d6dd",
+            "TestName": "operator conditions monitoring",
+            "Release": "4.19",
+            "GroupId": "13655607-b883-4ddf-bfd0-997e6f4caff2",
+            "Issue": {
+                "Type": "Product",
+                "Description": "vSphere install failing due to machines stuck in Provisioned",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54197"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1902392425935015936",
+                    "StartTime": "2025-03-19T16:11:00Z",
+                    "CompletionTime": "2025-03-19T17:35:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1902414832968142848",
+                    "StartTime": "2025-03-19T17:40:05Z",
+                    "CompletionTime": "2025-03-19T19:45:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1904164853229031424",
+                    "StartTime": "2025-03-24T13:34:09Z",
+                    "CompletionTime": "2025-03-24T15:03:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1904188434763747328",
+                    "StartTime": "2025-03-24T15:07:55Z",
+                    "CompletionTime": "2025-03-24T16:28:34Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-kube-apiserver-rollout/1903222493410234368",
+                    "StartTime": "2025-03-21T23:09:33Z",
+                    "CompletionTime": "2025-03-22T00:31:32Z"
+                }
+            ]
+        },
+        {
+            "TestId": "Operator results:ff3f4ce2ada4b853ece12306b1ef3eaf",
+            "TestName": "operator conditions machine-api",
+            "Release": "4.19",
+            "GroupId": "13655607-b883-4ddf-bfd0-997e6f4caff2",
+            "Issue": {
+                "Type": "Product",
+                "Description": "vSphere install failing due to machines stuck in Provisioned",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54197"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1902392425935015936",
+                    "StartTime": "2025-03-19T16:11:00Z",
+                    "CompletionTime": "2025-03-19T17:35:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1902414832968142848",
+                    "StartTime": "2025-03-19T17:40:05Z",
+                    "CompletionTime": "2025-03-19T19:45:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1904164853229031424",
+                    "StartTime": "2025-03-24T13:34:09Z",
+                    "CompletionTime": "2025-03-24T15:03:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1904188434763747328",
+                    "StartTime": "2025-03-24T15:07:55Z",
+                    "CompletionTime": "2025-03-24T16:28:34Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-kube-apiserver-rollout/1903222493410234368",
+                    "StartTime": "2025-03-21T23:09:33Z",
+                    "CompletionTime": "2025-03-22T00:31:32Z"
+                }
+            ]
+        },
+        {
+            "TestId": "Operator results:868edf33fa32b0aab132c2a676d49e3b",
+            "TestName": "operator conditions cluster-autoscaler",
+            "Release": "4.19",
+            "GroupId": "13655607-b883-4ddf-bfd0-997e6f4caff2",
+            "Issue": {
+                "Type": "Product",
+                "Description": "vSphere install failing due to machines stuck in Provisioned",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54197"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1902392425935015936",
+                    "StartTime": "2025-03-19T16:11:00Z",
+                    "CompletionTime": "2025-03-19T17:35:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1902414832968142848",
+                    "StartTime": "2025-03-19T17:40:05Z",
+                    "CompletionTime": "2025-03-19T19:45:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1904164853229031424",
+                    "StartTime": "2025-03-24T13:34:09Z",
+                    "CompletionTime": "2025-03-24T15:03:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1904188434763747328",
+                    "StartTime": "2025-03-24T15:07:55Z",
+                    "CompletionTime": "2025-03-24T16:28:34Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-kube-apiserver-rollout/1903222493410234368",
+                    "StartTime": "2025-03-21T23:09:33Z",
+                    "CompletionTime": "2025-03-22T00:31:32Z"
+                }
+            ]
+        }
+    ]
+}

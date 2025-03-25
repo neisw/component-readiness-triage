@@ -1,0 +1,26 @@
+{
+    "Arguments": {
+        "TestRelease": "4.19",
+        "TestReportURL": "",
+        "IssueDescription": "pod sandbox errors adding pod to network",
+        "IssueType": "Product",
+        "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-53279",
+        "OutputFile": "sandboxes_by_adding_pod_to_network_regressions_1.json",
+        "TargetBuildCluster": "",
+        "JobRunStartTimeMin": "",
+        "TestDetails": [
+            {
+                "URL": "https://sippy.dptools.openshift.org/api/component_readiness/test_details?baseEndTime=2025-03-25T23:59:59Z&baseRelease=4.18&baseStartTime=2025-02-23T00:00:00Z&columnGroupBy=Architecture,Network,Platform,Topology&confidence=95&dbGroupBy=Platform,Architecture,Network,Topology,FeatureSet,Upgrade,Suite,Installer&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=true&includeVariant=Architecture:amd64&includeVariant=CGroupMode:v2&includeVariant=ContainerRuntime:crun&includeVariant=ContainerRuntime:runc&includeVariant=FeatureSet:default&includeVariant=FeatureSet:techpreview&includeVariant=Installer:ipi&includeVariant=Installer:upi&includeVariant=JobTier:blocking&includeVariant=JobTier:informing&includeVariant=JobTier:standard&includeVariant=LayeredProduct:none&includeVariant=Network:ovn&includeVariant=Owner:eng&includeVariant=Owner:service-delivery&includeVariant=Platform:aws&includeVariant=Platform:azure&includeVariant=Platform:gcp&includeVariant=Platform:metal&includeVariant=Platform:rosa&includeVariant=Platform:vsphere&includeVariant=Topology:ha&includeVariant=Topology:microshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-03-25T23:59:59Z&sampleRelease=4.19&sampleStartTime=2025-03-18T00:00:00Z&component=Networking%20%2F%20cluster-network-operator&capability=Other&testId=openshift-tests%3A65e48733eb0b6115134b2b8c6a365f16&testBasisRelease=4.18&environment=amd64%20default%20ipi%20ovn%20azure%20unknown%20ha%20micro&Architecture=amd64&FeatureSet=default&NetworkAccess=default&Scheduler=default&SecurityMode=default&Installer=ipi&Network=ovn&Platform=azure&Suite=unknown&Topology=ha&Upgrade=micro"
+            },
+            {
+                "URL": "https://sippy.dptools.openshift.org/api/component_readiness/test_details?baseEndTime=2025-03-25T23:59:59Z&baseRelease=4.18&baseStartTime=2025-02-23T00:00:00Z&columnGroupBy=Architecture,Network,Platform,Topology&confidence=95&dbGroupBy=Platform,Architecture,Network,Topology,FeatureSet,Upgrade,Suite,Installer&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=true&includeVariant=Architecture:amd64&includeVariant=CGroupMode:v2&includeVariant=ContainerRuntime:crun&includeVariant=ContainerRuntime:runc&includeVariant=FeatureSet:default&includeVariant=FeatureSet:techpreview&includeVariant=Installer:ipi&includeVariant=Installer:upi&includeVariant=JobTier:blocking&includeVariant=JobTier:informing&includeVariant=JobTier:standard&includeVariant=LayeredProduct:none&includeVariant=Network:ovn&includeVariant=Owner:eng&includeVariant=Owner:service-delivery&includeVariant=Platform:aws&includeVariant=Platform:azure&includeVariant=Platform:gcp&includeVariant=Platform:metal&includeVariant=Platform:rosa&includeVariant=Platform:vsphere&includeVariant=Topology:ha&includeVariant=Topology:microshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-03-25T23:59:59Z&sampleRelease=4.19&sampleStartTime=2025-03-18T00:00:00Z&component=Networking%20%2F%20cluster-network-operator&capability=Other&testId=openshift-tests%3A65e48733eb0b6115134b2b8c6a365f16&testBasisRelease=4.18&environment=amd64%20default%20ipi%20ovn%20gcp%20unknown%20ha%20micro&Architecture=amd64&FeatureSet=default&NetworkAccess=default&Scheduler=default&SecurityMode=default&Installer=ipi&Network=ovn&Platform=gcp&Suite=unknown&Topology=ha&Upgrade=micro"
+            }
+        ],
+        "IncidentGroupId": "c4f724a2-01ad-42f1-a140-0f0be9a3eb27"
+    },
+    "Tests": [
+        {
+            "TestId": "*"
+        }
+    ]
+}

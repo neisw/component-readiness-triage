@@ -1,0 +1,75 @@
+{
+    "Arguments": {
+        "TestRelease": "4.19",
+        "IssueDescription": "vSphere unexpected node reboots",
+        "IssueType": "Product",
+        "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-54210",
+        "OutputFile": "vsphere_unexpected_node_reboots_regressions.json",
+        "IncidentGroupId": "3a1ed967-7b87-4dd9-833a-2cdc744df10f",
+        "TargetModifiedTime": "2025-03-25 13:26:25.024109+00:00"
+    },
+    "Tests": [
+        {
+            "TestId": "openshift-tests:956a9e436fa8d2a879a8ed5c9a307e89",
+            "TestName": "[sig-node] Managed cluster should verify that nodes have no unexpected reboots [Late] [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "3a1ed967-7b87-4dd9-833a-2cdc744df10f",
+            "Issue": {
+                "Type": "Product",
+                "Description": "vSphere unexpected node reboots",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54210"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ipi-ovn-runc/1904321325170692096",
+                    "StartTime": "2025-03-24T23:55:56Z",
+                    "CompletionTime": "2025-03-25T01:52:32Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1903118362741837824",
+                    "StartTime": "2025-03-21T16:15:27Z",
+                    "CompletionTime": "2025-03-21T19:12:55Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-static-ovn/1904328146707025920",
+                    "StartTime": "2025-03-25T00:22:33Z",
+                    "CompletionTime": "2025-03-25T02:28:11Z"
+                }
+            ]
+        }
+    ]
+}

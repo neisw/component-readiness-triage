@@ -5,8 +5,7 @@
         "IssueDescription": "EgressIP tests failing on azure",
         "IssueType": "Product",
         "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-53201",
-        "IssueResolutionDate": "2025-03-18T00:01:01Z",
-        "OutputFile": "egressip_test_details_regressions_3.json",
+        "OutputFile": "egressip_test_details_regressions_4.json",
         "TargetBuildCluster": "",
         "JobRunStartTimeMin": "",
         "TestDetails": [
