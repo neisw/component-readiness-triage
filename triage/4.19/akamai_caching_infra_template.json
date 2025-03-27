@@ -22,6 +22,18 @@
         },
         {
             "TestId": "openshift-tests:7dd49c583b2a86489d255d6ec262f69e"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:c1f54790201ec8f4241eca902f854b79"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:768829d0095685957b0d795e984b2385"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:40365516152136b9a06007d3c5bc7c13"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:7dd49c583b2a86489d255d6ec262f69e"
         }
     ]
 }
