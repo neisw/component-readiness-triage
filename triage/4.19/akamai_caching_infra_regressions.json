@@ -6,13 +6,137 @@
         "IssueURL": "https://issues.redhat.com/browse/TRT-2060",
         "OutputFile": "akamai_caching_infra_regressions.json",
         "IncidentGroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
-        "TargetModifiedTime": "2025-03-27 12:18:12.835289+00:00",
+        "TargetModifiedTime": "2025-03-27 13:48:41.516578+00:00",
         "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2025-03-27T23%3A59%3A59Z&baseRelease=4.18&baseStartTime=2025-02-25T00%3A00%3A00Z&columnGroupBy=Architecture%2CNetwork%2CPlatform%2CTopology&confidence=95&dbGroupBy=Platform%2CArchitecture%2CNetwork%2CTopology%2CFeatureSet%2CUpgrade%2CSuite%2CInstaller&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=true&includeVariant=Architecture%3Aamd64&includeVariant=CGroupMode%3Av2&includeVariant=ContainerRuntime%3Arunc&includeVariant=ContainerRuntime%3Acrun&includeVariant=FeatureSet%3Adefault&includeVariant=FeatureSet%3Atechpreview&includeVariant=Installer%3Aipi&includeVariant=Installer%3Aupi&includeVariant=JobTier%3Ablocking&includeVariant=JobTier%3Ainforming&includeVariant=JobTier%3Astandard&includeVariant=LayeredProduct%3Anone&includeVariant=Network%3Aovn&includeVariant=Owner%3Aeng&includeVariant=Owner%3Aservice-delivery&includeVariant=Platform%3Aaws&includeVariant=Platform%3Aazure&includeVariant=Platform%3Agcp&includeVariant=Platform%3Ametal&includeVariant=Platform%3Arosa&includeVariant=Platform%3Avsphere&includeVariant=Topology%3Aha&includeVariant=Topology%3Amicroshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-03-27T23%3A59%3A59Z&sampleRelease=4.19&sampleStartTime=2025-03-20T00%3A00%3A00Z",
         "JobRunStartTimeMin": "2025-03-26T01:58:06Z"
     },
     "Tests": [
         {
-            "TestId": "openshift-tests-upgrade:c1f54790201ec8f4241eca902f854b79",
+            "TestId": "openshift-tests:c1f54790201ec8f4241eca902f854b79",
+            "TestName": "[sig-instrumentation] Prometheus [apigroup:image.openshift.io] when installed on the cluster shouldn't report any alerts in firing state apart from Watchdog and AlertmanagerReceiversNotConfigured [Early][apigroup:config.openshift.io] [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Akamai caching issue is back again, affects a number of tests",
+                "URL": "https://issues.redhat.com/browse/TRT-2060"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1905004814245302272",
+                    "StartTime": "2025-03-26T21:11:55Z",
+                    "CompletionTime": "2025-03-27T01:11:52Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1905065700527968256",
+                    "StartTime": "2025-03-27T01:13:52Z",
+                    "CompletionTime": "2025-03-27T05:11:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1905170045256863744",
+                    "StartTime": "2025-03-27T08:07:41Z",
+                    "CompletionTime": "2025-03-27T11:57:30Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:c1f54790201ec8f4241eca902f854b79",
+            "TestName": "[sig-instrumentation] Prometheus [apigroup:image.openshift.io] when installed on the cluster shouldn't report any alerts in firing state apart from Watchdog and AlertmanagerReceiversNotConfigured [Early][apigroup:config.openshift.io] [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Akamai caching issue is back again, affects a number of tests",
+                "URL": "https://issues.redhat.com/browse/TRT-2060"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1905000615767969792",
+                    "StartTime": "2025-03-26T20:55:14Z",
+                    "CompletionTime": "2025-03-26T23:03:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1905170073820073984",
+                    "StartTime": "2025-03-27T08:07:43Z",
+                    "CompletionTime": "2025-03-27T11:00:32Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-runc-techpreview/1905065997463719936",
+                    "StartTime": "2025-03-27T01:15:02Z",
+                    "CompletionTime": "2025-03-27T03:42:57Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:c1f54790201ec8f4241eca902f854b79",
             "TestName": "[sig-instrumentation] Prometheus [apigroup:image.openshift.io] when installed on the cluster shouldn't report any alerts in firing state apart from Watchdog and AlertmanagerReceiversNotConfigured [Early][apigroup:config.openshift.io] [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
             "Release": "4.19",
             "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
@@ -56,6 +180,26 @@
                 }
             ],
             "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1904954016178114560",
+                    "StartTime": "2025-03-26T17:40:55Z",
+                    "CompletionTime": "2025-03-26T21:25:12Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1904953305243586560",
+                    "StartTime": "2025-03-26T17:40:56Z",
+                    "CompletionTime": "2025-03-26T21:30:50Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1904955157859274752",
+                    "StartTime": "2025-03-26T17:40:56Z",
+                    "CompletionTime": "2025-03-26T21:39:15Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1904955657644150784",
+                    "StartTime": "2025-03-26T17:40:55Z",
+                    "CompletionTime": "2025-03-26T21:40:48Z"
+                },
                 {
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1905044188366376960",
                     "StartTime": "2025-03-26T23:48:21Z",
@@ -164,7 +308,7 @@
             ]
         },
         {
-            "TestId": "openshift-tests-upgrade:c1f54790201ec8f4241eca902f854b79",
+            "TestId": "openshift-tests:c1f54790201ec8f4241eca902f854b79",
             "TestName": "[sig-instrumentation] Prometheus [apigroup:image.openshift.io] when installed on the cluster shouldn't report any alerts in firing state apart from Watchdog and AlertmanagerReceiversNotConfigured [Early][apigroup:config.openshift.io] [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
             "Release": "4.19",
             "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
@@ -276,7 +420,7 @@
             ]
         },
         {
-            "TestId": "openshift-tests-upgrade:c1f54790201ec8f4241eca902f854b79",
+            "TestId": "openshift-tests:c1f54790201ec8f4241eca902f854b79",
             "TestName": "[sig-instrumentation] Prometheus [apigroup:image.openshift.io] when installed on the cluster shouldn't report any alerts in firing state apart from Watchdog and AlertmanagerReceiversNotConfigured [Early][apigroup:config.openshift.io] [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
             "Release": "4.19",
             "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
@@ -292,7 +436,7 @@
                 },
                 {
                     "key": "Upgrade",
-                    "value": "minor"
+                    "value": "none"
                 },
                 {
                     "key": "Architecture",
@@ -300,7 +444,7 @@
                 },
                 {
                     "key": "Platform",
-                    "value": "azure"
+                    "value": "aws"
                 },
                 {
                     "key": "FeatureSet",
@@ -321,154 +465,44 @@
             ],
             "JobRuns": [
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904952604547354624",
-                    "StartTime": "2025-03-26T17:40:56Z",
-                    "CompletionTime": "2025-03-26T22:48:01Z"
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn/1905170001644490752",
+                    "StartTime": "2025-03-27T08:07:38Z",
+                    "CompletionTime": "2025-03-27T10:37:32Z"
                 },
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904951761127346176",
-                    "StartTime": "2025-03-26T17:40:56Z",
-                    "CompletionTime": "2025-03-26T22:48:26Z"
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-cgroupsv2/1905170047786029056",
+                    "StartTime": "2025-03-27T08:07:42Z",
+                    "CompletionTime": "2025-03-27T10:41:46Z"
                 },
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904954324451069952",
-                    "StartTime": "2025-03-26T17:40:58Z",
-                    "CompletionTime": "2025-03-26T22:58:32Z"
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-fips/1905169752238592000",
+                    "StartTime": "2025-03-27T08:07:19Z",
+                    "CompletionTime": "2025-03-27T10:14:40Z"
                 },
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904953521560621056",
-                    "StartTime": "2025-03-26T17:40:57Z",
-                    "CompletionTime": "2025-03-26T23:03:46Z"
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-kube-apiserver-rollout/1905034790554308608",
+                    "StartTime": "2025-03-26T23:11:02Z",
+                    "CompletionTime": "2025-03-27T01:46:24Z"
                 },
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904958795834986496",
-                    "StartTime": "2025-03-26T17:40:57Z",
-                    "CompletionTime": "2025-03-26T23:09:07Z"
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-proxy/1905047416436953088",
+                    "StartTime": "2025-03-27T00:00:24Z",
+                    "CompletionTime": "2025-03-27T02:07:44Z"
                 },
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904953521317351424",
-                    "StartTime": "2025-03-26T17:40:57Z",
-                    "CompletionTime": "2025-03-26T23:14:16Z"
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-proxy/1905169962230616064",
+                    "StartTime": "2025-03-27T08:07:35Z",
+                    "CompletionTime": "2025-03-27T10:38:53Z"
                 },
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904956053359955968",
-                    "StartTime": "2025-03-26T17:40:56Z",
-                    "CompletionTime": "2025-03-26T23:13:28Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904954532404662272",
-                    "StartTime": "2025-03-26T17:40:56Z",
-                    "CompletionTime": "2025-03-26T23:28:56Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904958668256841728",
-                    "StartTime": "2025-03-26T17:40:57Z",
-                    "CompletionTime": "2025-03-26T23:47:27Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044215256059904",
-                    "StartTime": "2025-03-26T23:48:23Z",
-                    "CompletionTime": "2025-03-27T03:48:51Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044213544783872",
-                    "StartTime": "2025-03-26T23:48:23Z",
-                    "CompletionTime": "2025-03-27T03:53:16Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044220259864576",
-                    "StartTime": "2025-03-26T23:48:23Z",
-                    "CompletionTime": "2025-03-27T03:54:13Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044205139398656",
-                    "StartTime": "2025-03-26T23:48:22Z",
-                    "CompletionTime": "2025-03-27T03:55:35Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044202639593472",
-                    "StartTime": "2025-03-26T23:48:22Z",
-                    "CompletionTime": "2025-03-27T04:00:44Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044207664369664",
-                    "StartTime": "2025-03-26T23:48:22Z",
-                    "CompletionTime": "2025-03-27T04:01:12Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044217751670784",
-                    "StartTime": "2025-03-26T23:48:23Z",
-                    "CompletionTime": "2025-03-27T03:59:03Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044210176757760",
-                    "StartTime": "2025-03-26T23:48:22Z",
-                    "CompletionTime": "2025-03-27T04:02:10Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044221925003264",
-                    "StartTime": "2025-03-26T23:48:24Z",
-                    "CompletionTime": "2025-03-27T04:05:03Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044200160759808",
-                    "StartTime": "2025-03-26T23:48:22Z",
-                    "CompletionTime": "2025-03-27T04:11:07Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905132919152709632",
-                    "StartTime": "2025-03-27T05:40:52Z",
-                    "CompletionTime": "2025-03-27T09:31:16Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905132914132127744",
-                    "StartTime": "2025-03-27T05:40:52Z",
-                    "CompletionTime": "2025-03-27T09:31:29Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905132923460259840",
-                    "StartTime": "2025-03-27T05:40:53Z",
-                    "CompletionTime": "2025-03-27T09:32:28Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905132920834625536",
-                    "StartTime": "2025-03-27T05:40:53Z",
-                    "CompletionTime": "2025-03-27T09:37:00Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905132925909733376",
-                    "StartTime": "2025-03-27T05:40:53Z",
-                    "CompletionTime": "2025-03-27T09:40:37Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905132930896760832",
-                    "StartTime": "2025-03-27T05:40:53Z",
-                    "CompletionTime": "2025-03-27T09:46:33Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905132928413732864",
-                    "StartTime": "2025-03-27T05:40:53Z",
-                    "CompletionTime": "2025-03-27T09:49:10Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905132916636127232",
-                    "StartTime": "2025-03-27T05:40:52Z",
-                    "CompletionTime": "2025-03-27T09:49:41Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905132911602962432",
-                    "StartTime": "2025-03-27T05:40:52Z",
-                    "CompletionTime": "2025-03-27T09:53:52Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905132933409148928",
-                    "StartTime": "2025-03-27T05:40:54Z",
-                    "CompletionTime": "2025-03-27T09:53:02Z"
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-runc/1905055174242603008",
+                    "StartTime": "2025-03-27T00:32:02Z",
+                    "CompletionTime": "2025-03-27T02:38:06Z"
                 }
             ]
         },
         {
-            "TestId": "openshift-tests-upgrade:c1f54790201ec8f4241eca902f854b79",
+            "TestId": "openshift-tests:c1f54790201ec8f4241eca902f854b79",
             "TestName": "[sig-instrumentation] Prometheus [apigroup:image.openshift.io] when installed on the cluster shouldn't report any alerts in firing state apart from Watchdog and AlertmanagerReceiversNotConfigured [Early][apigroup:config.openshift.io] [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
             "Release": "4.19",
             "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
@@ -484,7 +518,7 @@
                 },
                 {
                     "key": "Upgrade",
-                    "value": "micro"
+                    "value": "none"
                 },
                 {
                     "key": "Architecture",
@@ -496,7 +530,7 @@
                 },
                 {
                     "key": "FeatureSet",
-                    "value": "default"
+                    "value": "techpreview"
                 },
                 {
                     "key": "Suite",
@@ -513,74 +547,24 @@
             ],
             "JobRuns": [
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1904951428464513024",
-                    "StartTime": "2025-03-26T17:23:05Z",
-                    "CompletionTime": "2025-03-26T22:21:57Z"
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1904955791585054720",
+                    "StartTime": "2025-03-26T17:23:11Z",
+                    "CompletionTime": "2025-03-26T22:10:18Z"
                 },
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1904952845669502976",
-                    "StartTime": "2025-03-26T17:23:04Z",
-                    "CompletionTime": "2025-03-26T22:22:55Z"
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1905170057843970048",
+                    "StartTime": "2025-03-27T08:07:42Z",
+                    "CompletionTime": "2025-03-27T10:49:36Z"
                 },
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169795280539648",
-                    "StartTime": "2025-03-27T08:07:22Z",
-                    "CompletionTime": "2025-03-27T11:22:24Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169786086625280",
-                    "StartTime": "2025-03-27T08:07:21Z",
-                    "CompletionTime": "2025-03-27T11:27:04Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169788578041856",
-                    "StartTime": "2025-03-27T08:07:21Z",
-                    "CompletionTime": "2025-03-27T11:32:40Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169793665732608",
-                    "StartTime": "2025-03-27T08:07:22Z",
-                    "CompletionTime": "2025-03-27T11:46:20Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169808706506752",
-                    "StartTime": "2025-03-27T08:07:23Z",
-                    "CompletionTime": "2025-03-27T11:41:31Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169805606916096",
-                    "StartTime": "2025-03-27T08:07:23Z",
-                    "CompletionTime": "2025-03-27T11:49:07Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169797000204288",
-                    "StartTime": "2025-03-27T08:07:22Z",
-                    "CompletionTime": "2025-03-27T11:49:00Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169799604867072",
-                    "StartTime": "2025-03-27T08:07:22Z",
-                    "CompletionTime": "2025-03-27T11:50:28Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169791073652736",
-                    "StartTime": "2025-03-27T08:07:21Z",
-                    "CompletionTime": "2025-03-27T11:52:20Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169802037563392",
-                    "StartTime": "2025-03-27T08:07:22Z",
-                    "CompletionTime": "2025-03-27T11:59:45Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-runc-upgrade/1905088912615804928",
-                    "StartTime": "2025-03-27T02:46:02Z",
-                    "CompletionTime": "2025-03-27T06:25:20Z"
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-azure-ovn-runc-techpreview/1905099720829702144",
+                    "StartTime": "2025-03-27T03:29:02Z",
+                    "CompletionTime": "2025-03-27T06:13:46Z"
                 }
             ]
         },
         {
-            "TestId": "openshift-tests-upgrade:c1f54790201ec8f4241eca902f854b79",
+            "TestId": "openshift-tests:c1f54790201ec8f4241eca902f854b79",
             "TestName": "[sig-instrumentation] Prometheus [apigroup:image.openshift.io] when installed on the cluster shouldn't report any alerts in firing state apart from Watchdog and AlertmanagerReceiversNotConfigured [Early][apigroup:config.openshift.io] [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
             "Release": "4.19",
             "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
@@ -596,7 +580,7 @@
                 },
                 {
                     "key": "Upgrade",
-                    "value": "micro"
+                    "value": "none"
                 },
                 {
                     "key": "Architecture",
@@ -625,129 +609,96 @@
             ],
             "JobRuns": [
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905002940943306752",
-                    "StartTime": "2025-03-26T21:04:28Z",
-                    "CompletionTime": "2025-03-27T00:24:01Z"
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn/1905170035198922752",
+                    "StartTime": "2025-03-27T08:07:41Z",
+                    "CompletionTime": "2025-03-27T10:27:21Z"
                 },
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044243747966976",
-                    "StartTime": "2025-03-26T23:48:26Z",
-                    "CompletionTime": "2025-03-27T03:20:51Z"
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-gcp-ovn-rt/1905169841526935552",
+                    "StartTime": "2025-03-27T08:07:26Z",
+                    "CompletionTime": "2025-03-27T10:36:24Z"
                 },
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044234503720960",
-                    "StartTime": "2025-03-26T23:48:25Z",
-                    "CompletionTime": "2025-03-27T03:25:24Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044226962362368",
-                    "StartTime": "2025-03-26T23:48:24Z",
-                    "CompletionTime": "2025-03-27T03:26:59Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044241231384576",
-                    "StartTime": "2025-03-26T23:48:25Z",
-                    "CompletionTime": "2025-03-27T03:28:49Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044237024497664",
-                    "StartTime": "2025-03-26T23:48:25Z",
-                    "CompletionTime": "2025-03-27T03:27:43Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044230317805568",
-                    "StartTime": "2025-03-26T23:48:24Z",
-                    "CompletionTime": "2025-03-27T03:31:43Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044246256160768",
-                    "StartTime": "2025-03-26T23:48:26Z",
-                    "CompletionTime": "2025-03-27T03:31:16Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044231999721472",
-                    "StartTime": "2025-03-26T23:48:25Z",
-                    "CompletionTime": "2025-03-27T03:42:47Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044238702219264",
-                    "StartTime": "2025-03-26T23:48:25Z",
-                    "CompletionTime": "2025-03-27T03:43:47Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905053659968835584",
-                    "StartTime": "2025-03-27T00:26:01Z",
-                    "CompletionTime": "2025-03-27T03:44:09Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044228640083968",
-                    "StartTime": "2025-03-26T23:48:24Z",
-                    "CompletionTime": "2025-03-27T03:52:03Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132952824582144",
-                    "StartTime": "2025-03-27T05:40:55Z",
-                    "CompletionTime": "2025-03-27T09:17:26Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132958583361536",
-                    "StartTime": "2025-03-27T05:40:56Z",
-                    "CompletionTime": "2025-03-27T09:17:41Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132940967284736",
-                    "StartTime": "2025-03-27T05:40:54Z",
-                    "CompletionTime": "2025-03-27T09:19:33Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132945996255232",
-                    "StartTime": "2025-03-27T05:40:55Z",
-                    "CompletionTime": "2025-03-27T09:20:41Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132950190559232",
-                    "StartTime": "2025-03-27T05:40:55Z",
-                    "CompletionTime": "2025-03-27T09:24:30Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132947673976832",
-                    "StartTime": "2025-03-27T05:40:55Z",
-                    "CompletionTime": "2025-03-27T09:40:11Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132955227918336",
-                    "StartTime": "2025-03-27T05:40:55Z",
-                    "CompletionTime": "2025-03-27T09:38:41Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132938446508032",
-                    "StartTime": "2025-03-27T05:40:54Z",
-                    "CompletionTime": "2025-03-27T09:39:42Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132961938804736",
-                    "StartTime": "2025-03-27T05:40:56Z",
-                    "CompletionTime": "2025-03-27T09:40:02Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132943492255744",
-                    "StartTime": "2025-03-27T05:40:54Z",
-                    "CompletionTime": "2025-03-27T09:39:12Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905169937912041472",
-                    "StartTime": "2025-03-27T08:07:33Z",
-                    "CompletionTime": "2025-03-27T11:19:36Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-runc-upgrade/1905039822754418688",
-                    "StartTime": "2025-03-26T23:31:02Z",
-                    "CompletionTime": "2025-03-27T03:21:20Z"
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-gcp-ovn-runc/1905033782952464384",
+                    "StartTime": "2025-03-26T23:07:02Z",
+                    "CompletionTime": "2025-03-27T01:52:09Z"
                 }
             ]
         },
         {
-            "TestId": "openshift-tests-upgrade:768829d0095685957b0d795e984b2385",
+            "TestId": "openshift-tests:c1f54790201ec8f4241eca902f854b79",
+            "TestName": "[sig-instrumentation] Prometheus [apigroup:image.openshift.io] when installed on the cluster shouldn't report any alerts in firing state apart from Watchdog and AlertmanagerReceiversNotConfigured [Early][apigroup:config.openshift.io] [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Akamai caching issue is back again, affects a number of tests",
+                "URL": "https://issues.redhat.com/browse/TRT-2060"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ipi-ovn-runc/1905045867010723840",
+                    "StartTime": "2025-03-26T23:55:02Z",
+                    "CompletionTime": "2025-03-27T01:59:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1905170087258624000",
+                    "StartTime": "2025-03-27T08:07:44Z",
+                    "CompletionTime": "2025-03-27T10:07:18Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1905200161945030656",
+                    "StartTime": "2025-03-27T10:08:09Z",
+                    "CompletionTime": "2025-03-27T12:05:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-kube-apiserver-rollout/1905035041784729600",
+                    "StartTime": "2025-03-26T23:12:02Z",
+                    "CompletionTime": "2025-03-27T01:31:00Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-static-ovn/1905169949656092672",
+                    "StartTime": "2025-03-27T08:07:34Z",
+                    "CompletionTime": "2025-03-27T10:16:55Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:768829d0095685957b0d795e984b2385",
             "TestName": "[sig-arch] events should not repeat pathologically for ns/openshift-marketplace",
             "Release": "4.19",
             "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
@@ -763,7 +714,7 @@
                 },
                 {
                     "key": "Upgrade",
-                    "value": "micro"
+                    "value": "none"
                 },
                 {
                     "key": "Architecture",
@@ -792,74 +743,49 @@
             ],
             "JobRuns": [
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-upgrade/1905169852335656960",
-                    "StartTime": "2025-03-27T08:07:26Z",
-                    "CompletionTime": "2025-03-27T11:17:53Z"
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn/1905170001644490752",
+                    "StartTime": "2025-03-27T08:07:38Z",
+                    "CompletionTime": "2025-03-27T10:37:32Z"
                 },
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-upgrade/1905169858211876864",
-                    "StartTime": "2025-03-27T08:07:27Z",
-                    "CompletionTime": "2025-03-27T11:24:35Z"
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-csi/1905170020929900544",
+                    "StartTime": "2025-03-27T08:07:39Z",
+                    "CompletionTime": "2025-03-27T10:00:07Z"
                 },
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-upgrade/1905169874292838400",
-                    "StartTime": "2025-03-27T08:07:28Z",
-                    "CompletionTime": "2025-03-27T11:24:55Z"
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-cgroupsv2/1905170047786029056",
+                    "StartTime": "2025-03-27T08:07:42Z",
+                    "CompletionTime": "2025-03-27T10:41:46Z"
                 },
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-upgrade/1905169860728459264",
-                    "StartTime": "2025-03-27T08:07:27Z",
-                    "CompletionTime": "2025-03-27T11:29:52Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-upgrade/1905169876763283456",
-                    "StartTime": "2025-03-27T08:07:28Z",
-                    "CompletionTime": "2025-03-27T11:30:33Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-upgrade/1905169855686905856",
-                    "StartTime": "2025-03-27T08:07:26Z",
-                    "CompletionTime": "2025-03-27T11:32:08Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-upgrade/1905169864910180352",
-                    "StartTime": "2025-03-27T08:07:27Z",
-                    "CompletionTime": "2025-03-27T11:33:51Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-upgrade/1905169869100290048",
-                    "StartTime": "2025-03-27T08:07:27Z",
-                    "CompletionTime": "2025-03-27T11:38:07Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-upgrade/1905169863379259392",
-                    "StartTime": "2025-03-27T08:07:27Z",
-                    "CompletionTime": "2025-03-27T11:39:42Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-upgrade/1905169871658815488",
-                    "StartTime": "2025-03-27T08:07:28Z",
-                    "CompletionTime": "2025-03-27T11:41:31Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-runc-upgrade/1905029001022279680",
-                    "StartTime": "2025-03-26T22:48:02Z",
-                    "CompletionTime": "2025-03-27T02:21:33Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-upgrade-fips/1904996341499564032",
-                    "StartTime": "2025-03-26T20:38:15Z",
-                    "CompletionTime": "2025-03-26T23:54:08Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-upgrade-fips/1905169751676555264",
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-fips/1905169752238592000",
                     "StartTime": "2025-03-27T08:07:19Z",
-                    "CompletionTime": "2025-03-27T11:11:51Z"
+                    "CompletionTime": "2025-03-27T10:14:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-kube-apiserver-rollout/1905034790554308608",
+                    "StartTime": "2025-03-26T23:11:02Z",
+                    "CompletionTime": "2025-03-27T01:46:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-proxy/1905047416436953088",
+                    "StartTime": "2025-03-27T00:00:24Z",
+                    "CompletionTime": "2025-03-27T02:07:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-proxy/1905169962230616064",
+                    "StartTime": "2025-03-27T08:07:35Z",
+                    "CompletionTime": "2025-03-27T10:38:53Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-runc/1905055174242603008",
+                    "StartTime": "2025-03-27T00:32:02Z",
+                    "CompletionTime": "2025-03-27T02:38:06Z"
                 }
             ]
         },
         {
-            "TestId": "openshift-tests-upgrade:7dd49c583b2a86489d255d6ec262f69e",
+            "TestId": "openshift-tests:7dd49c583b2a86489d255d6ec262f69e",
             "TestName": "[OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-marketplace",
             "Release": "4.19",
             "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
@@ -904,6 +830,26 @@
             ],
             "JobRuns": [
                 {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1904954016178114560",
+                    "StartTime": "2025-03-26T17:40:55Z",
+                    "CompletionTime": "2025-03-26T21:25:12Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1904953305243586560",
+                    "StartTime": "2025-03-26T17:40:56Z",
+                    "CompletionTime": "2025-03-26T21:30:50Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1904955157859274752",
+                    "StartTime": "2025-03-26T17:40:56Z",
+                    "CompletionTime": "2025-03-26T21:39:15Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1904955657644150784",
+                    "StartTime": "2025-03-26T17:40:55Z",
+                    "CompletionTime": "2025-03-26T21:40:48Z"
+                },
+                {
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1905044188366376960",
                     "StartTime": "2025-03-26T23:48:21Z",
                     "CompletionTime": "2025-03-27T03:15:16Z"
@@ -1011,7 +957,144 @@
             ]
         },
         {
-            "TestId": "openshift-tests-upgrade:768829d0095685957b0d795e984b2385",
+            "TestId": "openshift-tests:7dd49c583b2a86489d255d6ec262f69e",
+            "TestName": "[OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-marketplace",
+            "Release": "4.19",
+            "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Akamai caching issue is back again, affects a number of tests",
+                "URL": "https://issues.redhat.com/browse/TRT-2060"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-upgrade/1904947454520856576",
+                    "StartTime": "2025-03-26T17:22:53Z",
+                    "CompletionTime": "2025-03-26T20:36:21Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-upgrade/1904947538109140992",
+                    "StartTime": "2025-03-26T17:22:53Z",
+                    "CompletionTime": "2025-03-26T20:40:01Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-upgrade/1904947193777754112",
+                    "StartTime": "2025-03-26T17:22:52Z",
+                    "CompletionTime": "2025-03-26T20:44:15Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-upgrade/1904952728061218816",
+                    "StartTime": "2025-03-26T17:22:53Z",
+                    "CompletionTime": "2025-03-26T20:50:25Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-upgrade/1905169852335656960",
+                    "StartTime": "2025-03-27T08:07:26Z",
+                    "CompletionTime": "2025-03-27T11:17:53Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-upgrade/1905169858211876864",
+                    "StartTime": "2025-03-27T08:07:27Z",
+                    "CompletionTime": "2025-03-27T11:24:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-upgrade/1905169874292838400",
+                    "StartTime": "2025-03-27T08:07:28Z",
+                    "CompletionTime": "2025-03-27T11:24:55Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-upgrade/1905169860728459264",
+                    "StartTime": "2025-03-27T08:07:27Z",
+                    "CompletionTime": "2025-03-27T11:29:52Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-upgrade/1905169876763283456",
+                    "StartTime": "2025-03-27T08:07:28Z",
+                    "CompletionTime": "2025-03-27T11:30:33Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-upgrade/1905169855686905856",
+                    "StartTime": "2025-03-27T08:07:26Z",
+                    "CompletionTime": "2025-03-27T11:32:08Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-upgrade/1905169864910180352",
+                    "StartTime": "2025-03-27T08:07:27Z",
+                    "CompletionTime": "2025-03-27T11:33:51Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-upgrade/1905169863379259392",
+                    "StartTime": "2025-03-27T08:07:27Z",
+                    "CompletionTime": "2025-03-27T11:39:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-upgrade/1905169869100290048",
+                    "StartTime": "2025-03-27T08:07:27Z",
+                    "CompletionTime": "2025-03-27T11:38:07Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-upgrade/1905169871658815488",
+                    "StartTime": "2025-03-27T08:07:28Z",
+                    "CompletionTime": "2025-03-27T11:41:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-runc-upgrade/1905029001022279680",
+                    "StartTime": "2025-03-26T22:48:02Z",
+                    "CompletionTime": "2025-03-27T02:21:33Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-upgrade-fips/1904947167869538304",
+                    "StartTime": "2025-03-26T17:22:51Z",
+                    "CompletionTime": "2025-03-26T20:37:57Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-upgrade-fips/1904996341499564032",
+                    "StartTime": "2025-03-26T20:38:15Z",
+                    "CompletionTime": "2025-03-26T23:54:08Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-upgrade-fips/1905169751676555264",
+                    "StartTime": "2025-03-27T08:07:19Z",
+                    "CompletionTime": "2025-03-27T11:11:51Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:768829d0095685957b0d795e984b2385",
             "TestName": "[sig-arch] events should not repeat pathologically for ns/openshift-marketplace",
             "Release": "4.19",
             "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
@@ -1071,6 +1154,11 @@
                     "CompletionTime": "2025-03-26T21:39:15Z"
                 },
                 {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1904955657644150784",
+                    "StartTime": "2025-03-26T17:40:55Z",
+                    "CompletionTime": "2025-03-26T21:40:48Z"
+                },
+                {
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1905044188366376960",
                     "StartTime": "2025-03-26T23:48:21Z",
                     "CompletionTime": "2025-03-27T03:15:16Z"
@@ -1121,6 +1209,11 @@
                     "CompletionTime": "2025-03-27T03:39:19Z"
                 },
                 {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1905132893231910912",
+                    "StartTime": "2025-03-27T05:40:52Z",
+                    "CompletionTime": "2025-03-27T09:14:18Z"
+                },
+                {
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1905132893278048256",
                     "StartTime": "2025-03-27T05:40:52Z",
                     "CompletionTime": "2025-03-27T09:17:44Z"
@@ -1164,12 +1257,353 @@
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1905132893508734976",
                     "StartTime": "2025-03-27T05:40:52Z",
                     "CompletionTime": "2025-03-27T09:36:49Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1905169752146317312",
+                    "StartTime": "2025-03-27T08:07:19Z",
+                    "CompletionTime": "2025-03-27T11:58:45Z"
                 }
             ]
         },
         {
-            "TestId": "openshift-tests-upgrade:7dd49c583b2a86489d255d6ec262f69e",
+            "TestId": "openshift-tests:7dd49c583b2a86489d255d6ec262f69e",
             "TestName": "[OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-marketplace",
+            "Release": "4.19",
+            "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Akamai caching issue is back again, affects a number of tests",
+                "URL": "https://issues.redhat.com/browse/TRT-2060"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn/1905170001644490752",
+                    "StartTime": "2025-03-27T08:07:38Z",
+                    "CompletionTime": "2025-03-27T10:37:32Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-csi/1905170020929900544",
+                    "StartTime": "2025-03-27T08:07:39Z",
+                    "CompletionTime": "2025-03-27T10:00:07Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-cgroupsv2/1905170047786029056",
+                    "StartTime": "2025-03-27T08:07:42Z",
+                    "CompletionTime": "2025-03-27T10:41:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-fips/1905169752238592000",
+                    "StartTime": "2025-03-27T08:07:19Z",
+                    "CompletionTime": "2025-03-27T10:14:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-kube-apiserver-rollout/1905034790554308608",
+                    "StartTime": "2025-03-26T23:11:02Z",
+                    "CompletionTime": "2025-03-27T01:46:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-proxy/1905047416436953088",
+                    "StartTime": "2025-03-27T00:00:24Z",
+                    "CompletionTime": "2025-03-27T02:07:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-proxy/1905169962230616064",
+                    "StartTime": "2025-03-27T08:07:35Z",
+                    "CompletionTime": "2025-03-27T10:38:53Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-runc/1905055174242603008",
+                    "StartTime": "2025-03-27T00:32:02Z",
+                    "CompletionTime": "2025-03-27T02:38:06Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:40365516152136b9a06007d3c5bc7c13",
+            "TestName": "[sig-operator] an end user can use OLM can subscribe to the operator [apigroup:config.openshift.io] [Skipped:Disconnected] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Akamai caching issue is back again, affects a number of tests",
+                "URL": "https://issues.redhat.com/browse/TRT-2060"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn/1905170001644490752",
+                    "StartTime": "2025-03-27T08:07:38Z",
+                    "CompletionTime": "2025-03-27T10:37:32Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-cgroupsv2/1905170047786029056",
+                    "StartTime": "2025-03-27T08:07:42Z",
+                    "CompletionTime": "2025-03-27T10:41:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-fips/1905169752238592000",
+                    "StartTime": "2025-03-27T08:07:19Z",
+                    "CompletionTime": "2025-03-27T10:14:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-proxy/1905047416436953088",
+                    "StartTime": "2025-03-27T00:00:24Z",
+                    "CompletionTime": "2025-03-27T02:07:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-proxy/1905169962230616064",
+                    "StartTime": "2025-03-27T08:07:35Z",
+                    "CompletionTime": "2025-03-27T10:38:53Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-runc/1905055174242603008",
+                    "StartTime": "2025-03-27T00:32:02Z",
+                    "CompletionTime": "2025-03-27T02:38:06Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:40365516152136b9a06007d3c5bc7c13",
+            "TestName": "[sig-operator] an end user can use OLM can subscribe to the operator [apigroup:config.openshift.io] [Skipped:Disconnected] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Akamai caching issue is back again, affects a number of tests",
+                "URL": "https://issues.redhat.com/browse/TRT-2060"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "minor"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1904954016178114560",
+                    "StartTime": "2025-03-26T17:40:55Z",
+                    "CompletionTime": "2025-03-26T21:25:12Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1904953305243586560",
+                    "StartTime": "2025-03-26T17:40:56Z",
+                    "CompletionTime": "2025-03-26T21:30:50Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1904955157859274752",
+                    "StartTime": "2025-03-26T17:40:56Z",
+                    "CompletionTime": "2025-03-26T21:39:15Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1904955657644150784",
+                    "StartTime": "2025-03-26T17:40:55Z",
+                    "CompletionTime": "2025-03-26T21:40:48Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1905044188366376960",
+                    "StartTime": "2025-03-26T23:48:21Z",
+                    "CompletionTime": "2025-03-27T03:15:16Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1905044183895248896",
+                    "StartTime": "2025-03-26T23:48:21Z",
+                    "CompletionTime": "2025-03-27T03:15:48Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1905044183329017856",
+                    "StartTime": "2025-03-26T23:48:21Z",
+                    "CompletionTime": "2025-03-27T03:20:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1905044183941386240",
+                    "StartTime": "2025-03-26T23:48:21Z",
+                    "CompletionTime": "2025-03-27T03:25:14Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1905044185006739456",
+                    "StartTime": "2025-03-26T23:48:21Z",
+                    "CompletionTime": "2025-03-27T03:25:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1905044191726014464",
+                    "StartTime": "2025-03-26T23:48:22Z",
+                    "CompletionTime": "2025-03-27T03:29:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1905044183370960896",
+                    "StartTime": "2025-03-26T23:48:21Z",
+                    "CompletionTime": "2025-03-27T03:29:29Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1905044194271956992",
+                    "StartTime": "2025-03-26T23:48:22Z",
+                    "CompletionTime": "2025-03-27T03:31:10Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1905044195924512768",
+                    "StartTime": "2025-03-26T23:48:22Z",
+                    "CompletionTime": "2025-03-27T03:34:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1905044184172072960",
+                    "StartTime": "2025-03-26T23:48:21Z",
+                    "CompletionTime": "2025-03-27T03:39:19Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1905132893231910912",
+                    "StartTime": "2025-03-27T05:40:52Z",
+                    "CompletionTime": "2025-03-27T09:14:18Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1905132893278048256",
+                    "StartTime": "2025-03-27T05:40:52Z",
+                    "CompletionTime": "2025-03-27T09:17:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1905132893315796992",
+                    "StartTime": "2025-03-27T05:40:52Z",
+                    "CompletionTime": "2025-03-27T09:24:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1905132895735910400",
+                    "StartTime": "2025-03-27T05:40:52Z",
+                    "CompletionTime": "2025-03-27T09:27:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1905132893148024832",
+                    "StartTime": "2025-03-27T05:40:52Z",
+                    "CompletionTime": "2025-03-27T09:27:05Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1905132893185773568",
+                    "StartTime": "2025-03-27T05:40:52Z",
+                    "CompletionTime": "2025-03-27T09:30:01Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1905132893361934336",
+                    "StartTime": "2025-03-27T05:40:52Z",
+                    "CompletionTime": "2025-03-27T09:31:48Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1905132893433237504",
+                    "StartTime": "2025-03-27T05:40:52Z",
+                    "CompletionTime": "2025-03-27T09:32:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1905132893470986240",
+                    "StartTime": "2025-03-27T05:40:52Z",
+                    "CompletionTime": "2025-03-27T09:32:36Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1905132893508734976",
+                    "StartTime": "2025-03-27T05:40:52Z",
+                    "CompletionTime": "2025-03-27T09:36:49Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-aws-ovn-upgrade/1905169752146317312",
+                    "StartTime": "2025-03-27T08:07:19Z",
+                    "CompletionTime": "2025-03-27T11:58:45Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:40365516152136b9a06007d3c5bc7c13",
+            "TestName": "[sig-operator] an end user can use OLM can subscribe to the operator [apigroup:config.openshift.io] [Skipped:Disconnected] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel]",
             "Release": "4.19",
             "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
             "Issue": {
@@ -1280,8 +1714,8 @@
             ]
         },
         {
-            "TestId": "openshift-tests-upgrade:768829d0095685957b0d795e984b2385",
-            "TestName": "[sig-arch] events should not repeat pathologically for ns/openshift-marketplace",
+            "TestId": "openshift-tests:40365516152136b9a06007d3c5bc7c13",
+            "TestName": "[sig-operator] an end user can use OLM can subscribe to the operator [apigroup:config.openshift.io] [Skipped:Disconnected] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel]",
             "Release": "4.19",
             "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
             "Issue": {
@@ -1296,7 +1730,131 @@
                 },
                 {
                     "key": "Upgrade",
-                    "value": "micro"
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1905000615767969792",
+                    "StartTime": "2025-03-26T20:55:14Z",
+                    "CompletionTime": "2025-03-26T23:03:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1905170073820073984",
+                    "StartTime": "2025-03-27T08:07:43Z",
+                    "CompletionTime": "2025-03-27T11:00:32Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-runc-techpreview/1905065997463719936",
+                    "StartTime": "2025-03-27T01:15:02Z",
+                    "CompletionTime": "2025-03-27T03:42:57Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:40365516152136b9a06007d3c5bc7c13",
+            "TestName": "[sig-operator] an end user can use OLM can subscribe to the operator [apigroup:config.openshift.io] [Skipped:Disconnected] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Akamai caching issue is back again, affects a number of tests",
+                "URL": "https://issues.redhat.com/browse/TRT-2060"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "azure"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1904955791585054720",
+                    "StartTime": "2025-03-26T17:23:11Z",
+                    "CompletionTime": "2025-03-26T22:10:18Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1905170057843970048",
+                    "StartTime": "2025-03-27T08:07:42Z",
+                    "CompletionTime": "2025-03-27T10:49:36Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-azure-ovn-runc-techpreview/1905099720829702144",
+                    "StartTime": "2025-03-27T03:29:02Z",
+                    "CompletionTime": "2025-03-27T06:13:46Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:40365516152136b9a06007d3c5bc7c13",
+            "TestName": "[sig-operator] an end user can use OLM can subscribe to the operator [apigroup:config.openshift.io] [Skipped:Disconnected] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Akamai caching issue is back again, affects a number of tests",
+                "URL": "https://issues.redhat.com/browse/TRT-2060"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
                 },
                 {
                     "key": "Architecture",
@@ -1325,1141 +1883,880 @@
             ],
             "JobRuns": [
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1904947672637247488",
-                    "StartTime": "2025-03-26T17:23:03Z",
-                    "CompletionTime": "2025-03-26T21:54:23Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1904947339940859904",
-                    "StartTime": "2025-03-26T17:23:04Z",
-                    "CompletionTime": "2025-03-26T22:04:19Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1904947848277921792",
-                    "StartTime": "2025-03-26T17:23:05Z",
-                    "CompletionTime": "2025-03-26T22:06:51Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1904948136397246464",
-                    "StartTime": "2025-03-26T17:23:04Z",
-                    "CompletionTime": "2025-03-26T22:06:27Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1904947339399794688",
-                    "StartTime": "2025-03-26T17:23:04Z",
-                    "CompletionTime": "2025-03-26T22:11:03Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1904947338267332608",
-                    "StartTime": "2025-03-26T17:23:04Z",
-                    "CompletionTime": "2025-03-26T22:12:48Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1904947342260310016",
-                    "StartTime": "2025-03-26T17:23:05Z",
-                    "CompletionTime": "2025-03-26T22:13:48Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1904949237355909120",
-                    "StartTime": "2025-03-26T17:23:05Z",
-                    "CompletionTime": "2025-03-26T22:14:56Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1904951428464513024",
-                    "StartTime": "2025-03-26T17:23:05Z",
-                    "CompletionTime": "2025-03-26T22:21:57Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1904952845669502976",
-                    "StartTime": "2025-03-26T17:23:04Z",
-                    "CompletionTime": "2025-03-26T22:22:55Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169795280539648",
-                    "StartTime": "2025-03-27T08:07:22Z",
-                    "CompletionTime": "2025-03-27T11:22:24Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169786086625280",
-                    "StartTime": "2025-03-27T08:07:21Z",
-                    "CompletionTime": "2025-03-27T11:27:04Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169788578041856",
-                    "StartTime": "2025-03-27T08:07:21Z",
-                    "CompletionTime": "2025-03-27T11:32:40Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169793665732608",
-                    "StartTime": "2025-03-27T08:07:22Z",
-                    "CompletionTime": "2025-03-27T11:46:20Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169808706506752",
-                    "StartTime": "2025-03-27T08:07:23Z",
-                    "CompletionTime": "2025-03-27T11:41:31Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169805606916096",
-                    "StartTime": "2025-03-27T08:07:23Z",
-                    "CompletionTime": "2025-03-27T11:49:07Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169797000204288",
-                    "StartTime": "2025-03-27T08:07:22Z",
-                    "CompletionTime": "2025-03-27T11:49:00Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169799604867072",
-                    "StartTime": "2025-03-27T08:07:22Z",
-                    "CompletionTime": "2025-03-27T11:50:28Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169791073652736",
-                    "StartTime": "2025-03-27T08:07:21Z",
-                    "CompletionTime": "2025-03-27T11:52:20Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169802037563392",
-                    "StartTime": "2025-03-27T08:07:22Z",
-                    "CompletionTime": "2025-03-27T11:59:45Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-runc-upgrade/1905088912615804928",
-                    "StartTime": "2025-03-27T02:46:02Z",
-                    "CompletionTime": "2025-03-27T06:25:20Z"
-                }
-            ]
-        },
-        {
-            "TestId": "openshift-tests-upgrade:7dd49c583b2a86489d255d6ec262f69e",
-            "TestName": "[OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-marketplace",
-            "Release": "4.19",
-            "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
-            "Issue": {
-                "Type": "Infrastructure",
-                "Description": "Akamai caching issue is back again, affects a number of tests",
-                "URL": "https://issues.redhat.com/browse/TRT-2060"
-            },
-            "Variants": [
-                {
-                    "key": "Network",
-                    "value": "ovn"
-                },
-                {
-                    "key": "Upgrade",
-                    "value": "minor"
-                },
-                {
-                    "key": "Architecture",
-                    "value": "amd64"
-                },
-                {
-                    "key": "Platform",
-                    "value": "azure"
-                },
-                {
-                    "key": "FeatureSet",
-                    "value": "default"
-                },
-                {
-                    "key": "Suite",
-                    "value": "unknown"
-                },
-                {
-                    "key": "Topology",
-                    "value": "ha"
-                },
-                {
-                    "key": "Installer",
-                    "value": "ipi"
-                }
-            ],
-            "JobRuns": [
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904952604547354624",
-                    "StartTime": "2025-03-26T17:40:56Z",
-                    "CompletionTime": "2025-03-26T22:48:01Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904951761127346176",
-                    "StartTime": "2025-03-26T17:40:56Z",
-                    "CompletionTime": "2025-03-26T22:48:26Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904954324451069952",
-                    "StartTime": "2025-03-26T17:40:58Z",
-                    "CompletionTime": "2025-03-26T22:58:32Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904954532459188224",
-                    "StartTime": "2025-03-26T17:40:57Z",
-                    "CompletionTime": "2025-03-26T23:04:40Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904953521560621056",
-                    "StartTime": "2025-03-26T17:40:57Z",
-                    "CompletionTime": "2025-03-26T23:03:46Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904958795834986496",
-                    "StartTime": "2025-03-26T17:40:57Z",
-                    "CompletionTime": "2025-03-26T23:09:07Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904953521317351424",
-                    "StartTime": "2025-03-26T17:40:57Z",
-                    "CompletionTime": "2025-03-26T23:14:16Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904956053359955968",
-                    "StartTime": "2025-03-26T17:40:56Z",
-                    "CompletionTime": "2025-03-26T23:13:28Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904954532404662272",
-                    "StartTime": "2025-03-26T17:40:56Z",
-                    "CompletionTime": "2025-03-26T23:28:56Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904958668256841728",
-                    "StartTime": "2025-03-26T17:40:57Z",
-                    "CompletionTime": "2025-03-26T23:47:27Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044215256059904",
-                    "StartTime": "2025-03-26T23:48:23Z",
-                    "CompletionTime": "2025-03-27T03:48:51Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044213544783872",
-                    "StartTime": "2025-03-26T23:48:23Z",
-                    "CompletionTime": "2025-03-27T03:53:16Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044220259864576",
-                    "StartTime": "2025-03-26T23:48:23Z",
-                    "CompletionTime": "2025-03-27T03:54:13Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044205139398656",
-                    "StartTime": "2025-03-26T23:48:22Z",
-                    "CompletionTime": "2025-03-27T03:55:35Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044202639593472",
-                    "StartTime": "2025-03-26T23:48:22Z",
-                    "CompletionTime": "2025-03-27T04:00:44Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044207664369664",
-                    "StartTime": "2025-03-26T23:48:22Z",
-                    "CompletionTime": "2025-03-27T04:01:12Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044217751670784",
-                    "StartTime": "2025-03-26T23:48:23Z",
-                    "CompletionTime": "2025-03-27T03:59:03Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044210176757760",
-                    "StartTime": "2025-03-26T23:48:22Z",
-                    "CompletionTime": "2025-03-27T04:02:10Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044221925003264",
-                    "StartTime": "2025-03-26T23:48:24Z",
-                    "CompletionTime": "2025-03-27T04:05:03Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044200160759808",
-                    "StartTime": "2025-03-26T23:48:22Z",
-                    "CompletionTime": "2025-03-27T04:11:07Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905132919152709632",
-                    "StartTime": "2025-03-27T05:40:52Z",
-                    "CompletionTime": "2025-03-27T09:31:16Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905132914132127744",
-                    "StartTime": "2025-03-27T05:40:52Z",
-                    "CompletionTime": "2025-03-27T09:31:29Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905132923460259840",
-                    "StartTime": "2025-03-27T05:40:53Z",
-                    "CompletionTime": "2025-03-27T09:32:28Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905132920834625536",
-                    "StartTime": "2025-03-27T05:40:53Z",
-                    "CompletionTime": "2025-03-27T09:37:00Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905132925909733376",
-                    "StartTime": "2025-03-27T05:40:53Z",
-                    "CompletionTime": "2025-03-27T09:40:37Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905132930896760832",
-                    "StartTime": "2025-03-27T05:40:53Z",
-                    "CompletionTime": "2025-03-27T09:46:33Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905132928413732864",
-                    "StartTime": "2025-03-27T05:40:53Z",
-                    "CompletionTime": "2025-03-27T09:49:10Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905132916636127232",
-                    "StartTime": "2025-03-27T05:40:52Z",
-                    "CompletionTime": "2025-03-27T09:49:41Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905132911602962432",
-                    "StartTime": "2025-03-27T05:40:52Z",
-                    "CompletionTime": "2025-03-27T09:53:52Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905132933409148928",
-                    "StartTime": "2025-03-27T05:40:54Z",
-                    "CompletionTime": "2025-03-27T09:53:02Z"
-                }
-            ]
-        },
-        {
-            "TestId": "openshift-tests-upgrade:768829d0095685957b0d795e984b2385",
-            "TestName": "[sig-arch] events should not repeat pathologically for ns/openshift-marketplace",
-            "Release": "4.19",
-            "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
-            "Issue": {
-                "Type": "Infrastructure",
-                "Description": "Akamai caching issue is back again, affects a number of tests",
-                "URL": "https://issues.redhat.com/browse/TRT-2060"
-            },
-            "Variants": [
-                {
-                    "key": "Network",
-                    "value": "ovn"
-                },
-                {
-                    "key": "Upgrade",
-                    "value": "minor"
-                },
-                {
-                    "key": "Architecture",
-                    "value": "amd64"
-                },
-                {
-                    "key": "Platform",
-                    "value": "azure"
-                },
-                {
-                    "key": "FeatureSet",
-                    "value": "default"
-                },
-                {
-                    "key": "Suite",
-                    "value": "unknown"
-                },
-                {
-                    "key": "Topology",
-                    "value": "ha"
-                },
-                {
-                    "key": "Installer",
-                    "value": "ipi"
-                }
-            ],
-            "JobRuns": [
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904952604547354624",
-                    "StartTime": "2025-03-26T17:40:56Z",
-                    "CompletionTime": "2025-03-26T22:48:01Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904951761127346176",
-                    "StartTime": "2025-03-26T17:40:56Z",
-                    "CompletionTime": "2025-03-26T22:48:26Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904954324451069952",
-                    "StartTime": "2025-03-26T17:40:58Z",
-                    "CompletionTime": "2025-03-26T22:58:32Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904954532459188224",
-                    "StartTime": "2025-03-26T17:40:57Z",
-                    "CompletionTime": "2025-03-26T23:04:40Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904953521560621056",
-                    "StartTime": "2025-03-26T17:40:57Z",
-                    "CompletionTime": "2025-03-26T23:03:46Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904953521317351424",
-                    "StartTime": "2025-03-26T17:40:57Z",
-                    "CompletionTime": "2025-03-26T23:14:16Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904956053359955968",
-                    "StartTime": "2025-03-26T17:40:56Z",
-                    "CompletionTime": "2025-03-26T23:13:28Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904954532404662272",
-                    "StartTime": "2025-03-26T17:40:56Z",
-                    "CompletionTime": "2025-03-26T23:28:56Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1904958668256841728",
-                    "StartTime": "2025-03-26T17:40:57Z",
-                    "CompletionTime": "2025-03-26T23:47:27Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044215256059904",
-                    "StartTime": "2025-03-26T23:48:23Z",
-                    "CompletionTime": "2025-03-27T03:48:51Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044213544783872",
-                    "StartTime": "2025-03-26T23:48:23Z",
-                    "CompletionTime": "2025-03-27T03:53:16Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044220259864576",
-                    "StartTime": "2025-03-26T23:48:23Z",
-                    "CompletionTime": "2025-03-27T03:54:13Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044205139398656",
-                    "StartTime": "2025-03-26T23:48:22Z",
-                    "CompletionTime": "2025-03-27T03:55:35Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044202639593472",
-                    "StartTime": "2025-03-26T23:48:22Z",
-                    "CompletionTime": "2025-03-27T04:00:44Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044207664369664",
-                    "StartTime": "2025-03-26T23:48:22Z",
-                    "CompletionTime": "2025-03-27T04:01:12Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044217751670784",
-                    "StartTime": "2025-03-26T23:48:23Z",
-                    "CompletionTime": "2025-03-27T03:59:03Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044210176757760",
-                    "StartTime": "2025-03-26T23:48:22Z",
-                    "CompletionTime": "2025-03-27T04:02:10Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044221925003264",
-                    "StartTime": "2025-03-26T23:48:24Z",
-                    "CompletionTime": "2025-03-27T04:05:03Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905044200160759808",
-                    "StartTime": "2025-03-26T23:48:22Z",
-                    "CompletionTime": "2025-03-27T04:11:07Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905132914132127744",
-                    "StartTime": "2025-03-27T05:40:52Z",
-                    "CompletionTime": "2025-03-27T09:31:29Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905132923460259840",
-                    "StartTime": "2025-03-27T05:40:53Z",
-                    "CompletionTime": "2025-03-27T09:32:28Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905132920834625536",
-                    "StartTime": "2025-03-27T05:40:53Z",
-                    "CompletionTime": "2025-03-27T09:37:00Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905132930896760832",
-                    "StartTime": "2025-03-27T05:40:53Z",
-                    "CompletionTime": "2025-03-27T09:46:33Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905132928413732864",
-                    "StartTime": "2025-03-27T05:40:53Z",
-                    "CompletionTime": "2025-03-27T09:49:10Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905132916636127232",
-                    "StartTime": "2025-03-27T05:40:52Z",
-                    "CompletionTime": "2025-03-27T09:49:41Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905132911602962432",
-                    "StartTime": "2025-03-27T05:40:52Z",
-                    "CompletionTime": "2025-03-27T09:53:52Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-azure-ovn-upgrade/1905132933409148928",
-                    "StartTime": "2025-03-27T05:40:54Z",
-                    "CompletionTime": "2025-03-27T09:53:02Z"
-                }
-            ]
-        },
-        {
-            "TestId": "openshift-tests-upgrade:7dd49c583b2a86489d255d6ec262f69e",
-            "TestName": "[OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-marketplace",
-            "Release": "4.19",
-            "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
-            "Issue": {
-                "Type": "Infrastructure",
-                "Description": "Akamai caching issue is back again, affects a number of tests",
-                "URL": "https://issues.redhat.com/browse/TRT-2060"
-            },
-            "Variants": [
-                {
-                    "key": "Network",
-                    "value": "ovn"
-                },
-                {
-                    "key": "Upgrade",
-                    "value": "micro"
-                },
-                {
-                    "key": "Architecture",
-                    "value": "amd64"
-                },
-                {
-                    "key": "Platform",
-                    "value": "azure"
-                },
-                {
-                    "key": "FeatureSet",
-                    "value": "default"
-                },
-                {
-                    "key": "Suite",
-                    "value": "unknown"
-                },
-                {
-                    "key": "Topology",
-                    "value": "ha"
-                },
-                {
-                    "key": "Installer",
-                    "value": "ipi"
-                }
-            ],
-            "JobRuns": [
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1904947339940859904",
-                    "StartTime": "2025-03-26T17:23:04Z",
-                    "CompletionTime": "2025-03-26T22:04:19Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1904947848277921792",
-                    "StartTime": "2025-03-26T17:23:05Z",
-                    "CompletionTime": "2025-03-26T22:06:51Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1904948136397246464",
-                    "StartTime": "2025-03-26T17:23:04Z",
-                    "CompletionTime": "2025-03-26T22:06:27Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1904947339399794688",
-                    "StartTime": "2025-03-26T17:23:04Z",
-                    "CompletionTime": "2025-03-26T22:11:03Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1904947338267332608",
-                    "StartTime": "2025-03-26T17:23:04Z",
-                    "CompletionTime": "2025-03-26T22:12:48Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1904947342260310016",
-                    "StartTime": "2025-03-26T17:23:05Z",
-                    "CompletionTime": "2025-03-26T22:13:48Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1904949237355909120",
-                    "StartTime": "2025-03-26T17:23:05Z",
-                    "CompletionTime": "2025-03-26T22:14:56Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1904951428464513024",
-                    "StartTime": "2025-03-26T17:23:05Z",
-                    "CompletionTime": "2025-03-26T22:21:57Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1904952845669502976",
-                    "StartTime": "2025-03-26T17:23:04Z",
-                    "CompletionTime": "2025-03-26T22:22:55Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169795280539648",
-                    "StartTime": "2025-03-27T08:07:22Z",
-                    "CompletionTime": "2025-03-27T11:22:24Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169786086625280",
-                    "StartTime": "2025-03-27T08:07:21Z",
-                    "CompletionTime": "2025-03-27T11:27:04Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169788578041856",
-                    "StartTime": "2025-03-27T08:07:21Z",
-                    "CompletionTime": "2025-03-27T11:32:40Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169793665732608",
-                    "StartTime": "2025-03-27T08:07:22Z",
-                    "CompletionTime": "2025-03-27T11:46:20Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169808706506752",
-                    "StartTime": "2025-03-27T08:07:23Z",
-                    "CompletionTime": "2025-03-27T11:41:31Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169805606916096",
-                    "StartTime": "2025-03-27T08:07:23Z",
-                    "CompletionTime": "2025-03-27T11:49:07Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169797000204288",
-                    "StartTime": "2025-03-27T08:07:22Z",
-                    "CompletionTime": "2025-03-27T11:49:00Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169799604867072",
-                    "StartTime": "2025-03-27T08:07:22Z",
-                    "CompletionTime": "2025-03-27T11:50:28Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169791073652736",
-                    "StartTime": "2025-03-27T08:07:21Z",
-                    "CompletionTime": "2025-03-27T11:52:20Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-upgrade/1905169802037563392",
-                    "StartTime": "2025-03-27T08:07:22Z",
-                    "CompletionTime": "2025-03-27T11:59:45Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-runc-upgrade/1905088912615804928",
-                    "StartTime": "2025-03-27T02:46:02Z",
-                    "CompletionTime": "2025-03-27T06:25:20Z"
-                }
-            ]
-        },
-        {
-            "TestId": "openshift-tests-upgrade:768829d0095685957b0d795e984b2385",
-            "TestName": "[sig-arch] events should not repeat pathologically for ns/openshift-marketplace",
-            "Release": "4.19",
-            "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
-            "Issue": {
-                "Type": "Infrastructure",
-                "Description": "Akamai caching issue is back again, affects a number of tests",
-                "URL": "https://issues.redhat.com/browse/TRT-2060"
-            },
-            "Variants": [
-                {
-                    "key": "Network",
-                    "value": "ovn"
-                },
-                {
-                    "key": "Upgrade",
-                    "value": "micro"
-                },
-                {
-                    "key": "Architecture",
-                    "value": "amd64"
-                },
-                {
-                    "key": "Platform",
-                    "value": "gcp"
-                },
-                {
-                    "key": "FeatureSet",
-                    "value": "default"
-                },
-                {
-                    "key": "Suite",
-                    "value": "unknown"
-                },
-                {
-                    "key": "Topology",
-                    "value": "ha"
-                },
-                {
-                    "key": "Installer",
-                    "value": "ipi"
-                }
-            ],
-            "JobRuns": [
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1904955252273057792",
-                    "StartTime": "2025-03-26T17:40:58Z",
-                    "CompletionTime": "2025-03-26T21:36:37Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1904952489405321216",
-                    "StartTime": "2025-03-26T17:40:59Z",
-                    "CompletionTime": "2025-03-26T21:44:51Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1904954751141810176",
-                    "StartTime": "2025-03-26T17:41:00Z",
-                    "CompletionTime": "2025-03-26T21:44:24Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1904959057005907968",
-                    "StartTime": "2025-03-26T17:40:59Z",
-                    "CompletionTime": "2025-03-26T21:47:52Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1904963053737218048",
-                    "StartTime": "2025-03-26T17:40:58Z",
-                    "CompletionTime": "2025-03-26T22:05:45Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1904967871780360192",
-                    "StartTime": "2025-03-26T17:41:00Z",
-                    "CompletionTime": "2025-03-26T22:18:24Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1904967995965313024",
-                    "StartTime": "2025-03-26T17:40:59Z",
-                    "CompletionTime": "2025-03-26T22:26:21Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905002940943306752",
-                    "StartTime": "2025-03-26T21:04:28Z",
-                    "CompletionTime": "2025-03-27T00:24:01Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044243747966976",
-                    "StartTime": "2025-03-26T23:48:26Z",
-                    "CompletionTime": "2025-03-27T03:20:51Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044234503720960",
-                    "StartTime": "2025-03-26T23:48:25Z",
-                    "CompletionTime": "2025-03-27T03:25:24Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044226962362368",
-                    "StartTime": "2025-03-26T23:48:24Z",
-                    "CompletionTime": "2025-03-27T03:26:59Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044241231384576",
-                    "StartTime": "2025-03-26T23:48:25Z",
-                    "CompletionTime": "2025-03-27T03:28:49Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044237024497664",
-                    "StartTime": "2025-03-26T23:48:25Z",
-                    "CompletionTime": "2025-03-27T03:27:43Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044230317805568",
-                    "StartTime": "2025-03-26T23:48:24Z",
-                    "CompletionTime": "2025-03-27T03:31:43Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044246256160768",
-                    "StartTime": "2025-03-26T23:48:26Z",
-                    "CompletionTime": "2025-03-27T03:31:16Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044231999721472",
-                    "StartTime": "2025-03-26T23:48:25Z",
-                    "CompletionTime": "2025-03-27T03:42:47Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044238702219264",
-                    "StartTime": "2025-03-26T23:48:25Z",
-                    "CompletionTime": "2025-03-27T03:43:47Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905053659968835584",
-                    "StartTime": "2025-03-27T00:26:01Z",
-                    "CompletionTime": "2025-03-27T03:44:09Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044228640083968",
-                    "StartTime": "2025-03-26T23:48:24Z",
-                    "CompletionTime": "2025-03-27T03:52:03Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132952824582144",
-                    "StartTime": "2025-03-27T05:40:55Z",
-                    "CompletionTime": "2025-03-27T09:17:26Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132958583361536",
-                    "StartTime": "2025-03-27T05:40:56Z",
-                    "CompletionTime": "2025-03-27T09:17:41Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132940967284736",
-                    "StartTime": "2025-03-27T05:40:54Z",
-                    "CompletionTime": "2025-03-27T09:19:33Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132945996255232",
-                    "StartTime": "2025-03-27T05:40:55Z",
-                    "CompletionTime": "2025-03-27T09:20:41Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132950190559232",
-                    "StartTime": "2025-03-27T05:40:55Z",
-                    "CompletionTime": "2025-03-27T09:24:30Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132947673976832",
-                    "StartTime": "2025-03-27T05:40:55Z",
-                    "CompletionTime": "2025-03-27T09:40:11Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132955227918336",
-                    "StartTime": "2025-03-27T05:40:55Z",
-                    "CompletionTime": "2025-03-27T09:38:41Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132938446508032",
-                    "StartTime": "2025-03-27T05:40:54Z",
-                    "CompletionTime": "2025-03-27T09:39:42Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132961938804736",
-                    "StartTime": "2025-03-27T05:40:56Z",
-                    "CompletionTime": "2025-03-27T09:40:02Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132943492255744",
-                    "StartTime": "2025-03-27T05:40:54Z",
-                    "CompletionTime": "2025-03-27T09:39:12Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905169937912041472",
-                    "StartTime": "2025-03-27T08:07:33Z",
-                    "CompletionTime": "2025-03-27T11:19:36Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-runc-upgrade/1905039822754418688",
-                    "StartTime": "2025-03-26T23:31:02Z",
-                    "CompletionTime": "2025-03-27T03:21:20Z"
-                }
-            ]
-        },
-        {
-            "TestId": "openshift-tests-upgrade:7dd49c583b2a86489d255d6ec262f69e",
-            "TestName": "[OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-marketplace",
-            "Release": "4.19",
-            "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
-            "Issue": {
-                "Type": "Infrastructure",
-                "Description": "Akamai caching issue is back again, affects a number of tests",
-                "URL": "https://issues.redhat.com/browse/TRT-2060"
-            },
-            "Variants": [
-                {
-                    "key": "Network",
-                    "value": "ovn"
-                },
-                {
-                    "key": "Upgrade",
-                    "value": "micro"
-                },
-                {
-                    "key": "Architecture",
-                    "value": "amd64"
-                },
-                {
-                    "key": "Platform",
-                    "value": "gcp"
-                },
-                {
-                    "key": "FeatureSet",
-                    "value": "default"
-                },
-                {
-                    "key": "Suite",
-                    "value": "unknown"
-                },
-                {
-                    "key": "Topology",
-                    "value": "ha"
-                },
-                {
-                    "key": "Installer",
-                    "value": "ipi"
-                }
-            ],
-            "JobRuns": [
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1904967871780360192",
-                    "StartTime": "2025-03-26T17:41:00Z",
-                    "CompletionTime": "2025-03-26T22:18:24Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1904967995965313024",
-                    "StartTime": "2025-03-26T17:40:59Z",
-                    "CompletionTime": "2025-03-26T22:26:21Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905002940943306752",
-                    "StartTime": "2025-03-26T21:04:28Z",
-                    "CompletionTime": "2025-03-27T00:24:01Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044243747966976",
-                    "StartTime": "2025-03-26T23:48:26Z",
-                    "CompletionTime": "2025-03-27T03:20:51Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044234503720960",
-                    "StartTime": "2025-03-26T23:48:25Z",
-                    "CompletionTime": "2025-03-27T03:25:24Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044226962362368",
-                    "StartTime": "2025-03-26T23:48:24Z",
-                    "CompletionTime": "2025-03-27T03:26:59Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044241231384576",
-                    "StartTime": "2025-03-26T23:48:25Z",
-                    "CompletionTime": "2025-03-27T03:28:49Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044237024497664",
-                    "StartTime": "2025-03-26T23:48:25Z",
-                    "CompletionTime": "2025-03-27T03:27:43Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044230317805568",
-                    "StartTime": "2025-03-26T23:48:24Z",
-                    "CompletionTime": "2025-03-27T03:31:43Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044246256160768",
-                    "StartTime": "2025-03-26T23:48:26Z",
-                    "CompletionTime": "2025-03-27T03:31:16Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044231999721472",
-                    "StartTime": "2025-03-26T23:48:25Z",
-                    "CompletionTime": "2025-03-27T03:42:47Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044238702219264",
-                    "StartTime": "2025-03-26T23:48:25Z",
-                    "CompletionTime": "2025-03-27T03:43:47Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905053659968835584",
-                    "StartTime": "2025-03-27T00:26:01Z",
-                    "CompletionTime": "2025-03-27T03:44:09Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905044228640083968",
-                    "StartTime": "2025-03-26T23:48:24Z",
-                    "CompletionTime": "2025-03-27T03:52:03Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132958583361536",
-                    "StartTime": "2025-03-27T05:40:56Z",
-                    "CompletionTime": "2025-03-27T09:17:41Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132952824582144",
-                    "StartTime": "2025-03-27T05:40:55Z",
-                    "CompletionTime": "2025-03-27T09:17:26Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132940967284736",
-                    "StartTime": "2025-03-27T05:40:54Z",
-                    "CompletionTime": "2025-03-27T09:19:33Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132945996255232",
-                    "StartTime": "2025-03-27T05:40:55Z",
-                    "CompletionTime": "2025-03-27T09:20:41Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132950190559232",
-                    "StartTime": "2025-03-27T05:40:55Z",
-                    "CompletionTime": "2025-03-27T09:24:30Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132947673976832",
-                    "StartTime": "2025-03-27T05:40:55Z",
-                    "CompletionTime": "2025-03-27T09:40:11Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132955227918336",
-                    "StartTime": "2025-03-27T05:40:55Z",
-                    "CompletionTime": "2025-03-27T09:38:41Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132938446508032",
-                    "StartTime": "2025-03-27T05:40:54Z",
-                    "CompletionTime": "2025-03-27T09:39:42Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132961938804736",
-                    "StartTime": "2025-03-27T05:40:56Z",
-                    "CompletionTime": "2025-03-27T09:40:02Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905132943492255744",
-                    "StartTime": "2025-03-27T05:40:54Z",
-                    "CompletionTime": "2025-03-27T09:39:12Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1905169937912041472",
-                    "StartTime": "2025-03-27T08:07:33Z",
-                    "CompletionTime": "2025-03-27T11:19:36Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-runc-upgrade/1905039822754418688",
-                    "StartTime": "2025-03-26T23:31:02Z",
-                    "CompletionTime": "2025-03-27T03:21:20Z"
-                }
-            ]
-        },
-        {
-            "TestId": "openshift-tests-upgrade:768829d0095685957b0d795e984b2385",
-            "TestName": "[sig-arch] events should not repeat pathologically for ns/openshift-marketplace",
-            "Release": "4.19",
-            "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
-            "Issue": {
-                "Type": "Infrastructure",
-                "Description": "Akamai caching issue is back again, affects a number of tests",
-                "URL": "https://issues.redhat.com/browse/TRT-2060"
-            },
-            "Variants": [
-                {
-                    "key": "Network",
-                    "value": "ovn"
-                },
-                {
-                    "key": "Upgrade",
-                    "value": "minor"
-                },
-                {
-                    "key": "Architecture",
-                    "value": "amd64"
-                },
-                {
-                    "key": "Platform",
-                    "value": "gcp"
-                },
-                {
-                    "key": "FeatureSet",
-                    "value": "default"
-                },
-                {
-                    "key": "Suite",
-                    "value": "unknown"
-                },
-                {
-                    "key": "Topology",
-                    "value": "ha"
-                },
-                {
-                    "key": "Installer",
-                    "value": "ipi"
-                }
-            ],
-            "JobRuns": [
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-gcp-ovn-rt-upgrade/1904949658816352256",
-                    "StartTime": "2025-03-26T17:23:14Z",
-                    "CompletionTime": "2025-03-26T21:30:11Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-gcp-ovn-rt-upgrade/1904949786553880576",
-                    "StartTime": "2025-03-26T17:23:14Z",
-                    "CompletionTime": "2025-03-26T21:31:03Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-gcp-ovn-rt-upgrade/1904947339823419392",
-                    "StartTime": "2025-03-26T17:23:13Z",
-                    "CompletionTime": "2025-03-26T21:36:23Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-gcp-ovn-rt-upgrade/1904947338980364288",
-                    "StartTime": "2025-03-26T17:23:13Z",
-                    "CompletionTime": "2025-03-26T21:42:10Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-gcp-ovn-rt-upgrade/1904947848194035712",
-                    "StartTime": "2025-03-26T17:23:14Z",
-                    "CompletionTime": "2025-03-26T21:50:04Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-gcp-ovn-rt-upgrade/1904949237230080000",
-                    "StartTime": "2025-03-26T17:23:14Z",
-                    "CompletionTime": "2025-03-26T21:50:28Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-gcp-ovn-rt-upgrade/1904947341798936576",
-                    "StartTime": "2025-03-26T17:23:13Z",
-                    "CompletionTime": "2025-03-26T21:50:11Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-gcp-ovn-rt-upgrade/1904958668315561984",
-                    "StartTime": "2025-03-26T17:23:14Z",
-                    "CompletionTime": "2025-03-26T22:14:58Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-gcp-ovn-rt-upgrade/1904958795788849152",
-                    "StartTime": "2025-03-26T17:23:15Z",
-                    "CompletionTime": "2025-03-26T22:17:42Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-gcp-ovn-rt-upgrade/1904961408429199360",
-                    "StartTime": "2025-03-26T17:23:15Z",
-                    "CompletionTime": "2025-03-26T22:36:15Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-gcp-ovn-rt-upgrade/1905169828864331776",
-                    "StartTime": "2025-03-27T08:07:24Z",
-                    "CompletionTime": "2025-03-27T12:10:55Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-gcp-ovn-rt-upgrade/1905169818764447744",
-                    "StartTime": "2025-03-27T08:07:24Z",
-                    "CompletionTime": "2025-03-27T12:17:20Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-gcp-ovn-rt-upgrade/1905169816247865344",
-                    "StartTime": "2025-03-27T08:07:23Z",
-                    "CompletionTime": "2025-03-27T12:18:28Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-gcp-ovn-rt-upgrade/1905169826347749376",
-                    "StartTime": "2025-03-27T08:07:24Z",
-                    "CompletionTime": "2025-03-27T12:19:44Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-gcp-ovn-upgrade/1904948973857148928",
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn/1904952728895885312",
                     "StartTime": "2025-03-26T17:23:02Z",
-                    "CompletionTime": "2025-03-26T21:35:33Z"
+                    "CompletionTime": "2025-03-26T21:36:07Z"
                 },
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-gcp-ovn-upgrade/1905170037711310848",
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn/1905170077137768448",
+                    "StartTime": "2025-03-27T08:07:44Z",
+                    "CompletionTime": "2025-03-27T10:54:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-azure-ovn-runc/1905059704095117312",
+                    "StartTime": "2025-03-27T00:50:02Z",
+                    "CompletionTime": "2025-03-27T03:19:33Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:768829d0095685957b0d795e984b2385",
+            "TestName": "[sig-arch] events should not repeat pathologically for ns/openshift-marketplace",
+            "Release": "4.19",
+            "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Akamai caching issue is back again, affects a number of tests",
+                "URL": "https://issues.redhat.com/browse/TRT-2060"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "azure"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1904955791585054720",
+                    "StartTime": "2025-03-26T17:23:11Z",
+                    "CompletionTime": "2025-03-26T22:10:18Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1905170057843970048",
+                    "StartTime": "2025-03-27T08:07:42Z",
+                    "CompletionTime": "2025-03-27T10:49:36Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-azure-ovn-runc-techpreview/1905099720829702144",
+                    "StartTime": "2025-03-27T03:29:02Z",
+                    "CompletionTime": "2025-03-27T06:13:46Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:7dd49c583b2a86489d255d6ec262f69e",
+            "TestName": "[OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-marketplace",
+            "Release": "4.19",
+            "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Akamai caching issue is back again, affects a number of tests",
+                "URL": "https://issues.redhat.com/browse/TRT-2060"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "azure"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1904955791585054720",
+                    "StartTime": "2025-03-26T17:23:11Z",
+                    "CompletionTime": "2025-03-26T22:10:18Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1905170057843970048",
+                    "StartTime": "2025-03-27T08:07:42Z",
+                    "CompletionTime": "2025-03-27T10:49:36Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-azure-ovn-runc-techpreview/1905099720829702144",
+                    "StartTime": "2025-03-27T03:29:02Z",
+                    "CompletionTime": "2025-03-27T06:13:46Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:7dd49c583b2a86489d255d6ec262f69e",
+            "TestName": "[OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-marketplace",
+            "Release": "4.19",
+            "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Akamai caching issue is back again, affects a number of tests",
+                "URL": "https://issues.redhat.com/browse/TRT-2060"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn/1905170035198922752",
                     "StartTime": "2025-03-27T08:07:41Z",
-                    "CompletionTime": "2025-03-27T12:04:14Z"
+                    "CompletionTime": "2025-03-27T10:27:21Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-gcp-ovn-csi/1905169936217542656",
+                    "StartTime": "2025-03-27T08:07:33Z",
+                    "CompletionTime": "2025-03-27T09:59:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-gcp-ovn-rt/1905169841526935552",
+                    "StartTime": "2025-03-27T08:07:26Z",
+                    "CompletionTime": "2025-03-27T10:36:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-gcp-ovn-runc/1905033782952464384",
+                    "StartTime": "2025-03-26T23:07:02Z",
+                    "CompletionTime": "2025-03-27T01:52:09Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:768829d0095685957b0d795e984b2385",
+            "TestName": "[sig-arch] events should not repeat pathologically for ns/openshift-marketplace",
+            "Release": "4.19",
+            "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Akamai caching issue is back again, affects a number of tests",
+                "URL": "https://issues.redhat.com/browse/TRT-2060"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn/1905170035198922752",
+                    "StartTime": "2025-03-27T08:07:41Z",
+                    "CompletionTime": "2025-03-27T10:27:21Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-gcp-ovn-csi/1905169936217542656",
+                    "StartTime": "2025-03-27T08:07:33Z",
+                    "CompletionTime": "2025-03-27T09:59:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-gcp-ovn-rt/1905169841526935552",
+                    "StartTime": "2025-03-27T08:07:26Z",
+                    "CompletionTime": "2025-03-27T10:36:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-gcp-ovn-runc/1905033782952464384",
+                    "StartTime": "2025-03-26T23:07:02Z",
+                    "CompletionTime": "2025-03-27T01:52:09Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:40365516152136b9a06007d3c5bc7c13",
+            "TestName": "[sig-operator] an end user can use OLM can subscribe to the operator [apigroup:config.openshift.io] [Skipped:Disconnected] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Akamai caching issue is back again, affects a number of tests",
+                "URL": "https://issues.redhat.com/browse/TRT-2060"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn/1905170035198922752",
+                    "StartTime": "2025-03-27T08:07:41Z",
+                    "CompletionTime": "2025-03-27T10:27:21Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-gcp-ovn-rt/1905169841526935552",
+                    "StartTime": "2025-03-27T08:07:26Z",
+                    "CompletionTime": "2025-03-27T10:36:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-gcp-ovn-runc/1905033782952464384",
+                    "StartTime": "2025-03-26T23:07:02Z",
+                    "CompletionTime": "2025-03-27T01:52:09Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:768829d0095685957b0d795e984b2385",
+            "TestName": "[sig-arch] events should not repeat pathologically for ns/openshift-marketplace",
+            "Release": "4.19",
+            "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Akamai caching issue is back again, affects a number of tests",
+                "URL": "https://issues.redhat.com/browse/TRT-2060"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-serial-ipv4/1904947167789846528",
+                    "StartTime": "2025-03-26T17:22:51Z",
+                    "CompletionTime": "2025-03-26T21:23:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-serial-ipv4/1905169783549071360",
+                    "StartTime": "2025-03-27T08:07:21Z",
+                    "CompletionTime": "2025-03-27T12:08:18Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-serial-ovn-dualstack/1904952007588843520",
+                    "StartTime": "2025-03-26T17:23:10Z",
+                    "CompletionTime": "2025-03-26T21:25:39Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-serial-ovn-dualstack/1905169954664091648",
+                    "StartTime": "2025-03-27T08:07:34Z",
+                    "CompletionTime": "2025-03-27T11:36:19Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:7dd49c583b2a86489d255d6ec262f69e",
+            "TestName": "[OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-marketplace",
+            "Release": "4.19",
+            "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Akamai caching issue is back again, affects a number of tests",
+                "URL": "https://issues.redhat.com/browse/TRT-2060"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "parallel"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-agent-ha-dualstack-conformance/1904952967891521536",
+                    "StartTime": "2025-03-26T17:23:02Z",
+                    "CompletionTime": "2025-03-26T20:32:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-agent-ha-dualstack-conformance/1905047409738649600",
+                    "StartTime": "2025-03-27T00:00:24Z",
+                    "CompletionTime": "2025-03-27T02:28:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-agent-ha-dualstack-conformance/1905170070439464960",
+                    "StartTime": "2025-03-27T08:07:43Z",
+                    "CompletionTime": "2025-03-27T10:41:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:7dd49c583b2a86489d255d6ec262f69e",
+            "TestName": "[OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-marketplace",
+            "Release": "4.19",
+            "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Akamai caching issue is back again, affects a number of tests",
+                "URL": "https://issues.redhat.com/browse/TRT-2060"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-serial-ipv4/1904947167789846528",
+                    "StartTime": "2025-03-26T17:22:51Z",
+                    "CompletionTime": "2025-03-26T21:23:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-serial-ipv4/1905169783549071360",
+                    "StartTime": "2025-03-27T08:07:21Z",
+                    "CompletionTime": "2025-03-27T12:08:18Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-serial-ovn-dualstack/1904952007588843520",
+                    "StartTime": "2025-03-26T17:23:10Z",
+                    "CompletionTime": "2025-03-26T21:25:39Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-serial-ovn-dualstack/1905169954664091648",
+                    "StartTime": "2025-03-27T08:07:34Z",
+                    "CompletionTime": "2025-03-27T11:36:19Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:768829d0095685957b0d795e984b2385",
+            "TestName": "[sig-arch] events should not repeat pathologically for ns/openshift-marketplace",
+            "Release": "4.19",
+            "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Akamai caching issue is back again, affects a number of tests",
+                "URL": "https://issues.redhat.com/browse/TRT-2060"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "parallel"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-agent-ha-dualstack-conformance/1904952967891521536",
+                    "StartTime": "2025-03-26T17:23:02Z",
+                    "CompletionTime": "2025-03-26T20:32:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-agent-ha-dualstack-conformance/1905047409738649600",
+                    "StartTime": "2025-03-27T00:00:24Z",
+                    "CompletionTime": "2025-03-27T02:28:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-agent-ha-dualstack-conformance/1905170070439464960",
+                    "StartTime": "2025-03-27T08:07:43Z",
+                    "CompletionTime": "2025-03-27T10:41:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:40365516152136b9a06007d3c5bc7c13",
+            "TestName": "[sig-operator] an end user can use OLM can subscribe to the operator [apigroup:config.openshift.io] [Skipped:Disconnected] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Akamai caching issue is back again, affects a number of tests",
+                "URL": "https://issues.redhat.com/browse/TRT-2060"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "rosa"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-rosa-sts-ovn/1905002904876486656",
+                    "StartTime": "2025-03-26T21:04:20Z",
+                    "CompletionTime": "2025-03-27T00:03:32Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-rosa-sts-ovn/1905048503776710656",
+                    "StartTime": "2025-03-27T00:05:32Z",
+                    "CompletionTime": "2025-03-27T03:05:00Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-rosa-sts-ovn/1905170084704292864",
+                    "StartTime": "2025-03-27T08:07:44Z",
+                    "CompletionTime": "2025-03-27T11:45:35Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:768829d0095685957b0d795e984b2385",
+            "TestName": "[sig-arch] events should not repeat pathologically for ns/openshift-marketplace",
+            "Release": "4.19",
+            "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Akamai caching issue is back again, affects a number of tests",
+                "URL": "https://issues.redhat.com/browse/TRT-2060"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ipi-ovn-runc/1905045867010723840",
+                    "StartTime": "2025-03-26T23:55:02Z",
+                    "CompletionTime": "2025-03-27T01:59:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1905170087258624000",
+                    "StartTime": "2025-03-27T08:07:44Z",
+                    "CompletionTime": "2025-03-27T10:07:18Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1905200161945030656",
+                    "StartTime": "2025-03-27T10:08:09Z",
+                    "CompletionTime": "2025-03-27T12:05:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-csi/1905169773461770240",
+                    "StartTime": "2025-03-27T08:07:20Z",
+                    "CompletionTime": "2025-03-27T09:25:23Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-kube-apiserver-rollout/1905035041784729600",
+                    "StartTime": "2025-03-26T23:12:02Z",
+                    "CompletionTime": "2025-03-27T01:31:00Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-static-ovn/1905169949656092672",
+                    "StartTime": "2025-03-27T08:07:34Z",
+                    "CompletionTime": "2025-03-27T10:16:55Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:40365516152136b9a06007d3c5bc7c13",
+            "TestName": "[sig-operator] an end user can use OLM can subscribe to the operator [apigroup:config.openshift.io] [Skipped:Disconnected] [Skipped:NoOptionalCapabilities] [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Akamai caching issue is back again, affects a number of tests",
+                "URL": "https://issues.redhat.com/browse/TRT-2060"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ipi-ovn-runc/1905045867010723840",
+                    "StartTime": "2025-03-26T23:55:02Z",
+                    "CompletionTime": "2025-03-27T01:59:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1905170087258624000",
+                    "StartTime": "2025-03-27T08:07:44Z",
+                    "CompletionTime": "2025-03-27T10:07:18Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1905200161945030656",
+                    "StartTime": "2025-03-27T10:08:09Z",
+                    "CompletionTime": "2025-03-27T12:05:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-static-ovn/1905169949656092672",
+                    "StartTime": "2025-03-27T08:07:34Z",
+                    "CompletionTime": "2025-03-27T10:16:55Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:7dd49c583b2a86489d255d6ec262f69e",
+            "TestName": "[OLM][invariant] alert/KubePodNotReady should not be at or above info in ns/openshift-marketplace",
+            "Release": "4.19",
+            "GroupId": "88e821ae-8b50-4b90-9418-0b44cbdd9d63",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Akamai caching issue is back again, affects a number of tests",
+                "URL": "https://issues.redhat.com/browse/TRT-2060"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ipi-ovn-runc/1905045867010723840",
+                    "StartTime": "2025-03-26T23:55:02Z",
+                    "CompletionTime": "2025-03-27T01:59:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1905170087258624000",
+                    "StartTime": "2025-03-27T08:07:44Z",
+                    "CompletionTime": "2025-03-27T10:07:18Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1905200161945030656",
+                    "StartTime": "2025-03-27T10:08:09Z",
+                    "CompletionTime": "2025-03-27T12:05:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-csi/1905169773461770240",
+                    "StartTime": "2025-03-27T08:07:20Z",
+                    "CompletionTime": "2025-03-27T09:25:23Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-kube-apiserver-rollout/1905035041784729600",
+                    "StartTime": "2025-03-26T23:12:02Z",
+                    "CompletionTime": "2025-03-27T01:31:00Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-static-ovn/1905169949656092672",
+                    "StartTime": "2025-03-27T08:07:34Z",
+                    "CompletionTime": "2025-03-27T10:16:55Z"
                 }
             ]
         }
