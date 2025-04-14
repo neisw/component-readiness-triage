@@ -6,7 +6,7 @@
         "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-54877",
         "OutputFile": "olm_newolm_failures_regressions.json",
         "IncidentGroupId": "8b4324b5-9a0e-452b-b1c2-a4f1e1e56231",
-        "TargetModifiedTime": "2025-04-11 10:52:59.288327+00:00"
+        "TargetModifiedTime": "2025-04-14 12:54:55.703231+00:00"
     },
     "Tests": [
         {
@@ -55,6 +55,11 @@
             ],
             "JobRuns": [
                 {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-cgroupsv2/1910774132551716864",
+                    "StartTime": "2025-04-11T19:16:49Z",
+                    "CompletionTime": "2025-04-11T21:34:13Z"
+                },
+                {
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-fips/1910033017452105728",
                     "StartTime": "2025-04-09T18:12:12Z",
                     "CompletionTime": "2025-04-09T20:48:04Z"
@@ -73,6 +78,16 @@
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-fips/1910494683956514816",
                     "StartTime": "2025-04-11T00:46:42Z",
                     "CompletionTime": "2025-04-11T03:00:23Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-fips/1911355154997710848",
+                    "StartTime": "2025-04-13T09:45:44Z",
+                    "CompletionTime": "2025-04-13T12:13:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-proxy/1911354948650536960",
+                    "StartTime": "2025-04-13T09:45:05Z",
+                    "CompletionTime": "2025-04-13T11:59:45Z"
                 }
             ]
         },
@@ -122,6 +137,11 @@
             ],
             "JobRuns": [
                 {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-cgroupsv2/1910774132551716864",
+                    "StartTime": "2025-04-11T19:16:49Z",
+                    "CompletionTime": "2025-04-11T21:34:13Z"
+                },
+                {
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-fips/1910033017452105728",
                     "StartTime": "2025-04-09T18:12:12Z",
                     "CompletionTime": "2025-04-09T20:48:04Z"
@@ -140,6 +160,16 @@
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-fips/1910494683956514816",
                     "StartTime": "2025-04-11T00:46:42Z",
                     "CompletionTime": "2025-04-11T03:00:23Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-fips/1911355154997710848",
+                    "StartTime": "2025-04-13T09:45:44Z",
+                    "CompletionTime": "2025-04-13T12:13:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-proxy/1911354948650536960",
+                    "StartTime": "2025-04-13T09:45:05Z",
+                    "CompletionTime": "2025-04-13T11:59:45Z"
                 }
             ]
         },
@@ -189,6 +219,11 @@
             ],
             "JobRuns": [
                 {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-cgroupsv2/1910774132551716864",
+                    "StartTime": "2025-04-11T19:16:49Z",
+                    "CompletionTime": "2025-04-11T21:34:13Z"
+                },
+                {
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-fips/1910033017452105728",
                     "StartTime": "2025-04-09T18:12:12Z",
                     "CompletionTime": "2025-04-09T20:48:04Z"
@@ -207,6 +242,16 @@
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-fips/1910494683956514816",
                     "StartTime": "2025-04-11T00:46:42Z",
                     "CompletionTime": "2025-04-11T03:00:23Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-fips/1911355154997710848",
+                    "StartTime": "2025-04-13T09:45:44Z",
+                    "CompletionTime": "2025-04-13T12:13:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-proxy/1911354948650536960",
+                    "StartTime": "2025-04-13T09:45:05Z",
+                    "CompletionTime": "2025-04-13T11:59:45Z"
                 }
             ]
         },
@@ -269,6 +314,21 @@
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn/1910302813846507520",
                     "StartTime": "2025-04-10T12:02:48Z",
                     "CompletionTime": "2025-04-10T14:54:52Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn/1910583925080592384",
+                    "StartTime": "2025-04-11T06:41:19Z",
+                    "CompletionTime": "2025-04-11T09:11:33Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn/1910985047024865280",
+                    "StartTime": "2025-04-12T09:14:43Z",
+                    "CompletionTime": "2025-04-12T11:50:48Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-azure-ovn-runc/1911220498495180800",
+                    "StartTime": "2025-04-13T00:50:49Z",
+                    "CompletionTime": "2025-04-13T03:19:37Z"
                 }
             ]
         },
@@ -331,6 +391,21 @@
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn/1910302813846507520",
                     "StartTime": "2025-04-10T12:02:48Z",
                     "CompletionTime": "2025-04-10T14:54:52Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn/1910583925080592384",
+                    "StartTime": "2025-04-11T06:41:19Z",
+                    "CompletionTime": "2025-04-11T09:11:33Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn/1910985047024865280",
+                    "StartTime": "2025-04-12T09:14:43Z",
+                    "CompletionTime": "2025-04-12T11:50:48Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-azure-ovn-runc/1911220498495180800",
+                    "StartTime": "2025-04-13T00:50:49Z",
+                    "CompletionTime": "2025-04-13T03:19:37Z"
                 }
             ]
         },
@@ -393,6 +468,21 @@
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn/1910302813846507520",
                     "StartTime": "2025-04-10T12:02:48Z",
                     "CompletionTime": "2025-04-10T14:54:52Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn/1910583925080592384",
+                    "StartTime": "2025-04-11T06:41:19Z",
+                    "CompletionTime": "2025-04-11T09:11:33Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn/1910985047024865280",
+                    "StartTime": "2025-04-12T09:14:43Z",
+                    "CompletionTime": "2025-04-12T11:50:48Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-azure-ovn-runc/1911220498495180800",
+                    "StartTime": "2025-04-13T00:50:49Z",
+                    "CompletionTime": "2025-04-13T03:19:37Z"
                 }
             ]
         },
@@ -447,6 +537,16 @@
                     "CompletionTime": "2025-04-11T02:35:32Z"
                 },
                 {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ipi-ovn-runc/1910844269858394112",
+                    "StartTime": "2025-04-11T23:55:48Z",
+                    "CompletionTime": "2025-04-12T01:59:06Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ipi-ovn-runc/1911569056314429440",
+                    "StartTime": "2025-04-13T23:55:50Z",
+                    "CompletionTime": "2025-04-14T01:59:49Z"
+                },
+                {
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1909903870910271488",
                     "StartTime": "2025-04-09T09:38:38Z",
                     "CompletionTime": "2025-04-09T11:41:25Z"
@@ -467,6 +567,36 @@
                     "CompletionTime": "2025-04-10T11:05:33Z"
                 },
                 {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1910984917836107776",
+                    "StartTime": "2025-04-12T09:14:31Z",
+                    "CompletionTime": "2025-04-12T11:15:33Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1911166576489402368",
+                    "StartTime": "2025-04-12T21:16:21Z",
+                    "CompletionTime": "2025-04-12T23:20:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1911355064400744448",
+                    "StartTime": "2025-04-13T09:45:28Z",
+                    "CompletionTime": "2025-04-13T11:44:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1911385731897495552",
+                    "StartTime": "2025-04-13T11:47:24Z",
+                    "CompletionTime": "2025-04-13T13:47:34Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1911416498199465984",
+                    "StartTime": "2025-04-13T13:49:40Z",
+                    "CompletionTime": "2025-04-13T15:47:18Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1911547152769748992",
+                    "StartTime": "2025-04-13T22:28:43Z",
+                    "CompletionTime": "2025-04-14T00:31:59Z"
+                },
+                {
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-static-ovn/1910171714977796096",
                     "StartTime": "2025-04-10T03:22:25Z",
                     "CompletionTime": "2025-04-10T06:57:42Z"
@@ -480,6 +610,21 @@
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-static-ovn/1910461811539316736",
                     "StartTime": "2025-04-10T22:35:01Z",
                     "CompletionTime": "2025-04-11T01:50:27Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-static-ovn/1910584070115430400",
+                    "StartTime": "2025-04-11T06:41:30Z",
+                    "CompletionTime": "2025-04-11T09:01:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-static-ovn/1910774250831089664",
+                    "StartTime": "2025-04-11T19:17:00Z",
+                    "CompletionTime": "2025-04-11T22:56:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-static-ovn/1910984807161008128",
+                    "StartTime": "2025-04-12T09:14:14Z",
+                    "CompletionTime": "2025-04-12T11:18:53Z"
                 }
             ]
         },
@@ -534,6 +679,16 @@
                     "CompletionTime": "2025-04-11T02:35:32Z"
                 },
                 {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ipi-ovn-runc/1910844269858394112",
+                    "StartTime": "2025-04-11T23:55:48Z",
+                    "CompletionTime": "2025-04-12T01:59:06Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ipi-ovn-runc/1911569056314429440",
+                    "StartTime": "2025-04-13T23:55:50Z",
+                    "CompletionTime": "2025-04-14T01:59:49Z"
+                },
+                {
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1909903870910271488",
                     "StartTime": "2025-04-09T09:38:38Z",
                     "CompletionTime": "2025-04-09T11:41:25Z"
@@ -554,6 +709,36 @@
                     "CompletionTime": "2025-04-10T11:05:33Z"
                 },
                 {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1910984917836107776",
+                    "StartTime": "2025-04-12T09:14:31Z",
+                    "CompletionTime": "2025-04-12T11:15:33Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1911166576489402368",
+                    "StartTime": "2025-04-12T21:16:21Z",
+                    "CompletionTime": "2025-04-12T23:20:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1911355064400744448",
+                    "StartTime": "2025-04-13T09:45:28Z",
+                    "CompletionTime": "2025-04-13T11:44:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1911385731897495552",
+                    "StartTime": "2025-04-13T11:47:24Z",
+                    "CompletionTime": "2025-04-13T13:47:34Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1911416498199465984",
+                    "StartTime": "2025-04-13T13:49:40Z",
+                    "CompletionTime": "2025-04-13T15:47:18Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1911547152769748992",
+                    "StartTime": "2025-04-13T22:28:43Z",
+                    "CompletionTime": "2025-04-14T00:31:59Z"
+                },
+                {
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-static-ovn/1910171714977796096",
                     "StartTime": "2025-04-10T03:22:25Z",
                     "CompletionTime": "2025-04-10T06:57:42Z"
@@ -567,6 +752,21 @@
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-static-ovn/1910461811539316736",
                     "StartTime": "2025-04-10T22:35:01Z",
                     "CompletionTime": "2025-04-11T01:50:27Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-static-ovn/1910584070115430400",
+                    "StartTime": "2025-04-11T06:41:30Z",
+                    "CompletionTime": "2025-04-11T09:01:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-static-ovn/1910774250831089664",
+                    "StartTime": "2025-04-11T19:17:00Z",
+                    "CompletionTime": "2025-04-11T22:56:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-static-ovn/1910984807161008128",
+                    "StartTime": "2025-04-12T09:14:14Z",
+                    "CompletionTime": "2025-04-12T11:18:53Z"
                 }
             ]
         }
