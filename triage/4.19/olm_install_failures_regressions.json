@@ -1,0 +1,832 @@
+{
+    "Arguments": {
+        "TestRelease": "4.19",
+        "IssueDescription": "OLM techpreview install failures",
+        "IssueType": "Product",
+        "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-54781",
+        "OutputFile": "olm_install_failures_regressions.json",
+        "IncidentGroupId": "d69a4094-f01a-4240-bcdf-3b7b30c68431",
+        "TargetModifiedTime": "2025-04-10 20:01:13.090234+00:00",
+        "IssueResolutionDate": "2025-04-10T03:22:00Z"
+    },
+    "Tests": [
+        {
+            "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
+            "TestName": "install should succeed: overall",
+            "Release": "4.19",
+            "GroupId": "d69a4094-f01a-4240-bcdf-3b7b30c68431",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM techpreview install failures",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54781",
+                "ResolutionDate": "2025-04-10T03:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-console-operator-release-4.19-periodics-e2e-aws-techpreview/1909922644015190016",
+                    "StartTime": "2025-04-09T10:53:37Z",
+                    "CompletionTime": "2025-04-09T11:14:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1908633377116786688",
+                    "StartTime": "2025-04-05T21:30:16Z",
+                    "CompletionTime": "2025-04-05T22:28:05Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1909903906138230784",
+                    "StartTime": "2025-04-09T09:38:41Z",
+                    "CompletionTime": "2025-04-09T11:21:29Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1909930323508989952",
+                    "StartTime": "2025-04-09T11:24:08Z",
+                    "CompletionTime": "2025-04-09T12:55:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1909953804451713024",
+                    "StartTime": "2025-04-09T12:57:26Z",
+                    "CompletionTime": "2025-04-09T14:42:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1910033217952419840",
+                    "StartTime": "2025-04-09T18:12:28Z",
+                    "CompletionTime": "2025-04-09T19:45:55Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1910057095860850688",
+                    "StartTime": "2025-04-09T19:47:53Z",
+                    "CompletionTime": "2025-04-09T21:20:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1910081295308820480",
+                    "StartTime": "2025-04-09T21:24:02Z",
+                    "CompletionTime": "2025-04-09T22:58:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-runc-techpreview/1908690015131537408",
+                    "StartTime": "2025-04-06T01:15:34Z",
+                    "CompletionTime": "2025-04-06T03:19:33Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-shared-vpc-phz-techpreview/1909733712858189824",
+                    "StartTime": "2025-04-08T22:22:41Z",
+                    "CompletionTime": "2025-04-08T22:27:50Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:2bc0fe9de9a98831c20e569a21d7ded9",
+            "TestName": "install should succeed: cluster creation",
+            "Release": "4.19",
+            "GroupId": "d69a4094-f01a-4240-bcdf-3b7b30c68431",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM techpreview install failures",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54781",
+                "ResolutionDate": "2025-04-10T03:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1909904016872050688",
+                    "StartTime": "2025-04-09T09:38:49Z",
+                    "CompletionTime": "2025-04-09T11:21:23Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1909930305897107456",
+                    "StartTime": "2025-04-09T11:24:04Z",
+                    "CompletionTime": "2025-04-09T12:52:05Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1909953291362504704",
+                    "StartTime": "2025-04-09T12:55:24Z",
+                    "CompletionTime": "2025-04-09T14:30:59Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1910033122372620288",
+                    "StartTime": "2025-04-09T18:12:20Z",
+                    "CompletionTime": "2025-04-09T19:53:07Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1910058655529570304",
+                    "StartTime": "2025-04-09T19:54:05Z",
+                    "CompletionTime": "2025-04-09T21:26:07Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1910082366685057024",
+                    "StartTime": "2025-04-09T21:28:18Z",
+                    "CompletionTime": "2025-04-09T22:57:43Z"
+                }
+            ]
+        },
+        {
+            "TestId": "Operator results:349ae2ffd8b5cfcb4021fcd275fd5f13",
+            "TestName": "operator conditions olm",
+            "Release": "4.19",
+            "GroupId": "d69a4094-f01a-4240-bcdf-3b7b30c68431",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM techpreview install failures",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54781",
+                "ResolutionDate": "2025-04-10T03:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview-serial/1907599120365785088",
+                    "StartTime": "2025-04-03T01:00:45Z",
+                    "CompletionTime": "2025-04-03T02:23:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview-serial/1909903900371062784",
+                    "StartTime": "2025-04-09T09:38:41Z",
+                    "CompletionTime": "2025-04-09T10:51:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview-serial/1910033018286772224",
+                    "StartTime": "2025-04-09T18:12:12Z",
+                    "CompletionTime": "2025-04-09T20:26:20Z"
+                }
+            ]
+        },
+        {
+            "TestId": "Operator results:349ae2ffd8b5cfcb4021fcd275fd5f13",
+            "TestName": "operator conditions olm",
+            "Release": "4.19",
+            "GroupId": "d69a4094-f01a-4240-bcdf-3b7b30c68431",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM techpreview install failures",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54781",
+                "ResolutionDate": "2025-04-10T03:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1909903906138230784",
+                    "StartTime": "2025-04-09T09:38:41Z",
+                    "CompletionTime": "2025-04-09T11:21:29Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1909930323508989952",
+                    "StartTime": "2025-04-09T11:24:08Z",
+                    "CompletionTime": "2025-04-09T12:55:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1909953804451713024",
+                    "StartTime": "2025-04-09T12:57:26Z",
+                    "CompletionTime": "2025-04-09T14:42:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1910033217952419840",
+                    "StartTime": "2025-04-09T18:12:28Z",
+                    "CompletionTime": "2025-04-09T19:45:55Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1910057095860850688",
+                    "StartTime": "2025-04-09T19:47:53Z",
+                    "CompletionTime": "2025-04-09T21:20:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1910081295308820480",
+                    "StartTime": "2025-04-09T21:24:02Z",
+                    "CompletionTime": "2025-04-09T22:58:35Z"
+                }
+            ]
+        },
+        {
+            "TestId": "Operator results:349ae2ffd8b5cfcb4021fcd275fd5f13",
+            "TestName": "operator conditions olm",
+            "Release": "4.19",
+            "GroupId": "d69a4094-f01a-4240-bcdf-3b7b30c68431",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM techpreview install failures",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54781",
+                "ResolutionDate": "2025-04-10T03:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-dualstack-techpreview/1909903878627790848",
+                    "StartTime": "2025-04-09T09:38:39Z",
+                    "CompletionTime": "2025-04-09T11:41:20Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-ipv6-techpreview/1909904009401995264",
+                    "StartTime": "2025-04-09T09:38:49Z",
+                    "CompletionTime": "2025-04-09T11:39:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-techpreview/1909904069720281088",
+                    "StartTime": "2025-04-09T09:38:53Z",
+                    "CompletionTime": "2025-04-09T11:38:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-techpreview/1910033307723108352",
+                    "StartTime": "2025-04-09T18:12:35Z",
+                    "CompletionTime": "2025-04-09T20:14:17Z"
+                }
+            ]
+        },
+        {
+            "TestId": "Operator results:349ae2ffd8b5cfcb4021fcd275fd5f13",
+            "TestName": "operator conditions olm",
+            "Release": "4.19",
+            "GroupId": "d69a4094-f01a-4240-bcdf-3b7b30c68431",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM techpreview install failures",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54781",
+                "ResolutionDate": "2025-04-10T03:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1909904016872050688",
+                    "StartTime": "2025-04-09T09:38:49Z",
+                    "CompletionTime": "2025-04-09T11:21:23Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1909930305897107456",
+                    "StartTime": "2025-04-09T11:24:04Z",
+                    "CompletionTime": "2025-04-09T12:52:05Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1909953291362504704",
+                    "StartTime": "2025-04-09T12:55:24Z",
+                    "CompletionTime": "2025-04-09T14:30:59Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1910033122372620288",
+                    "StartTime": "2025-04-09T18:12:20Z",
+                    "CompletionTime": "2025-04-09T19:53:07Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1910058655529570304",
+                    "StartTime": "2025-04-09T19:54:05Z",
+                    "CompletionTime": "2025-04-09T21:26:07Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1910082366685057024",
+                    "StartTime": "2025-04-09T21:28:18Z",
+                    "CompletionTime": "2025-04-09T22:57:43Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
+            "TestName": "install should succeed: overall",
+            "Release": "4.19",
+            "GroupId": "d69a4094-f01a-4240-bcdf-3b7b30c68431",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM techpreview install failures",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54781",
+                "ResolutionDate": "2025-04-10T03:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1909904016872050688",
+                    "StartTime": "2025-04-09T09:38:49Z",
+                    "CompletionTime": "2025-04-09T11:21:23Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1909930305897107456",
+                    "StartTime": "2025-04-09T11:24:04Z",
+                    "CompletionTime": "2025-04-09T12:52:05Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1909953291362504704",
+                    "StartTime": "2025-04-09T12:55:24Z",
+                    "CompletionTime": "2025-04-09T14:30:59Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1910033122372620288",
+                    "StartTime": "2025-04-09T18:12:20Z",
+                    "CompletionTime": "2025-04-09T19:53:07Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1910058655529570304",
+                    "StartTime": "2025-04-09T19:54:05Z",
+                    "CompletionTime": "2025-04-09T21:26:07Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1910082366685057024",
+                    "StartTime": "2025-04-09T21:28:18Z",
+                    "CompletionTime": "2025-04-09T22:57:43Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:2bc0fe9de9a98831c20e569a21d7ded9",
+            "TestName": "install should succeed: cluster creation",
+            "Release": "4.19",
+            "GroupId": "d69a4094-f01a-4240-bcdf-3b7b30c68431",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM techpreview install failures",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54781",
+                "ResolutionDate": "2025-04-10T03:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1909903906138230784",
+                    "StartTime": "2025-04-09T09:38:41Z",
+                    "CompletionTime": "2025-04-09T11:21:29Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1909930323508989952",
+                    "StartTime": "2025-04-09T11:24:08Z",
+                    "CompletionTime": "2025-04-09T12:55:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1909953804451713024",
+                    "StartTime": "2025-04-09T12:57:26Z",
+                    "CompletionTime": "2025-04-09T14:42:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1910033217952419840",
+                    "StartTime": "2025-04-09T18:12:28Z",
+                    "CompletionTime": "2025-04-09T19:45:55Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1910057095860850688",
+                    "StartTime": "2025-04-09T19:47:53Z",
+                    "CompletionTime": "2025-04-09T21:20:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1910081295308820480",
+                    "StartTime": "2025-04-09T21:24:02Z",
+                    "CompletionTime": "2025-04-09T22:58:35Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
+            "TestName": "install should succeed: overall",
+            "Release": "4.19",
+            "GroupId": "d69a4094-f01a-4240-bcdf-3b7b30c68431",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM techpreview install failures",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54781",
+                "ResolutionDate": "2025-04-10T03:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-dualstack-techpreview/1909903878627790848",
+                    "StartTime": "2025-04-09T09:38:39Z",
+                    "CompletionTime": "2025-04-09T11:41:20Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-ipv6-techpreview/1909904009401995264",
+                    "StartTime": "2025-04-09T09:38:49Z",
+                    "CompletionTime": "2025-04-09T11:39:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-techpreview/1909904069720281088",
+                    "StartTime": "2025-04-09T09:38:53Z",
+                    "CompletionTime": "2025-04-09T11:38:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-techpreview/1910033307723108352",
+                    "StartTime": "2025-04-09T18:12:35Z",
+                    "CompletionTime": "2025-04-09T20:14:17Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:2bc0fe9de9a98831c20e569a21d7ded9",
+            "TestName": "install should succeed: cluster creation",
+            "Release": "4.19",
+            "GroupId": "d69a4094-f01a-4240-bcdf-3b7b30c68431",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM techpreview install failures",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54781",
+                "ResolutionDate": "2025-04-10T03:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-dualstack-techpreview/1909903878627790848",
+                    "StartTime": "2025-04-09T09:38:39Z",
+                    "CompletionTime": "2025-04-09T11:41:20Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-ipv6-techpreview/1909904009401995264",
+                    "StartTime": "2025-04-09T09:38:49Z",
+                    "CompletionTime": "2025-04-09T11:39:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-techpreview/1909904069720281088",
+                    "StartTime": "2025-04-09T09:38:53Z",
+                    "CompletionTime": "2025-04-09T11:38:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-techpreview/1910033307723108352",
+                    "StartTime": "2025-04-09T18:12:35Z",
+                    "CompletionTime": "2025-04-09T20:14:17Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
+            "TestName": "install should succeed: overall",
+            "Release": "4.19",
+            "GroupId": "d69a4094-f01a-4240-bcdf-3b7b30c68431",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM techpreview install failures",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54781",
+                "ResolutionDate": "2025-04-10T03:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview-serial/1907599120365785088",
+                    "StartTime": "2025-04-03T01:00:45Z",
+                    "CompletionTime": "2025-04-03T02:23:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview-serial/1909903900371062784",
+                    "StartTime": "2025-04-09T09:38:41Z",
+                    "CompletionTime": "2025-04-09T10:51:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview-serial/1910033018286772224",
+                    "StartTime": "2025-04-09T18:12:12Z",
+                    "CompletionTime": "2025-04-09T20:26:20Z"
+                }
+            ]
+        }
+    ]
+}

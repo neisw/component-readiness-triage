@@ -1,0 +1,574 @@
+{
+    "Arguments": {
+        "TestRelease": "4.19",
+        "IssueDescription": "NewOLM test regressions",
+        "IssueType": "Product",
+        "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-54877",
+        "OutputFile": "olm_newolm_failures_regressions.json",
+        "IncidentGroupId": "8b4324b5-9a0e-452b-b1c2-a4f1e1e56231",
+        "TargetModifiedTime": "2025-04-11 10:52:59.288327+00:00"
+    },
+    "Tests": [
+        {
+            "TestId": "openshift-tests:0c0cc3c8ed00082e1c8c423d61129c21",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLM][Skipped:Disconnected] OLMv1 operator installation should fail to install a non-existing cluster extension [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "8b4324b5-9a0e-452b-b1c2-a4f1e1e56231",
+            "Issue": {
+                "Type": "Product",
+                "Description": "NewOLM test regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54877"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-fips/1910033017452105728",
+                    "StartTime": "2025-04-09T18:12:12Z",
+                    "CompletionTime": "2025-04-09T20:48:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-fips/1910208299307896832",
+                    "StartTime": "2025-04-10T05:48:42Z",
+                    "CompletionTime": "2025-04-10T08:09:33Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-fips/1910461363625398272",
+                    "StartTime": "2025-04-10T22:33:57Z",
+                    "CompletionTime": "2025-04-11T00:44:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-fips/1910494683956514816",
+                    "StartTime": "2025-04-11T00:46:42Z",
+                    "CompletionTime": "2025-04-11T03:00:23Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:f8c9a96afcf430ac6c28ef3e6f414644",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLM][Skipped:Disconnected] OLMv1 operator installation should install a cluster extension [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "8b4324b5-9a0e-452b-b1c2-a4f1e1e56231",
+            "Issue": {
+                "Type": "Product",
+                "Description": "NewOLM test regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54877"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-fips/1910033017452105728",
+                    "StartTime": "2025-04-09T18:12:12Z",
+                    "CompletionTime": "2025-04-09T20:48:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-fips/1910208299307896832",
+                    "StartTime": "2025-04-10T05:48:42Z",
+                    "CompletionTime": "2025-04-10T08:09:33Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-fips/1910461363625398272",
+                    "StartTime": "2025-04-10T22:33:57Z",
+                    "CompletionTime": "2025-04-11T00:44:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-fips/1910494683956514816",
+                    "StartTime": "2025-04-11T00:46:42Z",
+                    "CompletionTime": "2025-04-11T03:00:23Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:a1b8acc02feba9d42fac0dcc5ea4e87b",
+            "TestName": "",
+            "Release": "4.19",
+            "GroupId": "8b4324b5-9a0e-452b-b1c2-a4f1e1e56231",
+            "Issue": {
+                "Type": "Product",
+                "Description": "NewOLM test regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54877"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-fips/1910033017452105728",
+                    "StartTime": "2025-04-09T18:12:12Z",
+                    "CompletionTime": "2025-04-09T20:48:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-fips/1910208299307896832",
+                    "StartTime": "2025-04-10T05:48:42Z",
+                    "CompletionTime": "2025-04-10T08:09:33Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-fips/1910461363625398272",
+                    "StartTime": "2025-04-10T22:33:57Z",
+                    "CompletionTime": "2025-04-11T00:44:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-aws-ovn-fips/1910494683956514816",
+                    "StartTime": "2025-04-11T00:46:42Z",
+                    "CompletionTime": "2025-04-11T03:00:23Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:a1b8acc02feba9d42fac0dcc5ea4e87b",
+            "TestName": "",
+            "Release": "4.19",
+            "GroupId": "8b4324b5-9a0e-452b-b1c2-a4f1e1e56231",
+            "Issue": {
+                "Type": "Product",
+                "Description": "NewOLM test regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54877"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "azure"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn/1909904020231688192",
+                    "StartTime": "2025-04-09T09:38:50Z",
+                    "CompletionTime": "2025-04-09T12:09:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn/1910033255726321664",
+                    "StartTime": "2025-04-09T18:12:31Z",
+                    "CompletionTime": "2025-04-09T20:48:57Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn/1910302813846507520",
+                    "StartTime": "2025-04-10T12:02:48Z",
+                    "CompletionTime": "2025-04-10T14:54:52Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:0c0cc3c8ed00082e1c8c423d61129c21",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLM][Skipped:Disconnected] OLMv1 operator installation should fail to install a non-existing cluster extension [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "8b4324b5-9a0e-452b-b1c2-a4f1e1e56231",
+            "Issue": {
+                "Type": "Product",
+                "Description": "NewOLM test regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54877"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "azure"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn/1909904020231688192",
+                    "StartTime": "2025-04-09T09:38:50Z",
+                    "CompletionTime": "2025-04-09T12:09:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn/1910033255726321664",
+                    "StartTime": "2025-04-09T18:12:31Z",
+                    "CompletionTime": "2025-04-09T20:48:57Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn/1910302813846507520",
+                    "StartTime": "2025-04-10T12:02:48Z",
+                    "CompletionTime": "2025-04-10T14:54:52Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:f8c9a96afcf430ac6c28ef3e6f414644",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLM][Skipped:Disconnected] OLMv1 operator installation should install a cluster extension [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "8b4324b5-9a0e-452b-b1c2-a4f1e1e56231",
+            "Issue": {
+                "Type": "Product",
+                "Description": "NewOLM test regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54877"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "azure"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn/1909904020231688192",
+                    "StartTime": "2025-04-09T09:38:50Z",
+                    "CompletionTime": "2025-04-09T12:09:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn/1910033255726321664",
+                    "StartTime": "2025-04-09T18:12:31Z",
+                    "CompletionTime": "2025-04-09T20:48:57Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn/1910302813846507520",
+                    "StartTime": "2025-04-10T12:02:48Z",
+                    "CompletionTime": "2025-04-10T14:54:52Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:0c0cc3c8ed00082e1c8c423d61129c21",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLM][Skipped:Disconnected] OLMv1 operator installation should fail to install a non-existing cluster extension [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "8b4324b5-9a0e-452b-b1c2-a4f1e1e56231",
+            "Issue": {
+                "Type": "Product",
+                "Description": "NewOLM test regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54877"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ipi-ovn-runc/1910481876099796992",
+                    "StartTime": "2025-04-10T23:55:47Z",
+                    "CompletionTime": "2025-04-11T02:35:32Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1909903870910271488",
+                    "StartTime": "2025-04-09T09:38:38Z",
+                    "CompletionTime": "2025-04-09T11:41:25Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1910171418033655808",
+                    "StartTime": "2025-04-10T03:22:01Z",
+                    "CompletionTime": "2025-04-10T06:54:02Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1910225082588860416",
+                    "StartTime": "2025-04-10T06:55:23Z",
+                    "CompletionTime": "2025-04-10T08:57:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1910256222926278656",
+                    "StartTime": "2025-04-10T08:59:09Z",
+                    "CompletionTime": "2025-04-10T11:05:33Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-static-ovn/1910171714977796096",
+                    "StartTime": "2025-04-10T03:22:25Z",
+                    "CompletionTime": "2025-04-10T06:57:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-static-ovn/1910302597412032512",
+                    "StartTime": "2025-04-10T12:02:32Z",
+                    "CompletionTime": "2025-04-10T14:16:39Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-static-ovn/1910461811539316736",
+                    "StartTime": "2025-04-10T22:35:01Z",
+                    "CompletionTime": "2025-04-11T01:50:27Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:f8c9a96afcf430ac6c28ef3e6f414644",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLM][Skipped:Disconnected] OLMv1 operator installation should install a cluster extension [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "8b4324b5-9a0e-452b-b1c2-a4f1e1e56231",
+            "Issue": {
+                "Type": "Product",
+                "Description": "NewOLM test regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54877"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ipi-ovn-runc/1910481876099796992",
+                    "StartTime": "2025-04-10T23:55:47Z",
+                    "CompletionTime": "2025-04-11T02:35:32Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1909903870910271488",
+                    "StartTime": "2025-04-09T09:38:38Z",
+                    "CompletionTime": "2025-04-09T11:41:25Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1910171418033655808",
+                    "StartTime": "2025-04-10T03:22:01Z",
+                    "CompletionTime": "2025-04-10T06:54:02Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1910225082588860416",
+                    "StartTime": "2025-04-10T06:55:23Z",
+                    "CompletionTime": "2025-04-10T08:57:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1910256222926278656",
+                    "StartTime": "2025-04-10T08:59:09Z",
+                    "CompletionTime": "2025-04-10T11:05:33Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-static-ovn/1910171714977796096",
+                    "StartTime": "2025-04-10T03:22:25Z",
+                    "CompletionTime": "2025-04-10T06:57:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-static-ovn/1910302597412032512",
+                    "StartTime": "2025-04-10T12:02:32Z",
+                    "CompletionTime": "2025-04-10T14:16:39Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-static-ovn/1910461811539316736",
+                    "StartTime": "2025-04-10T22:35:01Z",
+                    "CompletionTime": "2025-04-11T01:50:27Z"
+                }
+            ]
+        }
+    ]
+}
