@@ -1,0 +1,287 @@
+{
+    "Arguments": {
+        "TestRelease": "4.19",
+        "IssueDescription": "Restored watch counts tests showing regression",
+        "IssueType": "Product",
+        "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-54869",
+        "OutputFile": "watch_counts_regressions.json",
+        "IncidentGroupId": "55343414-5e5e-4805-ba59-e6eff1de8623",
+        "TargetModifiedTime": "2025-04-10 16:57:10.247170+00:00",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2025-04-10T23%3A59%3A59Z&baseRelease=4.18&baseStartTime=2025-03-11T00%3A00%3A00Z&columnGroupBy=Architecture%2CNetwork%2CPlatform%2CTopology&confidence=95&dbGroupBy=Platform%2CArchitecture%2CNetwork%2CTopology%2CFeatureSet%2CUpgrade%2CSuite%2CInstaller&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=true&includeVariant=Architecture%3Aamd64&includeVariant=CGroupMode%3Av2&includeVariant=ContainerRuntime%3Arunc&includeVariant=ContainerRuntime%3Acrun&includeVariant=FeatureSet%3Adefault&includeVariant=FeatureSet%3Atechpreview&includeVariant=Installer%3Aipi&includeVariant=Installer%3Aupi&includeVariant=JobTier%3Ablocking&includeVariant=JobTier%3Ainforming&includeVariant=JobTier%3Astandard&includeVariant=LayeredProduct%3Anone&includeVariant=Network%3Aovn&includeVariant=Owner%3Aeng&includeVariant=Owner%3Aservice-delivery&includeVariant=Platform%3Aaws&includeVariant=Platform%3Aazure&includeVariant=Platform%3Agcp&includeVariant=Platform%3Ametal&includeVariant=Platform%3Arosa&includeVariant=Platform%3Avsphere&includeVariant=Topology%3Aha&includeVariant=Topology%3Amicroshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-04-10T23%3A59%3A59Z&sampleRelease=4.19&sampleStartTime=2025-04-03T00%3A00%3A00Z&component=kube-apiserver&capability=Other"
+    },
+    "Tests": [
+        {
+            "TestId": "openshift-tests:9ff4e9b171ea809e0d6faf721b2fe737",
+            "TestName": "[sig-arch][Late] operators should not create watch channels very often [apigroup:apiserver.openshift.io] [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "55343414-5e5e-4805-ba59-e6eff1de8623",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Restored watch counts tests showing regression",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54869"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-gcp-ovn-serial/1909766384837988352",
+                    "StartTime": "2025-04-09T00:32:22Z",
+                    "CompletionTime": "2025-04-09T04:12:37Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-gcp-ovn-serial/1909903759337590784",
+                    "StartTime": "2025-04-09T09:38:30Z",
+                    "CompletionTime": "2025-04-09T13:24:51Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-gcp-ovn-serial/1910033124935340032",
+                    "StartTime": "2025-04-09T18:12:20Z",
+                    "CompletionTime": "2025-04-09T21:44:08Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-gcp-ovn-serial/1910171498547515392",
+                    "StartTime": "2025-04-10T03:22:07Z",
+                    "CompletionTime": "2025-04-10T07:13:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-gcp-ovn-serial/1910302722586841088",
+                    "StartTime": "2025-04-10T12:02:41Z",
+                    "CompletionTime": "2025-04-10T15:50:22Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:9ff4e9b171ea809e0d6faf721b2fe737",
+            "TestName": "[sig-arch][Late] operators should not create watch channels very often [apigroup:apiserver.openshift.io] [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "55343414-5e5e-4805-ba59-e6eff1de8623",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Restored watch counts tests showing regression",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54869"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview-serial/1909766421743669248",
+                    "StartTime": "2025-04-09T00:32:25Z",
+                    "CompletionTime": "2025-04-09T04:45:11Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview-serial/1910171516209729536",
+                    "StartTime": "2025-04-10T03:22:08Z",
+                    "CompletionTime": "2025-04-10T07:35:21Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview-serial/1910302589921005568",
+                    "StartTime": "2025-04-10T12:02:32Z",
+                    "CompletionTime": "2025-04-10T16:16:03Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:9ff4e9b171ea809e0d6faf721b2fe737",
+            "TestName": "[sig-arch][Late] operators should not create watch channels very often [apigroup:apiserver.openshift.io] [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "55343414-5e5e-4805-ba59-e6eff1de8623",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Restored watch counts tests showing regression",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54869"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-serial/1908206103640936448",
+                    "StartTime": "2025-04-04T17:12:08Z",
+                    "CompletionTime": "2025-04-04T21:20:54Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-serial/1909766514844635136",
+                    "StartTime": "2025-04-09T00:32:32Z",
+                    "CompletionTime": "2025-04-09T03:25:49Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-serial/1909903884336238592",
+                    "StartTime": "2025-04-09T09:38:39Z",
+                    "CompletionTime": "2025-04-09T12:30:54Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-serial/1910033017984782336",
+                    "StartTime": "2025-04-09T18:12:12Z",
+                    "CompletionTime": "2025-04-09T22:04:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-serial/1910302667071033344",
+                    "StartTime": "2025-04-10T12:02:37Z",
+                    "CompletionTime": "2025-04-10T15:03:26Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:9ff4e9b171ea809e0d6faf721b2fe737",
+            "TestName": "[sig-arch][Late] operators should not create watch channels very often [apigroup:apiserver.openshift.io] [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "55343414-5e5e-4805-ba59-e6eff1de8623",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Restored watch counts tests showing regression",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54869"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "upi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-upi-serial/1909766659975942144",
+                    "StartTime": "2025-04-09T00:32:41Z",
+                    "CompletionTime": "2025-04-09T03:26:59Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-upi-serial/1909903811346960384",
+                    "StartTime": "2025-04-09T09:38:34Z",
+                    "CompletionTime": "2025-04-09T12:31:00Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-upi-serial/1910033017888313344",
+                    "StartTime": "2025-04-09T18:12:12Z",
+                    "CompletionTime": "2025-04-09T22:05:33Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-upi-serial/1910171520353701888",
+                    "StartTime": "2025-04-10T03:22:09Z",
+                    "CompletionTime": "2025-04-10T07:31:14Z"
+                }
+            ]
+        }
+    ]
+}
