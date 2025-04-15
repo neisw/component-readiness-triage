@@ -8,7 +8,8 @@
         "OutputFile": "kube-apiserver-operator_certrotation_regressions.json",
         "TargetBuildCluster": "",
         "JobRunStartTimeMin": "",
-        "IncidentGroupId": "f3f6de36-ba71-44d5-ab0b-1abe9de96198"
+        "IncidentGroupId": "f3f6de36-ba71-44d5-ab0b-1abe9de96198",
+        "IssueResolutionDate": "2025-04-14T17:50:00Z"
     },
     "Tests": [
         {
