@@ -1,0 +1,33 @@
+{
+    "Arguments": {
+        "TestRelease": "4.19",
+        "TestReportURL": "",
+        "IssueDescription": "New metal provider failing techpreview",
+        "IssueType": "Product",
+        "IssueURL": "https://issues.redhat.com//browse/OCPBUGS-54972",
+        "IssueResolutionDate": "2025-04-15T06:10:00Z",
+        "OutputFile": "metal_techpreview_regressions.json",
+        "TargetBuildCluster": "",
+        "JobRunStartTimeMin": "",
+        "TestDetails": [
+            {
+                "URL": "https://sippy.dptools.openshift.org/api/component_readiness/test_details?baseEndTime=2025-04-15T23:59:59Z&baseRelease=4.18&baseStartTime=2025-03-16T00:00:00Z&columnGroupBy=Architecture,Network,Platform,Topology&confidence=95&dbGroupBy=Platform,Architecture,Network,Topology,FeatureSet,Upgrade,Suite,Installer&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=true&includeVariant=Architecture:amd64&includeVariant=CGroupMode:v2&includeVariant=ContainerRuntime:crun&includeVariant=ContainerRuntime:runc&includeVariant=FeatureSet:techpreview&includeVariant=Installer:ipi&includeVariant=Installer:upi&includeVariant=JobTier:blocking&includeVariant=JobTier:informing&includeVariant=JobTier:standard&includeVariant=LayeredProduct:none&includeVariant=Network:ovn&includeVariant=Owner:eng&includeVariant=Owner:service-delivery&includeVariant=Platform:metal&includeVariant=Topology:ha&includeVariant=Topology:microshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-04-15T23:59:59Z&sampleRelease=4.19&sampleStartTime=2025-04-08T00:00:00Z&component=Monitoring&capability=Other&testId=openshift-tests%3Ac1f54790201ec8f4241eca902f854b79&testBasisRelease=4.18&environment=amd64%20techpreview%20ipi%20ovn%20metal%20unknown%20ha%20none&Architecture=amd64&FeatureSet=techpreview&Installer=ipi&Network=ovn&Platform=metal&Suite=unknown&Topology=ha&Aggregation=none&LayeredProduct=none&Procedure=none&Upgrade=none"
+            },
+            {
+                "URL": "https://sippy.dptools.openshift.org/api/component_readiness/test_details?baseEndTime=2025-04-15T23:59:59Z&baseRelease=4.18&baseStartTime=2025-03-16T00:00:00Z&columnGroupBy=Architecture,Network,Platform,Topology&confidence=95&dbGroupBy=Platform,Architecture,Network,Topology,FeatureSet,Upgrade,Suite,Installer&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=true&includeVariant=Architecture:amd64&includeVariant=CGroupMode:v2&includeVariant=ContainerRuntime:crun&includeVariant=ContainerRuntime:runc&includeVariant=FeatureSet:techpreview&includeVariant=Installer:ipi&includeVariant=Installer:upi&includeVariant=JobTier:blocking&includeVariant=JobTier:informing&includeVariant=JobTier:standard&includeVariant=LayeredProduct:none&includeVariant=Network:ovn&includeVariant=Owner:eng&includeVariant=Owner:service-delivery&includeVariant=Platform:metal&includeVariant=Topology:ha&includeVariant=Topology:microshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-04-15T23:59:59Z&sampleRelease=4.19&sampleStartTime=2025-04-08T00:00:00Z&component=Test%20Framework&capability=Pathological%20Events&testId=openshift-tests%3A9a5af3e40b55b646653cfe4eaa0569cf&testBasisRelease=4.18&environment=amd64%20techpreview%20ipi%20ovn%20metal%20unknown%20ha%20none&Architecture=amd64&FeatureSet=techpreview&Installer=ipi&Network=ovn&Platform=metal&Suite=unknown&Topology=ha&Aggregation=none&LayeredProduct=none&Procedure=none&Upgrade=none"
+            },
+            {
+                "URL": "https://sippy.dptools.openshift.org/api/component_readiness/test_details?baseEndTime=2025-04-15T23:59:59Z&baseRelease=4.18&baseStartTime=2025-03-16T00:00:00Z&columnGroupBy=Architecture,Network,Platform,Topology&confidence=95&dbGroupBy=Platform,Architecture,Network,Topology,FeatureSet,Upgrade,Suite,Installer&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=true&includeVariant=Architecture:amd64&includeVariant=CGroupMode:v2&includeVariant=ContainerRuntime:crun&includeVariant=ContainerRuntime:runc&includeVariant=FeatureSet:techpreview&includeVariant=Installer:ipi&includeVariant=Installer:upi&includeVariant=JobTier:blocking&includeVariant=JobTier:informing&includeVariant=JobTier:standard&includeVariant=LayeredProduct:none&includeVariant=Network:ovn&includeVariant=Owner:eng&includeVariant=Owner:service-delivery&includeVariant=Platform:metal&includeVariant=Topology:ha&includeVariant=Topology:microshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-04-15T23:59:59Z&sampleRelease=4.19&sampleStartTime=2025-04-08T00:00:00Z&component=Unknown&capability=Other&testId=openshift-tests%3A2fb5b1d3fc2727d8591a6d1a8f72ca50&testBasisRelease=4.18&environment=amd64%20techpreview%20ipi%20ovn%20metal%20unknown%20ha%20none&Architecture=amd64&FeatureSet=techpreview&Installer=ipi&Network=ovn&Platform=metal&Suite=unknown&Topology=ha&Aggregation=none&LayeredProduct=none&Procedure=none&Upgrade=none"
+            },
+            {
+                "URL": "https://sippy.dptools.openshift.org/api/component_readiness/test_details?baseEndTime=2025-04-15T23:59:59Z&baseRelease=4.18&baseStartTime=2025-03-16T00:00:00Z&columnGroupBy=Architecture,Network,Platform,Topology&confidence=95&dbGroupBy=Platform,Architecture,Network,Topology,FeatureSet,Upgrade,Suite,Installer&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=true&includeVariant=Architecture:amd64&includeVariant=CGroupMode:v2&includeVariant=ContainerRuntime:crun&includeVariant=ContainerRuntime:runc&includeVariant=FeatureSet:techpreview&includeVariant=Installer:ipi&includeVariant=Installer:upi&includeVariant=JobTier:blocking&includeVariant=JobTier:informing&includeVariant=JobTier:standard&includeVariant=LayeredProduct:none&includeVariant=Network:ovn&includeVariant=Owner:eng&includeVariant=Owner:service-delivery&includeVariant=Platform:metal&includeVariant=Topology:ha&includeVariant=Topology:microshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-04-15T23:59:59Z&sampleRelease=4.19&sampleStartTime=2025-04-08T00:00:00Z&component=Unknown&capability=Other&testId=openshift-tests%3A37f1600d4f8d75c47fc5f575025068d2&testBasisRelease=4.18&environment=amd64%20techpreview%20ipi%20ovn%20metal%20unknown%20ha%20none&Architecture=amd64&FeatureSet=techpreview&Installer=ipi&Network=ovn&Platform=metal&Suite=unknown&Topology=ha&Aggregation=none&LayeredProduct=none&Procedure=none&Upgrade=none"
+            }
+        ],
+        "IncidentGroupId": "8cca144e-2f45-49f2-9b68-599f8caf9e25"
+    },
+    "Tests": [
+        {
+            "TestId": "*"
+        }
+    ]
+}
