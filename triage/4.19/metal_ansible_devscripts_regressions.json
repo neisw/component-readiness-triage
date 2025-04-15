@@ -6,9 +6,10 @@
         "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-54953",
         "OutputFile": "metal_ansible_devscripts_regressions.json",
         "IncidentGroupId": "ef5c692a-5004-4c78-8ba3-28a92cc32865",
-        "TargetModifiedTime": "2025-04-14 13:59:21.927046+00:00",
-        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2025-04-14T23%3A59%3A59Z&baseRelease=4.18&baseStartTime=2025-03-15T00%3A00%3A00Z&columnGroupBy=Architecture%2CNetwork%2CPlatform%2CTopology&confidence=95&dbGroupBy=Platform%2CArchitecture%2CNetwork%2CTopology%2CFeatureSet%2CUpgrade%2CSuite%2CInstaller&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=true&includeVariant=Architecture%3Aamd64&includeVariant=CGroupMode%3Av2&includeVariant=ContainerRuntime%3Arunc&includeVariant=ContainerRuntime%3Acrun&includeVariant=FeatureSet%3Adefault&includeVariant=FeatureSet%3Atechpreview&includeVariant=Installer%3Aipi&includeVariant=Installer%3Aupi&includeVariant=JobTier%3Ablocking&includeVariant=JobTier%3Ainforming&includeVariant=JobTier%3Astandard&includeVariant=LayeredProduct%3Anone&includeVariant=Network%3Aovn&includeVariant=Owner%3Aeng&includeVariant=Owner%3Aservice-delivery&includeVariant=Platform%3Ametal&includeVariant=Topology%3Aha&includeVariant=Topology%3Amicroshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-04-14T23%3A59%3A59Z&sampleRelease=4.19&sampleStartTime=2025-04-07T00%3A00%3A00Z&component=Installer+%2F+openshift-installer",
-        "JobRunStartTimeMin": "2025-04-14T10:01:32Z"
+        "TargetModifiedTime": "2025-04-15 10:04:48.199350+00:00",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2025-04-14T23%3A59%3A59Z&baseRelease=4.18&baseStartTime=2025-03-15T00%3A00%3A00Z&columnGroupBy=Architecture%2CNetwork%2CPlatform%2CTopology&confidence=95&dbGroupBy=Platform%2CArchitecture%2CNetwork%2CTopology%2CFeatureSet%2CUpgrade%2CSuite%2CInstaller&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=true&includeVariant=Architecture%3Aamd64&includeVariant=CGroupMode%3Av2&includeVariant=ContainerRuntime%3Arunc&includeVariant=ContainerRuntime%3Acrun&includeVariant=FeatureSet%3Adefault&includeVariant=FeatureSet%3Atechpreview&includeVariant=Installer%3Aipi&includeVariant=Installer%3Aupi&includeVariant=JobTier%3Ablocking&includeVariant=JobTier%3Ainforming&includeVariant=JobTier%3Astandard&includeVariant=LayeredProduct%3Anone&includeVariant=Network%3Aovn&includeVariant=Owner%3Aeng&includeVariant=Owner%3Aservice-delivery&includeVariant=Platform%3Ametal&includeVariant=Topology%3Aha&includeVariant=Topology%3Amicroshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-04-15T23%3A59%3A59Z&sampleRelease=4.19&sampleStartTime=2025-04-08T00%3A00%3A00Z&component=Installer+%2F+openshift-installer",
+        "JobRunStartTimeMin": "2025-04-14T10:01:32Z",
+        "IssueResolutionDate": "2025-04-14T13:22:00Z"
     },
     "Tests": [
         {
@@ -19,99 +20,8 @@
             "Issue": {
                 "Type": "Product",
                 "Description": "Devscripts failure due to ansible change",
-                "URL": "https://issues.redhat.com/browse/OCPBUGS-54953"
-            },
-            "Variants": [
-                {
-                    "key": "Network",
-                    "value": "ovn"
-                },
-                {
-                    "key": "Upgrade",
-                    "value": "none"
-                },
-                {
-                    "key": "Architecture",
-                    "value": "amd64"
-                },
-                {
-                    "key": "Platform",
-                    "value": "metal"
-                },
-                {
-                    "key": "FeatureSet",
-                    "value": "default"
-                },
-                {
-                    "key": "Suite",
-                    "value": "unknown"
-                },
-                {
-                    "key": "Topology",
-                    "value": "ha"
-                },
-                {
-                    "key": "Installer",
-                    "value": "ipi"
-                }
-            ],
-            "JobRuns": [
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1911724350482944000",
-                    "StartTime": "2025-04-14T10:12:42Z",
-                    "CompletionTime": "2025-04-14T10:25:49Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1911728030888235008",
-                    "StartTime": "2025-04-14T10:27:35Z",
-                    "CompletionTime": "2025-04-14T10:39:39Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1911731838666149888",
-                    "StartTime": "2025-04-14T10:42:43Z",
-                    "CompletionTime": "2025-04-14T10:55:47Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1911737545792688128",
-                    "StartTime": "2025-04-14T11:05:23Z",
-                    "CompletionTime": "2025-04-14T11:17:42Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-dualstack/1911724554296758272",
-                    "StartTime": "2025-04-14T10:12:57Z",
-                    "CompletionTime": "2025-04-14T10:23:39Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-ipv6/1911724461191598080",
-                    "StartTime": "2025-04-14T10:12:50Z",
-                    "CompletionTime": "2025-04-14T10:26:13Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-ipv6/1911728029239873536",
-                    "StartTime": "2025-04-14T10:27:34Z",
-                    "CompletionTime": "2025-04-14T10:36:20Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-ipv6/1911731102976839680",
-                    "StartTime": "2025-04-14T10:39:47Z",
-                    "CompletionTime": "2025-04-14T10:52:17Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-ipv6/1911737704215744512",
-                    "StartTime": "2025-04-14T11:05:59Z",
-                    "CompletionTime": "2025-04-14T11:18:40Z"
-                }
-            ]
-        },
-        {
-            "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
-            "TestName": "install should succeed: overall",
-            "Release": "4.19",
-            "GroupId": "ef5c692a-5004-4c78-8ba3-28a92cc32865",
-            "Issue": {
-                "Type": "Product",
-                "Description": "Devscripts failure due to ansible change",
-                "URL": "https://issues.redhat.com/browse/OCPBUGS-54953"
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54953",
+                "ResolutionDate": "2025-04-14T13:22:00Z"
             },
             "Variants": [
                 {
@@ -173,7 +83,8 @@
             "Issue": {
                 "Type": "Product",
                 "Description": "Devscripts failure due to ansible change",
-                "URL": "https://issues.redhat.com/browse/OCPBUGS-54953"
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54953",
+                "ResolutionDate": "2025-04-14T13:22:00Z"
             },
             "Variants": [
                 {
@@ -235,99 +146,8 @@
             "Issue": {
                 "Type": "Product",
                 "Description": "Devscripts failure due to ansible change",
-                "URL": "https://issues.redhat.com/browse/OCPBUGS-54953"
-            },
-            "Variants": [
-                {
-                    "key": "Network",
-                    "value": "ovn"
-                },
-                {
-                    "key": "Upgrade",
-                    "value": "none"
-                },
-                {
-                    "key": "Architecture",
-                    "value": "amd64"
-                },
-                {
-                    "key": "Platform",
-                    "value": "metal"
-                },
-                {
-                    "key": "FeatureSet",
-                    "value": "default"
-                },
-                {
-                    "key": "Suite",
-                    "value": "unknown"
-                },
-                {
-                    "key": "Topology",
-                    "value": "ha"
-                },
-                {
-                    "key": "Installer",
-                    "value": "ipi"
-                }
-            ],
-            "JobRuns": [
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1911724350482944000",
-                    "StartTime": "2025-04-14T10:12:42Z",
-                    "CompletionTime": "2025-04-14T10:25:49Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1911728030888235008",
-                    "StartTime": "2025-04-14T10:27:35Z",
-                    "CompletionTime": "2025-04-14T10:39:39Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1911731838666149888",
-                    "StartTime": "2025-04-14T10:42:43Z",
-                    "CompletionTime": "2025-04-14T10:55:47Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1911737545792688128",
-                    "StartTime": "2025-04-14T11:05:23Z",
-                    "CompletionTime": "2025-04-14T11:17:42Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-dualstack/1911724554296758272",
-                    "StartTime": "2025-04-14T10:12:57Z",
-                    "CompletionTime": "2025-04-14T10:23:39Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-ipv6/1911724461191598080",
-                    "StartTime": "2025-04-14T10:12:50Z",
-                    "CompletionTime": "2025-04-14T10:26:13Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-ipv6/1911728029239873536",
-                    "StartTime": "2025-04-14T10:27:34Z",
-                    "CompletionTime": "2025-04-14T10:36:20Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-ipv6/1911731102976839680",
-                    "StartTime": "2025-04-14T10:39:47Z",
-                    "CompletionTime": "2025-04-14T10:52:17Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-ipv6/1911737704215744512",
-                    "StartTime": "2025-04-14T11:05:59Z",
-                    "CompletionTime": "2025-04-14T11:18:40Z"
-                }
-            ]
-        },
-        {
-            "TestId": "cluster install:2ec4097c2122a2e07e7270c2d7cb3cc6",
-            "TestName": "install should succeed: other",
-            "Release": "4.19",
-            "GroupId": "ef5c692a-5004-4c78-8ba3-28a92cc32865",
-            "Issue": {
-                "Type": "Product",
-                "Description": "Devscripts failure due to ansible change",
-                "URL": "https://issues.redhat.com/browse/OCPBUGS-54953"
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54953",
+                "ResolutionDate": "2025-04-14T13:22:00Z"
             },
             "Variants": [
                 {
@@ -404,7 +224,194 @@
             "Issue": {
                 "Type": "Product",
                 "Description": "Devscripts failure due to ansible change",
-                "URL": "https://issues.redhat.com/browse/OCPBUGS-54953"
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54953",
+                "ResolutionDate": "2025-04-14T13:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1911724350482944000",
+                    "StartTime": "2025-04-14T10:12:42Z",
+                    "CompletionTime": "2025-04-14T10:25:49Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1911728030888235008",
+                    "StartTime": "2025-04-14T10:27:35Z",
+                    "CompletionTime": "2025-04-14T10:39:39Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1911731838666149888",
+                    "StartTime": "2025-04-14T10:42:43Z",
+                    "CompletionTime": "2025-04-14T10:55:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1911737545792688128",
+                    "StartTime": "2025-04-14T11:05:23Z",
+                    "CompletionTime": "2025-04-14T11:17:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-dualstack/1911724554296758272",
+                    "StartTime": "2025-04-14T10:12:57Z",
+                    "CompletionTime": "2025-04-14T10:23:39Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-ipv6/1911724461191598080",
+                    "StartTime": "2025-04-14T10:12:50Z",
+                    "CompletionTime": "2025-04-14T10:26:13Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-ipv6/1911728029239873536",
+                    "StartTime": "2025-04-14T10:27:34Z",
+                    "CompletionTime": "2025-04-14T10:36:20Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-ipv6/1911731102976839680",
+                    "StartTime": "2025-04-14T10:39:47Z",
+                    "CompletionTime": "2025-04-14T10:52:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-ipv6/1911737704215744512",
+                    "StartTime": "2025-04-14T11:05:59Z",
+                    "CompletionTime": "2025-04-14T11:18:40Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:2ec4097c2122a2e07e7270c2d7cb3cc6",
+            "TestName": "install should succeed: other",
+            "Release": "4.19",
+            "GroupId": "ef5c692a-5004-4c78-8ba3-28a92cc32865",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Devscripts failure due to ansible change",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54953",
+                "ResolutionDate": "2025-04-14T13:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1911724350482944000",
+                    "StartTime": "2025-04-14T10:12:42Z",
+                    "CompletionTime": "2025-04-14T10:25:49Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1911728030888235008",
+                    "StartTime": "2025-04-14T10:27:35Z",
+                    "CompletionTime": "2025-04-14T10:39:39Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1911731838666149888",
+                    "StartTime": "2025-04-14T10:42:43Z",
+                    "CompletionTime": "2025-04-14T10:55:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1911737545792688128",
+                    "StartTime": "2025-04-14T11:05:23Z",
+                    "CompletionTime": "2025-04-14T11:17:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-dualstack/1911724554296758272",
+                    "StartTime": "2025-04-14T10:12:57Z",
+                    "CompletionTime": "2025-04-14T10:23:39Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-ipv6/1911724461191598080",
+                    "StartTime": "2025-04-14T10:12:50Z",
+                    "CompletionTime": "2025-04-14T10:26:13Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-ipv6/1911728029239873536",
+                    "StartTime": "2025-04-14T10:27:34Z",
+                    "CompletionTime": "2025-04-14T10:36:20Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-ipv6/1911731102976839680",
+                    "StartTime": "2025-04-14T10:39:47Z",
+                    "CompletionTime": "2025-04-14T10:52:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-ipv6/1911737704215744512",
+                    "StartTime": "2025-04-14T11:05:59Z",
+                    "CompletionTime": "2025-04-14T11:18:40Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
+            "TestName": "install should succeed: overall",
+            "Release": "4.19",
+            "GroupId": "ef5c692a-5004-4c78-8ba3-28a92cc32865",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Devscripts failure due to ansible change",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54953",
+                "ResolutionDate": "2025-04-14T13:22:00Z"
             },
             "Variants": [
                 {
