@@ -1,0 +1,110 @@
+{
+    "Arguments": {
+        "TestRelease": "4.19",
+        "IssueDescription": "vSphere CSI driver panic",
+        "IssueType": "Product",
+        "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-55020",
+        "OutputFile": "vsphere_csi_panic_regressions.json",
+        "IncidentGroupId": "3d1a9090-5f5f-46e8-97ea-71764ecbab74",
+        "TargetModifiedTime": "2025-04-15 12:42:11.924264+00:00"
+    },
+    "Tests": [
+        {
+            "TestId": "Symptom Detection:171acaa74f3d5ea96e3b687038d0cf13",
+            "TestName": "Undiagnosed panic detected in pod",
+            "Release": "4.19",
+            "GroupId": "3d1a9090-5f5f-46e8-97ea-71764ecbab74",
+            "Issue": {
+                "Type": "Product",
+                "Description": "vSphere CSI driver panic",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55020"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-vsphere-periodic-techpreview/1910627831218442240",
+                    "StartTime": "2025-04-11T09:35:47Z",
+                    "CompletionTime": "2025-04-11T12:56:13Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-vsphere-periodic-techpreview/1911682262257111040",
+                    "StartTime": "2025-04-14T07:25:43Z",
+                    "CompletionTime": "2025-04-14T10:52:56Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-vsphere-periodic-techpreview/1911822240278646784",
+                    "StartTime": "2025-04-14T16:41:56Z",
+                    "CompletionTime": "2025-04-14T21:31:33Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-vsphere-periodic-techpreview/1911997212766769152",
+                    "StartTime": "2025-04-15T04:17:13Z",
+                    "CompletionTime": "2025-04-15T09:05:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-vsphere-periodic-techpreview/1911997232387723264",
+                    "StartTime": "2025-04-15T04:17:17Z",
+                    "CompletionTime": "2025-04-15T09:07:16Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-vsphere-periodic-techpreview/1911997203782569984",
+                    "StartTime": "2025-04-15T04:17:11Z",
+                    "CompletionTime": "2025-04-15T09:11:10Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-vsphere-periodic-techpreview/1911997219293106176",
+                    "StartTime": "2025-04-15T04:17:14Z",
+                    "CompletionTime": "2025-04-15T09:21:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-vsphere-periodic-techpreview/1912024005397712896",
+                    "StartTime": "2025-04-15T06:03:41Z",
+                    "CompletionTime": "2025-04-15T11:12:16Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-vsphere-periodic-techpreview/1912023996501594112",
+                    "StartTime": "2025-04-15T06:03:39Z",
+                    "CompletionTime": "2025-04-15T11:20:51Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-vsphere-periodic-techpreview/1912024011643031552",
+                    "StartTime": "2025-04-15T06:03:42Z",
+                    "CompletionTime": "2025-04-15T11:25:28Z"
+                }
+            ]
+        }
+    ]
+}

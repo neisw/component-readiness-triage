@@ -1,0 +1,209 @@
+{
+    "Arguments": {
+        "TestRelease": "4.19",
+        "IssueDescription": "etcd conditions failing on controlplane machineset operator jobs",
+        "IssueType": "Product",
+        "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-55017",
+        "OutputFile": "etcd_conditions_machineset_operator_regressions.json",
+        "IncidentGroupId": "bf4c9cda-b4c9-4fd7-9d7e-44144bb68ec9",
+        "TargetModifiedTime": "2025-04-15 11:32:52.338316+00:00"
+    },
+    "Tests": [
+        {
+            "TestId": "Operator results:45d55df296fbbfa7144600dce70c1182",
+            "TestName": "operator conditions etcd",
+            "Release": "4.19",
+            "GroupId": "bf4c9cda-b4c9-4fd7-9d7e-44144bb68ec9",
+            "Issue": {
+                "Type": "Product",
+                "Description": "etcd conditions failing on controlplane machineset operator jobs",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55017"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "azure"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-azure-techpreview/1911727243638345728",
+                    "StartTime": "2025-04-14T10:24:27Z",
+                    "CompletionTime": "2025-04-14T14:57:44Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-azure-techpreview/1911802393641619456",
+                    "StartTime": "2025-04-14T15:23:04Z",
+                    "CompletionTime": "2025-04-14T19:36:58Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-azure-techpreview/1911821266831020032",
+                    "StartTime": "2025-04-14T16:38:04Z",
+                    "CompletionTime": "2025-04-14T21:11:43Z"
+                }
+            ]
+        },
+        {
+            "TestId": "Operator results:45d55df296fbbfa7144600dce70c1182",
+            "TestName": "operator conditions etcd",
+            "Release": "4.19",
+            "GroupId": "bf4c9cda-b4c9-4fd7-9d7e-44144bb68ec9",
+            "Issue": {
+                "Type": "Product",
+                "Description": "etcd conditions failing on controlplane machineset operator jobs",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55017"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-gcp-techpreview/1910212054975778816",
+                    "StartTime": "2025-04-10T06:03:38Z",
+                    "CompletionTime": "2025-04-10T09:40:59Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-gcp-techpreview/1911299262780542976",
+                    "StartTime": "2025-04-13T06:03:49Z",
+                    "CompletionTime": "2025-04-13T09:55:13Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-gcp-techpreview/1911727055410565120",
+                    "StartTime": "2025-04-14T10:23:42Z",
+                    "CompletionTime": "2025-04-14T14:25:55Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-gcp-techpreview/1911792287084449792",
+                    "StartTime": "2025-04-14T14:42:55Z",
+                    "CompletionTime": "2025-04-14T18:54:08Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-gcp-techpreview/1911821662844620800",
+                    "StartTime": "2025-04-14T16:39:37Z",
+                    "CompletionTime": "2025-04-14T20:28:30Z"
+                }
+            ]
+        },
+        {
+            "TestId": "Operator results:45d55df296fbbfa7144600dce70c1182",
+            "TestName": "operator conditions etcd",
+            "Release": "4.19",
+            "GroupId": "bf4c9cda-b4c9-4fd7-9d7e-44144bb68ec9",
+            "Issue": {
+                "Type": "Product",
+                "Description": "etcd conditions failing on controlplane machineset operator jobs",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55017"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-vsphere-periodic-techpreview/1911682255760134144",
+                    "StartTime": "2025-04-14T07:25:41Z",
+                    "CompletionTime": "2025-04-14T10:55:54Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-vsphere-periodic-techpreview/1911803895588327424",
+                    "StartTime": "2025-04-14T15:29:02Z",
+                    "CompletionTime": "2025-04-14T20:19:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-vsphere-periodic-techpreview/1911822240278646784",
+                    "StartTime": "2025-04-14T16:41:56Z",
+                    "CompletionTime": "2025-04-14T21:31:33Z"
+                }
+            ]
+        }
+    ]
+}
