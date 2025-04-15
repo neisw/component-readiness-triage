@@ -6,7 +6,8 @@
         "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-54951",
         "OutputFile": "pods_restarting_regressions.json",
         "IncidentGroupId": "51f34118-4b20-4a94-9eba-7e7e0f498c95",
-        "TargetModifiedTime": "2025-04-14 14:27:02.533948+00:00"
+        "TargetModifiedTime": "2025-04-15 15:27:09.726758+00:00",
+        "IssueResolutionDate": "2025-04-14T15:10:00Z"
     },
     "Tests": [
         {
@@ -17,7 +18,8 @@
             "Issue": {
                 "Type": "Product",
                 "Description": "Pods restarting excessively on techpreview serial",
-                "URL": "https://issues.redhat.com/browse/OCPBUGS-54951"
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54951",
+                "ResolutionDate": "2025-04-14T15:10:00Z"
             },
             "Variants": [
                 {
@@ -84,7 +86,8 @@
             "Issue": {
                 "Type": "Product",
                 "Description": "Pods restarting excessively on techpreview serial",
-                "URL": "https://issues.redhat.com/browse/OCPBUGS-54951"
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54951",
+                "ResolutionDate": "2025-04-14T15:10:00Z"
             },
             "Variants": [
                 {
@@ -151,7 +154,8 @@
             "Issue": {
                 "Type": "Product",
                 "Description": "Pods restarting excessively on techpreview serial",
-                "URL": "https://issues.redhat.com/browse/OCPBUGS-54951"
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54951",
+                "ResolutionDate": "2025-04-14T15:10:00Z"
             },
             "Variants": [
                 {
@@ -218,7 +222,8 @@
             "Issue": {
                 "Type": "Product",
                 "Description": "Pods restarting excessively on techpreview serial",
-                "URL": "https://issues.redhat.com/browse/OCPBUGS-54951"
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54951",
+                "ResolutionDate": "2025-04-14T15:10:00Z"
             },
             "Variants": [
                 {
@@ -285,7 +290,8 @@
             "Issue": {
                 "Type": "Product",
                 "Description": "Pods restarting excessively on techpreview serial",
-                "URL": "https://issues.redhat.com/browse/OCPBUGS-54951"
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54951",
+                "ResolutionDate": "2025-04-14T15:10:00Z"
             },
             "Variants": [
                 {
@@ -352,7 +358,8 @@
             "Issue": {
                 "Type": "Product",
                 "Description": "Pods restarting excessively on techpreview serial",
-                "URL": "https://issues.redhat.com/browse/OCPBUGS-54951"
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54951",
+                "ResolutionDate": "2025-04-14T15:10:00Z"
             },
             "Variants": [
                 {
@@ -419,7 +426,8 @@
             "Issue": {
                 "Type": "Product",
                 "Description": "Pods restarting excessively on techpreview serial",
-                "URL": "https://issues.redhat.com/browse/OCPBUGS-54951"
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54951",
+                "ResolutionDate": "2025-04-14T15:10:00Z"
             },
             "Variants": [
                 {
@@ -491,7 +499,8 @@
             "Issue": {
                 "Type": "Product",
                 "Description": "Pods restarting excessively on techpreview serial",
-                "URL": "https://issues.redhat.com/browse/OCPBUGS-54951"
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54951",
+                "ResolutionDate": "2025-04-14T15:10:00Z"
             },
             "Variants": [
                 {
@@ -558,7 +567,8 @@
             "Issue": {
                 "Type": "Product",
                 "Description": "Pods restarting excessively on techpreview serial",
-                "URL": "https://issues.redhat.com/browse/OCPBUGS-54951"
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54951",
+                "ResolutionDate": "2025-04-14T15:10:00Z"
             },
             "Variants": [
                 {
@@ -625,7 +635,8 @@
             "Issue": {
                 "Type": "Product",
                 "Description": "Pods restarting excessively on techpreview serial",
-                "URL": "https://issues.redhat.com/browse/OCPBUGS-54951"
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54951",
+                "ResolutionDate": "2025-04-14T15:10:00Z"
             },
             "Variants": [
                 {
@@ -692,7 +703,8 @@
             "Issue": {
                 "Type": "Product",
                 "Description": "Pods restarting excessively on techpreview serial",
-                "URL": "https://issues.redhat.com/browse/OCPBUGS-54951"
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54951",
+                "ResolutionDate": "2025-04-14T15:10:00Z"
             },
             "Variants": [
                 {
@@ -759,7 +771,8 @@
             "Issue": {
                 "Type": "Product",
                 "Description": "Pods restarting excessively on techpreview serial",
-                "URL": "https://issues.redhat.com/browse/OCPBUGS-54951"
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54951",
+                "ResolutionDate": "2025-04-14T15:10:00Z"
             },
             "Variants": [
                 {
