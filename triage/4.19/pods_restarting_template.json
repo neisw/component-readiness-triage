@@ -5,6 +5,7 @@
         "IssueDescription": "Pods restarting excessively on techpreview serial",
         "IssueType": "Product",
         "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-54951",
+        "IssueResolutionDate": "2025-04-14T15:10:00Z",
         "OutputFile": "pods_restarting_regressions.json",
         "TargetBuildCluster": "",
         "JobRunStartTimeMin": "",
