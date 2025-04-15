@@ -5,6 +5,7 @@
         "IssueDescription": "Devscripts failure due to ansible change",
         "IssueType": "Product",
         "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-54953",
+        "IssueResolutionDate": "2025-04-14T13:22:00Z",
         "OutputFile": "metal_ansible_devscripts_regressions.json",
         "TargetBuildCluster": "",
         "JobRunStartTimeMin": "2025-04-14T10:01:32Z",
