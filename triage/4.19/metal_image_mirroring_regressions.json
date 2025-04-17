@@ -1,12 +1,13 @@
 {
     "Arguments": {
         "TestRelease": "4.19",
-        "IssueDescription": "Metal disconnected CI jobs cannot reliably mirror images",
+        "IssueDescription": "Metal CI jobs cannot reliably mirror images",
         "IssueType": "Product",
         "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-48630",
         "OutputFile": "metal_image_mirroring_regressions.json",
         "IncidentGroupId": "3e7a02e5-ff7c-4a86-999c-66b206cd97dd",
-        "TargetModifiedTime": "2025-04-15 14:36:49.959006+00:00"
+        "TargetModifiedTime": "2025-04-17 16:11:51.953770+00:00",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2025-04-17T23:59:59Z&baseRelease=4.18&baseStartTime=2025-03-18T00:00:00Z&columnGroupBy=Architecture,Network,Platform,Topology&confidence=95&dbGroupBy=Platform,Architecture,Network,Topology,FeatureSet,Upgrade,Suite,Installer&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=true&includeVariant=Architecture:amd64&includeVariant=CGroupMode:v2&includeVariant=ContainerRuntime:runc&includeVariant=ContainerRuntime:crun&includeVariant=FeatureSet:default&includeVariant=FeatureSet:techpreview&includeVariant=Installer:ipi&includeVariant=Installer:upi&includeVariant=JobTier:blocking&includeVariant=JobTier:informing&includeVariant=JobTier:standard&includeVariant=LayeredProduct:none&includeVariant=Network:ovn&includeVariant=Owner:eng&includeVariant=Owner:service-delivery&includeVariant=Platform:aws&includeVariant=Platform:azure&includeVariant=Platform:gcp&includeVariant=Platform:metal&includeVariant=Platform:rosa&includeVariant=Platform:vsphere&includeVariant=Topology:ha&includeVariant=Topology:microshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-04-17T23:59:59Z&sampleRelease=4.19&sampleStartTime=2025-04-10T00:00:00Z"
     },
     "Tests": [
         {
@@ -16,7 +17,7 @@
             "GroupId": "3e7a02e5-ff7c-4a86-999c-66b206cd97dd",
             "Issue": {
                 "Type": "Product",
-                "Description": "Metal disconnected CI jobs cannot reliably mirror images",
+                "Description": "Metal CI jobs cannot reliably mirror images",
                 "URL": "https://issues.redhat.com/browse/OCPBUGS-48630"
             },
             "Variants": [
@@ -55,29 +56,9 @@
             ],
             "JobRuns": [
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-serial-ipv4/1910302929609297920",
-                    "StartTime": "2025-04-10T12:03:04Z",
-                    "CompletionTime": "2025-04-10T17:13:34Z"
-                },
-                {
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-serial-ipv4/1910584255474307072",
                     "StartTime": "2025-04-11T06:41:45Z",
                     "CompletionTime": "2025-04-11T08:07:21Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-serial-ipv4/1910774253343477760",
-                    "StartTime": "2025-04-11T19:17:00Z",
-                    "CompletionTime": "2025-04-11T20:36:01Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-serial-ipv4/1911995636111118336",
-                    "StartTime": "2025-04-15T04:10:33Z",
-                    "CompletionTime": "2025-04-15T06:29:21Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-serial-ovn-dualstack/1910302932125880320",
-                    "StartTime": "2025-04-10T12:03:04Z",
-                    "CompletionTime": "2025-04-10T14:53:51Z"
                 },
                 {
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-serial-ovn-dualstack/1911355149113102336",
@@ -88,11 +69,6 @@
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-serial-ovn-ipv6/1910584106161278976",
                     "StartTime": "2025-04-11T06:41:33Z",
                     "CompletionTime": "2025-04-11T08:06:16Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-serial-ovn-ipv6/1911995714070646784",
-                    "StartTime": "2025-04-15T04:10:40Z",
-                    "CompletionTime": "2025-04-15T06:46:27Z"
                 }
             ]
         },
@@ -103,7 +79,7 @@
             "GroupId": "3e7a02e5-ff7c-4a86-999c-66b206cd97dd",
             "Issue": {
                 "Type": "Product",
-                "Description": "Metal disconnected CI jobs cannot reliably mirror images",
+                "Description": "Metal CI jobs cannot reliably mirror images",
                 "URL": "https://issues.redhat.com/browse/OCPBUGS-48630"
             },
             "Variants": [
@@ -142,11 +118,6 @@
             ],
             "JobRuns": [
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1910810564850880512",
-                    "StartTime": "2025-04-11T21:41:54Z",
-                    "CompletionTime": "2025-04-11T23:05:38Z"
-                },
-                {
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1911270078419046400",
                     "StartTime": "2025-04-13T04:07:51Z",
                     "CompletionTime": "2025-04-13T05:35:52Z"
@@ -155,36 +126,6 @@
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1911598354895212544",
                     "StartTime": "2025-04-14T01:52:13Z",
                     "CompletionTime": "2025-04-14T03:18:04Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1911995650321420288",
-                    "StartTime": "2025-04-15T04:10:35Z",
-                    "CompletionTime": "2025-04-15T07:21:26Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-upgrade-runc/1910518863284408320",
-                    "StartTime": "2025-04-11T02:22:47Z",
-                    "CompletionTime": "2025-04-11T03:46:55Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-upgrade-runc/1910881254379622400",
-                    "StartTime": "2025-04-12T02:22:48Z",
-                    "CompletionTime": "2025-04-12T03:42:32Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-upgrade-ovn-ipv6/1909766498067419136",
-                    "StartTime": "2025-04-09T00:32:30Z",
-                    "CompletionTime": "2025-04-09T02:00:56Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-upgrade-ovn-ipv6/1910584080991260672",
-                    "StartTime": "2025-04-11T06:41:30Z",
-                    "CompletionTime": "2025-04-11T08:05:27Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-upgrade-ovn-ipv6/1911995642767478784",
-                    "StartTime": "2025-04-15T04:10:34Z",
-                    "CompletionTime": "2025-04-15T07:00:18Z"
                 }
             ]
         },
@@ -195,7 +136,121 @@
             "GroupId": "3e7a02e5-ff7c-4a86-999c-66b206cd97dd",
             "Issue": {
                 "Type": "Product",
-                "Description": "Metal disconnected CI jobs cannot reliably mirror images",
+                "Description": "Metal CI jobs cannot reliably mirror images",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-48630"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "minor"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-upgrade-from-stable-4.18-e2e-metal-ipi-upgrade-ovn-ipv6/1910302875918012416",
+                    "StartTime": "2025-04-10T12:02:55Z",
+                    "CompletionTime": "2025-04-10T15:06:06Z"
+                }
+            ]
+        },
+        {
+            "TestId": "Operator results:a4dfe6caa55e94230b4ee0ff127b6d64",
+            "TestName": "operator conditions openshift-apiserver",
+            "Release": "4.19",
+            "GroupId": "3e7a02e5-ff7c-4a86-999c-66b206cd97dd",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Metal CI jobs cannot reliably mirror images",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-48630"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-serial-ipv4/1910584255474307072",
+                    "StartTime": "2025-04-11T06:41:45Z",
+                    "CompletionTime": "2025-04-11T08:07:21Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-serial-ovn-dualstack/1911355149113102336",
+                    "StartTime": "2025-04-13T09:45:43Z",
+                    "CompletionTime": "2025-04-13T10:51:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-serial-ovn-ipv6/1910584106161278976",
+                    "StartTime": "2025-04-11T06:41:33Z",
+                    "CompletionTime": "2025-04-11T08:06:16Z"
+                }
+            ]
+        },
+        {
+            "TestId": "Operator results:a4dfe6caa55e94230b4ee0ff127b6d64",
+            "TestName": "operator conditions openshift-apiserver",
+            "Release": "4.19",
+            "GroupId": "3e7a02e5-ff7c-4a86-999c-66b206cd97dd",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Metal CI jobs cannot reliably mirror images",
                 "URL": "https://issues.redhat.com/browse/OCPBUGS-48630"
             },
             "Variants": [
@@ -234,26 +289,6 @@
             ],
             "JobRuns": [
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1910302724281339904",
-                    "StartTime": "2025-04-10T12:02:41Z",
-                    "CompletionTime": "2025-04-10T15:15:30Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1910584078562758656",
-                    "StartTime": "2025-04-11T06:41:30Z",
-                    "CompletionTime": "2025-04-11T08:04:20Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-dualstack/1909646979122597888",
-                    "StartTime": "2025-04-08T16:37:43Z",
-                    "CompletionTime": "2025-04-08T17:57:59Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-dualstack/1911995488412897280",
-                    "StartTime": "2025-04-15T04:10:21Z",
-                    "CompletionTime": "2025-04-15T06:17:41Z"
-                },
-                {
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-ipv6-runc/1910535723929309184",
                     "StartTime": "2025-04-11T03:29:47Z",
                     "CompletionTime": "2025-04-11T04:39:55Z"
@@ -282,7 +317,7 @@
             "GroupId": "3e7a02e5-ff7c-4a86-999c-66b206cd97dd",
             "Issue": {
                 "Type": "Product",
-                "Description": "Metal disconnected CI jobs cannot reliably mirror images",
+                "Description": "Metal CI jobs cannot reliably mirror images",
                 "URL": "https://issues.redhat.com/browse/OCPBUGS-48630"
             },
             "Variants": [
@@ -321,11 +356,6 @@
             ],
             "JobRuns": [
                 {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1910810564850880512",
-                    "StartTime": "2025-04-11T21:41:54Z",
-                    "CompletionTime": "2025-04-11T23:05:38Z"
-                },
-                {
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1911270078419046400",
                     "StartTime": "2025-04-13T04:07:51Z",
                     "CompletionTime": "2025-04-13T05:35:52Z"
@@ -334,36 +364,6 @@
                     "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1911598354895212544",
                     "StartTime": "2025-04-14T01:52:13Z",
                     "CompletionTime": "2025-04-14T03:18:04Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1911995650321420288",
-                    "StartTime": "2025-04-15T04:10:35Z",
-                    "CompletionTime": "2025-04-15T07:21:26Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-upgrade-runc/1910518863284408320",
-                    "StartTime": "2025-04-11T02:22:47Z",
-                    "CompletionTime": "2025-04-11T03:46:55Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-upgrade-runc/1910881254379622400",
-                    "StartTime": "2025-04-12T02:22:48Z",
-                    "CompletionTime": "2025-04-12T03:42:32Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-upgrade-ovn-ipv6/1909766498067419136",
-                    "StartTime": "2025-04-09T00:32:30Z",
-                    "CompletionTime": "2025-04-09T02:00:56Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-upgrade-ovn-ipv6/1910584080991260672",
-                    "StartTime": "2025-04-11T06:41:30Z",
-                    "CompletionTime": "2025-04-11T08:05:27Z"
-                },
-                {
-                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-upgrade-ovn-ipv6/1911995642767478784",
-                    "StartTime": "2025-04-15T04:10:34Z",
-                    "CompletionTime": "2025-04-15T07:00:18Z"
                 }
             ]
         }
