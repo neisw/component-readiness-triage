@@ -1,0 +1,62 @@
+{
+    "Arguments": {
+        "TestRelease": "4.19",
+        "IssueDescription": "AWS installs failing due to overloaded CI accounts",
+        "IssueType": "Product",
+        "IssueURL": "https://issues.redhat.com/browse/DPTP-4387",
+        "OutputFile": "aws_overloaded_accounts_test_ids_regressions.json",
+        "IncidentGroupId": "47514f61-3870-4a7d-adbc-5442cf80b104",
+        "TargetModifiedTime": "2025-04-20 16:35:50.250003+00:00",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2025-04-19T23%3A59%3A59Z&baseRelease=4.18&baseStartTime=2025-03-20T00%3A00%3A00Z&columnGroupBy=Architecture%2CNetwork%2CPlatform%2CTopology&confidence=95&dbGroupBy=Platform%2CArchitecture%2CNetwork%2CTopology%2CFeatureSet%2CUpgrade%2CSuite%2CInstaller&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=true&includeVariant=Architecture%3Aamd64&includeVariant=CGroupMode%3Av2&includeVariant=ContainerRuntime%3Arunc&includeVariant=ContainerRuntime%3Acrun&includeVariant=FeatureSet%3Adefault&includeVariant=FeatureSet%3Atechpreview&includeVariant=Installer%3Aipi&includeVariant=Installer%3Aupi&includeVariant=JobTier%3Ablocking&includeVariant=JobTier%3Ainforming&includeVariant=JobTier%3Astandard&includeVariant=LayeredProduct%3Anone&includeVariant=Network%3Aovn&includeVariant=Owner%3Aeng&includeVariant=Owner%3Aservice-delivery&includeVariant=Platform%3Aaws&includeVariant=Topology%3Aha&includeVariant=Topology%3Amicroshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-04-20T23%3A59%3A59Z&sampleRelease=4.19&sampleStartTime=2025-04-13T00%3A00%3A00Z"
+    },
+    "Tests": [
+        {
+            "TestId": "Operator results:868edf33fa32b0aab132c2a676d49e3b",
+            "TestName": "operator conditions cluster-autoscaler"
+        },
+        {
+            "TestId": "Operator results:ff3f4ce2ada4b853ece12306b1ef3eaf",
+            "TestName": "operator conditions machine-api"
+        },
+        {
+            "TestId": "Operator results:6d9ee55972f66121016367d07d52f0a9",
+            "TestName": "operator conditions control-plane-machine-set"
+        },
+        {
+            "TestId": "Operator results:ab5196ebb6bf3bea6278b71f135a81bf",
+            "TestName": "operator conditions cloud-credential"
+        },
+        {
+            "TestId": "Operator results:ad47fd0f8db4a5195cee022678627c9b",
+            "TestName": "operator conditions image-registry"
+        },
+        {
+            "TestId": "cluster install:2bc0fe9de9a98831c20e569a21d7ded9",
+            "TestName": "install should succeed: cluster creation"
+        },
+        {
+            "TestId": "Operator results:258e3ff8c9692c937596663377c10e29",
+            "TestName": "operator conditions console"
+        },
+        {
+            "TestId": "Operator results:7e4c8db94dde9f957ea7d639cd29d6dd",
+            "TestName": "operator conditions monitoring"
+        },
+        {
+            "TestId": "Operator results:4b5f6af893ad5577904fbaec3254506d",
+            "TestName": "operator conditions network"
+        },
+        {
+            "TestId": "Operator results:33921465a4b24f992f7e9c47b1ec9409",
+            "TestName": "operator conditions ingress"
+        },
+        {
+            "TestId": "Operator results:871b9b096c0fa7fae6368bae4be46434",
+            "TestName": "operator conditions storage"
+        },
+        {
+            "TestId": "Operator results:466e1a49a33b63218495dc8201953194",
+            "TestName": "operator conditions authentication"
+        }
+    ]
+}
