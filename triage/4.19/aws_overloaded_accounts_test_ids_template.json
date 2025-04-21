@@ -2,8 +2,8 @@
     "Arguments": {
         "TestRelease": "4.19",
         "IssueDescription": "AWS installs failing due to overloaded CI accounts",
-        "IssueType": "Product",
-        "IssueURL": "https://issues.redhat.com/browse/DPTP-4387",
+        "IssueType": "Infrastructure",
+        "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-55173",
         "OutputFile": "aws_overloaded_accounts_test_ids_regressions.json",
         "IncidentGroupId": "47514f61-3870-4a7d-adbc-5442cf80b104",
         "TargetModifiedTime": "2025-04-20 16:35:50.250003+00:00",
