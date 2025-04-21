@@ -1,0 +1,168 @@
+{
+    "Arguments": {
+        "TestRelease": "4.19",
+        "IssueDescription": "Gateway API Pods Setting Resource Limits",
+        "IssueType": "Product",
+        "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-54651",
+        "OutputFile": "gateway_api_resource_limits_regressions.json",
+        "IncidentGroupId": "ca235ad7-773d-46fc-87d3-a6456e14ae69",
+        "TargetModifiedTime": "2025-04-21 15:49:59.726350+00:00",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2025-04-21T23%3A59%3A59Z&baseRelease=4.18&baseStartTime=2025-03-22T00%3A00%3A00Z&columnGroupBy=Architecture%2CNetwork%2CPlatform%2CTopology&confidence=95&dbGroupBy=Platform%2CArchitecture%2CNetwork%2CTopology%2CFeatureSet%2CUpgrade%2CSuite%2CInstaller&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=true&includeVariant=Architecture%3Aamd64&includeVariant=CGroupMode%3Av2&includeVariant=ContainerRuntime%3Arunc&includeVariant=ContainerRuntime%3Acrun&includeVariant=FeatureSet%3Atechpreview&includeVariant=Installer%3Aipi&includeVariant=Installer%3Aupi&includeVariant=JobTier%3Ablocking&includeVariant=JobTier%3Ainforming&includeVariant=JobTier%3Astandard&includeVariant=LayeredProduct%3Anone&includeVariant=Network%3Aovn&includeVariant=Owner%3Aeng&includeVariant=Owner%3Aservice-delivery&includeVariant=Platform%3Aaws&includeVariant=Platform%3Aazure&includeVariant=Platform%3Agcp&includeVariant=Platform%3Ametal&includeVariant=Platform%3Arosa&includeVariant=Platform%3Avsphere&includeVariant=Topology%3Aha&includeVariant=Topology%3Amicroshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-04-21T23%3A59%3A59Z&sampleRelease=4.19&sampleStartTime=2025-04-14T00%3A00%3A00Z&component=Unknown&capability=Other&testId=openshift-tests%3A24065e06d32b90a7bf706b37ee663a05"
+    },
+    "Tests": [
+        {
+            "TestId": "openshift-tests:24065e06d32b90a7bf706b37ee663a05",
+            "TestName": "[sig-arch] Managed cluster should set requests but not limits [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "ca235ad7-773d-46fc-87d3-a6456e14ae69",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Gateway API Pods Setting Resource Limits",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54651"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "azure"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1912897067752099840",
+                    "StartTime": "2025-04-17T15:52:14Z",
+                    "CompletionTime": "2025-04-17T18:57:34Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1913170365861859328",
+                    "StartTime": "2025-04-18T09:58:50Z",
+                    "CompletionTime": "2025-04-18T12:31:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1913702396400242688",
+                    "StartTime": "2025-04-19T21:13:00Z",
+                    "CompletionTime": "2025-04-19T23:48:01Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1914035446388625408",
+                    "StartTime": "2025-04-20T19:16:20Z",
+                    "CompletionTime": "2025-04-20T22:16:29Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1914127879159943168",
+                    "StartTime": "2025-04-21T01:23:43Z",
+                    "CompletionTime": "2025-04-21T04:16:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-azure-ovn-runc-techpreview/1914127470764756992",
+                    "StartTime": "2025-04-21T01:22:06Z",
+                    "CompletionTime": "2025-04-21T03:56:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:24065e06d32b90a7bf706b37ee663a05",
+            "TestName": "[sig-arch] Managed cluster should set requests but not limits [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "ca235ad7-773d-46fc-87d3-a6456e14ae69",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Gateway API Pods Setting Resource Limits",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-54651"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview/1913267728349663232",
+                    "StartTime": "2025-04-18T16:25:47Z",
+                    "CompletionTime": "2025-04-18T18:55:01Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview/1913273097075560448",
+                    "StartTime": "2025-04-18T16:46:45Z",
+                    "CompletionTime": "2025-04-18T19:12:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview/1913306312138035200",
+                    "StartTime": "2025-04-18T18:59:06Z",
+                    "CompletionTime": "2025-04-18T21:24:53Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview/1914035379275567104",
+                    "StartTime": "2025-04-20T19:16:06Z",
+                    "CompletionTime": "2025-04-20T21:41:16Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-gcp-ovn-runc-techpreview/1913363981574082560",
+                    "StartTime": "2025-04-18T22:48:16Z",
+                    "CompletionTime": "2025-04-19T01:11:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-gcp-ovn-runc-techpreview/1914230024127385600",
+                    "StartTime": "2025-04-21T08:09:37Z",
+                    "CompletionTime": "2025-04-21T10:43:48Z"
+                }
+            ]
+        }
+    ]
+}
