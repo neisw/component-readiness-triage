@@ -1,0 +1,490 @@
+{
+    "Arguments": {
+        "TestRelease": "4.19",
+        "IssueDescription": "GCP External Proxy LB Infra Limit",
+        "IssueType": "Infrastructure",
+        "IssueURL": "",
+        "OutputFile": "gcp_external_proxy_lb_regressions.json",
+        "IncidentGroupId": "1fbe39c7-1e16-482c-8ef8-b28abec4978d",
+        "TargetModifiedTime": "2025-04-21 16:07:25.533868+00:00",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2025-04-21T23%3A59%3A59Z&baseRelease=4.18&baseStartTime=2025-03-22T00%3A00%3A00Z&columnGroupBy=Architecture%2CNetwork%2CPlatform%2CTopology&confidence=95&dbGroupBy=Platform%2CArchitecture%2CNetwork%2CTopology%2CFeatureSet%2CUpgrade%2CSuite%2CInstaller&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=true&includeVariant=Architecture%3Aamd64&includeVariant=CGroupMode%3Av2&includeVariant=ContainerRuntime%3Arunc&includeVariant=ContainerRuntime%3Acrun&includeVariant=FeatureSet%3Adefault&includeVariant=FeatureSet%3Atechpreview&includeVariant=Installer%3Aipi&includeVariant=Installer%3Aupi&includeVariant=JobTier%3Ablocking&includeVariant=JobTier%3Ainforming&includeVariant=JobTier%3Astandard&includeVariant=LayeredProduct%3Anone&includeVariant=Network%3Aovn&includeVariant=Owner%3Aeng&includeVariant=Owner%3Aservice-delivery&includeVariant=Platform%3Agcp&includeVariant=Topology%3Aha&includeVariant=Topology%3Amicroshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-04-21T23%3A59%3A59Z&sampleRelease=4.19&sampleStartTime=2025-04-14T00%3A00%3A00Z&component=Installer+%2F+openshift-installer",
+        "JobRunStartTimeMax": "2025-04-18T10:10:32Z",
+        "JobRunStartTimeMin": "2025-04-17T19:37:32Z"
+    },
+    "Tests": [
+        {
+            "TestId": "cluster install:3e14279ba2c202608dd9a041e5023c4c",
+            "TestName": "install should succeed: infrastructure",
+            "Release": "4.19",
+            "GroupId": "1fbe39c7-1e16-482c-8ef8-b28abec4978d",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "GCP External Proxy LB Infra Limit"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1912957047826026496",
+                    "StartTime": "2025-04-17T19:51:15Z",
+                    "CompletionTime": "2025-04-17T20:53:37Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1912972920225796096",
+                    "StartTime": "2025-04-17T20:54:19Z",
+                    "CompletionTime": "2025-04-17T21:53:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1912988455185420288",
+                    "StartTime": "2025-04-17T21:56:03Z",
+                    "CompletionTime": "2025-04-17T22:55:27Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1912991623659130880",
+                    "StartTime": "2025-04-17T22:08:29Z",
+                    "CompletionTime": "2025-04-17T23:07:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1912991626259599360",
+                    "StartTime": "2025-04-17T22:08:29Z",
+                    "CompletionTime": "2025-04-17T23:08:08Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1912991621134159872",
+                    "StartTime": "2025-04-17T22:08:29Z",
+                    "CompletionTime": "2025-04-17T23:08:32Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1912991633717071872",
+                    "StartTime": "2025-04-17T22:08:30Z",
+                    "CompletionTime": "2025-04-17T23:08:10Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1912991637923958784",
+                    "StartTime": "2025-04-17T22:08:30Z",
+                    "CompletionTime": "2025-04-17T23:08:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1912991618617577472",
+                    "StartTime": "2025-04-17T22:08:29Z",
+                    "CompletionTime": "2025-04-17T23:08:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1912991616096800768",
+                    "StartTime": "2025-04-17T22:08:28Z",
+                    "CompletionTime": "2025-04-17T23:08:57Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1912991635403182080",
+                    "StartTime": "2025-04-17T22:08:30Z",
+                    "CompletionTime": "2025-04-17T23:08:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1912991631200489472",
+                    "StartTime": "2025-04-17T22:08:30Z",
+                    "CompletionTime": "2025-04-17T23:09:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1912991628704878592",
+                    "StartTime": "2025-04-17T22:08:29Z",
+                    "CompletionTime": "2025-04-17T23:09:32Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1913083620944252928",
+                    "StartTime": "2025-04-18T04:14:03Z",
+                    "CompletionTime": "2025-04-18T05:15:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1913083624291307520",
+                    "StartTime": "2025-04-18T04:14:03Z",
+                    "CompletionTime": "2025-04-18T05:15:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1913083615902699520",
+                    "StartTime": "2025-04-18T04:14:02Z",
+                    "CompletionTime": "2025-04-18T05:15:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1913083633535553536",
+                    "StartTime": "2025-04-18T04:14:04Z",
+                    "CompletionTime": "2025-04-18T05:16:11Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1913083631853637632",
+                    "StartTime": "2025-04-18T04:14:03Z",
+                    "CompletionTime": "2025-04-18T05:16:19Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1913083638564524032",
+                    "StartTime": "2025-04-18T04:14:04Z",
+                    "CompletionTime": "2025-04-18T05:20:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1913083628489805824",
+                    "StartTime": "2025-04-18T04:14:03Z",
+                    "CompletionTime": "2025-04-18T05:21:18Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1913170359159361536",
+                    "StartTime": "2025-04-18T09:58:49Z",
+                    "CompletionTime": "2025-04-18T11:05:25Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1913172614625366016",
+                    "StartTime": "2025-04-18T10:07:44Z",
+                    "CompletionTime": "2025-04-18T11:07:51Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1913172620413505536",
+                    "StartTime": "2025-04-18T10:07:45Z",
+                    "CompletionTime": "2025-04-18T11:09:02Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1913172610347175936",
+                    "StartTime": "2025-04-18T10:07:44Z",
+                    "CompletionTime": "2025-04-18T11:08:39Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1913172603640483840",
+                    "StartTime": "2025-04-18T10:07:43Z",
+                    "CompletionTime": "2025-04-18T11:08:34Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1913172618744172544",
+                    "StartTime": "2025-04-18T10:07:45Z",
+                    "CompletionTime": "2025-04-18T11:08:42Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
+            "TestName": "install should succeed: overall",
+            "Release": "4.19",
+            "GroupId": "1fbe39c7-1e16-482c-8ef8-b28abec4978d",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "GCP External Proxy LB Infra Limit"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1912957047826026496",
+                    "StartTime": "2025-04-17T19:51:15Z",
+                    "CompletionTime": "2025-04-17T20:53:37Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1912972920225796096",
+                    "StartTime": "2025-04-17T20:54:19Z",
+                    "CompletionTime": "2025-04-17T21:53:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1912988455185420288",
+                    "StartTime": "2025-04-17T21:56:03Z",
+                    "CompletionTime": "2025-04-17T22:55:27Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1912991623659130880",
+                    "StartTime": "2025-04-17T22:08:29Z",
+                    "CompletionTime": "2025-04-17T23:07:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1912991626259599360",
+                    "StartTime": "2025-04-17T22:08:29Z",
+                    "CompletionTime": "2025-04-17T23:08:08Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1912991621134159872",
+                    "StartTime": "2025-04-17T22:08:29Z",
+                    "CompletionTime": "2025-04-17T23:08:32Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1912991633717071872",
+                    "StartTime": "2025-04-17T22:08:30Z",
+                    "CompletionTime": "2025-04-17T23:08:10Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1912991637923958784",
+                    "StartTime": "2025-04-17T22:08:30Z",
+                    "CompletionTime": "2025-04-17T23:08:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1912991618617577472",
+                    "StartTime": "2025-04-17T22:08:29Z",
+                    "CompletionTime": "2025-04-17T23:08:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1912991616096800768",
+                    "StartTime": "2025-04-17T22:08:28Z",
+                    "CompletionTime": "2025-04-17T23:08:57Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1912991635403182080",
+                    "StartTime": "2025-04-17T22:08:30Z",
+                    "CompletionTime": "2025-04-17T23:08:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1912991631200489472",
+                    "StartTime": "2025-04-17T22:08:30Z",
+                    "CompletionTime": "2025-04-17T23:09:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1912991628704878592",
+                    "StartTime": "2025-04-17T22:08:29Z",
+                    "CompletionTime": "2025-04-17T23:09:32Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1913083624291307520",
+                    "StartTime": "2025-04-18T04:14:03Z",
+                    "CompletionTime": "2025-04-18T05:15:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1913083620944252928",
+                    "StartTime": "2025-04-18T04:14:03Z",
+                    "CompletionTime": "2025-04-18T05:15:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1913083615902699520",
+                    "StartTime": "2025-04-18T04:14:02Z",
+                    "CompletionTime": "2025-04-18T05:15:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1913083633535553536",
+                    "StartTime": "2025-04-18T04:14:04Z",
+                    "CompletionTime": "2025-04-18T05:16:11Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1913083631853637632",
+                    "StartTime": "2025-04-18T04:14:03Z",
+                    "CompletionTime": "2025-04-18T05:16:19Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1913083638564524032",
+                    "StartTime": "2025-04-18T04:14:04Z",
+                    "CompletionTime": "2025-04-18T05:20:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1913083628489805824",
+                    "StartTime": "2025-04-18T04:14:03Z",
+                    "CompletionTime": "2025-04-18T05:21:18Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1913170359159361536",
+                    "StartTime": "2025-04-18T09:58:49Z",
+                    "CompletionTime": "2025-04-18T11:05:25Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1913172614625366016",
+                    "StartTime": "2025-04-18T10:07:44Z",
+                    "CompletionTime": "2025-04-18T11:07:51Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1913172620413505536",
+                    "StartTime": "2025-04-18T10:07:45Z",
+                    "CompletionTime": "2025-04-18T11:09:02Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1913172610347175936",
+                    "StartTime": "2025-04-18T10:07:44Z",
+                    "CompletionTime": "2025-04-18T11:08:39Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1913172603640483840",
+                    "StartTime": "2025-04-18T10:07:43Z",
+                    "CompletionTime": "2025-04-18T11:08:34Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-upgrade/1913172618744172544",
+                    "StartTime": "2025-04-18T10:07:45Z",
+                    "CompletionTime": "2025-04-18T11:08:42Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:3e14279ba2c202608dd9a041e5023c4c",
+            "TestName": "install should succeed: infrastructure",
+            "Release": "4.19",
+            "GroupId": "1fbe39c7-1e16-482c-8ef8-b28abec4978d",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "GCP External Proxy LB Infra Limit"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-gcp-ovn-serial-runc/1912989606878384128",
+                    "StartTime": "2025-04-17T22:00:20Z",
+                    "CompletionTime": "2025-04-17T23:00:00Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-gcp-ovn-serial/1912957190751129600",
+                    "StartTime": "2025-04-17T19:51:24Z",
+                    "CompletionTime": "2025-04-17T20:52:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-gcp-ovn-serial/1913170573911920640",
+                    "StartTime": "2025-04-18T09:59:09Z",
+                    "CompletionTime": "2025-04-18T10:59:36Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
+            "TestName": "install should succeed: overall",
+            "Release": "4.19",
+            "GroupId": "1fbe39c7-1e16-482c-8ef8-b28abec4978d",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "GCP External Proxy LB Infra Limit"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-gcp-ovn-serial-runc/1912989606878384128",
+                    "StartTime": "2025-04-17T22:00:20Z",
+                    "CompletionTime": "2025-04-17T23:00:00Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-gcp-ovn-serial/1912957190751129600",
+                    "StartTime": "2025-04-17T19:51:24Z",
+                    "CompletionTime": "2025-04-17T20:52:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-gcp-ovn-serial/1913170573911920640",
+                    "StartTime": "2025-04-18T09:59:09Z",
+                    "CompletionTime": "2025-04-18T10:59:36Z"
+                }
+            ]
+        }
+    ]
+}
