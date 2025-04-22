@@ -1,0 +1,31 @@
+{
+    "Arguments": {
+        "TestRelease": "4.19",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2025-04-22T23:59:59Z&baseRelease=4.18&baseStartTime=2025-03-23T00:00:00Z&columnGroupBy=Architecture,Network,Platform,Topology&confidence=95&dbGroupBy=Platform,Architecture,Network,Topology,FeatureSet,Upgrade,Suite,Installer&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=true&includeVariant=Architecture:amd64&includeVariant=CGroupMode:v2&includeVariant=ContainerRuntime:runc&includeVariant=ContainerRuntime:crun&includeVariant=FeatureSet:default&includeVariant=FeatureSet:techpreview&includeVariant=Installer:ipi&includeVariant=Installer:upi&includeVariant=JobTier:blocking&includeVariant=JobTier:informing&includeVariant=JobTier:standard&includeVariant=LayeredProduct:none&includeVariant=Network:ovn&includeVariant=Owner:eng&includeVariant=Owner:service-delivery&includeVariant=Platform:aws&includeVariant=Platform:azure&includeVariant=Platform:gcp&includeVariant=Platform:metal&includeVariant=Platform:rosa&includeVariant=Platform:vsphere&includeVariant=Topology:ha&includeVariant=Topology:microshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-04-22T23:59:59Z&sampleRelease=4.19&sampleStartTime=2025-04-15T00:00:00Z",
+        "IssueDescription": "Console Operator Crashloop",
+        "IssueType": "Product",
+        "IssueURL": "https://issues.redhat.com//browse/OCPBUGS-55082",
+        "OutputFile": "console_operator_crashloop_regressions.json",
+        "TargetBuildCluster": "",
+        "IssueResolutionDate": "2025-04-17T23:11:00Z",
+        "JobRunStartTimeMin": "",
+        "IncidentGroupId": "3f13c9cb-8560-4c20-9f57-0b1ac065b6c2"
+    },
+    "Tests": [
+        {
+            "TestId": "openshift-tests-upgrade:e78644c3024c99c0a7226427e95fb8e9"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:d777625077b46358dec9e126bcace6dd"
+        },
+        {
+            "TestId": "openshift-tests:e78644c3024c99c0a7226427e95fb8e9"
+        },
+        {
+            "TestId": "openshift-tests:d777625077b46358dec9e126bcace6dd"
+        },
+        {
+            "TestId": "openshift-tests:c1f54790201ec8f4241eca902f854b79"
+        }
+    ]
+}
