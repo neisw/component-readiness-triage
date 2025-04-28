@@ -1,0 +1,2669 @@
+{
+    "Arguments": {
+        "TestRelease": "4.19",
+        "IssueDescription": "Metal DHCP hostname race condition in bare metal jobs",
+        "IssueType": "Product",
+        "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-55315",
+        "OutputFile": "metal_dhcp_race_regressions.json",
+        "IncidentGroupId": "4f8bf8dc-5ae1-44f5-9443-b9424055f789",
+        "TargetModifiedTime": "2025-04-28 12:31:54.183851+00:00",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2025-02-25T23:59:59Z&baseRelease=4.18&baseStartTime=2025-01-26T00:00:00Z&columnGroupBy=Architecture,Network,Platform,Topology&confidence=95&dbGroupBy=Platform,Architecture,Network,Topology,FeatureSet,Upgrade,Suite,Installer&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=true&includeVariant=Architecture:amd64&includeVariant=CGroupMode:v2&includeVariant=ContainerRuntime:runc&includeVariant=ContainerRuntime:crun&includeVariant=FeatureSet:default&includeVariant=FeatureSet:techpreview&includeVariant=Installer:ipi&includeVariant=Installer:upi&includeVariant=JobTier:blocking&includeVariant=JobTier:informing&includeVariant=JobTier:standard&includeVariant=LayeredProduct:none&includeVariant=Network:ovn&includeVariant=Owner:eng&includeVariant=Owner:service-delivery&includeVariant=Platform:aws&includeVariant=Platform:azure&includeVariant=Platform:gcp&includeVariant=Platform:metal&includeVariant=Platform:rosa&includeVariant=Platform:vsphere&includeVariant=Topology:ha&includeVariant=Topology:microshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-04-28T23:59:59Z&sampleRelease=4.19&sampleStartTime=2025-04-21T00:00:00Z"
+    },
+    "Tests": [
+        {
+            "TestId": "Operator results:868edf33fa32b0aab132c2a676d49e3b",
+            "TestName": "operator conditions cluster-autoscaler",
+            "Release": "4.19",
+            "GroupId": "4f8bf8dc-5ae1-44f5-9443-b9424055f789",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Metal DHCP hostname race condition in bare metal jobs",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55315"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1914179661684805632",
+                    "StartTime": "2025-04-21T04:48:49Z",
+                    "CompletionTime": "2025-04-21T06:59:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915069439116578816",
+                    "StartTime": "2025-04-23T15:45:09Z",
+                    "CompletionTime": "2025-04-23T19:40:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915129056265768960",
+                    "StartTime": "2025-04-23T19:42:03Z",
+                    "CompletionTime": "2025-04-23T22:51:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915211124991594496",
+                    "StartTime": "2025-04-24T01:07:39Z",
+                    "CompletionTime": "2025-04-24T03:23:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915245464991567872",
+                    "StartTime": "2025-04-24T03:24:36Z",
+                    "CompletionTime": "2025-04-24T06:31:20Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915292957083176960",
+                    "StartTime": "2025-04-24T06:33:20Z",
+                    "CompletionTime": "2025-04-24T08:29:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915379017452621824",
+                    "StartTime": "2025-04-24T12:14:29Z",
+                    "CompletionTime": "2025-04-24T15:54:58Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915775736111697920",
+                    "StartTime": "2025-04-25T14:31:04Z",
+                    "CompletionTime": "2025-04-25T16:32:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915807119978795008",
+                    "StartTime": "2025-04-25T16:36:25Z",
+                    "CompletionTime": "2025-04-25T18:37:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915838188119658496",
+                    "StartTime": "2025-04-25T18:39:53Z",
+                    "CompletionTime": "2025-04-25T21:32:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915900058339905536",
+                    "StartTime": "2025-04-25T22:45:10Z",
+                    "CompletionTime": "2025-04-26T00:42:37Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916061724373422080",
+                    "StartTime": "2025-04-26T09:28:08Z",
+                    "CompletionTime": "2025-04-26T11:31:06Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916094174612951040",
+                    "StartTime": "2025-04-26T11:37:05Z",
+                    "CompletionTime": "2025-04-26T13:32:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916123803335790592",
+                    "StartTime": "2025-04-26T13:34:49Z",
+                    "CompletionTime": "2025-04-26T15:31:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916216722247913472",
+                    "StartTime": "2025-04-26T19:43:46Z",
+                    "CompletionTime": "2025-04-26T21:58:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916251329852870656",
+                    "StartTime": "2025-04-26T22:01:33Z",
+                    "CompletionTime": "2025-04-27T00:02:52Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916282369099173888",
+                    "StartTime": "2025-04-27T00:04:54Z",
+                    "CompletionTime": "2025-04-27T02:15:53Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916341555963105280",
+                    "StartTime": "2025-04-27T04:00:01Z",
+                    "CompletionTime": "2025-04-27T06:09:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916452229078847488",
+                    "StartTime": "2025-04-27T11:19:52Z",
+                    "CompletionTime": "2025-04-27T13:23:50Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916492704536072192",
+                    "StartTime": "2025-04-27T14:00:14Z",
+                    "CompletionTime": "2025-04-27T16:04:33Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916524113917120512",
+                    "StartTime": "2025-04-27T16:05:30Z",
+                    "CompletionTime": "2025-04-27T18:01:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916553852866269184",
+                    "StartTime": "2025-04-27T18:03:41Z",
+                    "CompletionTime": "2025-04-27T19:59:15Z"
+                }
+            ]
+        },
+        {
+            "TestId": "Operator results:868edf33fa32b0aab132c2a676d49e3b",
+            "TestName": "operator conditions cluster-autoscaler",
+            "Release": "4.19",
+            "GroupId": "4f8bf8dc-5ae1-44f5-9443-b9424055f789",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Metal DHCP hostname race condition in bare metal jobs",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55315"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1914283509556449280",
+                    "StartTime": "2025-04-21T11:42:07Z",
+                    "CompletionTime": "2025-04-21T13:45:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1914993759393681408",
+                    "StartTime": "2025-04-23T10:44:03Z",
+                    "CompletionTime": "2025-04-23T13:11:52Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915034794169733120",
+                    "StartTime": "2025-04-23T13:27:17Z",
+                    "CompletionTime": "2025-04-23T17:22:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915093858367049728",
+                    "StartTime": "2025-04-23T17:22:10Z",
+                    "CompletionTime": "2025-04-23T20:50:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915094193219309568",
+                    "StartTime": "2025-04-23T17:23:31Z",
+                    "CompletionTime": "2025-04-23T20:51:36Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915209915257851904",
+                    "StartTime": "2025-04-24T01:03:21Z",
+                    "CompletionTime": "2025-04-24T03:02:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915211122479206400",
+                    "StartTime": "2025-04-24T01:07:39Z",
+                    "CompletionTime": "2025-04-24T03:44:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915250759444729856",
+                    "StartTime": "2025-04-24T03:45:38Z",
+                    "CompletionTime": "2025-04-24T06:36:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915294325340639232",
+                    "StartTime": "2025-04-24T06:38:46Z",
+                    "CompletionTime": "2025-04-24T08:40:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915379014902484992",
+                    "StartTime": "2025-04-24T12:14:29Z",
+                    "CompletionTime": "2025-04-24T15:47:56Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915432938086862848",
+                    "StartTime": "2025-04-24T15:49:33Z",
+                    "CompletionTime": "2025-04-24T19:13:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915484810655043584",
+                    "StartTime": "2025-04-24T19:15:40Z",
+                    "CompletionTime": "2025-04-24T21:18:16Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915516664451960832",
+                    "StartTime": "2025-04-24T21:22:16Z",
+                    "CompletionTime": "2025-04-25T00:02:06Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915582416915795968",
+                    "StartTime": "2025-04-25T01:43:22Z",
+                    "CompletionTime": "2025-04-25T03:48:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915614018727317504",
+                    "StartTime": "2025-04-25T03:49:06Z",
+                    "CompletionTime": "2025-04-25T06:33:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915656073260306432",
+                    "StartTime": "2025-04-25T06:36:13Z",
+                    "CompletionTime": "2025-04-25T08:30:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915775712120279040",
+                    "StartTime": "2025-04-25T14:31:02Z",
+                    "CompletionTime": "2025-04-25T16:30:18Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915899997107261440",
+                    "StartTime": "2025-04-25T22:45:05Z",
+                    "CompletionTime": "2025-04-26T00:40:45Z"
+                }
+            ]
+        },
+        {
+            "TestId": "Operator results:ff3f4ce2ada4b853ece12306b1ef3eaf",
+            "TestName": "operator conditions machine-api",
+            "Release": "4.19",
+            "GroupId": "4f8bf8dc-5ae1-44f5-9443-b9424055f789",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Metal DHCP hostname race condition in bare metal jobs",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55315"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1914179661684805632",
+                    "StartTime": "2025-04-21T04:48:49Z",
+                    "CompletionTime": "2025-04-21T06:59:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915069439116578816",
+                    "StartTime": "2025-04-23T15:45:09Z",
+                    "CompletionTime": "2025-04-23T19:40:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915129056265768960",
+                    "StartTime": "2025-04-23T19:42:03Z",
+                    "CompletionTime": "2025-04-23T22:51:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915211124991594496",
+                    "StartTime": "2025-04-24T01:07:39Z",
+                    "CompletionTime": "2025-04-24T03:23:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915245464991567872",
+                    "StartTime": "2025-04-24T03:24:36Z",
+                    "CompletionTime": "2025-04-24T06:31:20Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915292957083176960",
+                    "StartTime": "2025-04-24T06:33:20Z",
+                    "CompletionTime": "2025-04-24T08:29:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915379017452621824",
+                    "StartTime": "2025-04-24T12:14:29Z",
+                    "CompletionTime": "2025-04-24T15:54:58Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915775736111697920",
+                    "StartTime": "2025-04-25T14:31:04Z",
+                    "CompletionTime": "2025-04-25T16:32:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915807119978795008",
+                    "StartTime": "2025-04-25T16:36:25Z",
+                    "CompletionTime": "2025-04-25T18:37:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915838188119658496",
+                    "StartTime": "2025-04-25T18:39:53Z",
+                    "CompletionTime": "2025-04-25T21:32:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915900058339905536",
+                    "StartTime": "2025-04-25T22:45:10Z",
+                    "CompletionTime": "2025-04-26T00:42:37Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916061724373422080",
+                    "StartTime": "2025-04-26T09:28:08Z",
+                    "CompletionTime": "2025-04-26T11:31:06Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916094174612951040",
+                    "StartTime": "2025-04-26T11:37:05Z",
+                    "CompletionTime": "2025-04-26T13:32:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916123803335790592",
+                    "StartTime": "2025-04-26T13:34:49Z",
+                    "CompletionTime": "2025-04-26T15:31:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916216722247913472",
+                    "StartTime": "2025-04-26T19:43:46Z",
+                    "CompletionTime": "2025-04-26T21:58:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916251329852870656",
+                    "StartTime": "2025-04-26T22:01:33Z",
+                    "CompletionTime": "2025-04-27T00:02:52Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916282369099173888",
+                    "StartTime": "2025-04-27T00:04:54Z",
+                    "CompletionTime": "2025-04-27T02:15:53Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916341555963105280",
+                    "StartTime": "2025-04-27T04:00:01Z",
+                    "CompletionTime": "2025-04-27T06:09:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916452229078847488",
+                    "StartTime": "2025-04-27T11:19:52Z",
+                    "CompletionTime": "2025-04-27T13:23:50Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916492704536072192",
+                    "StartTime": "2025-04-27T14:00:14Z",
+                    "CompletionTime": "2025-04-27T16:04:33Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916524113917120512",
+                    "StartTime": "2025-04-27T16:05:30Z",
+                    "CompletionTime": "2025-04-27T18:01:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916553852866269184",
+                    "StartTime": "2025-04-27T18:03:41Z",
+                    "CompletionTime": "2025-04-27T19:59:15Z"
+                }
+            ]
+        },
+        {
+            "TestId": "Operator results:ff3f4ce2ada4b853ece12306b1ef3eaf",
+            "TestName": "operator conditions machine-api",
+            "Release": "4.19",
+            "GroupId": "4f8bf8dc-5ae1-44f5-9443-b9424055f789",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Metal DHCP hostname race condition in bare metal jobs",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55315"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1914283509556449280",
+                    "StartTime": "2025-04-21T11:42:07Z",
+                    "CompletionTime": "2025-04-21T13:45:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1914993759393681408",
+                    "StartTime": "2025-04-23T10:44:03Z",
+                    "CompletionTime": "2025-04-23T13:11:52Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915034794169733120",
+                    "StartTime": "2025-04-23T13:27:17Z",
+                    "CompletionTime": "2025-04-23T17:22:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915093858367049728",
+                    "StartTime": "2025-04-23T17:22:10Z",
+                    "CompletionTime": "2025-04-23T20:50:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915094193219309568",
+                    "StartTime": "2025-04-23T17:23:31Z",
+                    "CompletionTime": "2025-04-23T20:51:36Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915209915257851904",
+                    "StartTime": "2025-04-24T01:03:21Z",
+                    "CompletionTime": "2025-04-24T03:02:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915211122479206400",
+                    "StartTime": "2025-04-24T01:07:39Z",
+                    "CompletionTime": "2025-04-24T03:44:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915250759444729856",
+                    "StartTime": "2025-04-24T03:45:38Z",
+                    "CompletionTime": "2025-04-24T06:36:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915294325340639232",
+                    "StartTime": "2025-04-24T06:38:46Z",
+                    "CompletionTime": "2025-04-24T08:40:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915379014902484992",
+                    "StartTime": "2025-04-24T12:14:29Z",
+                    "CompletionTime": "2025-04-24T15:47:56Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915432938086862848",
+                    "StartTime": "2025-04-24T15:49:33Z",
+                    "CompletionTime": "2025-04-24T19:13:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915484810655043584",
+                    "StartTime": "2025-04-24T19:15:40Z",
+                    "CompletionTime": "2025-04-24T21:18:16Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915516664451960832",
+                    "StartTime": "2025-04-24T21:22:16Z",
+                    "CompletionTime": "2025-04-25T00:02:06Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915582416915795968",
+                    "StartTime": "2025-04-25T01:43:22Z",
+                    "CompletionTime": "2025-04-25T03:48:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915614018727317504",
+                    "StartTime": "2025-04-25T03:49:06Z",
+                    "CompletionTime": "2025-04-25T06:33:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915656073260306432",
+                    "StartTime": "2025-04-25T06:36:13Z",
+                    "CompletionTime": "2025-04-25T08:30:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915775712120279040",
+                    "StartTime": "2025-04-25T14:31:02Z",
+                    "CompletionTime": "2025-04-25T16:30:18Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915899997107261440",
+                    "StartTime": "2025-04-25T22:45:05Z",
+                    "CompletionTime": "2025-04-26T00:40:45Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:2bc0fe9de9a98831c20e569a21d7ded9",
+            "TestName": "install should succeed: cluster creation",
+            "Release": "4.19",
+            "GroupId": "4f8bf8dc-5ae1-44f5-9443-b9424055f789",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Metal DHCP hostname race condition in bare metal jobs",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55315"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1914283509556449280",
+                    "StartTime": "2025-04-21T11:42:07Z",
+                    "CompletionTime": "2025-04-21T13:45:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1914993759393681408",
+                    "StartTime": "2025-04-23T10:44:03Z",
+                    "CompletionTime": "2025-04-23T13:11:52Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915034794169733120",
+                    "StartTime": "2025-04-23T13:27:17Z",
+                    "CompletionTime": "2025-04-23T17:22:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915093858367049728",
+                    "StartTime": "2025-04-23T17:22:10Z",
+                    "CompletionTime": "2025-04-23T20:50:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915094193219309568",
+                    "StartTime": "2025-04-23T17:23:31Z",
+                    "CompletionTime": "2025-04-23T20:51:36Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915209915257851904",
+                    "StartTime": "2025-04-24T01:03:21Z",
+                    "CompletionTime": "2025-04-24T03:02:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915211122479206400",
+                    "StartTime": "2025-04-24T01:07:39Z",
+                    "CompletionTime": "2025-04-24T03:44:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915250759444729856",
+                    "StartTime": "2025-04-24T03:45:38Z",
+                    "CompletionTime": "2025-04-24T06:36:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915294325340639232",
+                    "StartTime": "2025-04-24T06:38:46Z",
+                    "CompletionTime": "2025-04-24T08:40:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915379014902484992",
+                    "StartTime": "2025-04-24T12:14:29Z",
+                    "CompletionTime": "2025-04-24T15:47:56Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915432938086862848",
+                    "StartTime": "2025-04-24T15:49:33Z",
+                    "CompletionTime": "2025-04-24T19:13:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915484810655043584",
+                    "StartTime": "2025-04-24T19:15:40Z",
+                    "CompletionTime": "2025-04-24T21:18:16Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915516664451960832",
+                    "StartTime": "2025-04-24T21:22:16Z",
+                    "CompletionTime": "2025-04-25T00:02:06Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915582416915795968",
+                    "StartTime": "2025-04-25T01:43:22Z",
+                    "CompletionTime": "2025-04-25T03:48:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915614018727317504",
+                    "StartTime": "2025-04-25T03:49:06Z",
+                    "CompletionTime": "2025-04-25T06:33:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915656073260306432",
+                    "StartTime": "2025-04-25T06:36:13Z",
+                    "CompletionTime": "2025-04-25T08:30:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915775712120279040",
+                    "StartTime": "2025-04-25T14:31:02Z",
+                    "CompletionTime": "2025-04-25T16:30:18Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915899997107261440",
+                    "StartTime": "2025-04-25T22:45:05Z",
+                    "CompletionTime": "2025-04-26T00:40:45Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
+            "TestName": "install should succeed: overall",
+            "Release": "4.19",
+            "GroupId": "4f8bf8dc-5ae1-44f5-9443-b9424055f789",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Metal DHCP hostname race condition in bare metal jobs",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55315"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1914283509556449280",
+                    "StartTime": "2025-04-21T11:42:07Z",
+                    "CompletionTime": "2025-04-21T13:45:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1914993759393681408",
+                    "StartTime": "2025-04-23T10:44:03Z",
+                    "CompletionTime": "2025-04-23T13:11:52Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915034794169733120",
+                    "StartTime": "2025-04-23T13:27:17Z",
+                    "CompletionTime": "2025-04-23T17:22:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915093858367049728",
+                    "StartTime": "2025-04-23T17:22:10Z",
+                    "CompletionTime": "2025-04-23T20:50:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915094193219309568",
+                    "StartTime": "2025-04-23T17:23:31Z",
+                    "CompletionTime": "2025-04-23T20:51:36Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915209915257851904",
+                    "StartTime": "2025-04-24T01:03:21Z",
+                    "CompletionTime": "2025-04-24T03:02:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915211122479206400",
+                    "StartTime": "2025-04-24T01:07:39Z",
+                    "CompletionTime": "2025-04-24T03:44:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915250759444729856",
+                    "StartTime": "2025-04-24T03:45:38Z",
+                    "CompletionTime": "2025-04-24T06:36:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915294325340639232",
+                    "StartTime": "2025-04-24T06:38:46Z",
+                    "CompletionTime": "2025-04-24T08:40:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915379014902484992",
+                    "StartTime": "2025-04-24T12:14:29Z",
+                    "CompletionTime": "2025-04-24T15:47:56Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915432938086862848",
+                    "StartTime": "2025-04-24T15:49:33Z",
+                    "CompletionTime": "2025-04-24T19:13:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915484810655043584",
+                    "StartTime": "2025-04-24T19:15:40Z",
+                    "CompletionTime": "2025-04-24T21:18:16Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915516664451960832",
+                    "StartTime": "2025-04-24T21:22:16Z",
+                    "CompletionTime": "2025-04-25T00:02:06Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915582416915795968",
+                    "StartTime": "2025-04-25T01:43:22Z",
+                    "CompletionTime": "2025-04-25T03:48:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915614018727317504",
+                    "StartTime": "2025-04-25T03:49:06Z",
+                    "CompletionTime": "2025-04-25T06:33:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915656073260306432",
+                    "StartTime": "2025-04-25T06:36:13Z",
+                    "CompletionTime": "2025-04-25T08:30:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915775712120279040",
+                    "StartTime": "2025-04-25T14:31:02Z",
+                    "CompletionTime": "2025-04-25T16:30:18Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915899997107261440",
+                    "StartTime": "2025-04-25T22:45:05Z",
+                    "CompletionTime": "2025-04-26T00:40:45Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
+            "TestName": "install should succeed: overall",
+            "Release": "4.19",
+            "GroupId": "4f8bf8dc-5ae1-44f5-9443-b9424055f789",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Metal DHCP hostname race condition in bare metal jobs",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55315"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1914179661684805632",
+                    "StartTime": "2025-04-21T04:48:49Z",
+                    "CompletionTime": "2025-04-21T06:59:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915069439116578816",
+                    "StartTime": "2025-04-23T15:45:09Z",
+                    "CompletionTime": "2025-04-23T19:40:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915129056265768960",
+                    "StartTime": "2025-04-23T19:42:03Z",
+                    "CompletionTime": "2025-04-23T22:51:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915211124991594496",
+                    "StartTime": "2025-04-24T01:07:39Z",
+                    "CompletionTime": "2025-04-24T03:23:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915245464991567872",
+                    "StartTime": "2025-04-24T03:24:36Z",
+                    "CompletionTime": "2025-04-24T06:31:20Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915292957083176960",
+                    "StartTime": "2025-04-24T06:33:20Z",
+                    "CompletionTime": "2025-04-24T08:29:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915379017452621824",
+                    "StartTime": "2025-04-24T12:14:29Z",
+                    "CompletionTime": "2025-04-24T15:54:58Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915775736111697920",
+                    "StartTime": "2025-04-25T14:31:04Z",
+                    "CompletionTime": "2025-04-25T16:32:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915807119978795008",
+                    "StartTime": "2025-04-25T16:36:25Z",
+                    "CompletionTime": "2025-04-25T18:37:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915838188119658496",
+                    "StartTime": "2025-04-25T18:39:53Z",
+                    "CompletionTime": "2025-04-25T21:32:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915900058339905536",
+                    "StartTime": "2025-04-25T22:45:10Z",
+                    "CompletionTime": "2025-04-26T00:42:37Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916061724373422080",
+                    "StartTime": "2025-04-26T09:28:08Z",
+                    "CompletionTime": "2025-04-26T11:31:06Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916094174612951040",
+                    "StartTime": "2025-04-26T11:37:05Z",
+                    "CompletionTime": "2025-04-26T13:32:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916123803335790592",
+                    "StartTime": "2025-04-26T13:34:49Z",
+                    "CompletionTime": "2025-04-26T15:31:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916216722247913472",
+                    "StartTime": "2025-04-26T19:43:46Z",
+                    "CompletionTime": "2025-04-26T21:58:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916251329852870656",
+                    "StartTime": "2025-04-26T22:01:33Z",
+                    "CompletionTime": "2025-04-27T00:02:52Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916282369099173888",
+                    "StartTime": "2025-04-27T00:04:54Z",
+                    "CompletionTime": "2025-04-27T02:15:53Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916341555963105280",
+                    "StartTime": "2025-04-27T04:00:01Z",
+                    "CompletionTime": "2025-04-27T06:09:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916452229078847488",
+                    "StartTime": "2025-04-27T11:19:52Z",
+                    "CompletionTime": "2025-04-27T13:23:50Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916492704536072192",
+                    "StartTime": "2025-04-27T14:00:14Z",
+                    "CompletionTime": "2025-04-27T16:04:33Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916524113917120512",
+                    "StartTime": "2025-04-27T16:05:30Z",
+                    "CompletionTime": "2025-04-27T18:01:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916553852866269184",
+                    "StartTime": "2025-04-27T18:03:41Z",
+                    "CompletionTime": "2025-04-27T19:59:15Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:2bc0fe9de9a98831c20e569a21d7ded9",
+            "TestName": "install should succeed: cluster creation",
+            "Release": "4.19",
+            "GroupId": "4f8bf8dc-5ae1-44f5-9443-b9424055f789",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Metal DHCP hostname race condition in bare metal jobs",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55315"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1914179661684805632",
+                    "StartTime": "2025-04-21T04:48:49Z",
+                    "CompletionTime": "2025-04-21T06:59:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915069439116578816",
+                    "StartTime": "2025-04-23T15:45:09Z",
+                    "CompletionTime": "2025-04-23T19:40:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915129056265768960",
+                    "StartTime": "2025-04-23T19:42:03Z",
+                    "CompletionTime": "2025-04-23T22:51:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915211124991594496",
+                    "StartTime": "2025-04-24T01:07:39Z",
+                    "CompletionTime": "2025-04-24T03:23:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915245464991567872",
+                    "StartTime": "2025-04-24T03:24:36Z",
+                    "CompletionTime": "2025-04-24T06:31:20Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915292957083176960",
+                    "StartTime": "2025-04-24T06:33:20Z",
+                    "CompletionTime": "2025-04-24T08:29:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915379017452621824",
+                    "StartTime": "2025-04-24T12:14:29Z",
+                    "CompletionTime": "2025-04-24T15:54:58Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915775736111697920",
+                    "StartTime": "2025-04-25T14:31:04Z",
+                    "CompletionTime": "2025-04-25T16:32:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915807119978795008",
+                    "StartTime": "2025-04-25T16:36:25Z",
+                    "CompletionTime": "2025-04-25T18:37:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915838188119658496",
+                    "StartTime": "2025-04-25T18:39:53Z",
+                    "CompletionTime": "2025-04-25T21:32:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915900058339905536",
+                    "StartTime": "2025-04-25T22:45:10Z",
+                    "CompletionTime": "2025-04-26T00:42:37Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916061724373422080",
+                    "StartTime": "2025-04-26T09:28:08Z",
+                    "CompletionTime": "2025-04-26T11:31:06Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916094174612951040",
+                    "StartTime": "2025-04-26T11:37:05Z",
+                    "CompletionTime": "2025-04-26T13:32:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916123803335790592",
+                    "StartTime": "2025-04-26T13:34:49Z",
+                    "CompletionTime": "2025-04-26T15:31:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916216722247913472",
+                    "StartTime": "2025-04-26T19:43:46Z",
+                    "CompletionTime": "2025-04-26T21:58:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916251329852870656",
+                    "StartTime": "2025-04-26T22:01:33Z",
+                    "CompletionTime": "2025-04-27T00:02:52Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916282369099173888",
+                    "StartTime": "2025-04-27T00:04:54Z",
+                    "CompletionTime": "2025-04-27T02:15:53Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916341555963105280",
+                    "StartTime": "2025-04-27T04:00:01Z",
+                    "CompletionTime": "2025-04-27T06:09:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916452229078847488",
+                    "StartTime": "2025-04-27T11:19:52Z",
+                    "CompletionTime": "2025-04-27T13:23:50Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916492704536072192",
+                    "StartTime": "2025-04-27T14:00:14Z",
+                    "CompletionTime": "2025-04-27T16:04:33Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916524113917120512",
+                    "StartTime": "2025-04-27T16:05:30Z",
+                    "CompletionTime": "2025-04-27T18:01:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916553852866269184",
+                    "StartTime": "2025-04-27T18:03:41Z",
+                    "CompletionTime": "2025-04-27T19:59:15Z"
+                }
+            ]
+        },
+        {
+            "TestId": "Operator results:258e3ff8c9692c937596663377c10e29",
+            "TestName": "operator conditions console",
+            "Release": "4.19",
+            "GroupId": "4f8bf8dc-5ae1-44f5-9443-b9424055f789",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Metal DHCP hostname race condition in bare metal jobs",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55315"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915245464991567872",
+                    "StartTime": "2025-04-24T03:24:36Z",
+                    "CompletionTime": "2025-04-24T06:31:20Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915379017452621824",
+                    "StartTime": "2025-04-24T12:14:29Z",
+                    "CompletionTime": "2025-04-24T15:54:58Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915807119978795008",
+                    "StartTime": "2025-04-25T16:36:25Z",
+                    "CompletionTime": "2025-04-25T18:37:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915838188119658496",
+                    "StartTime": "2025-04-25T18:39:53Z",
+                    "CompletionTime": "2025-04-25T21:32:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915900058339905536",
+                    "StartTime": "2025-04-25T22:45:10Z",
+                    "CompletionTime": "2025-04-26T00:42:37Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916061724373422080",
+                    "StartTime": "2025-04-26T09:28:08Z",
+                    "CompletionTime": "2025-04-26T11:31:06Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916094174612951040",
+                    "StartTime": "2025-04-26T11:37:05Z",
+                    "CompletionTime": "2025-04-26T13:32:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916216722247913472",
+                    "StartTime": "2025-04-26T19:43:46Z",
+                    "CompletionTime": "2025-04-26T21:58:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916341555963105280",
+                    "StartTime": "2025-04-27T04:00:01Z",
+                    "CompletionTime": "2025-04-27T06:09:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916452229078847488",
+                    "StartTime": "2025-04-27T11:19:52Z",
+                    "CompletionTime": "2025-04-27T13:23:50Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916492704536072192",
+                    "StartTime": "2025-04-27T14:00:14Z",
+                    "CompletionTime": "2025-04-27T16:04:33Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916553852866269184",
+                    "StartTime": "2025-04-27T18:03:41Z",
+                    "CompletionTime": "2025-04-27T19:59:15Z"
+                }
+            ]
+        },
+        {
+            "TestId": "Operator results:258e3ff8c9692c937596663377c10e29",
+            "TestName": "operator conditions console",
+            "Release": "4.19",
+            "GroupId": "4f8bf8dc-5ae1-44f5-9443-b9424055f789",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Metal DHCP hostname race condition in bare metal jobs",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55315"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1914993759393681408",
+                    "StartTime": "2025-04-23T10:44:03Z",
+                    "CompletionTime": "2025-04-23T13:11:52Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915093858367049728",
+                    "StartTime": "2025-04-23T17:22:10Z",
+                    "CompletionTime": "2025-04-23T20:50:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915250759444729856",
+                    "StartTime": "2025-04-24T03:45:38Z",
+                    "CompletionTime": "2025-04-24T06:36:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915294325340639232",
+                    "StartTime": "2025-04-24T06:38:46Z",
+                    "CompletionTime": "2025-04-24T08:40:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915379014902484992",
+                    "StartTime": "2025-04-24T12:14:29Z",
+                    "CompletionTime": "2025-04-24T15:47:56Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915432938086862848",
+                    "StartTime": "2025-04-24T15:49:33Z",
+                    "CompletionTime": "2025-04-24T19:13:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915484810655043584",
+                    "StartTime": "2025-04-24T19:15:40Z",
+                    "CompletionTime": "2025-04-24T21:18:16Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915582416915795968",
+                    "StartTime": "2025-04-25T01:43:22Z",
+                    "CompletionTime": "2025-04-25T03:48:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915656073260306432",
+                    "StartTime": "2025-04-25T06:36:13Z",
+                    "CompletionTime": "2025-04-25T08:30:30Z"
+                }
+            ]
+        },
+        {
+            "TestId": "Operator results:7e4c8db94dde9f957ea7d639cd29d6dd",
+            "TestName": "operator conditions monitoring",
+            "Release": "4.19",
+            "GroupId": "4f8bf8dc-5ae1-44f5-9443-b9424055f789",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Metal DHCP hostname race condition in bare metal jobs",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55315"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1914179661684805632",
+                    "StartTime": "2025-04-21T04:48:49Z",
+                    "CompletionTime": "2025-04-21T06:59:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915069439116578816",
+                    "StartTime": "2025-04-23T15:45:09Z",
+                    "CompletionTime": "2025-04-23T19:40:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915129056265768960",
+                    "StartTime": "2025-04-23T19:42:03Z",
+                    "CompletionTime": "2025-04-23T22:51:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915211124991594496",
+                    "StartTime": "2025-04-24T01:07:39Z",
+                    "CompletionTime": "2025-04-24T03:23:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915245464991567872",
+                    "StartTime": "2025-04-24T03:24:36Z",
+                    "CompletionTime": "2025-04-24T06:31:20Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915292957083176960",
+                    "StartTime": "2025-04-24T06:33:20Z",
+                    "CompletionTime": "2025-04-24T08:29:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915379017452621824",
+                    "StartTime": "2025-04-24T12:14:29Z",
+                    "CompletionTime": "2025-04-24T15:54:58Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915775736111697920",
+                    "StartTime": "2025-04-25T14:31:04Z",
+                    "CompletionTime": "2025-04-25T16:32:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915807119978795008",
+                    "StartTime": "2025-04-25T16:36:25Z",
+                    "CompletionTime": "2025-04-25T18:37:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915838188119658496",
+                    "StartTime": "2025-04-25T18:39:53Z",
+                    "CompletionTime": "2025-04-25T21:32:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915900058339905536",
+                    "StartTime": "2025-04-25T22:45:10Z",
+                    "CompletionTime": "2025-04-26T00:42:37Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916061724373422080",
+                    "StartTime": "2025-04-26T09:28:08Z",
+                    "CompletionTime": "2025-04-26T11:31:06Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916094174612951040",
+                    "StartTime": "2025-04-26T11:37:05Z",
+                    "CompletionTime": "2025-04-26T13:32:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916123803335790592",
+                    "StartTime": "2025-04-26T13:34:49Z",
+                    "CompletionTime": "2025-04-26T15:31:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916216722247913472",
+                    "StartTime": "2025-04-26T19:43:46Z",
+                    "CompletionTime": "2025-04-26T21:58:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916251329852870656",
+                    "StartTime": "2025-04-26T22:01:33Z",
+                    "CompletionTime": "2025-04-27T00:02:52Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916282369099173888",
+                    "StartTime": "2025-04-27T00:04:54Z",
+                    "CompletionTime": "2025-04-27T02:15:53Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916341555963105280",
+                    "StartTime": "2025-04-27T04:00:01Z",
+                    "CompletionTime": "2025-04-27T06:09:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916452229078847488",
+                    "StartTime": "2025-04-27T11:19:52Z",
+                    "CompletionTime": "2025-04-27T13:23:50Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916492704536072192",
+                    "StartTime": "2025-04-27T14:00:14Z",
+                    "CompletionTime": "2025-04-27T16:04:33Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916524113917120512",
+                    "StartTime": "2025-04-27T16:05:30Z",
+                    "CompletionTime": "2025-04-27T18:01:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916553852866269184",
+                    "StartTime": "2025-04-27T18:03:41Z",
+                    "CompletionTime": "2025-04-27T19:59:15Z"
+                }
+            ]
+        },
+        {
+            "TestId": "Operator results:7e4c8db94dde9f957ea7d639cd29d6dd",
+            "TestName": "operator conditions monitoring",
+            "Release": "4.19",
+            "GroupId": "4f8bf8dc-5ae1-44f5-9443-b9424055f789",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Metal DHCP hostname race condition in bare metal jobs",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55315"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1914283509556449280",
+                    "StartTime": "2025-04-21T11:42:07Z",
+                    "CompletionTime": "2025-04-21T13:45:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1914993759393681408",
+                    "StartTime": "2025-04-23T10:44:03Z",
+                    "CompletionTime": "2025-04-23T13:11:52Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915034794169733120",
+                    "StartTime": "2025-04-23T13:27:17Z",
+                    "CompletionTime": "2025-04-23T17:22:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915093858367049728",
+                    "StartTime": "2025-04-23T17:22:10Z",
+                    "CompletionTime": "2025-04-23T20:50:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915094193219309568",
+                    "StartTime": "2025-04-23T17:23:31Z",
+                    "CompletionTime": "2025-04-23T20:51:36Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915209915257851904",
+                    "StartTime": "2025-04-24T01:03:21Z",
+                    "CompletionTime": "2025-04-24T03:02:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915211122479206400",
+                    "StartTime": "2025-04-24T01:07:39Z",
+                    "CompletionTime": "2025-04-24T03:44:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915250759444729856",
+                    "StartTime": "2025-04-24T03:45:38Z",
+                    "CompletionTime": "2025-04-24T06:36:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915294325340639232",
+                    "StartTime": "2025-04-24T06:38:46Z",
+                    "CompletionTime": "2025-04-24T08:40:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915379014902484992",
+                    "StartTime": "2025-04-24T12:14:29Z",
+                    "CompletionTime": "2025-04-24T15:47:56Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915432938086862848",
+                    "StartTime": "2025-04-24T15:49:33Z",
+                    "CompletionTime": "2025-04-24T19:13:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915484810655043584",
+                    "StartTime": "2025-04-24T19:15:40Z",
+                    "CompletionTime": "2025-04-24T21:18:16Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915516664451960832",
+                    "StartTime": "2025-04-24T21:22:16Z",
+                    "CompletionTime": "2025-04-25T00:02:06Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915582416915795968",
+                    "StartTime": "2025-04-25T01:43:22Z",
+                    "CompletionTime": "2025-04-25T03:48:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915614018727317504",
+                    "StartTime": "2025-04-25T03:49:06Z",
+                    "CompletionTime": "2025-04-25T06:33:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915656073260306432",
+                    "StartTime": "2025-04-25T06:36:13Z",
+                    "CompletionTime": "2025-04-25T08:30:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915775712120279040",
+                    "StartTime": "2025-04-25T14:31:02Z",
+                    "CompletionTime": "2025-04-25T16:30:18Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915899997107261440",
+                    "StartTime": "2025-04-25T22:45:05Z",
+                    "CompletionTime": "2025-04-26T00:40:45Z"
+                }
+            ]
+        },
+        {
+            "TestId": "Operator results:4b5f6af893ad5577904fbaec3254506d",
+            "TestName": "operator conditions network",
+            "Release": "4.19",
+            "GroupId": "4f8bf8dc-5ae1-44f5-9443-b9424055f789",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Metal DHCP hostname race condition in bare metal jobs",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55315"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915245464991567872",
+                    "StartTime": "2025-04-24T03:24:36Z",
+                    "CompletionTime": "2025-04-24T06:31:20Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915379017452621824",
+                    "StartTime": "2025-04-24T12:14:29Z",
+                    "CompletionTime": "2025-04-24T15:54:58Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915807119978795008",
+                    "StartTime": "2025-04-25T16:36:25Z",
+                    "CompletionTime": "2025-04-25T18:37:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915838188119658496",
+                    "StartTime": "2025-04-25T18:39:53Z",
+                    "CompletionTime": "2025-04-25T21:32:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915900058339905536",
+                    "StartTime": "2025-04-25T22:45:10Z",
+                    "CompletionTime": "2025-04-26T00:42:37Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916061724373422080",
+                    "StartTime": "2025-04-26T09:28:08Z",
+                    "CompletionTime": "2025-04-26T11:31:06Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916094174612951040",
+                    "StartTime": "2025-04-26T11:37:05Z",
+                    "CompletionTime": "2025-04-26T13:32:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916216722247913472",
+                    "StartTime": "2025-04-26T19:43:46Z",
+                    "CompletionTime": "2025-04-26T21:58:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916341555963105280",
+                    "StartTime": "2025-04-27T04:00:01Z",
+                    "CompletionTime": "2025-04-27T06:09:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916452229078847488",
+                    "StartTime": "2025-04-27T11:19:52Z",
+                    "CompletionTime": "2025-04-27T13:23:50Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916492704536072192",
+                    "StartTime": "2025-04-27T14:00:14Z",
+                    "CompletionTime": "2025-04-27T16:04:33Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916553852866269184",
+                    "StartTime": "2025-04-27T18:03:41Z",
+                    "CompletionTime": "2025-04-27T19:59:15Z"
+                }
+            ]
+        },
+        {
+            "TestId": "Operator results:4b5f6af893ad5577904fbaec3254506d",
+            "TestName": "operator conditions network",
+            "Release": "4.19",
+            "GroupId": "4f8bf8dc-5ae1-44f5-9443-b9424055f789",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Metal DHCP hostname race condition in bare metal jobs",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55315"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1914993759393681408",
+                    "StartTime": "2025-04-23T10:44:03Z",
+                    "CompletionTime": "2025-04-23T13:11:52Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915093858367049728",
+                    "StartTime": "2025-04-23T17:22:10Z",
+                    "CompletionTime": "2025-04-23T20:50:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915250759444729856",
+                    "StartTime": "2025-04-24T03:45:38Z",
+                    "CompletionTime": "2025-04-24T06:36:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915294325340639232",
+                    "StartTime": "2025-04-24T06:38:46Z",
+                    "CompletionTime": "2025-04-24T08:40:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915379014902484992",
+                    "StartTime": "2025-04-24T12:14:29Z",
+                    "CompletionTime": "2025-04-24T15:47:56Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915432938086862848",
+                    "StartTime": "2025-04-24T15:49:33Z",
+                    "CompletionTime": "2025-04-24T19:13:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915484810655043584",
+                    "StartTime": "2025-04-24T19:15:40Z",
+                    "CompletionTime": "2025-04-24T21:18:16Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915582416915795968",
+                    "StartTime": "2025-04-25T01:43:22Z",
+                    "CompletionTime": "2025-04-25T03:48:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915656073260306432",
+                    "StartTime": "2025-04-25T06:36:13Z",
+                    "CompletionTime": "2025-04-25T08:30:30Z"
+                }
+            ]
+        },
+        {
+            "TestId": "Operator results:33921465a4b24f992f7e9c47b1ec9409",
+            "TestName": "operator conditions ingress",
+            "Release": "4.19",
+            "GroupId": "4f8bf8dc-5ae1-44f5-9443-b9424055f789",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Metal DHCP hostname race condition in bare metal jobs",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55315"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1914179661684805632",
+                    "StartTime": "2025-04-21T04:48:49Z",
+                    "CompletionTime": "2025-04-21T06:59:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915069439116578816",
+                    "StartTime": "2025-04-23T15:45:09Z",
+                    "CompletionTime": "2025-04-23T19:40:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915129056265768960",
+                    "StartTime": "2025-04-23T19:42:03Z",
+                    "CompletionTime": "2025-04-23T22:51:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915211124991594496",
+                    "StartTime": "2025-04-24T01:07:39Z",
+                    "CompletionTime": "2025-04-24T03:23:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915245464991567872",
+                    "StartTime": "2025-04-24T03:24:36Z",
+                    "CompletionTime": "2025-04-24T06:31:20Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915292957083176960",
+                    "StartTime": "2025-04-24T06:33:20Z",
+                    "CompletionTime": "2025-04-24T08:29:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915379017452621824",
+                    "StartTime": "2025-04-24T12:14:29Z",
+                    "CompletionTime": "2025-04-24T15:54:58Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915775736111697920",
+                    "StartTime": "2025-04-25T14:31:04Z",
+                    "CompletionTime": "2025-04-25T16:32:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915807119978795008",
+                    "StartTime": "2025-04-25T16:36:25Z",
+                    "CompletionTime": "2025-04-25T18:37:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915838188119658496",
+                    "StartTime": "2025-04-25T18:39:53Z",
+                    "CompletionTime": "2025-04-25T21:32:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915900058339905536",
+                    "StartTime": "2025-04-25T22:45:10Z",
+                    "CompletionTime": "2025-04-26T00:42:37Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916061724373422080",
+                    "StartTime": "2025-04-26T09:28:08Z",
+                    "CompletionTime": "2025-04-26T11:31:06Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916094174612951040",
+                    "StartTime": "2025-04-26T11:37:05Z",
+                    "CompletionTime": "2025-04-26T13:32:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916123803335790592",
+                    "StartTime": "2025-04-26T13:34:49Z",
+                    "CompletionTime": "2025-04-26T15:31:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916216722247913472",
+                    "StartTime": "2025-04-26T19:43:46Z",
+                    "CompletionTime": "2025-04-26T21:58:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916251329852870656",
+                    "StartTime": "2025-04-26T22:01:33Z",
+                    "CompletionTime": "2025-04-27T00:02:52Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916282369099173888",
+                    "StartTime": "2025-04-27T00:04:54Z",
+                    "CompletionTime": "2025-04-27T02:15:53Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916341555963105280",
+                    "StartTime": "2025-04-27T04:00:01Z",
+                    "CompletionTime": "2025-04-27T06:09:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916452229078847488",
+                    "StartTime": "2025-04-27T11:19:52Z",
+                    "CompletionTime": "2025-04-27T13:23:50Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916492704536072192",
+                    "StartTime": "2025-04-27T14:00:14Z",
+                    "CompletionTime": "2025-04-27T16:04:33Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916524113917120512",
+                    "StartTime": "2025-04-27T16:05:30Z",
+                    "CompletionTime": "2025-04-27T18:01:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916553852866269184",
+                    "StartTime": "2025-04-27T18:03:41Z",
+                    "CompletionTime": "2025-04-27T19:59:15Z"
+                }
+            ]
+        },
+        {
+            "TestId": "Operator results:33921465a4b24f992f7e9c47b1ec9409",
+            "TestName": "operator conditions ingress",
+            "Release": "4.19",
+            "GroupId": "4f8bf8dc-5ae1-44f5-9443-b9424055f789",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Metal DHCP hostname race condition in bare metal jobs",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55315"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1914283509556449280",
+                    "StartTime": "2025-04-21T11:42:07Z",
+                    "CompletionTime": "2025-04-21T13:45:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1914993759393681408",
+                    "StartTime": "2025-04-23T10:44:03Z",
+                    "CompletionTime": "2025-04-23T13:11:52Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915034794169733120",
+                    "StartTime": "2025-04-23T13:27:17Z",
+                    "CompletionTime": "2025-04-23T17:22:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915093858367049728",
+                    "StartTime": "2025-04-23T17:22:10Z",
+                    "CompletionTime": "2025-04-23T20:50:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915094193219309568",
+                    "StartTime": "2025-04-23T17:23:31Z",
+                    "CompletionTime": "2025-04-23T20:51:36Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915209915257851904",
+                    "StartTime": "2025-04-24T01:03:21Z",
+                    "CompletionTime": "2025-04-24T03:02:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915211122479206400",
+                    "StartTime": "2025-04-24T01:07:39Z",
+                    "CompletionTime": "2025-04-24T03:44:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915250759444729856",
+                    "StartTime": "2025-04-24T03:45:38Z",
+                    "CompletionTime": "2025-04-24T06:36:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915294325340639232",
+                    "StartTime": "2025-04-24T06:38:46Z",
+                    "CompletionTime": "2025-04-24T08:40:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915379014902484992",
+                    "StartTime": "2025-04-24T12:14:29Z",
+                    "CompletionTime": "2025-04-24T15:47:56Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915432938086862848",
+                    "StartTime": "2025-04-24T15:49:33Z",
+                    "CompletionTime": "2025-04-24T19:13:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915484810655043584",
+                    "StartTime": "2025-04-24T19:15:40Z",
+                    "CompletionTime": "2025-04-24T21:18:16Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915516664451960832",
+                    "StartTime": "2025-04-24T21:22:16Z",
+                    "CompletionTime": "2025-04-25T00:02:06Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915582416915795968",
+                    "StartTime": "2025-04-25T01:43:22Z",
+                    "CompletionTime": "2025-04-25T03:48:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915614018727317504",
+                    "StartTime": "2025-04-25T03:49:06Z",
+                    "CompletionTime": "2025-04-25T06:33:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915656073260306432",
+                    "StartTime": "2025-04-25T06:36:13Z",
+                    "CompletionTime": "2025-04-25T08:30:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915775712120279040",
+                    "StartTime": "2025-04-25T14:31:02Z",
+                    "CompletionTime": "2025-04-25T16:30:18Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915899997107261440",
+                    "StartTime": "2025-04-25T22:45:05Z",
+                    "CompletionTime": "2025-04-26T00:40:45Z"
+                }
+            ]
+        },
+        {
+            "TestId": "Operator results:5c8f5ec6b30928a1b2b69aba4b7d7daa",
+            "TestName": "operator conditions kube-controller-manager",
+            "Release": "4.19",
+            "GroupId": "4f8bf8dc-5ae1-44f5-9443-b9424055f789",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Metal DHCP hostname race condition in bare metal jobs",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55315"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1914179661684805632",
+                    "StartTime": "2025-04-21T04:48:49Z",
+                    "CompletionTime": "2025-04-21T06:59:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915069439116578816",
+                    "StartTime": "2025-04-23T15:45:09Z",
+                    "CompletionTime": "2025-04-23T19:40:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915129056265768960",
+                    "StartTime": "2025-04-23T19:42:03Z",
+                    "CompletionTime": "2025-04-23T22:51:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915211124991594496",
+                    "StartTime": "2025-04-24T01:07:39Z",
+                    "CompletionTime": "2025-04-24T03:23:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915245464991567872",
+                    "StartTime": "2025-04-24T03:24:36Z",
+                    "CompletionTime": "2025-04-24T06:31:20Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915292957083176960",
+                    "StartTime": "2025-04-24T06:33:20Z",
+                    "CompletionTime": "2025-04-24T08:29:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915379017452621824",
+                    "StartTime": "2025-04-24T12:14:29Z",
+                    "CompletionTime": "2025-04-24T15:54:58Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915775736111697920",
+                    "StartTime": "2025-04-25T14:31:04Z",
+                    "CompletionTime": "2025-04-25T16:32:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915807119978795008",
+                    "StartTime": "2025-04-25T16:36:25Z",
+                    "CompletionTime": "2025-04-25T18:37:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915838188119658496",
+                    "StartTime": "2025-04-25T18:39:53Z",
+                    "CompletionTime": "2025-04-25T21:32:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915900058339905536",
+                    "StartTime": "2025-04-25T22:45:10Z",
+                    "CompletionTime": "2025-04-26T00:42:37Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916061724373422080",
+                    "StartTime": "2025-04-26T09:28:08Z",
+                    "CompletionTime": "2025-04-26T11:31:06Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916094174612951040",
+                    "StartTime": "2025-04-26T11:37:05Z",
+                    "CompletionTime": "2025-04-26T13:32:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916123803335790592",
+                    "StartTime": "2025-04-26T13:34:49Z",
+                    "CompletionTime": "2025-04-26T15:31:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916216722247913472",
+                    "StartTime": "2025-04-26T19:43:46Z",
+                    "CompletionTime": "2025-04-26T21:58:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916251329852870656",
+                    "StartTime": "2025-04-26T22:01:33Z",
+                    "CompletionTime": "2025-04-27T00:02:52Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916282369099173888",
+                    "StartTime": "2025-04-27T00:04:54Z",
+                    "CompletionTime": "2025-04-27T02:15:53Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916341555963105280",
+                    "StartTime": "2025-04-27T04:00:01Z",
+                    "CompletionTime": "2025-04-27T06:09:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916452229078847488",
+                    "StartTime": "2025-04-27T11:19:52Z",
+                    "CompletionTime": "2025-04-27T13:23:50Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916492704536072192",
+                    "StartTime": "2025-04-27T14:00:14Z",
+                    "CompletionTime": "2025-04-27T16:04:33Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916524113917120512",
+                    "StartTime": "2025-04-27T16:05:30Z",
+                    "CompletionTime": "2025-04-27T18:01:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916553852866269184",
+                    "StartTime": "2025-04-27T18:03:41Z",
+                    "CompletionTime": "2025-04-27T19:59:15Z"
+                }
+            ]
+        },
+        {
+            "TestId": "Operator results:5c8f5ec6b30928a1b2b69aba4b7d7daa",
+            "TestName": "operator conditions kube-controller-manager",
+            "Release": "4.19",
+            "GroupId": "4f8bf8dc-5ae1-44f5-9443-b9424055f789",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Metal DHCP hostname race condition in bare metal jobs",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55315"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1914283509556449280",
+                    "StartTime": "2025-04-21T11:42:07Z",
+                    "CompletionTime": "2025-04-21T13:45:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1914993759393681408",
+                    "StartTime": "2025-04-23T10:44:03Z",
+                    "CompletionTime": "2025-04-23T13:11:52Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915034794169733120",
+                    "StartTime": "2025-04-23T13:27:17Z",
+                    "CompletionTime": "2025-04-23T17:22:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915093858367049728",
+                    "StartTime": "2025-04-23T17:22:10Z",
+                    "CompletionTime": "2025-04-23T20:50:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915094193219309568",
+                    "StartTime": "2025-04-23T17:23:31Z",
+                    "CompletionTime": "2025-04-23T20:51:36Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915209915257851904",
+                    "StartTime": "2025-04-24T01:03:21Z",
+                    "CompletionTime": "2025-04-24T03:02:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915211122479206400",
+                    "StartTime": "2025-04-24T01:07:39Z",
+                    "CompletionTime": "2025-04-24T03:44:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915250759444729856",
+                    "StartTime": "2025-04-24T03:45:38Z",
+                    "CompletionTime": "2025-04-24T06:36:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915294325340639232",
+                    "StartTime": "2025-04-24T06:38:46Z",
+                    "CompletionTime": "2025-04-24T08:40:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915379014902484992",
+                    "StartTime": "2025-04-24T12:14:29Z",
+                    "CompletionTime": "2025-04-24T15:47:56Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915432938086862848",
+                    "StartTime": "2025-04-24T15:49:33Z",
+                    "CompletionTime": "2025-04-24T19:13:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915484810655043584",
+                    "StartTime": "2025-04-24T19:15:40Z",
+                    "CompletionTime": "2025-04-24T21:18:16Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915516664451960832",
+                    "StartTime": "2025-04-24T21:22:16Z",
+                    "CompletionTime": "2025-04-25T00:02:06Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915582416915795968",
+                    "StartTime": "2025-04-25T01:43:22Z",
+                    "CompletionTime": "2025-04-25T03:48:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915614018727317504",
+                    "StartTime": "2025-04-25T03:49:06Z",
+                    "CompletionTime": "2025-04-25T06:33:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915656073260306432",
+                    "StartTime": "2025-04-25T06:36:13Z",
+                    "CompletionTime": "2025-04-25T08:30:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915775712120279040",
+                    "StartTime": "2025-04-25T14:31:02Z",
+                    "CompletionTime": "2025-04-25T16:30:18Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915899997107261440",
+                    "StartTime": "2025-04-25T22:45:05Z",
+                    "CompletionTime": "2025-04-26T00:40:45Z"
+                }
+            ]
+        },
+        {
+            "TestId": "Operator results:466e1a49a33b63218495dc8201953194",
+            "TestName": "operator conditions authentication",
+            "Release": "4.19",
+            "GroupId": "4f8bf8dc-5ae1-44f5-9443-b9424055f789",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Metal DHCP hostname race condition in bare metal jobs",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55315"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915245464991567872",
+                    "StartTime": "2025-04-24T03:24:36Z",
+                    "CompletionTime": "2025-04-24T06:31:20Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915379017452621824",
+                    "StartTime": "2025-04-24T12:14:29Z",
+                    "CompletionTime": "2025-04-24T15:54:58Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915807119978795008",
+                    "StartTime": "2025-04-25T16:36:25Z",
+                    "CompletionTime": "2025-04-25T18:37:35Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915838188119658496",
+                    "StartTime": "2025-04-25T18:39:53Z",
+                    "CompletionTime": "2025-04-25T21:32:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1915900058339905536",
+                    "StartTime": "2025-04-25T22:45:10Z",
+                    "CompletionTime": "2025-04-26T00:42:37Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916061724373422080",
+                    "StartTime": "2025-04-26T09:28:08Z",
+                    "CompletionTime": "2025-04-26T11:31:06Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916094174612951040",
+                    "StartTime": "2025-04-26T11:37:05Z",
+                    "CompletionTime": "2025-04-26T13:32:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916216722247913472",
+                    "StartTime": "2025-04-26T19:43:46Z",
+                    "CompletionTime": "2025-04-26T21:58:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916341555963105280",
+                    "StartTime": "2025-04-27T04:00:01Z",
+                    "CompletionTime": "2025-04-27T06:09:40Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916452229078847488",
+                    "StartTime": "2025-04-27T11:19:52Z",
+                    "CompletionTime": "2025-04-27T13:23:50Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916492704536072192",
+                    "StartTime": "2025-04-27T14:00:14Z",
+                    "CompletionTime": "2025-04-27T16:04:33Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm-upgrade/1916553852866269184",
+                    "StartTime": "2025-04-27T18:03:41Z",
+                    "CompletionTime": "2025-04-27T19:59:15Z"
+                }
+            ]
+        },
+        {
+            "TestId": "Operator results:466e1a49a33b63218495dc8201953194",
+            "TestName": "operator conditions authentication",
+            "Release": "4.19",
+            "GroupId": "4f8bf8dc-5ae1-44f5-9443-b9424055f789",
+            "Issue": {
+                "Type": "Product",
+                "Description": "Metal DHCP hostname race condition in bare metal jobs",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55315"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1914993759393681408",
+                    "StartTime": "2025-04-23T10:44:03Z",
+                    "CompletionTime": "2025-04-23T13:11:52Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915093858367049728",
+                    "StartTime": "2025-04-23T17:22:10Z",
+                    "CompletionTime": "2025-04-23T20:50:03Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915250759444729856",
+                    "StartTime": "2025-04-24T03:45:38Z",
+                    "CompletionTime": "2025-04-24T06:36:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915294325340639232",
+                    "StartTime": "2025-04-24T06:38:46Z",
+                    "CompletionTime": "2025-04-24T08:40:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915379014902484992",
+                    "StartTime": "2025-04-24T12:14:29Z",
+                    "CompletionTime": "2025-04-24T15:47:56Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915432938086862848",
+                    "StartTime": "2025-04-24T15:49:33Z",
+                    "CompletionTime": "2025-04-24T19:13:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915484810655043584",
+                    "StartTime": "2025-04-24T19:15:40Z",
+                    "CompletionTime": "2025-04-24T21:18:16Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915582416915795968",
+                    "StartTime": "2025-04-25T01:43:22Z",
+                    "CompletionTime": "2025-04-25T03:48:24Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-bm/1915656073260306432",
+                    "StartTime": "2025-04-25T06:36:13Z",
+                    "CompletionTime": "2025-04-25T08:30:30Z"
+                }
+            ]
+        }
+    ]
+}
