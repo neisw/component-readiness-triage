@@ -8,21 +8,6 @@
         "OutputFile": "metal_dhcp_race_regressions.json",
         "TargetBuildCluster": "",
         "JobRunStartTimeMin": "",
-        "FileMatches": {
-            "MatchDefinitions": {
-                "MatchGate": "OR",
-                "Files": [
-                    {
-                        "FilePath": "build-log.txt",
-                        "ContentType": "text/plain",
-                        "MatchGate": "OR",
-                        "Matches": [
-                            "context deadline exceeded: got.*unavailable replicas"
-                        ]
-                    }
-                ]
-            }
-        },
         "IncidentGroupId": "4f8bf8dc-5ae1-44f5-9443-b9424055f789"
     },
     "Tests": [

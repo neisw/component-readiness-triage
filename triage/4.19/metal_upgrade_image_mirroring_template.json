@@ -1,0 +1,69 @@
+{
+    "Arguments": {
+        "TestRelease": "4.19",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2025-02-25T23:59:59Z&baseRelease=4.18&baseStartTime=2025-01-26T00:00:00Z&columnGroupBy=Architecture,Network,Platform,Topology&confidence=95&dbGroupBy=Platform,Architecture,Network,Topology,FeatureSet,Upgrade,Suite,Installer&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=true&includeVariant=Architecture:amd64&includeVariant=CGroupMode:v2&includeVariant=ContainerRuntime:runc&includeVariant=ContainerRuntime:crun&includeVariant=FeatureSet:default&includeVariant=FeatureSet:techpreview&includeVariant=Installer:ipi&includeVariant=Installer:upi&includeVariant=JobTier:blocking&includeVariant=JobTier:informing&includeVariant=JobTier:standard&includeVariant=LayeredProduct:none&includeVariant=Network:ovn&includeVariant=Owner:eng&includeVariant=Owner:service-delivery&includeVariant=Platform:aws&includeVariant=Platform:azure&includeVariant=Platform:gcp&includeVariant=Platform:metal&includeVariant=Platform:rosa&includeVariant=Platform:vsphere&includeVariant=Topology:ha&includeVariant=Topology:microshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-04-28T23:59:59Z&sampleRelease=4.19&sampleStartTime=2025-04-21T00:00:00Z",
+        "IssueDescription": "Metal upgrades unstable possibly due to image mirroring",
+        "IssueType": "Product",
+        "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-55432",
+        "OutputFile": "metal_upgrade_image_mirroring_regressions.json",
+        "TargetBuildCluster": "",
+        "JobRunStartTimeMin": "",
+        "FileMatches": {
+            "MatchDefinitions": {
+                "MatchGate": "OR",
+                "Files": [
+                    {
+                        "FilePath": "prowjob.json",
+                        "ContentType": "text/plain",
+                        "MatchGate": "OR",
+                        "Matches": [
+                            "prow.k8s.io/job.*-metal"
+                        ]
+                    }
+                ]
+            }
+        },
+        "IncidentGroupId": "147de852-cca4-4639-b269-8f943c7664ec"
+    },
+    "Tests": [
+        {
+            "TestId": "openshift-tests-upgrade:cc7e2ba6166c37b611478c22a74bc749"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:4be46ecee82b29a5b77683eb6edec8ec"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:156aeb09799cd6ebb4779780d13b1ab4"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:f3b725997f4b496478aa552815c8a532"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:ac841673e64e6eef98f591f836802a7a"
+        },
+        {
+            "TestId": "Cluster upgrade:c2c43a74ddd4c3281a393ab692a45073"
+        },
+        {
+            "TestId": "openshift-tests-upgrade:fefc532f9a1e9928f7b22d188a7d4799"
+        },
+        {
+            "TestId": "Cluster upgrade:6d8d083dec32d4046ed048288afeb23e"
+        },
+        {
+            "TestId": "Cluster upgrade:113ee14de1d86c26047063ded0d58ad5"
+        },
+        {
+            "TestId": "Cluster upgrade:a675c489791e5eb42897fd5587e0cc33"
+        },
+        {
+            "TestId": "Cluster upgrade:5b887599e36729974d5d12bb6c7467d4"
+        },
+        {
+            "TestId": "Cluster upgrade:a9b7f12d7dc3929d8beb5757e4f66c64"
+        },
+        {
+            "TestId": "Cluster upgrade:8245aa91a099b010302fae9bd1c9f6a9"
+        }
+    ]
+}
