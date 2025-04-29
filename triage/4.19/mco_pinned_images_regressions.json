@@ -1,0 +1,416 @@
+{
+    "Arguments": {
+        "TestRelease": "4.19",
+        "IssueDescription": "MCO PinnedImages tests permafailing vsphere techpreview",
+        "IssueType": "Product",
+        "IssueURL": "https://issues.redhat.com/browse/TRT-2095",
+        "OutputFile": "mco_pinned_images_regressions.json",
+        "IncidentGroupId": "761f5ec8-4780-4636-91a1-60a79bf0047f",
+        "TargetModifiedTime": "2025-04-29 11:04:08.140412+00:00",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2025-02-25T23:59:59Z&baseRelease=4.18&baseStartTime=2025-01-26T00:00:00Z&columnGroupBy=Architecture,Network,Platform,Topology&confidence=95&dbGroupBy=Platform,Architecture,Network,Topology,FeatureSet,Upgrade,Suite,Installer&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=true&includeVariant=Architecture:amd64&includeVariant=CGroupMode:v2&includeVariant=ContainerRuntime:runc&includeVariant=ContainerRuntime:crun&includeVariant=FeatureSet:default&includeVariant=FeatureSet:techpreview&includeVariant=Installer:ipi&includeVariant=Installer:upi&includeVariant=JobTier:blocking&includeVariant=JobTier:informing&includeVariant=JobTier:standard&includeVariant=LayeredProduct:none&includeVariant=Network:ovn&includeVariant=Owner:eng&includeVariant=Owner:service-delivery&includeVariant=Platform:aws&includeVariant=Platform:azure&includeVariant=Platform:gcp&includeVariant=Platform:metal&includeVariant=Platform:rosa&includeVariant=Platform:vsphere&includeVariant=Topology:ha&includeVariant=Topology:microshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-04-29T23:59:59Z&sampleRelease=4.19&sampleStartTime=2025-04-22T00:00:00Z&component=Machine%20Config%20Operator"
+    },
+    "Tests": [
+        {
+            "TestId": "openshift-tests:c5f918103ebee67760b7b32186710774",
+            "TestName": "[sig-mco][OCPFeatureGate:PinnedImages][OCPFeatureGate:MachineConfigNodes][Serial] All Nodes in a Custom Pool should have the PinnedImages in PIS [apigroup:machineconfiguration.openshift.io] [Suite:openshift/conformance/serial]",
+            "Release": "4.19",
+            "GroupId": "761f5ec8-4780-4636-91a1-60a79bf0047f",
+            "Issue": {
+                "Type": "Product",
+                "Description": "MCO PinnedImages tests permafailing vsphere techpreview",
+                "URL": "https://issues.redhat.com/browse/TRT-2095"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1916729021006090240",
+                    "StartTime": "2025-04-28T05:39:44Z",
+                    "CompletionTime": "2025-04-28T10:53:07Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1916808388444950528",
+                    "StartTime": "2025-04-28T10:55:07Z",
+                    "CompletionTime": "2025-04-28T15:52:01Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1916884879094583296",
+                    "StartTime": "2025-04-28T15:58:18Z",
+                    "CompletionTime": "2025-04-28T21:18:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1916965346405781504",
+                    "StartTime": "2025-04-28T21:18:48Z",
+                    "CompletionTime": "2025-04-29T02:26:50Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:51c491df5f76643689ebe1bcf19892de",
+            "TestName": "[sig-mco][OCPFeatureGate:PinnedImages][OCPFeatureGate:MachineConfigNodes][Serial] All Nodes in a custom Pool should have the PinnedImages even after Garbage Collection [apigroup:machineconfiguration.openshift.io] [Suite:openshift/conformance/serial]",
+            "Release": "4.19",
+            "GroupId": "761f5ec8-4780-4636-91a1-60a79bf0047f",
+            "Issue": {
+                "Type": "Product",
+                "Description": "MCO PinnedImages tests permafailing vsphere techpreview",
+                "URL": "https://issues.redhat.com/browse/TRT-2095"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1916729021006090240",
+                    "StartTime": "2025-04-28T05:39:44Z",
+                    "CompletionTime": "2025-04-28T10:53:07Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1916808388444950528",
+                    "StartTime": "2025-04-28T10:55:07Z",
+                    "CompletionTime": "2025-04-28T15:52:01Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1916884879094583296",
+                    "StartTime": "2025-04-28T15:58:18Z",
+                    "CompletionTime": "2025-04-28T21:18:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1916965346405781504",
+                    "StartTime": "2025-04-28T21:18:48Z",
+                    "CompletionTime": "2025-04-29T02:26:50Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:27282d654ce2b0b78e8276dcef33e05f",
+            "TestName": "[sig-mco][OCPFeatureGate:PinnedImages][OCPFeatureGate:MachineConfigNodes][Serial] All Nodes in a standard Pool should have the PinnedImages PIS [apigroup:machineconfiguration.openshift.io] [Suite:openshift/conformance/serial]",
+            "Release": "4.19",
+            "GroupId": "761f5ec8-4780-4636-91a1-60a79bf0047f",
+            "Issue": {
+                "Type": "Product",
+                "Description": "MCO PinnedImages tests permafailing vsphere techpreview",
+                "URL": "https://issues.redhat.com/browse/TRT-2095"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1916729021006090240",
+                    "StartTime": "2025-04-28T05:39:44Z",
+                    "CompletionTime": "2025-04-28T10:53:07Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1916808388444950528",
+                    "StartTime": "2025-04-28T10:55:07Z",
+                    "CompletionTime": "2025-04-28T15:52:01Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1916884879094583296",
+                    "StartTime": "2025-04-28T15:58:18Z",
+                    "CompletionTime": "2025-04-28T21:18:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1916965346405781504",
+                    "StartTime": "2025-04-28T21:18:48Z",
+                    "CompletionTime": "2025-04-29T02:26:50Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:c5f918103ebee67760b7b32186710774",
+            "TestName": "[sig-mco][OCPFeatureGate:PinnedImages][OCPFeatureGate:MachineConfigNodes][Serial] All Nodes in a Custom Pool should have the PinnedImages in PIS [apigroup:machineconfiguration.openshift.io] [Suite:openshift/conformance/serial]",
+            "Release": "4.19",
+            "GroupId": "761f5ec8-4780-4636-91a1-60a79bf0047f",
+            "Issue": {
+                "Type": "Product",
+                "Description": "MCO PinnedImages tests permafailing vsphere techpreview",
+                "URL": "https://issues.redhat.com/browse/TRT-2095"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1916729021006090240",
+                    "StartTime": "2025-04-28T05:39:44Z",
+                    "CompletionTime": "2025-04-28T10:53:07Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1916808388444950528",
+                    "StartTime": "2025-04-28T10:55:07Z",
+                    "CompletionTime": "2025-04-28T15:52:01Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1916884879094583296",
+                    "StartTime": "2025-04-28T15:58:18Z",
+                    "CompletionTime": "2025-04-28T21:18:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1916965346405781504",
+                    "StartTime": "2025-04-28T21:18:48Z",
+                    "CompletionTime": "2025-04-29T02:26:50Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:51c491df5f76643689ebe1bcf19892de",
+            "TestName": "[sig-mco][OCPFeatureGate:PinnedImages][OCPFeatureGate:MachineConfigNodes][Serial] All Nodes in a custom Pool should have the PinnedImages even after Garbage Collection [apigroup:machineconfiguration.openshift.io] [Suite:openshift/conformance/serial]",
+            "Release": "4.19",
+            "GroupId": "761f5ec8-4780-4636-91a1-60a79bf0047f",
+            "Issue": {
+                "Type": "Product",
+                "Description": "MCO PinnedImages tests permafailing vsphere techpreview",
+                "URL": "https://issues.redhat.com/browse/TRT-2095"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1916729021006090240",
+                    "StartTime": "2025-04-28T05:39:44Z",
+                    "CompletionTime": "2025-04-28T10:53:07Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1916808388444950528",
+                    "StartTime": "2025-04-28T10:55:07Z",
+                    "CompletionTime": "2025-04-28T15:52:01Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1916884879094583296",
+                    "StartTime": "2025-04-28T15:58:18Z",
+                    "CompletionTime": "2025-04-28T21:18:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1916965346405781504",
+                    "StartTime": "2025-04-28T21:18:48Z",
+                    "CompletionTime": "2025-04-29T02:26:50Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:27282d654ce2b0b78e8276dcef33e05f",
+            "TestName": "[sig-mco][OCPFeatureGate:PinnedImages][OCPFeatureGate:MachineConfigNodes][Serial] All Nodes in a standard Pool should have the PinnedImages PIS [apigroup:machineconfiguration.openshift.io] [Suite:openshift/conformance/serial]",
+            "Release": "4.19",
+            "GroupId": "761f5ec8-4780-4636-91a1-60a79bf0047f",
+            "Issue": {
+                "Type": "Product",
+                "Description": "MCO PinnedImages tests permafailing vsphere techpreview",
+                "URL": "https://issues.redhat.com/browse/TRT-2095"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1916729021006090240",
+                    "StartTime": "2025-04-28T05:39:44Z",
+                    "CompletionTime": "2025-04-28T10:53:07Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1916808388444950528",
+                    "StartTime": "2025-04-28T10:55:07Z",
+                    "CompletionTime": "2025-04-28T15:52:01Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1916884879094583296",
+                    "StartTime": "2025-04-28T15:58:18Z",
+                    "CompletionTime": "2025-04-28T21:18:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview-serial/1916965346405781504",
+                    "StartTime": "2025-04-28T21:18:48Z",
+                    "CompletionTime": "2025-04-29T02:26:50Z"
+                }
+            ]
+        }
+    ]
+}
