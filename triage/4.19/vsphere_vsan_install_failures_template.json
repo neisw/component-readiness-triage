@@ -5,7 +5,6 @@
         "IssueDescription": "vsphere install failures due to vsan infra",
         "IssueType": "Infrastructure",
         "IssueURL": "https://issues.redhat.com/browse/DPP-16883",
-        "IssueResolutionDate": "2025-04-29T12:22:00Z",
         "OutputFile": "vsphere_vsan_install_failures_regressions.json",
         "TargetBuildCluster": "",
         "JobRunStartTimeMin": "",
