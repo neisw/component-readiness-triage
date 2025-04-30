@@ -1,0 +1,458 @@
+{
+    "Arguments": {
+        "TestRelease": "4.19",
+        "IssueDescription": "New vsphere machine api tests introduced regressions",
+        "IssueType": "Product",
+        "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+        "OutputFile": "vsphere_m_api_failures_test_details_regressions.json",
+        "IncidentGroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+        "TargetModifiedTime": "2025-04-30 18:00:32.753543+00:00",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2025-02-25T23%3A59%3A59Z&baseRelease=4.18&baseStartTime=2025-01-26T00%3A00%3A00Z&columnGroupBy=Architecture%2CNetwork%2CPlatform%2CTopology&confidence=95&dbGroupBy=Platform%2CArchitecture%2CNetwork%2CTopology%2CFeatureSet%2CUpgrade%2CSuite%2CInstaller&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=true&includeVariant=Architecture%3Aamd64&includeVariant=CGroupMode%3Av2&includeVariant=ContainerRuntime%3Arunc&includeVariant=ContainerRuntime%3Acrun&includeVariant=FeatureSet%3Adefault&includeVariant=FeatureSet%3Atechpreview&includeVariant=Installer%3Aipi&includeVariant=Installer%3Aupi&includeVariant=JobTier%3Ablocking&includeVariant=JobTier%3Ainforming&includeVariant=JobTier%3Astandard&includeVariant=LayeredProduct%3Anone&includeVariant=Network%3Aovn&includeVariant=Owner%3Aeng&includeVariant=Owner%3Aservice-delivery&includeVariant=Platform%3Avsphere&includeVariant=Topology%3Aha&includeVariant=Topology%3Amicroshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-04-30T23%3A59%3A59Z&sampleRelease=4.19&sampleStartTime=2025-04-23T00%3A00%3A00Z&component=Networking+%2F+ovn-kubernetes",
+        "IssueResolutionDate": "2025-04-29T12:22:00Z"
+    },
+    "Tests": [
+        {
+            "TestId": "openshift-tests:b4d5ed92637fe0a6d03ac73229555ea6",
+            "TestName": "",
+            "Release": "4.19",
+            "GroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+            "Issue": {
+                "Type": "Product",
+                "Description": "New vsphere machine api tests introduced regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+                "ResolutionDate": "2025-04-29T12:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915775695020101632",
+                    "StartTime": "2025-04-25T14:31:00Z",
+                    "CompletionTime": "2025-04-25T16:43:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915900084348784640",
+                    "StartTime": "2025-04-25T22:45:12Z",
+                    "CompletionTime": "2025-04-26T01:01:08Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916062015089020928",
+                    "StartTime": "2025-04-26T09:28:30Z",
+                    "CompletionTime": "2025-04-26T11:28:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916216867370831872",
+                    "StartTime": "2025-04-26T19:43:59Z",
+                    "CompletionTime": "2025-04-26T21:56:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916341651593236480",
+                    "StartTime": "2025-04-27T04:00:09Z",
+                    "CompletionTime": "2025-04-27T06:13:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916492892445085696",
+                    "StartTime": "2025-04-27T14:00:27Z",
+                    "CompletionTime": "2025-04-27T16:04:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916647184342716416",
+                    "StartTime": "2025-04-28T00:14:15Z",
+                    "CompletionTime": "2025-04-28T02:24:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916884874904473600",
+                    "StartTime": "2025-04-28T15:58:17Z",
+                    "CompletionTime": "2025-04-28T18:18:56Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:15269712ce668c71aa1abb0f48526ac2",
+            "TestName": "",
+            "Release": "4.19",
+            "GroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+            "Issue": {
+                "Type": "Product",
+                "Description": "New vsphere machine api tests introduced regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+                "ResolutionDate": "2025-04-29T12:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916062015089020928",
+                    "StartTime": "2025-04-26T09:28:30Z",
+                    "CompletionTime": "2025-04-26T11:28:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916492892445085696",
+                    "StartTime": "2025-04-27T14:00:27Z",
+                    "CompletionTime": "2025-04-27T16:04:26Z"
+                }
+            ]
+        },
+        {
+            "TestId": "Symptom Detection:171acaa74f3d5ea96e3b687038d0cf13",
+            "TestName": "Undiagnosed panic detected in pod",
+            "Release": "4.19",
+            "GroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+            "Issue": {
+                "Type": "Product",
+                "Description": "New vsphere machine api tests introduced regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+                "ResolutionDate": "2025-04-29T12:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-vsphere-periodic-techpreview/1915031876435709952",
+                    "StartTime": "2025-04-23T13:14:44Z",
+                    "CompletionTime": "2025-04-23T16:40:25Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-vsphere-periodic-techpreview/1916481319701843968",
+                    "StartTime": "2025-04-27T13:15:27Z",
+                    "CompletionTime": "2025-04-27T16:59:08Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915775695020101632",
+                    "StartTime": "2025-04-25T14:31:00Z",
+                    "CompletionTime": "2025-04-25T16:43:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915900084348784640",
+                    "StartTime": "2025-04-25T22:45:12Z",
+                    "CompletionTime": "2025-04-26T01:01:08Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916062015089020928",
+                    "StartTime": "2025-04-26T09:28:30Z",
+                    "CompletionTime": "2025-04-26T11:28:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916216867370831872",
+                    "StartTime": "2025-04-26T19:43:59Z",
+                    "CompletionTime": "2025-04-26T21:56:46Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:15269712ce668c71aa1abb0f48526ac2",
+            "TestName": "",
+            "Release": "4.19",
+            "GroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+            "Issue": {
+                "Type": "Product",
+                "Description": "New vsphere machine api tests introduced regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+                "ResolutionDate": "2025-04-29T12:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916062015089020928",
+                    "StartTime": "2025-04-26T09:28:30Z",
+                    "CompletionTime": "2025-04-26T11:28:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916492892445085696",
+                    "StartTime": "2025-04-27T14:00:27Z",
+                    "CompletionTime": "2025-04-27T16:04:26Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:f782f0945697da7b4f7f68ef6f4849b9",
+            "TestName": "[sig-auth][Feature:ProjectAPI]  TestScopedProjectAccess should succeed [apigroup:user.openshift.io][apigroup:project.openshift.io][apigroup:authorization.openshift.io] [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+            "Issue": {
+                "Type": "Product",
+                "Description": "New vsphere machine api tests introduced regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+                "ResolutionDate": "2025-04-29T12:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915775695020101632",
+                    "StartTime": "2025-04-25T14:31:00Z",
+                    "CompletionTime": "2025-04-25T16:43:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915900084348784640",
+                    "StartTime": "2025-04-25T22:45:12Z",
+                    "CompletionTime": "2025-04-26T01:01:08Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916216867370831872",
+                    "StartTime": "2025-04-26T19:43:59Z",
+                    "CompletionTime": "2025-04-26T21:56:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916341651593236480",
+                    "StartTime": "2025-04-27T04:00:09Z",
+                    "CompletionTime": "2025-04-27T06:13:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916884874904473600",
+                    "StartTime": "2025-04-28T15:58:17Z",
+                    "CompletionTime": "2025-04-28T18:18:56Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:c0affa01f993d53061c8683fb91bc8da",
+            "TestName": "",
+            "Release": "4.19",
+            "GroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+            "Issue": {
+                "Type": "Product",
+                "Description": "New vsphere machine api tests introduced regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+                "ResolutionDate": "2025-04-29T12:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915775695020101632",
+                    "StartTime": "2025-04-25T14:31:00Z",
+                    "CompletionTime": "2025-04-25T16:43:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915900084348784640",
+                    "StartTime": "2025-04-25T22:45:12Z",
+                    "CompletionTime": "2025-04-26T01:01:08Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916062015089020928",
+                    "StartTime": "2025-04-26T09:28:30Z",
+                    "CompletionTime": "2025-04-26T11:28:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916216867370831872",
+                    "StartTime": "2025-04-26T19:43:59Z",
+                    "CompletionTime": "2025-04-26T21:56:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916341651593236480",
+                    "StartTime": "2025-04-27T04:00:09Z",
+                    "CompletionTime": "2025-04-27T06:13:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916492892445085696",
+                    "StartTime": "2025-04-27T14:00:27Z",
+                    "CompletionTime": "2025-04-27T16:04:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916647184342716416",
+                    "StartTime": "2025-04-28T00:14:15Z",
+                    "CompletionTime": "2025-04-28T02:24:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916884874904473600",
+                    "StartTime": "2025-04-28T15:58:17Z",
+                    "CompletionTime": "2025-04-28T18:18:56Z"
+                }
+            ]
+        }
+    ]
+}
