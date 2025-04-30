@@ -1,0 +1,2294 @@
+{
+    "Arguments": {
+        "TestRelease": "4.19",
+        "IssueDescription": "OLM Preflight test regressions",
+        "IssueType": "Product",
+        "IssueURL": "https://issues.redhat.com/browse/TRT-2091",
+        "OutputFile": "olm_preflight_failures_regressions.json",
+        "IncidentGroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+        "TargetModifiedTime": "2025-04-30 14:05:14.842486+00:00",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2025-02-25T23%3A59%3A59Z&baseRelease=4.18&baseStartTime=2025-01-26T00%3A00%3A00Z&columnGroupBy=Architecture%2CNetwork%2CPlatform%2CTopology&confidence=95&dbGroupBy=Platform%2CArchitecture%2CNetwork%2CTopology%2CFeatureSet%2CUpgrade%2CSuite%2CInstaller&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=true&includeVariant=Architecture%3Aamd64&includeVariant=CGroupMode%3Av2&includeVariant=ContainerRuntime%3Arunc&includeVariant=ContainerRuntime%3Acrun&includeVariant=FeatureSet%3Adefault&includeVariant=FeatureSet%3Atechpreview&includeVariant=Installer%3Aipi&includeVariant=Installer%3Aupi&includeVariant=JobTier%3Ablocking&includeVariant=JobTier%3Ainforming&includeVariant=JobTier%3Astandard&includeVariant=LayeredProduct%3Anone&includeVariant=Network%3Aovn&includeVariant=Owner%3Aeng&includeVariant=Owner%3Aservice-delivery&includeVariant=Platform%3Aaws&includeVariant=Platform%3Aazure&includeVariant=Platform%3Agcp&includeVariant=Platform%3Ametal&includeVariant=Platform%3Arosa&includeVariant=Platform%3Avsphere&includeVariant=Topology%3Aha&includeVariant=Topology%3Amicroshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-04-30T23%3A59%3A59Z&sampleRelease=4.19&sampleStartTime=2025-04-23T00%3A00%3A00Z&component=OLM&capability=OCPFeatureGate%3ANewOLMPreflightPermissionChecks"
+    },
+    "Tests": [
+        {
+            "TestId": "openshift-tests:2413ed36f26ac24c84a5b6886f6689f2",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {ClusterRoleBindings} are not specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916061827180007424",
+                    "StartTime": "2025-04-26T09:28:15Z",
+                    "CompletionTime": "2025-04-26T12:05:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916102345037451264",
+                    "StartTime": "2025-04-26T12:09:32Z",
+                    "CompletionTime": "2025-04-26T14:37:13Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916140009295974400",
+                    "StartTime": "2025-04-26T14:39:13Z",
+                    "CompletionTime": "2025-04-26T17:02:11Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916216907631955968",
+                    "StartTime": "2025-04-26T19:44:02Z",
+                    "CompletionTime": "2025-04-26T22:08:49Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916253500686209024",
+                    "StartTime": "2025-04-26T22:10:11Z",
+                    "CompletionTime": "2025-04-27T00:41:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916292149284966400",
+                    "StartTime": "2025-04-27T00:43:46Z",
+                    "CompletionTime": "2025-04-27T03:08:14Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916341701937467392",
+                    "StartTime": "2025-04-27T04:00:13Z",
+                    "CompletionTime": "2025-04-27T06:17:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916376423707185152",
+                    "StartTime": "2025-04-27T06:18:38Z",
+                    "CompletionTime": "2025-04-27T08:48:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916414622965960704",
+                    "StartTime": "2025-04-27T08:50:26Z",
+                    "CompletionTime": "2025-04-27T11:10:55Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916492643290845184",
+                    "StartTime": "2025-04-27T14:00:09Z",
+                    "CompletionTime": "2025-04-27T16:51:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916535934585671680",
+                    "StartTime": "2025-04-27T16:52:28Z",
+                    "CompletionTime": "2025-04-27T19:29:13Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916575881380237312",
+                    "StartTime": "2025-04-27T19:31:13Z",
+                    "CompletionTime": "2025-04-27T21:56:28Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:2413ed36f26ac24c84a5b6886f6689f2",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {ClusterRoleBindings} are not specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "azure"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1916061765095919616",
+                    "StartTime": "2025-04-26T09:28:10Z",
+                    "CompletionTime": "2025-04-26T12:09:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1916216930281197568",
+                    "StartTime": "2025-04-26T19:44:04Z",
+                    "CompletionTime": "2025-04-26T22:36:16Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1916341638175657984",
+                    "StartTime": "2025-04-27T04:00:07Z",
+                    "CompletionTime": "2025-04-27T06:35:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1916492599670083584",
+                    "StartTime": "2025-04-27T14:00:06Z",
+                    "CompletionTime": "2025-04-27T16:52:14Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:2413ed36f26ac24c84a5b6886f6689f2",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {ClusterRoleBindings} are not specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview/1916061802009989120",
+                    "StartTime": "2025-04-26T09:28:13Z",
+                    "CompletionTime": "2025-04-26T12:02:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview/1916216626663919616",
+                    "StartTime": "2025-04-26T19:43:40Z",
+                    "CompletionTime": "2025-04-26T22:18:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview/1916341821047312384",
+                    "StartTime": "2025-04-27T04:00:23Z",
+                    "CompletionTime": "2025-04-27T06:35:27Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:2413ed36f26ac24c84a5b6886f6689f2",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {ClusterRoleBindings} are not specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-dualstack-techpreview/1916062010055856128",
+                    "StartTime": "2025-04-26T09:28:30Z",
+                    "CompletionTime": "2025-04-26T12:33:15Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-dualstack-techpreview/1916216849750560768",
+                    "StartTime": "2025-04-26T19:43:57Z",
+                    "CompletionTime": "2025-04-26T22:59:59Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-dualstack-techpreview/1916492811075588096",
+                    "StartTime": "2025-04-27T14:00:23Z",
+                    "CompletionTime": "2025-04-27T17:12:05Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-techpreview/1916061774323388416",
+                    "StartTime": "2025-04-26T09:28:11Z",
+                    "CompletionTime": "2025-04-26T12:20:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-techpreview/1916216916028952576",
+                    "StartTime": "2025-04-26T19:44:03Z",
+                    "CompletionTime": "2025-04-26T22:51:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-techpreview/1916492655877951488",
+                    "StartTime": "2025-04-27T14:00:10Z",
+                    "CompletionTime": "2025-04-27T17:01:31Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:2413ed36f26ac24c84a5b6886f6689f2",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {ClusterRoleBindings} are not specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916062015089020928",
+                    "StartTime": "2025-04-26T09:28:30Z",
+                    "CompletionTime": "2025-04-26T11:28:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916216867370831872",
+                    "StartTime": "2025-04-26T19:43:59Z",
+                    "CompletionTime": "2025-04-26T21:56:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916341651593236480",
+                    "StartTime": "2025-04-27T04:00:09Z",
+                    "CompletionTime": "2025-04-27T06:13:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916492892445085696",
+                    "StartTime": "2025-04-27T14:00:27Z",
+                    "CompletionTime": "2025-04-27T16:04:26Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:47a38452abffa89f42be5abc2f835274",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {ConfigMap:resourceNames} are not all specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916061827180007424",
+                    "StartTime": "2025-04-26T09:28:15Z",
+                    "CompletionTime": "2025-04-26T12:05:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916102345037451264",
+                    "StartTime": "2025-04-26T12:09:32Z",
+                    "CompletionTime": "2025-04-26T14:37:13Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916140009295974400",
+                    "StartTime": "2025-04-26T14:39:13Z",
+                    "CompletionTime": "2025-04-26T17:02:11Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916216907631955968",
+                    "StartTime": "2025-04-26T19:44:02Z",
+                    "CompletionTime": "2025-04-26T22:08:49Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916253500686209024",
+                    "StartTime": "2025-04-26T22:10:11Z",
+                    "CompletionTime": "2025-04-27T00:41:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916292149284966400",
+                    "StartTime": "2025-04-27T00:43:46Z",
+                    "CompletionTime": "2025-04-27T03:08:14Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916341701937467392",
+                    "StartTime": "2025-04-27T04:00:13Z",
+                    "CompletionTime": "2025-04-27T06:17:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916376423707185152",
+                    "StartTime": "2025-04-27T06:18:38Z",
+                    "CompletionTime": "2025-04-27T08:48:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916414622965960704",
+                    "StartTime": "2025-04-27T08:50:26Z",
+                    "CompletionTime": "2025-04-27T11:10:55Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916492643290845184",
+                    "StartTime": "2025-04-27T14:00:09Z",
+                    "CompletionTime": "2025-04-27T16:51:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916535934585671680",
+                    "StartTime": "2025-04-27T16:52:28Z",
+                    "CompletionTime": "2025-04-27T19:29:13Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916575881380237312",
+                    "StartTime": "2025-04-27T19:31:13Z",
+                    "CompletionTime": "2025-04-27T21:56:28Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:47a38452abffa89f42be5abc2f835274",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {ConfigMap:resourceNames} are not all specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "azure"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1916061765095919616",
+                    "StartTime": "2025-04-26T09:28:10Z",
+                    "CompletionTime": "2025-04-26T12:09:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1916216930281197568",
+                    "StartTime": "2025-04-26T19:44:04Z",
+                    "CompletionTime": "2025-04-26T22:36:16Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1916341638175657984",
+                    "StartTime": "2025-04-27T04:00:07Z",
+                    "CompletionTime": "2025-04-27T06:35:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1916492599670083584",
+                    "StartTime": "2025-04-27T14:00:06Z",
+                    "CompletionTime": "2025-04-27T16:52:14Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:47a38452abffa89f42be5abc2f835274",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {ConfigMap:resourceNames} are not all specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview/1916061802009989120",
+                    "StartTime": "2025-04-26T09:28:13Z",
+                    "CompletionTime": "2025-04-26T12:02:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview/1916216626663919616",
+                    "StartTime": "2025-04-26T19:43:40Z",
+                    "CompletionTime": "2025-04-26T22:18:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview/1916341821047312384",
+                    "StartTime": "2025-04-27T04:00:23Z",
+                    "CompletionTime": "2025-04-27T06:35:27Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:47a38452abffa89f42be5abc2f835274",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {ConfigMap:resourceNames} are not all specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-dualstack-techpreview/1916062010055856128",
+                    "StartTime": "2025-04-26T09:28:30Z",
+                    "CompletionTime": "2025-04-26T12:33:15Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-dualstack-techpreview/1916216849750560768",
+                    "StartTime": "2025-04-26T19:43:57Z",
+                    "CompletionTime": "2025-04-26T22:59:59Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-dualstack-techpreview/1916492811075588096",
+                    "StartTime": "2025-04-27T14:00:23Z",
+                    "CompletionTime": "2025-04-27T17:12:05Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-techpreview/1916061774323388416",
+                    "StartTime": "2025-04-26T09:28:11Z",
+                    "CompletionTime": "2025-04-26T12:20:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-techpreview/1916216916028952576",
+                    "StartTime": "2025-04-26T19:44:03Z",
+                    "CompletionTime": "2025-04-26T22:51:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-techpreview/1916492655877951488",
+                    "StartTime": "2025-04-27T14:00:10Z",
+                    "CompletionTime": "2025-04-27T17:01:31Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:47a38452abffa89f42be5abc2f835274",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {ConfigMap:resourceNames} are not all specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916062015089020928",
+                    "StartTime": "2025-04-26T09:28:30Z",
+                    "CompletionTime": "2025-04-26T11:28:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916216867370831872",
+                    "StartTime": "2025-04-26T19:43:59Z",
+                    "CompletionTime": "2025-04-26T21:56:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916341651593236480",
+                    "StartTime": "2025-04-27T04:00:09Z",
+                    "CompletionTime": "2025-04-27T06:13:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916492892445085696",
+                    "StartTime": "2025-04-27T14:00:27Z",
+                    "CompletionTime": "2025-04-27T16:04:26Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:58db8a0b697255b016c9cbbe3a53741f",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {clusterextension/finalizer} is not specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916061827180007424",
+                    "StartTime": "2025-04-26T09:28:15Z",
+                    "CompletionTime": "2025-04-26T12:05:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916102345037451264",
+                    "StartTime": "2025-04-26T12:09:32Z",
+                    "CompletionTime": "2025-04-26T14:37:13Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916140009295974400",
+                    "StartTime": "2025-04-26T14:39:13Z",
+                    "CompletionTime": "2025-04-26T17:02:11Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916216907631955968",
+                    "StartTime": "2025-04-26T19:44:02Z",
+                    "CompletionTime": "2025-04-26T22:08:49Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916253500686209024",
+                    "StartTime": "2025-04-26T22:10:11Z",
+                    "CompletionTime": "2025-04-27T00:41:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916292149284966400",
+                    "StartTime": "2025-04-27T00:43:46Z",
+                    "CompletionTime": "2025-04-27T03:08:14Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916341701937467392",
+                    "StartTime": "2025-04-27T04:00:13Z",
+                    "CompletionTime": "2025-04-27T06:17:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916376423707185152",
+                    "StartTime": "2025-04-27T06:18:38Z",
+                    "CompletionTime": "2025-04-27T08:48:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916414622965960704",
+                    "StartTime": "2025-04-27T08:50:26Z",
+                    "CompletionTime": "2025-04-27T11:10:55Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916492643290845184",
+                    "StartTime": "2025-04-27T14:00:09Z",
+                    "CompletionTime": "2025-04-27T16:51:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916535934585671680",
+                    "StartTime": "2025-04-27T16:52:28Z",
+                    "CompletionTime": "2025-04-27T19:29:13Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916575881380237312",
+                    "StartTime": "2025-04-27T19:31:13Z",
+                    "CompletionTime": "2025-04-27T21:56:28Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:58db8a0b697255b016c9cbbe3a53741f",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {clusterextension/finalizer} is not specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "azure"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1916061765095919616",
+                    "StartTime": "2025-04-26T09:28:10Z",
+                    "CompletionTime": "2025-04-26T12:09:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1916216930281197568",
+                    "StartTime": "2025-04-26T19:44:04Z",
+                    "CompletionTime": "2025-04-26T22:36:16Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1916341638175657984",
+                    "StartTime": "2025-04-27T04:00:07Z",
+                    "CompletionTime": "2025-04-27T06:35:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1916492599670083584",
+                    "StartTime": "2025-04-27T14:00:06Z",
+                    "CompletionTime": "2025-04-27T16:52:14Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:58db8a0b697255b016c9cbbe3a53741f",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {clusterextension/finalizer} is not specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview/1916061802009989120",
+                    "StartTime": "2025-04-26T09:28:13Z",
+                    "CompletionTime": "2025-04-26T12:02:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview/1916216626663919616",
+                    "StartTime": "2025-04-26T19:43:40Z",
+                    "CompletionTime": "2025-04-26T22:18:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview/1916341821047312384",
+                    "StartTime": "2025-04-27T04:00:23Z",
+                    "CompletionTime": "2025-04-27T06:35:27Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:58db8a0b697255b016c9cbbe3a53741f",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {clusterextension/finalizer} is not specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-dualstack-techpreview/1916062010055856128",
+                    "StartTime": "2025-04-26T09:28:30Z",
+                    "CompletionTime": "2025-04-26T12:33:15Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-dualstack-techpreview/1916216849750560768",
+                    "StartTime": "2025-04-26T19:43:57Z",
+                    "CompletionTime": "2025-04-26T22:59:59Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-dualstack-techpreview/1916492811075588096",
+                    "StartTime": "2025-04-27T14:00:23Z",
+                    "CompletionTime": "2025-04-27T17:12:05Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-techpreview/1916061774323388416",
+                    "StartTime": "2025-04-26T09:28:11Z",
+                    "CompletionTime": "2025-04-26T12:20:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-techpreview/1916216916028952576",
+                    "StartTime": "2025-04-26T19:44:03Z",
+                    "CompletionTime": "2025-04-26T22:51:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-techpreview/1916492655877951488",
+                    "StartTime": "2025-04-27T14:00:10Z",
+                    "CompletionTime": "2025-04-27T17:01:31Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:58db8a0b697255b016c9cbbe3a53741f",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {clusterextension/finalizer} is not specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916062015089020928",
+                    "StartTime": "2025-04-26T09:28:30Z",
+                    "CompletionTime": "2025-04-26T11:28:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916216867370831872",
+                    "StartTime": "2025-04-26T19:43:59Z",
+                    "CompletionTime": "2025-04-26T21:56:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916341651593236480",
+                    "StartTime": "2025-04-27T04:00:09Z",
+                    "CompletionTime": "2025-04-27T06:13:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916492892445085696",
+                    "StartTime": "2025-04-27T14:00:27Z",
+                    "CompletionTime": "2025-04-27T16:04:26Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:a1b16f31091711ac3f152953bc5c37c7",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {create} verb is not specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916061827180007424",
+                    "StartTime": "2025-04-26T09:28:15Z",
+                    "CompletionTime": "2025-04-26T12:05:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916102345037451264",
+                    "StartTime": "2025-04-26T12:09:32Z",
+                    "CompletionTime": "2025-04-26T14:37:13Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916140009295974400",
+                    "StartTime": "2025-04-26T14:39:13Z",
+                    "CompletionTime": "2025-04-26T17:02:11Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916216907631955968",
+                    "StartTime": "2025-04-26T19:44:02Z",
+                    "CompletionTime": "2025-04-26T22:08:49Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916253500686209024",
+                    "StartTime": "2025-04-26T22:10:11Z",
+                    "CompletionTime": "2025-04-27T00:41:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916292149284966400",
+                    "StartTime": "2025-04-27T00:43:46Z",
+                    "CompletionTime": "2025-04-27T03:08:14Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916341701937467392",
+                    "StartTime": "2025-04-27T04:00:13Z",
+                    "CompletionTime": "2025-04-27T06:17:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916376423707185152",
+                    "StartTime": "2025-04-27T06:18:38Z",
+                    "CompletionTime": "2025-04-27T08:48:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916414622965960704",
+                    "StartTime": "2025-04-27T08:50:26Z",
+                    "CompletionTime": "2025-04-27T11:10:55Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916492643290845184",
+                    "StartTime": "2025-04-27T14:00:09Z",
+                    "CompletionTime": "2025-04-27T16:51:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916535934585671680",
+                    "StartTime": "2025-04-27T16:52:28Z",
+                    "CompletionTime": "2025-04-27T19:29:13Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916575881380237312",
+                    "StartTime": "2025-04-27T19:31:13Z",
+                    "CompletionTime": "2025-04-27T21:56:28Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:a1b16f31091711ac3f152953bc5c37c7",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {create} verb is not specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "azure"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1916061765095919616",
+                    "StartTime": "2025-04-26T09:28:10Z",
+                    "CompletionTime": "2025-04-26T12:09:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1916216930281197568",
+                    "StartTime": "2025-04-26T19:44:04Z",
+                    "CompletionTime": "2025-04-26T22:36:16Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1916341638175657984",
+                    "StartTime": "2025-04-27T04:00:07Z",
+                    "CompletionTime": "2025-04-27T06:35:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1916492599670083584",
+                    "StartTime": "2025-04-27T14:00:06Z",
+                    "CompletionTime": "2025-04-27T16:52:14Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:a1b16f31091711ac3f152953bc5c37c7",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {create} verb is not specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview/1916061802009989120",
+                    "StartTime": "2025-04-26T09:28:13Z",
+                    "CompletionTime": "2025-04-26T12:02:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview/1916216626663919616",
+                    "StartTime": "2025-04-26T19:43:40Z",
+                    "CompletionTime": "2025-04-26T22:18:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview/1916341821047312384",
+                    "StartTime": "2025-04-27T04:00:23Z",
+                    "CompletionTime": "2025-04-27T06:35:27Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:a1b16f31091711ac3f152953bc5c37c7",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {create} verb is not specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-dualstack-techpreview/1916062010055856128",
+                    "StartTime": "2025-04-26T09:28:30Z",
+                    "CompletionTime": "2025-04-26T12:33:15Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-dualstack-techpreview/1916216849750560768",
+                    "StartTime": "2025-04-26T19:43:57Z",
+                    "CompletionTime": "2025-04-26T22:59:59Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-dualstack-techpreview/1916492811075588096",
+                    "StartTime": "2025-04-27T14:00:23Z",
+                    "CompletionTime": "2025-04-27T17:12:05Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-techpreview/1916061774323388416",
+                    "StartTime": "2025-04-26T09:28:11Z",
+                    "CompletionTime": "2025-04-26T12:20:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-techpreview/1916216916028952576",
+                    "StartTime": "2025-04-26T19:44:03Z",
+                    "CompletionTime": "2025-04-26T22:51:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-techpreview/1916492655877951488",
+                    "StartTime": "2025-04-27T14:00:10Z",
+                    "CompletionTime": "2025-04-27T17:01:31Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:a1b16f31091711ac3f152953bc5c37c7",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {create} verb is not specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916062015089020928",
+                    "StartTime": "2025-04-26T09:28:30Z",
+                    "CompletionTime": "2025-04-26T11:28:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916216867370831872",
+                    "StartTime": "2025-04-26T19:43:59Z",
+                    "CompletionTime": "2025-04-26T21:56:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916341651593236480",
+                    "StartTime": "2025-04-27T04:00:09Z",
+                    "CompletionTime": "2025-04-27T06:13:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916492892445085696",
+                    "StartTime": "2025-04-27T14:00:27Z",
+                    "CompletionTime": "2025-04-27T16:04:26Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:0d864e586a38542fc1e849079d2570c9",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {escalate, bind} is not specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916061827180007424",
+                    "StartTime": "2025-04-26T09:28:15Z",
+                    "CompletionTime": "2025-04-26T12:05:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916102345037451264",
+                    "StartTime": "2025-04-26T12:09:32Z",
+                    "CompletionTime": "2025-04-26T14:37:13Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916140009295974400",
+                    "StartTime": "2025-04-26T14:39:13Z",
+                    "CompletionTime": "2025-04-26T17:02:11Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916216907631955968",
+                    "StartTime": "2025-04-26T19:44:02Z",
+                    "CompletionTime": "2025-04-26T22:08:49Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916253500686209024",
+                    "StartTime": "2025-04-26T22:10:11Z",
+                    "CompletionTime": "2025-04-27T00:41:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916292149284966400",
+                    "StartTime": "2025-04-27T00:43:46Z",
+                    "CompletionTime": "2025-04-27T03:08:14Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916341701937467392",
+                    "StartTime": "2025-04-27T04:00:13Z",
+                    "CompletionTime": "2025-04-27T06:17:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916376423707185152",
+                    "StartTime": "2025-04-27T06:18:38Z",
+                    "CompletionTime": "2025-04-27T08:48:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916414622965960704",
+                    "StartTime": "2025-04-27T08:50:26Z",
+                    "CompletionTime": "2025-04-27T11:10:55Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916492643290845184",
+                    "StartTime": "2025-04-27T14:00:09Z",
+                    "CompletionTime": "2025-04-27T16:51:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916535934585671680",
+                    "StartTime": "2025-04-27T16:52:28Z",
+                    "CompletionTime": "2025-04-27T19:29:13Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916575881380237312",
+                    "StartTime": "2025-04-27T19:31:13Z",
+                    "CompletionTime": "2025-04-27T21:56:28Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:0d864e586a38542fc1e849079d2570c9",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {escalate, bind} is not specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "azure"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1916061765095919616",
+                    "StartTime": "2025-04-26T09:28:10Z",
+                    "CompletionTime": "2025-04-26T12:09:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1916216930281197568",
+                    "StartTime": "2025-04-26T19:44:04Z",
+                    "CompletionTime": "2025-04-26T22:36:16Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1916341638175657984",
+                    "StartTime": "2025-04-27T04:00:07Z",
+                    "CompletionTime": "2025-04-27T06:35:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1916492599670083584",
+                    "StartTime": "2025-04-27T14:00:06Z",
+                    "CompletionTime": "2025-04-27T16:52:14Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:0d864e586a38542fc1e849079d2570c9",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {escalate, bind} is not specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview/1916061802009989120",
+                    "StartTime": "2025-04-26T09:28:13Z",
+                    "CompletionTime": "2025-04-26T12:02:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview/1916216626663919616",
+                    "StartTime": "2025-04-26T19:43:40Z",
+                    "CompletionTime": "2025-04-26T22:18:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview/1916341821047312384",
+                    "StartTime": "2025-04-27T04:00:23Z",
+                    "CompletionTime": "2025-04-27T06:35:27Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:0d864e586a38542fc1e849079d2570c9",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {escalate, bind} is not specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-dualstack-techpreview/1916062010055856128",
+                    "StartTime": "2025-04-26T09:28:30Z",
+                    "CompletionTime": "2025-04-26T12:33:15Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-dualstack-techpreview/1916216849750560768",
+                    "StartTime": "2025-04-26T19:43:57Z",
+                    "CompletionTime": "2025-04-26T22:59:59Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-dualstack-techpreview/1916492811075588096",
+                    "StartTime": "2025-04-27T14:00:23Z",
+                    "CompletionTime": "2025-04-27T17:12:05Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-techpreview/1916061774323388416",
+                    "StartTime": "2025-04-26T09:28:11Z",
+                    "CompletionTime": "2025-04-26T12:20:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-techpreview/1916216916028952576",
+                    "StartTime": "2025-04-26T19:44:03Z",
+                    "CompletionTime": "2025-04-26T22:51:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-techpreview/1916492655877951488",
+                    "StartTime": "2025-04-27T14:00:10Z",
+                    "CompletionTime": "2025-04-27T17:01:31Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:0d864e586a38542fc1e849079d2570c9",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {escalate, bind} is not specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916062015089020928",
+                    "StartTime": "2025-04-26T09:28:30Z",
+                    "CompletionTime": "2025-04-26T11:28:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916216867370831872",
+                    "StartTime": "2025-04-26T19:43:59Z",
+                    "CompletionTime": "2025-04-26T21:56:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916341651593236480",
+                    "StartTime": "2025-04-27T04:00:09Z",
+                    "CompletionTime": "2025-04-27T06:13:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916492892445085696",
+                    "StartTime": "2025-04-27T14:00:27Z",
+                    "CompletionTime": "2025-04-27T16:04:26Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:af9b718835f591707c3448f65e58fb12",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {services} are not specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "aws"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916061827180007424",
+                    "StartTime": "2025-04-26T09:28:15Z",
+                    "CompletionTime": "2025-04-26T12:05:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916102345037451264",
+                    "StartTime": "2025-04-26T12:09:32Z",
+                    "CompletionTime": "2025-04-26T14:37:13Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916140009295974400",
+                    "StartTime": "2025-04-26T14:39:13Z",
+                    "CompletionTime": "2025-04-26T17:02:11Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916216907631955968",
+                    "StartTime": "2025-04-26T19:44:02Z",
+                    "CompletionTime": "2025-04-26T22:08:49Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916253500686209024",
+                    "StartTime": "2025-04-26T22:10:11Z",
+                    "CompletionTime": "2025-04-27T00:41:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916292149284966400",
+                    "StartTime": "2025-04-27T00:43:46Z",
+                    "CompletionTime": "2025-04-27T03:08:14Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916341701937467392",
+                    "StartTime": "2025-04-27T04:00:13Z",
+                    "CompletionTime": "2025-04-27T06:17:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916376423707185152",
+                    "StartTime": "2025-04-27T06:18:38Z",
+                    "CompletionTime": "2025-04-27T08:48:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916414622965960704",
+                    "StartTime": "2025-04-27T08:50:26Z",
+                    "CompletionTime": "2025-04-27T11:10:55Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916492643290845184",
+                    "StartTime": "2025-04-27T14:00:09Z",
+                    "CompletionTime": "2025-04-27T16:51:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916535934585671680",
+                    "StartTime": "2025-04-27T16:52:28Z",
+                    "CompletionTime": "2025-04-27T19:29:13Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-aws-ovn-techpreview/1916575881380237312",
+                    "StartTime": "2025-04-27T19:31:13Z",
+                    "CompletionTime": "2025-04-27T21:56:28Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:af9b718835f591707c3448f65e58fb12",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {services} are not specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "azure"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1916061765095919616",
+                    "StartTime": "2025-04-26T09:28:10Z",
+                    "CompletionTime": "2025-04-26T12:09:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1916216930281197568",
+                    "StartTime": "2025-04-26T19:44:04Z",
+                    "CompletionTime": "2025-04-26T22:36:16Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1916341638175657984",
+                    "StartTime": "2025-04-27T04:00:07Z",
+                    "CompletionTime": "2025-04-27T06:35:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-azure-ovn-techpreview/1916492599670083584",
+                    "StartTime": "2025-04-27T14:00:06Z",
+                    "CompletionTime": "2025-04-27T16:52:14Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:af9b718835f591707c3448f65e58fb12",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {services} are not specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "gcp"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview/1916061802009989120",
+                    "StartTime": "2025-04-26T09:28:13Z",
+                    "CompletionTime": "2025-04-26T12:02:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview/1916216626663919616",
+                    "StartTime": "2025-04-26T19:43:40Z",
+                    "CompletionTime": "2025-04-26T22:18:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-gcp-ovn-techpreview/1916341821047312384",
+                    "StartTime": "2025-04-27T04:00:23Z",
+                    "CompletionTime": "2025-04-27T06:35:27Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:af9b718835f591707c3448f65e58fb12",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {services} are not specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "metal"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-dualstack-techpreview/1916062010055856128",
+                    "StartTime": "2025-04-26T09:28:30Z",
+                    "CompletionTime": "2025-04-26T12:33:15Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-dualstack-techpreview/1916216849750560768",
+                    "StartTime": "2025-04-26T19:43:57Z",
+                    "CompletionTime": "2025-04-26T22:59:59Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-dualstack-techpreview/1916492811075588096",
+                    "StartTime": "2025-04-27T14:00:23Z",
+                    "CompletionTime": "2025-04-27T17:12:05Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-techpreview/1916061774323388416",
+                    "StartTime": "2025-04-26T09:28:11Z",
+                    "CompletionTime": "2025-04-26T12:20:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-techpreview/1916216916028952576",
+                    "StartTime": "2025-04-26T19:44:03Z",
+                    "CompletionTime": "2025-04-26T22:51:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-metal-ipi-ovn-techpreview/1916492655877951488",
+                    "StartTime": "2025-04-27T14:00:10Z",
+                    "CompletionTime": "2025-04-27T17:01:31Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:af9b718835f591707c3448f65e58fb12",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMPreflightPermissionChecks][Skipped:Disconnected] OLMv1 operator preflight checks should report error when {services} are not specified [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "d7363ee7-08b3-45c1-bdef-0548c5d716b0",
+            "Issue": {
+                "Type": "Product",
+                "Description": "OLM Preflight test regressions",
+                "URL": "https://issues.redhat.com/browse/TRT-2091"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916062015089020928",
+                    "StartTime": "2025-04-26T09:28:30Z",
+                    "CompletionTime": "2025-04-26T11:28:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916216867370831872",
+                    "StartTime": "2025-04-26T19:43:59Z",
+                    "CompletionTime": "2025-04-26T21:56:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916341651593236480",
+                    "StartTime": "2025-04-27T04:00:09Z",
+                    "CompletionTime": "2025-04-27T06:13:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916492892445085696",
+                    "StartTime": "2025-04-27T14:00:27Z",
+                    "CompletionTime": "2025-04-27T16:04:26Z"
+                }
+            ]
+        }
+    ]
+}
