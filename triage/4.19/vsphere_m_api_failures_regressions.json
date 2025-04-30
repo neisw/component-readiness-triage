@@ -1,0 +1,1504 @@
+{
+    "Arguments": {
+        "TestRelease": "4.19",
+        "IssueDescription": "New vsphere machine api tests introduced regressions",
+        "IssueType": "Product",
+        "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+        "OutputFile": "vsphere_m_api_failures_regressions.json",
+        "IncidentGroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+        "TargetModifiedTime": "2025-04-30 14:29:14.373455+00:00",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2025-02-25T23%3A59%3A59Z&baseRelease=4.18&baseStartTime=2025-01-26T00%3A00%3A00Z&columnGroupBy=Architecture%2CNetwork%2CPlatform%2CTopology&confidence=95&dbGroupBy=Platform%2CArchitecture%2CNetwork%2CTopology%2CFeatureSet%2CUpgrade%2CSuite%2CInstaller&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=true&includeVariant=Architecture%3Aamd64&includeVariant=CGroupMode%3Av2&includeVariant=ContainerRuntime%3Arunc&includeVariant=ContainerRuntime%3Acrun&includeVariant=FeatureSet%3Adefault&includeVariant=FeatureSet%3Atechpreview&includeVariant=Installer%3Aipi&includeVariant=Installer%3Aupi&includeVariant=JobTier%3Ablocking&includeVariant=JobTier%3Ainforming&includeVariant=JobTier%3Astandard&includeVariant=LayeredProduct%3Anone&includeVariant=Network%3Aovn&includeVariant=Owner%3Aeng&includeVariant=Owner%3Aservice-delivery&includeVariant=Platform%3Avsphere&includeVariant=Topology%3Aha&includeVariant=Topology%3Amicroshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-04-30T23%3A59%3A59Z&sampleRelease=4.19&sampleStartTime=2025-04-23T00%3A00%3A00Z&component=Networking+%2F+ovn-kubernetes",
+        "IssueResolutionDate": "2025-04-29T12:22:00Z"
+    },
+    "Tests": [
+        {
+            "TestId": "openshift-tests:057cfb4c5b7815367fa242f00bcb9e56",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using UserDefinedNetwork can perform east/west traffic between nodes for two pods connected over a L2 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+            "Issue": {
+                "Type": "Product",
+                "Description": "New vsphere machine api tests introduced regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+                "ResolutionDate": "2025-04-29T12:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915900084348784640",
+                    "StartTime": "2025-04-25T22:45:12Z",
+                    "CompletionTime": "2025-04-26T01:01:08Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916216867370831872",
+                    "StartTime": "2025-04-26T19:43:59Z",
+                    "CompletionTime": "2025-04-26T21:56:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916341651593236480",
+                    "StartTime": "2025-04-27T04:00:09Z",
+                    "CompletionTime": "2025-04-27T06:13:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916492892445085696",
+                    "StartTime": "2025-04-27T14:00:27Z",
+                    "CompletionTime": "2025-04-27T16:04:26Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:6a58ecc06bda51efe3f5b34f9c51b881",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using NetworkAttachmentDefinitions isolates overlapping CIDRs with L3 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+            "Issue": {
+                "Type": "Product",
+                "Description": "New vsphere machine api tests introduced regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+                "ResolutionDate": "2025-04-29T12:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915775695020101632",
+                    "StartTime": "2025-04-25T14:31:00Z",
+                    "CompletionTime": "2025-04-25T16:43:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916062015089020928",
+                    "StartTime": "2025-04-26T09:28:30Z",
+                    "CompletionTime": "2025-04-26T11:28:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916216867370831872",
+                    "StartTime": "2025-04-26T19:43:59Z",
+                    "CompletionTime": "2025-04-26T21:56:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916341651593236480",
+                    "StartTime": "2025-04-27T04:00:09Z",
+                    "CompletionTime": "2025-04-27T06:13:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916884874904473600",
+                    "StartTime": "2025-04-28T15:58:17Z",
+                    "CompletionTime": "2025-04-28T18:18:56Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:c2a46d5dbf5702b68b4b8bddbd5d899b",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using NetworkAttachmentDefinitions is isolated from the default network with L2 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+            "Issue": {
+                "Type": "Product",
+                "Description": "New vsphere machine api tests introduced regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+                "ResolutionDate": "2025-04-29T12:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915775695020101632",
+                    "StartTime": "2025-04-25T14:31:00Z",
+                    "CompletionTime": "2025-04-25T16:43:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915900084348784640",
+                    "StartTime": "2025-04-25T22:45:12Z",
+                    "CompletionTime": "2025-04-26T01:01:08Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916062015089020928",
+                    "StartTime": "2025-04-26T09:28:30Z",
+                    "CompletionTime": "2025-04-26T11:28:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916492892445085696",
+                    "StartTime": "2025-04-27T14:00:27Z",
+                    "CompletionTime": "2025-04-27T16:04:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916884874904473600",
+                    "StartTime": "2025-04-28T15:58:17Z",
+                    "CompletionTime": "2025-04-28T18:18:56Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:a3c05068e582269a29e5402e7cf77925",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using NetworkAttachmentDefinitions isolates overlapping CIDRs with L2 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+            "Issue": {
+                "Type": "Product",
+                "Description": "New vsphere machine api tests introduced regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+                "ResolutionDate": "2025-04-29T12:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915775695020101632",
+                    "StartTime": "2025-04-25T14:31:00Z",
+                    "CompletionTime": "2025-04-25T16:43:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915900084348784640",
+                    "StartTime": "2025-04-25T22:45:12Z",
+                    "CompletionTime": "2025-04-26T01:01:08Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916216867370831872",
+                    "StartTime": "2025-04-26T19:43:59Z",
+                    "CompletionTime": "2025-04-26T21:56:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916492892445085696",
+                    "StartTime": "2025-04-27T14:00:27Z",
+                    "CompletionTime": "2025-04-27T16:04:26Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:f0f79d11af0512b03b384c369b179243",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using NetworkAttachmentDefinitions can perform east/west traffic between nodes for two pods connected over a L2 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+            "Issue": {
+                "Type": "Product",
+                "Description": "New vsphere machine api tests introduced regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+                "ResolutionDate": "2025-04-29T12:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915775695020101632",
+                    "StartTime": "2025-04-25T14:31:00Z",
+                    "CompletionTime": "2025-04-25T16:43:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915900084348784640",
+                    "StartTime": "2025-04-25T22:45:12Z",
+                    "CompletionTime": "2025-04-26T01:01:08Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916216867370831872",
+                    "StartTime": "2025-04-26T19:43:59Z",
+                    "CompletionTime": "2025-04-26T21:56:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916492892445085696",
+                    "StartTime": "2025-04-27T14:00:27Z",
+                    "CompletionTime": "2025-04-27T16:04:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916884874904473600",
+                    "StartTime": "2025-04-28T15:58:17Z",
+                    "CompletionTime": "2025-04-28T18:18:56Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:4b6ab14f70e3d63ccd4f7efcbe5d4f3a",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] Network Policies when using openshift ovn-kubernetes pods within namespace should be isolated when deny policy is present in L3 dualstack primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+            "Issue": {
+                "Type": "Product",
+                "Description": "New vsphere machine api tests introduced regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+                "ResolutionDate": "2025-04-29T12:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915775695020101632",
+                    "StartTime": "2025-04-25T14:31:00Z",
+                    "CompletionTime": "2025-04-25T16:43:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916062015089020928",
+                    "StartTime": "2025-04-26T09:28:30Z",
+                    "CompletionTime": "2025-04-26T11:28:42Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:6d0e1ad91cb62cfb4cfdb56f5d60f9b7",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] Network Policies when using openshift ovn-kubernetes pods within namespace should be isolated when deny policy is present in L2 dualstack primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+            "Issue": {
+                "Type": "Product",
+                "Description": "New vsphere machine api tests introduced regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+                "ResolutionDate": "2025-04-29T12:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915775695020101632",
+                    "StartTime": "2025-04-25T14:31:00Z",
+                    "CompletionTime": "2025-04-25T16:43:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915900084348784640",
+                    "StartTime": "2025-04-25T22:45:12Z",
+                    "CompletionTime": "2025-04-26T01:01:08Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:b9008485e85dc6ba4e8e415f1c8325d5",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] Network Policies when using openshift ovn-kubernetes allow ingress traffic to one pod from a particular namespace in L3 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+            "Issue": {
+                "Type": "Product",
+                "Description": "New vsphere machine api tests introduced regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+                "ResolutionDate": "2025-04-29T12:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916216867370831872",
+                    "StartTime": "2025-04-26T19:43:59Z",
+                    "CompletionTime": "2025-04-26T21:56:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916492892445085696",
+                    "StartTime": "2025-04-27T14:00:27Z",
+                    "CompletionTime": "2025-04-27T16:04:26Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:b83c8837c9e1ea2531e9466f31e203ac",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using UserDefinedNetwork can perform east/west traffic between nodes two pods connected over a L3 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+            "Issue": {
+                "Type": "Product",
+                "Description": "New vsphere machine api tests introduced regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+                "ResolutionDate": "2025-04-29T12:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915775695020101632",
+                    "StartTime": "2025-04-25T14:31:00Z",
+                    "CompletionTime": "2025-04-25T16:43:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916492892445085696",
+                    "StartTime": "2025-04-27T14:00:27Z",
+                    "CompletionTime": "2025-04-27T16:04:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916884874904473600",
+                    "StartTime": "2025-04-28T15:58:17Z",
+                    "CompletionTime": "2025-04-28T18:18:56Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:8bcb94af3ea21c52a4a5ecf903a361f8",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using UserDefinedNetwork isolates overlapping CIDRs with L2 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+            "Issue": {
+                "Type": "Product",
+                "Description": "New vsphere machine api tests introduced regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+                "ResolutionDate": "2025-04-29T12:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916216867370831872",
+                    "StartTime": "2025-04-26T19:43:59Z",
+                    "CompletionTime": "2025-04-26T21:56:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916341651593236480",
+                    "StartTime": "2025-04-27T04:00:09Z",
+                    "CompletionTime": "2025-04-27T06:13:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916884874904473600",
+                    "StartTime": "2025-04-28T15:58:17Z",
+                    "CompletionTime": "2025-04-28T18:18:56Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:d93060c970e02799508eb0a8bba40419",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using UserDefinedNetwork isolates overlapping CIDRs with L3 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+            "Issue": {
+                "Type": "Product",
+                "Description": "New vsphere machine api tests introduced regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+                "ResolutionDate": "2025-04-29T12:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915775695020101632",
+                    "StartTime": "2025-04-25T14:31:00Z",
+                    "CompletionTime": "2025-04-25T16:43:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915900084348784640",
+                    "StartTime": "2025-04-25T22:45:12Z",
+                    "CompletionTime": "2025-04-26T01:01:08Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:057cfb4c5b7815367fa242f00bcb9e56",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using UserDefinedNetwork can perform east/west traffic between nodes for two pods connected over a L2 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+            "Issue": {
+                "Type": "Product",
+                "Description": "New vsphere machine api tests introduced regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+                "ResolutionDate": "2025-04-29T12:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915900084348784640",
+                    "StartTime": "2025-04-25T22:45:12Z",
+                    "CompletionTime": "2025-04-26T01:01:08Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916216867370831872",
+                    "StartTime": "2025-04-26T19:43:59Z",
+                    "CompletionTime": "2025-04-26T21:56:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916341651593236480",
+                    "StartTime": "2025-04-27T04:00:09Z",
+                    "CompletionTime": "2025-04-27T06:13:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916492892445085696",
+                    "StartTime": "2025-04-27T14:00:27Z",
+                    "CompletionTime": "2025-04-27T16:04:26Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:6a58ecc06bda51efe3f5b34f9c51b881",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using NetworkAttachmentDefinitions isolates overlapping CIDRs with L3 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+            "Issue": {
+                "Type": "Product",
+                "Description": "New vsphere machine api tests introduced regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+                "ResolutionDate": "2025-04-29T12:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915775695020101632",
+                    "StartTime": "2025-04-25T14:31:00Z",
+                    "CompletionTime": "2025-04-25T16:43:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916062015089020928",
+                    "StartTime": "2025-04-26T09:28:30Z",
+                    "CompletionTime": "2025-04-26T11:28:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916216867370831872",
+                    "StartTime": "2025-04-26T19:43:59Z",
+                    "CompletionTime": "2025-04-26T21:56:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916341651593236480",
+                    "StartTime": "2025-04-27T04:00:09Z",
+                    "CompletionTime": "2025-04-27T06:13:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916884874904473600",
+                    "StartTime": "2025-04-28T15:58:17Z",
+                    "CompletionTime": "2025-04-28T18:18:56Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:c2a46d5dbf5702b68b4b8bddbd5d899b",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using NetworkAttachmentDefinitions is isolated from the default network with L2 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+            "Issue": {
+                "Type": "Product",
+                "Description": "New vsphere machine api tests introduced regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+                "ResolutionDate": "2025-04-29T12:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915775695020101632",
+                    "StartTime": "2025-04-25T14:31:00Z",
+                    "CompletionTime": "2025-04-25T16:43:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915900084348784640",
+                    "StartTime": "2025-04-25T22:45:12Z",
+                    "CompletionTime": "2025-04-26T01:01:08Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916062015089020928",
+                    "StartTime": "2025-04-26T09:28:30Z",
+                    "CompletionTime": "2025-04-26T11:28:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916492892445085696",
+                    "StartTime": "2025-04-27T14:00:27Z",
+                    "CompletionTime": "2025-04-27T16:04:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916884874904473600",
+                    "StartTime": "2025-04-28T15:58:17Z",
+                    "CompletionTime": "2025-04-28T18:18:56Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:a3c05068e582269a29e5402e7cf77925",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using NetworkAttachmentDefinitions isolates overlapping CIDRs with L2 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+            "Issue": {
+                "Type": "Product",
+                "Description": "New vsphere machine api tests introduced regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+                "ResolutionDate": "2025-04-29T12:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915775695020101632",
+                    "StartTime": "2025-04-25T14:31:00Z",
+                    "CompletionTime": "2025-04-25T16:43:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915900084348784640",
+                    "StartTime": "2025-04-25T22:45:12Z",
+                    "CompletionTime": "2025-04-26T01:01:08Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916216867370831872",
+                    "StartTime": "2025-04-26T19:43:59Z",
+                    "CompletionTime": "2025-04-26T21:56:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916492892445085696",
+                    "StartTime": "2025-04-27T14:00:27Z",
+                    "CompletionTime": "2025-04-27T16:04:26Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:f0f79d11af0512b03b384c369b179243",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using NetworkAttachmentDefinitions can perform east/west traffic between nodes for two pods connected over a L2 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+            "Issue": {
+                "Type": "Product",
+                "Description": "New vsphere machine api tests introduced regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+                "ResolutionDate": "2025-04-29T12:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915775695020101632",
+                    "StartTime": "2025-04-25T14:31:00Z",
+                    "CompletionTime": "2025-04-25T16:43:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915900084348784640",
+                    "StartTime": "2025-04-25T22:45:12Z",
+                    "CompletionTime": "2025-04-26T01:01:08Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916216867370831872",
+                    "StartTime": "2025-04-26T19:43:59Z",
+                    "CompletionTime": "2025-04-26T21:56:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916492892445085696",
+                    "StartTime": "2025-04-27T14:00:27Z",
+                    "CompletionTime": "2025-04-27T16:04:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916884874904473600",
+                    "StartTime": "2025-04-28T15:58:17Z",
+                    "CompletionTime": "2025-04-28T18:18:56Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:3adec89dffbccbe54a29379a1a0b5446",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using ClusterUserDefinedNetwork is isolated from the default network with L2 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+            "Issue": {
+                "Type": "Product",
+                "Description": "New vsphere machine api tests introduced regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+                "ResolutionDate": "2025-04-29T12:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915900084348784640",
+                    "StartTime": "2025-04-25T22:45:12Z",
+                    "CompletionTime": "2025-04-26T01:01:08Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916216867370831872",
+                    "StartTime": "2025-04-26T19:43:59Z",
+                    "CompletionTime": "2025-04-26T21:56:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916492892445085696",
+                    "StartTime": "2025-04-27T14:00:27Z",
+                    "CompletionTime": "2025-04-27T16:04:26Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:4b6ab14f70e3d63ccd4f7efcbe5d4f3a",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] Network Policies when using openshift ovn-kubernetes pods within namespace should be isolated when deny policy is present in L3 dualstack primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+            "Issue": {
+                "Type": "Product",
+                "Description": "New vsphere machine api tests introduced regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+                "ResolutionDate": "2025-04-29T12:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915775695020101632",
+                    "StartTime": "2025-04-25T14:31:00Z",
+                    "CompletionTime": "2025-04-25T16:43:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916062015089020928",
+                    "StartTime": "2025-04-26T09:28:30Z",
+                    "CompletionTime": "2025-04-26T11:28:42Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:6d0e1ad91cb62cfb4cfdb56f5d60f9b7",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] Network Policies when using openshift ovn-kubernetes pods within namespace should be isolated when deny policy is present in L2 dualstack primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+            "Issue": {
+                "Type": "Product",
+                "Description": "New vsphere machine api tests introduced regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+                "ResolutionDate": "2025-04-29T12:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915775695020101632",
+                    "StartTime": "2025-04-25T14:31:00Z",
+                    "CompletionTime": "2025-04-25T16:43:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915900084348784640",
+                    "StartTime": "2025-04-25T22:45:12Z",
+                    "CompletionTime": "2025-04-26T01:01:08Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:b9008485e85dc6ba4e8e415f1c8325d5",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] Network Policies when using openshift ovn-kubernetes allow ingress traffic to one pod from a particular namespace in L3 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+            "Issue": {
+                "Type": "Product",
+                "Description": "New vsphere machine api tests introduced regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+                "ResolutionDate": "2025-04-29T12:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916216867370831872",
+                    "StartTime": "2025-04-26T19:43:59Z",
+                    "CompletionTime": "2025-04-26T21:56:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916492892445085696",
+                    "StartTime": "2025-04-27T14:00:27Z",
+                    "CompletionTime": "2025-04-27T16:04:26Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:b83c8837c9e1ea2531e9466f31e203ac",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using UserDefinedNetwork can perform east/west traffic between nodes two pods connected over a L3 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+            "Issue": {
+                "Type": "Product",
+                "Description": "New vsphere machine api tests introduced regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+                "ResolutionDate": "2025-04-29T12:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915775695020101632",
+                    "StartTime": "2025-04-25T14:31:00Z",
+                    "CompletionTime": "2025-04-25T16:43:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916492892445085696",
+                    "StartTime": "2025-04-27T14:00:27Z",
+                    "CompletionTime": "2025-04-27T16:04:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916884874904473600",
+                    "StartTime": "2025-04-28T15:58:17Z",
+                    "CompletionTime": "2025-04-28T18:18:56Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:8bcb94af3ea21c52a4a5ecf903a361f8",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using UserDefinedNetwork isolates overlapping CIDRs with L2 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+            "Issue": {
+                "Type": "Product",
+                "Description": "New vsphere machine api tests introduced regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+                "ResolutionDate": "2025-04-29T12:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916216867370831872",
+                    "StartTime": "2025-04-26T19:43:59Z",
+                    "CompletionTime": "2025-04-26T21:56:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916341651593236480",
+                    "StartTime": "2025-04-27T04:00:09Z",
+                    "CompletionTime": "2025-04-27T06:13:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1916884874904473600",
+                    "StartTime": "2025-04-28T15:58:17Z",
+                    "CompletionTime": "2025-04-28T18:18:56Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:d93060c970e02799508eb0a8bba40419",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using UserDefinedNetwork isolates overlapping CIDRs with L3 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "b9cd6267-e4c9-4bf9-9c3b-ff0fe9fedabb",
+            "Issue": {
+                "Type": "Product",
+                "Description": "New vsphere machine api tests introduced regressions",
+                "URL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+                "ResolutionDate": "2025-04-29T12:22:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915775695020101632",
+                    "StartTime": "2025-04-25T14:31:00Z",
+                    "CompletionTime": "2025-04-25T16:43:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1915900084348784640",
+                    "StartTime": "2025-04-25T22:45:12Z",
+                    "CompletionTime": "2025-04-26T01:01:08Z"
+                }
+            ]
+        }
+    ]
+}
