@@ -1,0 +1,40 @@
+{
+    "Arguments": {
+        "TestRelease": "4.19",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2025-02-25T23:59:59Z&baseRelease=4.18&baseStartTime=2025-01-26T00:00:00Z&columnGroupBy=Architecture,Network,Platform,Topology&confidence=95&dbGroupBy=Platform,Architecture,Network,Topology,FeatureSet,Upgrade,Suite,Installer&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=true&includeVariant=Architecture:amd64&includeVariant=CGroupMode:v2&includeVariant=ContainerRuntime:runc&includeVariant=ContainerRuntime:crun&includeVariant=FeatureSet:default&includeVariant=FeatureSet:techpreview&includeVariant=Installer:ipi&includeVariant=Installer:upi&includeVariant=JobTier:blocking&includeVariant=JobTier:informing&includeVariant=JobTier:standard&includeVariant=LayeredProduct:none&includeVariant=Network:ovn&includeVariant=Owner:eng&includeVariant=Owner:service-delivery&includeVariant=Platform:aws&includeVariant=Platform:azure&includeVariant=Platform:gcp&includeVariant=Platform:metal&includeVariant=Platform:rosa&includeVariant=Platform:vsphere&includeVariant=Topology:ha&includeVariant=Topology:microshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-05-05T23:59:59Z&sampleRelease=4.19&sampleStartTime=2025-04-28T00:00:00Z",
+        "IssueDescription": "IBM vSphere Network Outage",
+        "IssueType": "Infrastructure",
+        "IssueURL": "https://issues.redhat.com/browse/DPP-1703://issues.redhat.com/browse/DPP-17034",
+        "OutputFile": "vsphere_install_outage_regressions.json",
+        "TargetBuildCluster": "",
+        "JobRunStartTimeMin": "2025-05-04T00:00:00Z",
+        "IssueResolutionDate": "2025-05-05T14:00:00Z",
+        "FileMatches": {
+            "MatchDefinitions": {
+                "MatchGate": "OR",
+                "Files": [
+                    {
+                        "FilePath": "prowjob.json",
+                        "ContentType": "text/plain",
+                        "MatchGate": "OR",
+                        "Matches": [
+                            "prow.k8s.io/job.*-vsphere"
+                        ]
+                    }
+                ]
+            }
+        },
+        "IncidentGroupId": "b09f98a9-39f1-40df-890a-d51d654e7211"
+    },
+    "Tests": [
+        {
+            "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0"
+        },
+        {
+            "TestId": "cluster install:3e14279ba2c202608dd9a041e5023c4c"
+        },
+        {
+            "TestId": "cluster install:2ec4097c2122a2e07e7270c2d7cb3cc6"
+        }
+    ]
+}

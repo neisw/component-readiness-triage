@@ -1,0 +1,1344 @@
+{
+    "Arguments": {
+        "TestRelease": "4.19",
+        "IssueDescription": "IBM vSphere Network Outage",
+        "IssueType": "Product",
+        "IssueURL": "https://issues.redhat.com/browse/DPP-1703://issues.redhat.com/browse/DPP-17034",
+        "OutputFile": "vsphere_install_outage_regressions.json",
+        "IncidentGroupId": "b09f98a9-39f1-40df-890a-d51d654e7211",
+        "TargetModifiedTime": "2025-05-05 14:28:23.690393+00:00",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2025-02-25T23:59:59Z&baseRelease=4.18&baseStartTime=2025-01-26T00:00:00Z&columnGroupBy=Architecture,Network,Platform,Topology&confidence=95&dbGroupBy=Platform,Architecture,Network,Topology,FeatureSet,Upgrade,Suite,Installer&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=true&includeVariant=Architecture:amd64&includeVariant=CGroupMode:v2&includeVariant=ContainerRuntime:runc&includeVariant=ContainerRuntime:crun&includeVariant=FeatureSet:default&includeVariant=FeatureSet:techpreview&includeVariant=Installer:ipi&includeVariant=Installer:upi&includeVariant=JobTier:blocking&includeVariant=JobTier:informing&includeVariant=JobTier:standard&includeVariant=LayeredProduct:none&includeVariant=Network:ovn&includeVariant=Owner:eng&includeVariant=Owner:service-delivery&includeVariant=Platform:aws&includeVariant=Platform:azure&includeVariant=Platform:gcp&includeVariant=Platform:metal&includeVariant=Platform:rosa&includeVariant=Platform:vsphere&includeVariant=Topology:ha&includeVariant=Topology:microshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-05-05T23:59:59Z&sampleRelease=4.19&sampleStartTime=2025-04-28T00:00:00Z",
+        "JobRunStartTimeMin": "2025-05-04T00:00:00Z",
+        "IssueResolutionDate": "2025-05-05T14:00:00Z"
+    },
+    "Tests": [
+        {
+            "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
+            "TestName": "install should succeed: overall",
+            "Release": "4.19",
+            "GroupId": "b09f98a9-39f1-40df-890a-d51d654e7211",
+            "Issue": {
+                "Type": "Product",
+                "Description": "IBM vSphere Network Outage",
+                "URL": "https://issues.redhat.com/browse/DPP-1703://issues.redhat.com/browse/DPP-17034",
+                "ResolutionDate": "2025-05-05T14:00:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "upi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-upi-serial/1919037810162012160",
+                    "StartTime": "2025-05-04T14:34:02Z",
+                    "CompletionTime": "2025-05-04T15:13:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-upi-serial/1919143700508708864",
+                    "StartTime": "2025-05-04T21:34:12Z",
+                    "CompletionTime": "2025-05-04T22:15:29Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-upi-serial/1919224824618553344",
+                    "StartTime": "2025-05-05T02:56:30Z",
+                    "CompletionTime": "2025-05-05T03:38:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-upi-serial/1919314853709746176",
+                    "StartTime": "2025-05-05T08:54:27Z",
+                    "CompletionTime": "2025-05-05T09:35:29Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
+            "TestName": "install should succeed: overall",
+            "Release": "4.19",
+            "GroupId": "b09f98a9-39f1-40df-890a-d51d654e7211",
+            "Issue": {
+                "Type": "Product",
+                "Description": "IBM vSphere Network Outage",
+                "URL": "https://issues.redhat.com/browse/DPP-1703://issues.redhat.com/browse/DPP-17034",
+                "ResolutionDate": "2025-05-05T14:00:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "upi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-upi/1919038118732763136",
+                    "StartTime": "2025-05-04T14:34:34Z",
+                    "CompletionTime": "2025-05-04T15:15:05Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-upi/1919143703025291264",
+                    "StartTime": "2025-05-04T21:34:12Z",
+                    "CompletionTime": "2025-05-04T22:15:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-upi/1919224632515235840",
+                    "StartTime": "2025-05-05T02:56:14Z",
+                    "CompletionTime": "2025-05-05T03:37:33Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-upi/1919314831144390656",
+                    "StartTime": "2025-05-05T08:54:22Z",
+                    "CompletionTime": "2025-05-05T09:34:19Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:3e14279ba2c202608dd9a041e5023c4c",
+            "TestName": "install should succeed: infrastructure",
+            "Release": "4.19",
+            "GroupId": "b09f98a9-39f1-40df-890a-d51d654e7211",
+            "Issue": {
+                "Type": "Product",
+                "Description": "IBM vSphere Network Outage",
+                "URL": "https://issues.redhat.com/browse/DPP-1703://issues.redhat.com/browse/DPP-17034",
+                "ResolutionDate": "2025-05-05T14:00:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-serial-runc/1919234534025465856",
+                    "StartTime": "2025-05-05T03:35:45Z",
+                    "CompletionTime": "2025-05-05T04:17:56Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-serial/1919038017264160768",
+                    "StartTime": "2025-05-04T14:34:18Z",
+                    "CompletionTime": "2025-05-04T15:16:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-serial/1919143492513173504",
+                    "StartTime": "2025-05-04T21:33:53Z",
+                    "CompletionTime": "2025-05-04T22:15:36Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-serial/1919224603155107840",
+                    "StartTime": "2025-05-05T02:56:11Z",
+                    "CompletionTime": "2025-05-05T03:39:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-serial/1919314961931177984",
+                    "StartTime": "2025-05-05T08:54:49Z",
+                    "CompletionTime": "2025-05-05T09:34:35Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:2ec4097c2122a2e07e7270c2d7cb3cc6",
+            "TestName": "install should succeed: other",
+            "Release": "4.19",
+            "GroupId": "b09f98a9-39f1-40df-890a-d51d654e7211",
+            "Issue": {
+                "Type": "Product",
+                "Description": "IBM vSphere Network Outage",
+                "URL": "https://issues.redhat.com/browse/DPP-1703://issues.redhat.com/browse/DPP-17034",
+                "ResolutionDate": "2025-05-05T14:00:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "upi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-upi-serial/1919037810162012160",
+                    "StartTime": "2025-05-04T14:34:02Z",
+                    "CompletionTime": "2025-05-04T15:13:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-upi-serial/1919143700508708864",
+                    "StartTime": "2025-05-04T21:34:12Z",
+                    "CompletionTime": "2025-05-04T22:15:29Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-upi-serial/1919224824618553344",
+                    "StartTime": "2025-05-05T02:56:30Z",
+                    "CompletionTime": "2025-05-05T03:38:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-upi-serial/1919314853709746176",
+                    "StartTime": "2025-05-05T08:54:27Z",
+                    "CompletionTime": "2025-05-05T09:35:29Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:3e14279ba2c202608dd9a041e5023c4c",
+            "TestName": "install should succeed: infrastructure",
+            "Release": "4.19",
+            "GroupId": "b09f98a9-39f1-40df-890a-d51d654e7211",
+            "Issue": {
+                "Type": "Product",
+                "Description": "IBM vSphere Network Outage",
+                "URL": "https://issues.redhat.com/browse/DPP-1703://issues.redhat.com/browse/DPP-17034",
+                "ResolutionDate": "2025-05-05T14:00:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview-serial/1919037856173527040",
+                    "StartTime": "2025-05-04T14:34:05Z",
+                    "CompletionTime": "2025-05-04T15:16:20Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview-serial/1919143464855932928",
+                    "StartTime": "2025-05-04T21:33:52Z",
+                    "CompletionTime": "2025-05-04T22:15:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview-serial/1919224827156107264",
+                    "StartTime": "2025-05-05T02:56:30Z",
+                    "CompletionTime": "2025-05-05T03:40:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview-serial/1919315018134851584",
+                    "StartTime": "2025-05-05T08:55:01Z",
+                    "CompletionTime": "2025-05-05T09:34:23Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:3e14279ba2c202608dd9a041e5023c4c",
+            "TestName": "install should succeed: infrastructure",
+            "Release": "4.19",
+            "GroupId": "b09f98a9-39f1-40df-890a-d51d654e7211",
+            "Issue": {
+                "Type": "Product",
+                "Description": "IBM vSphere Network Outage",
+                "URL": "https://issues.redhat.com/browse/DPP-1703://issues.redhat.com/browse/DPP-17034",
+                "ResolutionDate": "2025-05-05T14:00:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-vsphere-periodic/1918963493042655232",
+                    "StartTime": "2025-05-04T09:38:43Z",
+                    "CompletionTime": "2025-05-04T10:27:37Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-csi-operator-test/1919239064112861184",
+                    "StartTime": "2025-05-05T03:53:45Z",
+                    "CompletionTime": "2025-05-05T04:35:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ipi-ovn-runc/1919179175818694656",
+                    "StartTime": "2025-05-04T23:55:44Z",
+                    "CompletionTime": "2025-05-05T00:50:37Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-csi/1919037810082320384",
+                    "StartTime": "2025-05-04T14:34:02Z",
+                    "CompletionTime": "2025-05-04T15:22:59Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-csi/1919143509248446464",
+                    "StartTime": "2025-05-04T21:33:55Z",
+                    "CompletionTime": "2025-05-04T22:22:57Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-csi/1919224709690429440",
+                    "StartTime": "2025-05-05T02:56:20Z",
+                    "CompletionTime": "2025-05-05T03:46:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-csi/1919314782406578176",
+                    "StartTime": "2025-05-05T08:54:18Z",
+                    "CompletionTime": "2025-05-05T09:34:32Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-kube-apiserver-rollout/1919169855899045888",
+                    "StartTime": "2025-05-04T23:18:44Z",
+                    "CompletionTime": "2025-05-05T00:14:36Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1919008795502055424",
+                    "StartTime": "2025-05-04T12:38:44Z",
+                    "CompletionTime": "2025-05-04T13:33:10Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1919022994601021440",
+                    "StartTime": "2025-05-04T13:35:10Z",
+                    "CompletionTime": "2025-05-04T14:28:58Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1919038042782306304",
+                    "StartTime": "2025-05-04T14:34:20Z",
+                    "CompletionTime": "2025-05-04T15:29:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1919053122404093952",
+                    "StartTime": "2025-05-04T15:34:52Z",
+                    "CompletionTime": "2025-05-04T16:29:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1919067416227221504",
+                    "StartTime": "2025-05-04T16:31:41Z",
+                    "CompletionTime": "2025-05-04T17:25:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1919143470660849664",
+                    "StartTime": "2025-05-04T21:33:52Z",
+                    "CompletionTime": "2025-05-04T22:29:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1919157830699454464",
+                    "StartTime": "2025-05-04T22:30:57Z",
+                    "CompletionTime": "2025-05-04T23:25:25Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1919172104863879168",
+                    "StartTime": "2025-05-04T23:27:40Z",
+                    "CompletionTime": "2025-05-05T00:21:59Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1919224717240176640",
+                    "StartTime": "2025-05-05T02:56:21Z",
+                    "CompletionTime": "2025-05-05T03:55:15Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1919240452809166848",
+                    "StartTime": "2025-05-05T03:59:16Z",
+                    "CompletionTime": "2025-05-05T04:54:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1919254904296181760",
+                    "StartTime": "2025-05-05T04:56:41Z",
+                    "CompletionTime": "2025-05-05T05:51:34Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1919315004713078784",
+                    "StartTime": "2025-05-05T08:54:58Z",
+                    "CompletionTime": "2025-05-05T09:35:14Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-static-ovn/1919038030643990528",
+                    "StartTime": "2025-05-04T14:34:19Z",
+                    "CompletionTime": "2025-05-04T15:29:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-static-ovn/1919143758394298368",
+                    "StartTime": "2025-05-04T21:34:17Z",
+                    "CompletionTime": "2025-05-04T22:30:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-static-ovn/1919224702136487936",
+                    "StartTime": "2025-05-05T02:56:20Z",
+                    "CompletionTime": "2025-05-05T03:54:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-static-ovn/1919314753109364736",
+                    "StartTime": "2025-05-05T08:54:16Z",
+                    "CompletionTime": "2025-05-05T09:40:35Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:3e14279ba2c202608dd9a041e5023c4c",
+            "TestName": "install should succeed: infrastructure",
+            "Release": "4.19",
+            "GroupId": "b09f98a9-39f1-40df-890a-d51d654e7211",
+            "Issue": {
+                "Type": "Product",
+                "Description": "IBM vSphere Network Outage",
+                "URL": "https://issues.redhat.com/browse/DPP-1703://issues.redhat.com/browse/DPP-17034",
+                "ResolutionDate": "2025-05-05T14:00:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "minor"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-vsphere-ovn-upgrade/1919038071144189952",
+                    "StartTime": "2025-05-04T14:34:23Z",
+                    "CompletionTime": "2025-05-04T15:16:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-vsphere-ovn-upgrade/1919143713095815168",
+                    "StartTime": "2025-05-04T21:34:13Z",
+                    "CompletionTime": "2025-05-04T22:18:15Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-vsphere-ovn-upgrade/1919224575472701440",
+                    "StartTime": "2025-05-05T02:56:10Z",
+                    "CompletionTime": "2025-05-05T03:39:16Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-vsphere-ovn-upgrade/1919315020647239680",
+                    "StartTime": "2025-05-05T08:55:02Z",
+                    "CompletionTime": "2025-05-05T09:34:02Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
+            "TestName": "install should succeed: overall",
+            "Release": "4.19",
+            "GroupId": "b09f98a9-39f1-40df-890a-d51d654e7211",
+            "Issue": {
+                "Type": "Product",
+                "Description": "IBM vSphere Network Outage",
+                "URL": "https://issues.redhat.com/browse/DPP-1703://issues.redhat.com/browse/DPP-17034",
+                "ResolutionDate": "2025-05-05T14:00:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-serial-runc/1919234534025465856",
+                    "StartTime": "2025-05-05T03:35:45Z",
+                    "CompletionTime": "2025-05-05T04:17:56Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-serial/1919038017264160768",
+                    "StartTime": "2025-05-04T14:34:18Z",
+                    "CompletionTime": "2025-05-04T15:16:28Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-serial/1919143492513173504",
+                    "StartTime": "2025-05-04T21:33:53Z",
+                    "CompletionTime": "2025-05-04T22:15:36Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-serial/1919224603155107840",
+                    "StartTime": "2025-05-05T02:56:11Z",
+                    "CompletionTime": "2025-05-05T03:39:38Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-serial/1919314961931177984",
+                    "StartTime": "2025-05-05T08:54:49Z",
+                    "CompletionTime": "2025-05-05T09:34:35Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
+            "TestName": "install should succeed: overall",
+            "Release": "4.19",
+            "GroupId": "b09f98a9-39f1-40df-890a-d51d654e7211",
+            "Issue": {
+                "Type": "Product",
+                "Description": "IBM vSphere Network Outage",
+                "URL": "https://issues.redhat.com/browse/DPP-1703://issues.redhat.com/browse/DPP-17034",
+                "ResolutionDate": "2025-05-05T14:00:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-vsphere-periodic-techpreview/1919018354975182848",
+                    "StartTime": "2025-05-04T13:16:44Z",
+                    "CompletionTime": "2025-05-04T14:06:25Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ipi-ovn-runc-techpreview/1919150309444161536",
+                    "StartTime": "2025-05-04T22:00:50Z",
+                    "CompletionTime": "2025-05-04T22:55:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1919038026466463744",
+                    "StartTime": "2025-05-04T14:34:19Z",
+                    "CompletionTime": "2025-05-04T15:22:58Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1919143760910880768",
+                    "StartTime": "2025-05-04T21:34:17Z",
+                    "CompletionTime": "2025-05-04T22:24:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1919224692913213440",
+                    "StartTime": "2025-05-05T02:56:19Z",
+                    "CompletionTime": "2025-05-05T03:45:58Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1919314925361041408",
+                    "StartTime": "2025-05-05T08:54:41Z",
+                    "CompletionTime": "2025-05-05T09:34:53Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
+            "TestName": "install should succeed: overall",
+            "Release": "4.19",
+            "GroupId": "b09f98a9-39f1-40df-890a-d51d654e7211",
+            "Issue": {
+                "Type": "Product",
+                "Description": "IBM vSphere Network Outage",
+                "URL": "https://issues.redhat.com/browse/DPP-1703://issues.redhat.com/browse/DPP-17034",
+                "ResolutionDate": "2025-05-05T14:00:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "serial"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview-serial/1919037856173527040",
+                    "StartTime": "2025-05-04T14:34:05Z",
+                    "CompletionTime": "2025-05-04T15:16:20Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview-serial/1919143464855932928",
+                    "StartTime": "2025-05-04T21:33:52Z",
+                    "CompletionTime": "2025-05-04T22:15:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview-serial/1919224827156107264",
+                    "StartTime": "2025-05-05T02:56:30Z",
+                    "CompletionTime": "2025-05-05T03:40:09Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview-serial/1919315018134851584",
+                    "StartTime": "2025-05-05T08:55:01Z",
+                    "CompletionTime": "2025-05-05T09:34:23Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:2ec4097c2122a2e07e7270c2d7cb3cc6",
+            "TestName": "install should succeed: other",
+            "Release": "4.19",
+            "GroupId": "b09f98a9-39f1-40df-890a-d51d654e7211",
+            "Issue": {
+                "Type": "Product",
+                "Description": "IBM vSphere Network Outage",
+                "URL": "https://issues.redhat.com/browse/DPP-1703://issues.redhat.com/browse/DPP-17034",
+                "ResolutionDate": "2025-05-05T14:00:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "upi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-upi/1919038118732763136",
+                    "StartTime": "2025-05-04T14:34:34Z",
+                    "CompletionTime": "2025-05-04T15:15:05Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-upi/1919143703025291264",
+                    "StartTime": "2025-05-04T21:34:12Z",
+                    "CompletionTime": "2025-05-04T22:15:04Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-upi/1919224632515235840",
+                    "StartTime": "2025-05-05T02:56:14Z",
+                    "CompletionTime": "2025-05-05T03:37:33Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-upi/1919314831144390656",
+                    "StartTime": "2025-05-05T08:54:22Z",
+                    "CompletionTime": "2025-05-05T09:34:19Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:3e14279ba2c202608dd9a041e5023c4c",
+            "TestName": "install should succeed: infrastructure",
+            "Release": "4.19",
+            "GroupId": "b09f98a9-39f1-40df-890a-d51d654e7211",
+            "Issue": {
+                "Type": "Product",
+                "Description": "IBM vSphere Network Outage",
+                "URL": "https://issues.redhat.com/browse/DPP-1703://issues.redhat.com/browse/DPP-17034",
+                "ResolutionDate": "2025-05-05T14:00:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-vsphere-ovn-upgrade/1919037959340822528",
+                    "StartTime": "2025-05-04T14:34:13Z",
+                    "CompletionTime": "2025-05-04T15:16:18Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-vsphere-ovn-upgrade/1919143464906264576",
+                    "StartTime": "2025-05-04T21:33:52Z",
+                    "CompletionTime": "2025-05-04T22:15:00Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-vsphere-ovn-upgrade/1919224822106165248",
+                    "StartTime": "2025-05-05T02:56:30Z",
+                    "CompletionTime": "2025-05-05T03:39:27Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-vsphere-ovn-upgrade/1919314727058542592",
+                    "StartTime": "2025-05-05T08:54:14Z",
+                    "CompletionTime": "2025-05-05T09:34:11Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-vsphere-runc-upgrade/1919189988906373120",
+                    "StartTime": "2025-05-05T00:38:44Z",
+                    "CompletionTime": "2025-05-05T01:20:41Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
+            "TestName": "install should succeed: overall",
+            "Release": "4.19",
+            "GroupId": "b09f98a9-39f1-40df-890a-d51d654e7211",
+            "Issue": {
+                "Type": "Product",
+                "Description": "IBM vSphere Network Outage",
+                "URL": "https://issues.redhat.com/browse/DPP-1703://issues.redhat.com/browse/DPP-17034",
+                "ResolutionDate": "2025-05-05T14:00:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "minor"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-vsphere-ovn-upgrade/1919038071144189952",
+                    "StartTime": "2025-05-04T14:34:23Z",
+                    "CompletionTime": "2025-05-04T15:16:47Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-vsphere-ovn-upgrade/1919143713095815168",
+                    "StartTime": "2025-05-04T21:34:13Z",
+                    "CompletionTime": "2025-05-04T22:18:15Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-vsphere-ovn-upgrade/1919224575472701440",
+                    "StartTime": "2025-05-05T02:56:10Z",
+                    "CompletionTime": "2025-05-05T03:39:16Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-upgrade-from-stable-4.18-e2e-vsphere-ovn-upgrade/1919315020647239680",
+                    "StartTime": "2025-05-05T08:55:02Z",
+                    "CompletionTime": "2025-05-05T09:34:02Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
+            "TestName": "install should succeed: overall",
+            "Release": "4.19",
+            "GroupId": "b09f98a9-39f1-40df-890a-d51d654e7211",
+            "Issue": {
+                "Type": "Product",
+                "Description": "IBM vSphere Network Outage",
+                "URL": "https://issues.redhat.com/browse/DPP-1703://issues.redhat.com/browse/DPP-17034",
+                "ResolutionDate": "2025-05-05T14:00:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "micro"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-vsphere-ovn-upgrade/1919037959340822528",
+                    "StartTime": "2025-05-04T14:34:13Z",
+                    "CompletionTime": "2025-05-04T15:16:18Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-vsphere-ovn-upgrade/1919143464906264576",
+                    "StartTime": "2025-05-04T21:33:52Z",
+                    "CompletionTime": "2025-05-04T22:15:00Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-vsphere-ovn-upgrade/1919224822106165248",
+                    "StartTime": "2025-05-05T02:56:30Z",
+                    "CompletionTime": "2025-05-05T03:39:27Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-vsphere-ovn-upgrade/1919314727058542592",
+                    "StartTime": "2025-05-05T08:54:14Z",
+                    "CompletionTime": "2025-05-05T09:34:11Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.19-e2e-vsphere-runc-upgrade/1919189988906373120",
+                    "StartTime": "2025-05-05T00:38:44Z",
+                    "CompletionTime": "2025-05-05T01:20:41Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:0cb1bb27e418491b1ffdacab58c5c8c0",
+            "TestName": "install should succeed: overall",
+            "Release": "4.19",
+            "GroupId": "b09f98a9-39f1-40df-890a-d51d654e7211",
+            "Issue": {
+                "Type": "Product",
+                "Description": "IBM vSphere Network Outage",
+                "URL": "https://issues.redhat.com/browse/DPP-1703://issues.redhat.com/browse/DPP-17034",
+                "ResolutionDate": "2025-05-05T14:00:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "default"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-vsphere-periodic/1918963493042655232",
+                    "StartTime": "2025-05-04T09:38:43Z",
+                    "CompletionTime": "2025-05-04T10:27:37Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-csi-operator-test/1919239064112861184",
+                    "StartTime": "2025-05-05T03:53:45Z",
+                    "CompletionTime": "2025-05-05T04:35:17Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ipi-ovn-runc/1919179175818694656",
+                    "StartTime": "2025-05-04T23:55:44Z",
+                    "CompletionTime": "2025-05-05T00:50:37Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-csi/1919037810082320384",
+                    "StartTime": "2025-05-04T14:34:02Z",
+                    "CompletionTime": "2025-05-04T15:22:59Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-csi/1919143509248446464",
+                    "StartTime": "2025-05-04T21:33:55Z",
+                    "CompletionTime": "2025-05-04T22:22:57Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-csi/1919224709690429440",
+                    "StartTime": "2025-05-05T02:56:20Z",
+                    "CompletionTime": "2025-05-05T03:46:42Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-csi/1919314782406578176",
+                    "StartTime": "2025-05-05T08:54:18Z",
+                    "CompletionTime": "2025-05-05T09:34:32Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-kube-apiserver-rollout/1919169855899045888",
+                    "StartTime": "2025-05-04T23:18:44Z",
+                    "CompletionTime": "2025-05-05T00:14:36Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1919008795502055424",
+                    "StartTime": "2025-05-04T12:38:44Z",
+                    "CompletionTime": "2025-05-04T13:33:10Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1919022994601021440",
+                    "StartTime": "2025-05-04T13:35:10Z",
+                    "CompletionTime": "2025-05-04T14:28:58Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1919038042782306304",
+                    "StartTime": "2025-05-04T14:34:20Z",
+                    "CompletionTime": "2025-05-04T15:29:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1919053122404093952",
+                    "StartTime": "2025-05-04T15:34:52Z",
+                    "CompletionTime": "2025-05-04T16:29:31Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1919067416227221504",
+                    "StartTime": "2025-05-04T16:31:41Z",
+                    "CompletionTime": "2025-05-04T17:25:30Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1919143470660849664",
+                    "StartTime": "2025-05-04T21:33:52Z",
+                    "CompletionTime": "2025-05-04T22:29:46Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1919157830699454464",
+                    "StartTime": "2025-05-04T22:30:57Z",
+                    "CompletionTime": "2025-05-04T23:25:25Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1919172104863879168",
+                    "StartTime": "2025-05-04T23:27:40Z",
+                    "CompletionTime": "2025-05-05T00:21:59Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1919224717240176640",
+                    "StartTime": "2025-05-05T02:56:21Z",
+                    "CompletionTime": "2025-05-05T03:55:15Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1919240452809166848",
+                    "StartTime": "2025-05-05T03:59:16Z",
+                    "CompletionTime": "2025-05-05T04:54:26Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1919254904296181760",
+                    "StartTime": "2025-05-05T04:56:41Z",
+                    "CompletionTime": "2025-05-05T05:51:34Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn/1919315004713078784",
+                    "StartTime": "2025-05-05T08:54:58Z",
+                    "CompletionTime": "2025-05-05T09:35:14Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-static-ovn/1919038030643990528",
+                    "StartTime": "2025-05-04T14:34:19Z",
+                    "CompletionTime": "2025-05-04T15:29:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-static-ovn/1919143758394298368",
+                    "StartTime": "2025-05-04T21:34:17Z",
+                    "CompletionTime": "2025-05-04T22:30:43Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-static-ovn/1919224702136487936",
+                    "StartTime": "2025-05-05T02:56:20Z",
+                    "CompletionTime": "2025-05-05T03:54:41Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-static-ovn/1919314753109364736",
+                    "StartTime": "2025-05-05T08:54:16Z",
+                    "CompletionTime": "2025-05-05T09:40:35Z"
+                }
+            ]
+        },
+        {
+            "TestId": "cluster install:3e14279ba2c202608dd9a041e5023c4c",
+            "TestName": "install should succeed: infrastructure",
+            "Release": "4.19",
+            "GroupId": "b09f98a9-39f1-40df-890a-d51d654e7211",
+            "Issue": {
+                "Type": "Product",
+                "Description": "IBM vSphere Network Outage",
+                "URL": "https://issues.redhat.com/browse/DPP-1703://issues.redhat.com/browse/DPP-17034",
+                "ResolutionDate": "2025-05-05T14:00:00Z"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-cluster-control-plane-machine-set-operator-release-4.19-periodics-e2e-vsphere-periodic-techpreview/1919018354975182848",
+                    "StartTime": "2025-05-04T13:16:44Z",
+                    "CompletionTime": "2025-05-04T14:06:25Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ipi-ovn-runc-techpreview/1919150309444161536",
+                    "StartTime": "2025-05-04T22:00:50Z",
+                    "CompletionTime": "2025-05-04T22:55:45Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1919038026466463744",
+                    "StartTime": "2025-05-04T14:34:19Z",
+                    "CompletionTime": "2025-05-04T15:22:58Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1919143760910880768",
+                    "StartTime": "2025-05-04T21:34:17Z",
+                    "CompletionTime": "2025-05-04T22:24:22Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1919224692913213440",
+                    "StartTime": "2025-05-05T02:56:19Z",
+                    "CompletionTime": "2025-05-05T03:45:58Z"
+                },
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1919314925361041408",
+                    "StartTime": "2025-05-05T08:54:41Z",
+                    "CompletionTime": "2025-05-05T09:34:53Z"
+                }
+            ]
+        }
+    ]
+}
