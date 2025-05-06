@@ -1,0 +1,70 @@
+{
+    "Arguments": {
+        "TestRelease": "4.19",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2025-02-25T23:59:59Z&baseRelease=4.18&baseStartTime=2025-01-26T00:00:00Z&columnGroupBy=Architecture,Network,Platform,Topology&confidence=95&dbGroupBy=Platform,Architecture,Network,Topology,FeatureSet,Upgrade,Suite,Installer&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=true&includeVariant=Architecture:amd64&includeVariant=CGroupMode:v2&includeVariant=ContainerRuntime:runc&includeVariant=ContainerRuntime:crun&includeVariant=FeatureSet:default&includeVariant=FeatureSet:techpreview&includeVariant=Installer:ipi&includeVariant=Installer:upi&includeVariant=JobTier:blocking&includeVariant=JobTier:informing&includeVariant=JobTier:standard&includeVariant=LayeredProduct:none&includeVariant=Network:ovn&includeVariant=Owner:eng&includeVariant=Owner:service-delivery&includeVariant=Platform:aws&includeVariant=Platform:azure&includeVariant=Platform:gcp&includeVariant=Platform:metal&includeVariant=Platform:rosa&includeVariant=Platform:vsphere&includeVariant=Topology:ha&includeVariant=Topology:microshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-05-06T23:59:59Z&sampleRelease=4.19&sampleStartTime=2025-04-29T00:00:00Z",
+        "IssueDescription": "MAPI tests adding schedulable nodes breaks several OLM/OVN tests",
+        "IssueType": "Product",
+        "IssueURL": "https://issues.redhat.com/browse/OCPBUGS-55461",
+        "OutputFile": "vsphere_m_api_failures_2_regressions.json",
+        "TargetBuildCluster": "",
+        "JobRunStartTimeMin": "2025-05-02T18:00:00Z",
+        "IssueResolutionDate": "2025-05-06T00:00:00Z",
+        "FileMatches": {
+            "MatchDefinitions": {
+                "MatchGate": "OR",
+                "Files": [
+                    {
+                        "FilePath": "prowjob.json",
+                        "ContentType": "text/plain",
+                        "MatchGate": "OR",
+                        "Matches": [
+                            "prow.k8s.io/job.*-vsphere.*techpreview"
+                        ]
+                    }
+                ]
+            }
+        },
+        "IncidentGroupId": "fade13b6-9817-4933-8374-95312e21b7d6"
+    },
+    "Tests": [
+        {
+            "TestId": "openshift-tests:d93060c970e02799508eb0a8bba40419"
+        },
+        {
+            "TestId": "openshift-tests:b83c8837c9e1ea2531e9466f31e203ac"
+        },
+        {
+            "TestId": "openshift-tests:6a58ecc06bda51efe3f5b34f9c51b881"
+        },
+        {
+            "TestId": "openshift-tests:c2a46d5dbf5702b68b4b8bddbd5d899b"
+        },
+        {
+            "TestId": "openshift-tests:6d0e1ad91cb62cfb4cfdb56f5d60f9b7"
+        },
+        {
+            "TestId": "openshift-tests:4b6ab14f70e3d63ccd4f7efcbe5d4f3a"
+        },
+        {
+            "TestId": "openshift-tests:54913fcf042e513f2b683f1b053240e1"
+        },
+        {
+            "TestId": "openshift-tests:b9008485e85dc6ba4e8e415f1c8325d5"
+        },
+        {
+            "TestId": "openshift-tests:d7f8a6b4745c4613410a6d62a7d26bee"
+        },
+        {
+            "TestId": "openshift-tests:f782f0945697da7b4f7f68ef6f4849b9"
+        },
+        {
+            "TestId": "openshift-tests:ad03f271aa7001079904af883b17414b"
+        },
+        {
+            "TestId": "openshift-tests:fe1b1f5408e365556b1c593477f46aa5"
+        },
+        {
+            "TestId": "openshift-tests:ded5e6648afc45da17a799e3b503987b"
+        }
+    ]
+}
