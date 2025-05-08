@@ -1,0 +1,626 @@
+{
+    "Arguments": {
+        "TestRelease": "4.19",
+        "IssueDescription": "Mass outage on run",
+        "IssueType": "Infrastructure",
+        "IssueURL": "",
+        "OutputFile": "vsphere_bad_run_regressions.json",
+        "IncidentGroupId": "e60ef125-b5b2-47ed-b6ca-ad9bb2f1ef0d",
+        "TargetModifiedTime": "2025-05-08 20:22:24.668663+00:00",
+        "TestReportURL": "https://sippy.dptools.openshift.org/api/component_readiness?baseEndTime=2025-02-25T23%3A59%3A59Z&baseRelease=4.18&baseStartTime=2025-01-26T00%3A00%3A00Z&columnGroupBy=Architecture%2CNetwork%2CPlatform%2CTopology&confidence=95&dbGroupBy=Platform%2CArchitecture%2CNetwork%2CTopology%2CFeatureSet%2CUpgrade%2CSuite%2CInstaller&flakeAsFailure=false&ignoreDisruption=true&ignoreMissing=false&includeMultiReleaseAnalysis=true&includeVariant=Architecture%3Aamd64&includeVariant=CGroupMode%3Av2&includeVariant=ContainerRuntime%3Arunc&includeVariant=ContainerRuntime%3Acrun&includeVariant=FeatureSet%3Adefault&includeVariant=FeatureSet%3Atechpreview&includeVariant=Installer%3Aipi&includeVariant=Installer%3Aupi&includeVariant=JobTier%3Ablocking&includeVariant=JobTier%3Ainforming&includeVariant=JobTier%3Astandard&includeVariant=LayeredProduct%3Anone&includeVariant=Network%3Aovn&includeVariant=Owner%3Aeng&includeVariant=Owner%3Aservice-delivery&includeVariant=Platform%3Avsphere&includeVariant=Topology%3Aha&includeVariant=Topology%3Amicroshift&minFail=3&passRateAllTests=0&passRateNewTests=95&pity=5&sampleEndTime=2025-05-08T23%3A59%3A59Z&sampleRelease=4.19&sampleStartTime=2025-05-01T00%3A00%3A00Z"
+    },
+    "Tests": [
+        {
+            "TestId": "openshift-tests:0563c117b6a877bcb64ce720b3ec1bce",
+            "TestName": "[sig-builds][Feature:Builds][timing] capture build stages and durations should record build stages and durations for s2i [apigroup:build.openshift.io] [Skipped:Disconnected] [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "e60ef125-b5b2-47ed-b6ca-ad9bb2f1ef0d",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Mass outage on run"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1920418823907840000",
+                    "StartTime": "2025-05-08T10:01:30Z",
+                    "CompletionTime": "2025-05-08T14:03:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:b4f45b8bd99a0e5527bfc40a03e521b9",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] EndpointSlices mirroring when using openshift ovn-kubernetes created using UserDefinedNetwork mirrors EndpointSlices managed by the default controller for namespaces with user defined primary networks L2 primary UDN, host-networked pods [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "e60ef125-b5b2-47ed-b6ca-ad9bb2f1ef0d",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Mass outage on run"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1920418823907840000",
+                    "StartTime": "2025-05-08T10:01:30Z",
+                    "CompletionTime": "2025-05-08T14:03:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:ccf5cb7a4258f96c26651d1a2d7dcc88",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using UserDefinedNetwork is isolated from the default network with L3 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "e60ef125-b5b2-47ed-b6ca-ad9bb2f1ef0d",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Mass outage on run"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1920418823907840000",
+                    "StartTime": "2025-05-08T10:01:30Z",
+                    "CompletionTime": "2025-05-08T14:03:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:8bcb94af3ea21c52a4a5ecf903a361f8",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using UserDefinedNetwork isolates overlapping CIDRs with L2 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "e60ef125-b5b2-47ed-b6ca-ad9bb2f1ef0d",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Mass outage on run"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1920418823907840000",
+                    "StartTime": "2025-05-08T10:01:30Z",
+                    "CompletionTime": "2025-05-08T14:03:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:66305a75b3c1a94f78a0c52dfc007966",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using NetworkAttachmentDefinitions can perform east/west traffic between nodes two pods connected over a L3 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "e60ef125-b5b2-47ed-b6ca-ad9bb2f1ef0d",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Mass outage on run"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1920418823907840000",
+                    "StartTime": "2025-05-08T10:01:30Z",
+                    "CompletionTime": "2025-05-08T14:03:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:057cfb4c5b7815367fa242f00bcb9e56",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using UserDefinedNetwork can perform east/west traffic between nodes for two pods connected over a L2 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "e60ef125-b5b2-47ed-b6ca-ad9bb2f1ef0d",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Mass outage on run"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1920418823907840000",
+                    "StartTime": "2025-05-08T10:01:30Z",
+                    "CompletionTime": "2025-05-08T14:03:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:a3c05068e582269a29e5402e7cf77925",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using NetworkAttachmentDefinitions isolates overlapping CIDRs with L2 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "e60ef125-b5b2-47ed-b6ca-ad9bb2f1ef0d",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Mass outage on run"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1920418823907840000",
+                    "StartTime": "2025-05-08T10:01:30Z",
+                    "CompletionTime": "2025-05-08T14:03:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:49f059643beb9459d38acc7c0c33ec54",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using UserDefinedNetwork is isolated from the default network with L2 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "e60ef125-b5b2-47ed-b6ca-ad9bb2f1ef0d",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Mass outage on run"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1920418823907840000",
+                    "StartTime": "2025-05-08T10:01:30Z",
+                    "CompletionTime": "2025-05-08T14:03:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:0508e70de2a7ea98c5e93e04a12e7fd2",
+            "TestName": "[sig-network][OCPFeatureGate:NetworkSegmentation][Feature:UserDefinedPrimaryNetworks] when using openshift ovn-kubernetes created using ClusterUserDefinedNetwork can perform east/west traffic between nodes for two pods connected over a L2 primary UDN [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "e60ef125-b5b2-47ed-b6ca-ad9bb2f1ef0d",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Mass outage on run"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1920418823907840000",
+                    "StartTime": "2025-05-08T10:01:30Z",
+                    "CompletionTime": "2025-05-08T14:03:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:93edafbe4661bf82f80ca3264f798698",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMCatalogdAPIV1Metas][Skipped:Disconnected] OLMv1 openshift-redhat-marketplace Catalog should serve FBC via the /v1/api/metas endpoint [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "e60ef125-b5b2-47ed-b6ca-ad9bb2f1ef0d",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Mass outage on run"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1920418823907840000",
+                    "StartTime": "2025-05-08T10:01:30Z",
+                    "CompletionTime": "2025-05-08T14:03:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:802047f0bf8a1cb901657cf373d3ae6d",
+            "TestName": "[sig-olmv1][OCPFeatureGate:NewOLMCatalogdAPIV1Metas][Skipped:Disconnected] OLMv1 openshift-certified-operators Catalog should serve FBC via the /v1/api/metas endpoint [Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "e60ef125-b5b2-47ed-b6ca-ad9bb2f1ef0d",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Mass outage on run"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1920418823907840000",
+                    "StartTime": "2025-05-08T10:01:30Z",
+                    "CompletionTime": "2025-05-08T14:03:24Z"
+                }
+            ]
+        },
+        {
+            "TestId": "openshift-tests:504e3c08486b17dd2b45ff13482f686a",
+            "TestName": "[sig-cluster-lifecycle][OCPFeatureGate:VSphereMultiDisk][platform:vsphere] Managed cluster should create machinesets with eagerly zeroed data disk [apigroup:machine.openshift.io][Suite:openshift/conformance/parallel]",
+            "Release": "4.19",
+            "GroupId": "e60ef125-b5b2-47ed-b6ca-ad9bb2f1ef0d",
+            "Issue": {
+                "Type": "Infrastructure",
+                "Description": "Mass outage on run"
+            },
+            "Variants": [
+                {
+                    "key": "Network",
+                    "value": "ovn"
+                },
+                {
+                    "key": "Upgrade",
+                    "value": "none"
+                },
+                {
+                    "key": "Architecture",
+                    "value": "amd64"
+                },
+                {
+                    "key": "Platform",
+                    "value": "vsphere"
+                },
+                {
+                    "key": "FeatureSet",
+                    "value": "techpreview"
+                },
+                {
+                    "key": "Suite",
+                    "value": "unknown"
+                },
+                {
+                    "key": "Topology",
+                    "value": "ha"
+                },
+                {
+                    "key": "Installer",
+                    "value": "ipi"
+                }
+            ],
+            "JobRuns": [
+                {
+                    "URL": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-nightly-4.19-e2e-vsphere-ovn-techpreview/1920418823907840000",
+                    "StartTime": "2025-05-08T10:01:30Z",
+                    "CompletionTime": "2025-05-08T14:03:24Z"
+                }
+            ]
+        }
+    ]
+}
